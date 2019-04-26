@@ -1,5 +1,5 @@
 # co-merchant-project
 
-## co-merchant-mobile
+## merchant-mobile
 
-## co-merchant-pc
+## merchant-pc
