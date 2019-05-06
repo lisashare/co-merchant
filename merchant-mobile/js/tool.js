@@ -53,6 +53,49 @@
         };
     }
 })(jQuery);
+
+$.fn.extend({
+    showMessage: function( $msg, $time ){
+        var oDiv = document.createElement("div");
+        oDiv.setAttribute("id", "toast");
+        var oBody = document.getElementsByTagName('body')[0];
+        oBody.append(oDiv);
+        $('#toast').text( $msg );
+        $('#toast').fadeIn();
+        setTimeout(function() {
+            $('#toast').fadeOut();
+        }, $time);
+    }
+});
+ /**
+ * 存储localStorage
+ */
+
+function setStore (name, content) {
+    if (!name) return
+    if (typeof content !== 'string') {
+      content = JSON.stringify(content)
+    }
+    window.localStorage.setItem(name, content)
+  }
+
+  /**
+ * 获取localStorage
+ */
+function getStore (name) {
+    if (!name) return
+    // var value = JSON.parse(window.localStorage.getItem(name));
+    var value = window.localStorage.getItem(name)
+    return value
+  }
+
+  /**
+ * 删除localStorage
+ */
+function removeStore (name) {
+    if (!name) return
+    window.localStorage.removeItem(name)
+  }
 /*
     $("#FengTab").FengTab();
     $("#FengTab2").FengTab({ 

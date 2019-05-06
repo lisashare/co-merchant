@@ -1,6 +1,10 @@
 /* 独立样式 */
 @rem: 50rem;
 img{height: 100%;}
+.color-f85100{
+    color: #f85100;
+}
+// 出现弹层禁止滚动
 .hei-100 {
     height: 100%;
     overflow: hidden;
@@ -8,6 +12,276 @@ img{height: 100%;}
 }
 .border-top{
     border-top: 1px solid #f0f0f0;
+}
+.border-bottom{
+    border-bottom: 1px solid #f0f0f0;
+}
+.bgcolor-gradient{
+    color: #fff;
+    background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-top: 88/@rem;
+}
+.header-fixed{
+    position: fixed;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 2;
+}
+.fixed-tab{
+    position: fixed;
+    top: 88/@rem;
+    z-index: 2;
+}
+.itd-tab{
+    margin-bottom: 0!important;
+}
+.itd-industry-news-wrap{
+    .i-industry-news-content{
+        a:last-child dl{
+            border-bottom: none;
+        }
+    }
+}
+.itd-online-desc{
+    font-size: 22/@rem;
+    color: #999;
+}
+// 详情页tab content
+.section-content{
+    line-height: 46/@rem!important;
+    font-size: 30/@rem!important;
+    color: #666!important;
+    overflow: hidden;
+    img{
+        margin: 32/@rem 0;
+        width: 100%!important;
+        height: 444/@rem!important;
+        border-radius: 6/@rem!important;
+    }
+    p{
+        text-indent: 1.5em;
+    }
+}
+// 费用
+.itd-join-charge{
+    font-size: 28/@rem;
+    color: #666;
+    background: #f7f7f7;
+    .itd-tr{
+        padding-left: 48/@rem;
+        height: 84/@rem;
+        line-height: 84/@rem;
+        
+        span.charge-title{
+            margin-right: 44/@rem;
+            font-size: 32/@rem;
+            font-weight: 700;
+            color: #000;
+        }
+        span.city-tip{
+            width: 150/@rem;
+            height: 46/@rem;
+            line-height: 46/@rem;
+            border-radius: 23/@rem;
+        }
+    }
+    .itd-tr:nth-child(2){
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.itd-more-city{
+    margin: 30/@rem auto 10/@rem;
+    width: 420/@rem;
+    height: 70/@rem;
+    line-height: 70/@rem;
+    font-size: 30/@rem;
+    border-radius: 35/@rem;
+}
+// 加盟问答
+.itd-customer-service:last-child{
+    margin-bottom: 0!important;
+}
+.itd-customer-service{
+    line-height: 45/@rem;
+    font-size: 32/@rem;
+    margin-bottom: 34/@rem;
+}
+.itd-questions{
+    margin-top: 10/@rem;
+    font-weight:700;
+    color: #000;
+    span{
+        margin-right: 40/@rem;
+    }
+    .icon-questions{
+        background-image: url('../images/main/icon_wen@3x.png');
+    }
+}
+.icon-questions,.icon-answers{
+    vertical-align: middle;
+    width: 47/@rem;
+    height: 37/@rem;
+}
+// 三角
+.icon-triangle{
+    position: absolute;
+    top: -48/@rem;
+    left: 33/@rem;
+    width: 0;height: 0;
+    border: 24/@rem solid;
+    border-color:transparent transparent #f7f7f7 transparent;
+}
+.itd-answers{
+    position: relative;
+    margin-top: 28/@rem;
+    padding: 30/@rem;
+    color: #999;
+    background: #f7f7f7;
+    border-radius: 6/@rem;
+    span{
+        margin-right: 40/@rem;
+    }
+    .icon-answers{
+        background-image: url('../images/main/icon_da@3x.png')
+    }
+}
+// 展开全文
+.itd-zkgd-wrap{
+    text-align: center;
+    margin-top: -16/@rem;
+    margin-bottom: 44/@rem;
+}
+.itd-djzk-btn{
+    display: inline-block;
+    width: 180/@rem;
+    line-height: 44/@rem;
+    font-size: 30/@rem;
+    color: #f85100;
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    img{
+        margin-left: 16/@rem;
+        display: inline-block;
+        width: 26/@rem;
+        height: 15/@rem; 
+    }
+}
+// 火锅的相关文章
+.itd-news-content{
+    li{
+        width: 100%;
+    }
+    .itd-item-p{
+        line-height: 44/@rem;
+    }
+}
+.itd-news-content>li{
+    margin-bottom: 44/@rem!important;
+}
+.itd-news-content>li:last-child{
+    margin-bottom: 0!important;
+}
+.itd-item-img{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24/@rem;
+    width: 100%;
+    li{
+        width: 210/@rem;
+        height: 139/@rem;
+        border-radius: 6/@rem;
+        overflow: hidden;
+    }
+}
+// 联系电话弹层
+.layer-wrap{
+    position: fixed;
+    top: 0;right: 0;bottom: 0;left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 4;
+    .layer-content{
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 560/@rem;
+        min-height: 366/@rem;
+        border-radius: 16/@rem;
+    }
+    .layer-top{
+        position: absolute;
+        right:0;
+    }
+    .tel-layer-top{
+        width: 560/@rem;
+        height: 155/@rem;
+        background: url('../images/main/people@3x.png') no-repeat;
+        background-size: 560/@rem 155/@rem;
+        top: -63/@rem;
+        left: 0;
+    }
+    .article-layer-top{
+        width: 596/@rem;
+        height: 170/@rem;
+        background: url('../images/main/book@3x.png') no-repeat;
+        background-size: 100%;
+        top: -52/@rem;
+    }
+    .layer-bottom{
+        padding-top: 128/@rem;
+        text-align: center;
+    }
+    input{
+        box-sizing: border-box;
+        padding: 0 30/@rem;
+        width: 492/@rem;
+        height: 60/@rem;
+        font-size: 24/@rem;
+        color: #999;
+        background: #f1f0f0;
+        border-radius: 35/@rem;
+        overflow: hidden;
+    }
+    p{
+        margin: 10/@rem 0 14/@rem;
+        padding-left: 34/@rem;
+        text-align: left;
+        font-size: 20/@rem;
+        // -webkit-transform:scale(0.9);
+        color: #f85100;
+    }
+    .layer-btn{
+        width: 265/@rem;
+        height: 106/@rem;
+        border-radius: 34/@rem;
+        
+    }
+    .tel-layer-btn{
+        background-image: url('../images/main/btn@3x.png');
+    }
+    .article-layer-btn{
+        background-image: url('../images/main/btn_fa@3x.png');
+    }
+    .layer-close{
+        position: absolute;
+        left: 50%;
+        bottom: -156/@rem;
+        transform: translateX(-50%);
+        width: 66/@rem;
+        height: 66/@rem;
+        background-image: url('../images/main/icon_cancel@3x.png');
+    }
 }
 // 项目详情页 start
 .itd-header{
@@ -101,7 +375,17 @@ img{height: 100%;}
         }
     }
 }
+// 详情页banner
+.itd-top-banner{
+    padding-top: 50/@rem;
+    a{
+        display: block;
+        height: 500/@rem!important;
+    }
+}
 // 项目详情页 end
+
+// 首页 start
 // 头部搜索弹框
 .back-btn {
     position: relative;
@@ -121,7 +405,7 @@ img{height: 100%;}
     width: 100%;
     height: 100%;
     margin: auto auto;
-    background: rgba(0,0,0,0.6);
+    background: rgba( 0, 0, 0, 0.5);
     z-index: 4;
 }
 .i-layer-search{
@@ -136,7 +420,7 @@ img{height: 100%;}
             position: relative;
             box-sizing: border-box;
             width: 606/@rem;
-            height: 70/@rem;
+            height: 60/@rem;
             padding: 0 28/@rem 0 80/@rem;
             background: #f1f0f0;
             border-radius: 35/@rem;
@@ -152,7 +436,7 @@ img{height: 100%;}
             }
             input{
                 width: 100%;
-                height: 70/@rem;
+                height: 60/@rem;
                 font-size: 26/@rem;
                 color: #999;
                 background: #f1f0f0;
@@ -173,15 +457,14 @@ img{height: 100%;}
             flex-wrap: wrap;
             a{
                 display: block;
-                width: 153/@rem;
+                width: 154/@rem;
                 margin-top: 20/@rem;
                 line-height: 56/@rem;
                 font-size: 28/@rem;
                 color: #666;
                 text-align:center;
                 background: #f7f7f7;
-                border-radius: 40/@rem;
-                // color: #f85100;
+                border-radius: 28/@rem;
                 overflow: hidden;
             }
             a:active{
@@ -194,6 +477,7 @@ img{height: 100%;}
         }
         .i-recently-search-list{
             max-height: 648/@rem;
+            min-height: 200/@rem;
             overflow-y: scroll;
             a{
                 box-sizing: border-box;
@@ -215,12 +499,16 @@ img{height: 100%;}
     }
 }
 // 头部
+// .header-wrapper{
+//     display: fixed;
+//     top: 0;left: 0;right: 0;
+//     height: 88/@rem;
+// }
 header.i-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 88/@rem;
-    background: #fff;
     .i-header-logo{
         width: 70/@rem;
         height: 70/@rem;
@@ -246,7 +534,7 @@ header.i-header{
         position: relative;
         box-sizing: border-box;
         width: 490/@rem;
-        height: 70/@rem;
+        height: 60/@rem;
         padding: 0 28/@rem 0 80/@rem;
         background: #f1f0f0;
         border-radius: 35/@rem;
@@ -262,7 +550,7 @@ header.i-header{
         }
         input{
             width: 100%;
-            height: 70/@rem;
+            height: 60/@rem;
             font-size: 26/@rem;
             color: #999;
             background: #f1f0f0;
@@ -300,6 +588,7 @@ header.i-header{
     flex-flow: wrap;
     align-content: space-around;
     height: 394/@rem;
+    padding: 26/@rem 0;
     .i-per-link{
         width: 110/@rem;
         padding: 0 20/@rem;
@@ -319,14 +608,15 @@ header.i-header{
 }
 // 新闻滚动
 .i-news-lb-wrap{
-    padding: 27/@rem 40/@rem;
+    padding: 28/@rem 40/@rem 26/@rem;
     .i-news-box{
         padding-left: 64/@rem;
         height: 36/@rem;
         background: url("../images/main/icon_news@3x.png") no-repeat left center;
         background-size: 42/@rem 36/@rem;
-        li{
+        li,a{
             width: 90%;
+            height: 36/@rem;
             line-height: 36/@rem;
             font-size: 28/@rem;
             color: #333;
@@ -405,17 +695,17 @@ header.i-header{
             background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
             background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
             background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
-            .icon-hot-more{
-                margin-left: 12/@rem;
-                width: 19/@rem;
-                height: 38/@rem;
-                vertical-align: middle;
-                background-image: url('../images/main/icon_project@3x.png');
-                background-size: 19/@rem 33/@rem;
-                background-position: top center;
-            }
         }
     }
+}
+.icon-hot-more{
+    margin-left: 12/@rem;
+    width: 19/@rem;
+    height: 38/@rem;
+    vertical-align: middle;
+    background-image: url('../images/main/icon_project@3x.png');
+    background-size: 19/@rem 33/@rem;
+    background-position: top center;
 }
 // 精品推荐
 .i-project-wrap{
@@ -423,12 +713,12 @@ header.i-header{
         display: flex;
         justify-content: space-between;
         flex-flow: wrap;
-        li{
-            margin-bottom: 40/@rem;
-        }
-        li:nth-last-of-type(1), li:nth-last-of-type(2){
-            margin-bottom: 0;
-        }
+    }
+    .i-recommed-ul>li{
+        margin-bottom: 40/@rem;
+    }
+    .i-recommed-ul>li:nth-last-of-type(1), .i-recommed-ul>li:nth-last-of-type(2){
+        margin-bottom: 0;
     }
     dl{
         width: 326/@rem;
@@ -478,8 +768,10 @@ header.i-header{
 }
 // 行业新闻
 .i-industry-news-wrap{
-   ul.i-industry-news-tabs, ul.i-industry-news-content{
-        padding: 0 40/@rem;
+    ul.i-industry-news-tabs, ul.i-industry-news-content{
+       box-sizing: border-box;
+       width: 100%;
+       padding: 0 40/@rem;
     }
     .i-industry-news-tabs {
         display: flex;
@@ -565,7 +857,7 @@ header.i-header{
     background: url('../images/main/icon_option@3x.png') no-repeat center bottom;
     background-size: 100% 6/@rem;
 }
-// 顶部固定foot
+// 首页-顶部固定foot
 .i-foot-fixed{
     position: fixed;
     right: 0;bottom: 0;left: 0;
@@ -573,13 +865,14 @@ header.i-header{
     font-size: 32/@rem;
     display: flex;
     align-items: center;
+    z-index: 2;
     p{
         display: inline-block;
         width: 1px;
         height: 30/@rem;
         background: #d6d6d6;
     }
-    .tel-btn, .online-btn{
+    .i-tel-btn, .i-online-btn{
         box-sizing: border-box;
         padding: 0 30/@rem;
         width: 245/@rem;
@@ -587,30 +880,86 @@ header.i-header{
         align-items: center;
         color: #565554;
     }
-    .article-btn{
+    .i-article-btn{
         line-height: 130/@rem;
         flex: 1;
-        color: #fff;
-        background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
-        background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
-        background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
-        background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
     }
-    .tel-btn, .online-btn, .article-btn{
+    .i-tel-btn, .i-online-btn, .i-article-btn{
         height: 130/@rem;
         text-align: center;
     }
-    .icon-consultation{
+    .i-icon-consultation{
         margin-right: 14/@rem;
         width: 40/@rem;
         height: 34/@rem;
         background-image: url('../images/main/icon_consultation@3x.png');
     }
-    .icon-tel{
+    .i-icon-tel{
         margin-right: 14/@rem;
         width:32/@rem;
         height: 38/@rem;
         background-image: url('../images/main/icon_tel@3x.png');
+    }
+
+    // 详情页特殊footer
+    .itd-online-btn{
+        border-left: 4/@rem solid #fff;;
+        border-right: 4/@rem solid #fff;;
+    }
+    .itd-tel-btn{
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 49/@rem;
+        width: 322/@rem;
+        height: 130/@rem;
+        color: #fff;
+        text-align: center;
+    }
+    .itd-online-btn, .itd-article-btn{
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 22/@rem 0;
+    }
+    .itd-article-btn{
+        width: 206/@rem;
+        height: 130/@rem;
+        color: #fff;
+        text-align: center;
+        flex: 1;
+        background: -webkit-linear-gradient(left, #a978ff, #8847fd); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #a978ff, #8847fd); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #a978ff, #8847fd); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #a978ff , #8847fd); /* 标准的语法（必须放在最后） */
+    }
+    .itd-online-btn{
+        width: 214/@rem;
+        height: 130/@rem;
+        color: #fff;
+        text-align: center;
+        background: -webkit-linear-gradient(left, #ffb606, #ffcc00); /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(right, #ffb606, #ffcc00); /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(right, #ffb606, #ffcc00); /* Firefox 3.6 - 15 */
+        background: linear-gradient(to right, #ffb606 , #ffcc00); /* 标准的语法（必须放在最后） */
+    }
+    .itd-icon-tel{
+        margin-right: 14/@rem;
+        width: 85/@rem;
+        height: 85/@rem;
+        background-image: url('../images/main/tele@3x.png');
+    }
+    .itd-icon-consultation{
+        width: 37/@rem;
+        height: 31/@rem;
+        background-image: url('../images/main/icon_zx@3x.png');
+    }
+    .itd-icon-article{
+        width: 29/@rem;
+        height: 33/@rem;
+        background-image: url('../images/main/icon_zl@3x.png');
     }
 }
 .icon{
@@ -621,8 +970,8 @@ header.i-header{
 }
 /* 底部备案信息 */
 footer{
-    padding: 49/@rem 0 38/@rem;
-    margin-bottom: 130/@rem;
+    padding: 49/@rem 0 168/@rem;
+    // margin-bottom: 130/@rem;
     font-size: 24/@rem;
     color: #565554;
     background: #f7f7f7;
@@ -650,7 +999,7 @@ footer{
         margin-bottom: 10/@rem;
     }
 }
-
+// 首页 end
 .line-clamp{
     position:relative;
     line-height:1.4em;
@@ -693,6 +1042,8 @@ footer{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    word-break:break-all;
+    word-wrap:break-word;
 }
 .t-unl{
     text-decoration: underline;
@@ -713,6 +1064,9 @@ footer{
 /*color*/
 .bgcolor-fff{
     background-color: #fff;
+}
+.mb-30{
+    margin-bottom: 30/@rem;
 }
 // .bgcolor-f8{
 //     background: #f8f8f8;

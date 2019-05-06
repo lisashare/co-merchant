@@ -19,15 +19,15 @@
     <script src="../js/rem.js"></script>
 </head>
 <body>
-    <div>
-        <!-- 顶部搜索 -->
-        <header class="i-header">
+    <!-- 顶部搜索 -->
+    <div class="container">
+        <header class="i-header header-fixed bgcolor-fff">
             <h1 class="i-header-logo">
                 <img src="../images/main/icon_more@3x.png" alt="logo">
             </h1>
-            <form class="i-header-search">
+            <form class="i-header-search" onsubmit= "return false;">
                 <i class="icon i-icon-search"></i>
-                <input type="text" name="search" id="search" placeholder="你想在哪里开店？" class="header-input">
+                <input type="text" class="search" id="search" placeholder="你想在哪里开店？" class="header-input">
             </form>
             <div class="i-header-menu">
                 <i class="i-icon-menu"></i>
@@ -38,9 +38,9 @@
         <div class="i-layer-search i-menu-wrap" style="display: none;">
             <header class="o-h p-r clear bgcolor-fff">
                 <div class="back-btn fl"></div>
-                <form class="fl">
+                <form class="fl" onsubmit="return false;">
                     <i class="icon i-icon-search"></i>
-                    <input type="text" name="search" id="search" placeholder="你想在哪里开店？" class="header-input">
+                    <input type="text"  class="search" id="layer-search" placeholder="你想在哪里开店？" class="header-input">
                 </form>
             </header>
             <!--热门搜索-->
@@ -61,10 +61,6 @@
             <div class="i-layer-search-wrap bgcolor-fff">
                 <h3>最近搜索</h3>
                 <ul class="i-recently-search-list">
-                    <li><a href="#" class="text-ellip">品牌资讯</a></li>
-                    <li><a href="#" class="text-ellip">行业新闻</a></li>
-                    <li><a href="#" class="text-ellip">创业故事</a></li>
-                    <li><a href="#" class="text-ellip">品牌资讯</a></li>
                 </ul>
             </div>
         </div>
@@ -336,7 +332,7 @@
                 <li>
                     <a href="#" data-id="58750" data-type="cmsad">
                         <dl>
-                            <dt class="br-10"><img src="../images/occupy/4.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/4.jpg"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name text-ellip">
@@ -727,84 +723,45 @@
         </footer>
         <!-- 底部固定按钮 -->
         <div class="i-foot-fixed o-h bgcolor-fff"> 
-            <a href="" class="online-btn">
-                <i class="icon icon-consultation"></i>在线咨询
+            <a href="javascript:;" class="i-online-btn online-btn">
+                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
             </a> 
             <p></p>
-            <a href="tel:4007777063" class="tel-btn">
-                <i class="icon icon-tel"></i>电话咨询
-            <a href="javascript:" class="article-btn">获取资料</a>
+            <a href="javascript:;" class="i-tel-btn tel-btn">
+                <i class="icon i-icon-tel icon-tel"></i>电话咨询
+            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a>
         </div>
         <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <div class="tel-layer-bottom layer-bottom">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <div class="article-layer-bottom layer-bottom">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
 <script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
 <script>
-    // 点击首页菜单弹出层
-    $(".i-header-menu").on("click",function (e) {
-        e.stopPropagation();
-        $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeIn(300);
-        $("html").toggleClass("hei-100");
-        $("body").toggleClass("hei-100");
-    })
-    // 点击阴影关闭
-    $(".i-menu-wrap a").on("click",function (e) {
-        e.stopPropagation();
-        $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
-        $("html").toggleClass("hei-100");
-        $("body").toggleClass("hei-100");
-    })
-    $(".back-btn").on("click",function (e) {
-        e.stopPropagation();
-        $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
-        $("html").toggleClass("hei-100");
-        $("body").toggleClass("hei-100");
-    })
-    $(".layer-search-mask").on("click",function (e) {
-        e.stopPropagation();
-        $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
-        $("html").toggleClass("hei-100");
-        $("body").toggleClass("hei-100");
-    })
-    // 搜索关闭阴影
-
-    // 留言
-    // $(".ys-choose-up").on("click",function () {
-    //     $(".ys-zxly-list").toggleClass("none");
-    // })
-
-    // 两行...
-    ellipEle();
-    function ellipEle(){
-        var ellipEle = $('.set-ellip');
-        var lineHeight = parseInt($('.set-ellip').css('line-height')) *2 ;
-        for(var i=0;i < ellipEle.length;i++){
-            if( ellipEle.eq(i).height() > lineHeight){
-                ellipEle.eq(i).addClass('line-clamp');
-            }
-        }
-    }
-    // banner swiper
-    new Swiper('.i-top-banner .swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 3000,
-        loop: true,
-        observer: true, 
-        observeParents: true
-    })
-
-    // 切换隐藏显示
-    $("#FengTab").FengTab({
-        callBack:  ellipEle
-    });
-
     // 新闻公告 start
     var iliHeight = $("#noticeBox").height();//单行滚动的高度
     var area = document.getElementById('noticeBox');
