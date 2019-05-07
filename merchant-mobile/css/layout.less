@@ -1,14 +1,15 @@
 /* 独立样式 */
 @rem: 50rem;
 img{height: 100%;}
-.color-f85100{
-    color: #f85100;
-}
+
 // 出现弹层禁止滚动
 .hei-100 {
     height: 100%;
     overflow: hidden;
     width: 100%;
+}
+.color-f85100{
+    color: #f85100;
 }
 .border-top{
     border-top: 1px solid #f0f0f0;
@@ -37,174 +38,19 @@ img{height: 100%;}
 .fixed-tab{
     position: fixed;
     top: 88/@rem;
+    width: 100%;
     z-index: 2;
 }
-.itd-tab{
-    margin-bottom: 0!important;
-}
-.itd-industry-news-wrap{
-    .i-industry-news-content{
-        a:last-child dl{
-            border-bottom: none;
-        }
-    }
-}
-.itd-online-desc{
-    font-size: 22/@rem;
-    color: #999;
-}
-// 详情页tab content
-.section-content{
-    line-height: 46/@rem!important;
-    font-size: 30/@rem!important;
-    color: #666!important;
-    overflow: hidden;
-    img{
-        margin: 32/@rem 0;
-        width: 100%!important;
-        height: 444/@rem!important;
-        border-radius: 6/@rem!important;
-    }
-    p{
-        text-indent: 1.5em;
-    }
-}
-// 费用
-.itd-join-charge{
-    font-size: 28/@rem;
-    color: #666;
-    background: #f7f7f7;
-    .itd-tr{
-        padding-left: 48/@rem;
-        height: 84/@rem;
-        line-height: 84/@rem;
-        
-        span.charge-title{
-            margin-right: 44/@rem;
-            font-size: 32/@rem;
-            font-weight: 700;
-            color: #000;
-        }
-        span.city-tip{
-            width: 150/@rem;
-            height: 46/@rem;
-            line-height: 46/@rem;
-            border-radius: 23/@rem;
-        }
-    }
-    .itd-tr:nth-child(2){
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-    }
-}
-.itd-more-city{
-    margin: 30/@rem auto 10/@rem;
-    width: 420/@rem;
-    height: 70/@rem;
-    line-height: 70/@rem;
-    font-size: 30/@rem;
-    border-radius: 35/@rem;
-}
-// 加盟问答
-.itd-customer-service:last-child{
-    margin-bottom: 0!important;
-}
-.itd-customer-service{
-    line-height: 45/@rem;
-    font-size: 32/@rem;
-    margin-bottom: 34/@rem;
-}
-.itd-questions{
-    margin-top: 10/@rem;
-    font-weight:700;
-    color: #000;
-    span{
-        margin-right: 40/@rem;
-    }
-    .icon-questions{
-        background-image: url('../images/main/icon_wen@3x.png');
-    }
-}
-.icon-questions,.icon-answers{
-    vertical-align: middle;
-    width: 47/@rem;
-    height: 37/@rem;
-}
-// 三角
-.icon-triangle{
+i.i-icon-search{
     position: absolute;
-    top: -48/@rem;
-    left: 33/@rem;
-    width: 0;height: 0;
-    border: 24/@rem solid;
-    border-color:transparent transparent #f7f7f7 transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 32/@rem;
+    width: 30/@rem;
+    height: 27/@rem;
+    background-image: url('../images/main/icon_search@3x.png'); 
 }
-.itd-answers{
-    position: relative;
-    margin-top: 28/@rem;
-    padding: 30/@rem;
-    color: #999;
-    background: #f7f7f7;
-    border-radius: 6/@rem;
-    span{
-        margin-right: 40/@rem;
-    }
-    .icon-answers{
-        background-image: url('../images/main/icon_da@3x.png')
-    }
-}
-// 展开全文
-.itd-zkgd-wrap{
-    text-align: center;
-    margin-top: -16/@rem;
-    margin-bottom: 44/@rem;
-}
-.itd-djzk-btn{
-    display: inline-block;
-    width: 180/@rem;
-    line-height: 44/@rem;
-    font-size: 30/@rem;
-    color: #f85100;
-    span{
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-    }
-    img{
-        margin-left: 16/@rem;
-        display: inline-block;
-        width: 26/@rem;
-        height: 15/@rem; 
-    }
-}
-// 火锅的相关文章
-.itd-news-content{
-    li{
-        width: 100%;
-    }
-    .itd-item-p{
-        line-height: 44/@rem;
-    }
-}
-.itd-news-content>li{
-    margin-bottom: 44/@rem!important;
-}
-.itd-news-content>li:last-child{
-    margin-bottom: 0!important;
-}
-.itd-item-img{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 24/@rem;
-    width: 100%;
-    li{
-        width: 210/@rem;
-        height: 139/@rem;
-        border-radius: 6/@rem;
-        overflow: hidden;
-    }
-}
-// 联系电话弹层
+// 公用-联系电话弹层
 .layer-wrap{
     position: fixed;
     top: 0;right: 0;bottom: 0;left: 0;
@@ -283,13 +129,12 @@ img{height: 100%;}
         background-image: url('../images/main/icon_cancel@3x.png');
     }
 }
-// 项目详情页 start
+// 详情页头部
 .itd-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 88/@rem;
-    // border-bottom: 1px solid #f0f0f0;
     .back-btn {
         width: 108/@rem;
         background-position: 40/@rem 50%;
@@ -297,8 +142,9 @@ img{height: 100%;}
     h2{
         width: 60%;
         line-height: 88/@rem;
-        font-size: 34/@rem;
-        color:#333;
+        font-size: 36/@rem;
+        color:#000;
+        font-weight: 700;
         text-align: center;
     }
     .itd-header-search{
@@ -313,11 +159,425 @@ img{height: 100%;}
         }   
     }
 }
+// 公共-弹层搜索
+.common-keywords{
+    padding: 0 56/@rem;
+    margin-bottom: 45/@rem; 
+    li,a{
+        float: left;
+    }
+    a{
+        padding: 0 40/@rem;
+        height: 38/@rem;
+        line-height: 38/@rem;
+        font-size: 28/@rem;
+    }
+}
+.common-layer-search{
+    position: fixed;
+    top: 0;left: 0;right:0;
+    z-index: 5;
+    .back-btn{
+        width: 108/@rem;
+        background-position: 40/@rem 50%;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        height: 88/@rem;
+        border-bottom: 1px solid #f0f0f0;
+        h2{
+            width: 72%;
+            line-height: 88/@rem;
+            font-size: 36/@rem;
+            color:#000;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    .common-input-wrap{
+        position: relative;
+        box-sizing: border-box;
+        width: 670/@rem;
+        height: 70/@rem;
+        margin: 30/@rem auto 17/@rem;
+        padding: 0 28/@rem 0 108/@rem;
+        background: #f1f0f0;
+        border-radius: 35/@rem;
+        overflow: hidden;
+        i.icon-common-search{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 60/@rem;
+            width: 30/@rem;
+            height: 27/@rem;
+            background-image: url('../images/main/icon_search@3x.png'); 
+        }
+        input{
+            width: 100%;
+            height: 70/@rem;
+            font-size: 26/@rem;
+            color: #999;
+            background: #f1f0f0;
+        }
+    }
+    .common-layer-search-wrap{
+        padding: 20/@rem 20/@rem 50/@rem 40/@rem;
+        h3{
+            line-height: 36/@rem;
+            font-size: 34/@rem;
+            font-weight: 700;
+            color: #000;
+        }
+        .common-shortcut-search{
+            padding-top: 10/@rem;
+            // display: flex;
+            // justify-content: space-between;
+            // align-content: flex-start;
+            // flex-wrap: wrap;
+            li,a{
+                float: left;
+            }
+            a{
+                display: block;
+                width: 154/@rem;
+                margin-top: 20/@rem;
+                margin-right: 15/@rem;
+                line-height: 56/@rem;
+                font-size: 28/@rem;
+                color: #666;
+                text-align:center;
+                background: #f7f7f7;
+                border-radius: 28/@rem;
+                overflow: hidden;
+            }
+            a:active{
+                color: #fff;
+                background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
+                background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
+                background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
+                background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
+            }
+        }
+    }
+}
+.common-find-wrap{
+    margin-top: 34/@rem;
+    margin-bottom: -6/@rem;
+}
+// 展开全文
+.xmxq-main-hide {
+    height: 600px!important;
+    overflow: hidden;
+    width: 100%;
+}
+.itd-zkgd-wrap{
+    text-align: center;
+    margin-top: -16/@rem;
+    margin-bottom: 44/@rem;
+    z-index: 1;
+}
+.itd-djzk-btn, .common-find-more{
+    display: inline-block;
+    width: 180/@rem;
+    line-height: 44/@rem;
+    font-size: 32/@rem;
+    font-weight: 700;
+    color: #f85100;
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    img{
+        margin-left: 16/@rem;
+        display: inline-block;
+        width: 26/@rem;
+        height: 15/@rem; 
+    }
+}
+/* 排行榜 start */
+.category-wrapper{
+    height: 970/@rem;
+    .menu-category{
+        box-sizing: border-box;
+        width: 206/@rem;
+        height: 570/@rem;
+        overflow-y: scroll;
+        border-right: 1px solid #f0f0f0;
+        li{
+            padding: 30/@rem;
+            text-align: center;
+            line-height: 32/@rem;
+            font-size: 32/@rem;
+            color: #333;
+        }
+    }
+    .category-list{
+        padding-bottom: 28/@rem;
+        height: 970/@rem;
+        overflow: hidden;
+        .food-list{
+            height: 970/@rem;
+            overflow-y: scroll;
+        }
+        li{
+            float: left;
+            margin: 30/@rem 35/@rem 16/@rem;
+            img{
+                width: 110/@rem;
+                height: 110/@rem;
+            }
+            p{
+                line-height: 40/@rem;
+                font-size: 24/@rem;
+                text-align: center;
+            }
+        }
+    }  
+}
+/* 排行榜 end */
+
+/* 搜索结果页 start */
+.res-header{
+    justify-content: flex-start!important;
+    form{
+        box-sizing: border-box;
+        position: relative;
+        width: 602/@rem;
+        height: 60/@rem;
+        padding-left: 82/@rem;
+        padding-right: 32/@rem;
+        border-radius: 35/@rem;
+        background: #f1f0f0;
+        overflow: hidden;
+        input{
+            width: 100%;
+            height: 60/@rem;
+            font-size: 26/@rem;
+            color: #999;
+            background: #f1f0f0;
+        }
+    }
+}
+.res-brand-wrap{
+    
+}
+/* 搜索结果页 end */
+.common-form-message{
+    width: 668/@rem;
+    margin: 0 auto;
+    padding: 48/@rem 0 50/@rem;
+    p{
+        line-height: 34/@rem;
+        font-size: 32/@rem;
+        font-weight: 700;
+    }
+    form{
+        padding-top:28/@rem;
+    }
+    .input-wrap{
+        width: 100%;
+        margin-bottom: 40/@rem;
+    }
+    .form-input{
+        box-sizing: border-box;
+        width: 668/@rem;
+        height: 80/@rem;
+        padding: 0 30/@rem;
+        font-size: 24/@rem;
+        color: #999;
+        background: #f1f0f0;
+    }
+    .form-project-name{
+        padding-right: 86/@rem;
+        
+    }
+    .icon-message-down{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 30/@rem;
+        width: 26/@rem;
+        height: 15/@rem;
+        background-image: url('../images/main/icon_down_gray@3x.png');
+    }
+    .submit-btn{
+        width: 668/@rem;
+        height: 94/@rem;
+        font-size: 32/@rem; 
+        text-align: center;
+        border-radius: 56/@rem;
+    }
+} 
+.common-bread{
+    margin: 30/@rem 40/@rem;
+    line-height: 22/@rem;
+    font-size: 22/@rem;
+    color: #666;
+    .modiify-time{
+
+    }
+}
+/* 搜索结果页 end */
+
+/* 项目详情页 start */
+.itd-tab{
+    margin-bottom: 0!important;
+}
+.itd-industry-news-wrap{
+    .i-industry-news-content{
+        a:last-child dl{
+            border-bottom: none;
+        }
+    }
+}
+.itd-online-desc{
+    font-size: 22/@rem;
+    color: #999; 
+}
+// 详情页tab content
+.section-content{
+    line-height: 46/@rem!important;
+    font-size: 30/@rem!important;
+    color: #666!important;
+    overflow: hidden;
+    img{
+        margin: 32/@rem 0;
+        width: 100%!important;
+        height: 444/@rem!important;
+        border-radius: 6/@rem!important;
+    }
+    p{
+        text-indent: 1.5em;
+    }
+}
+// 费用
+.itd-join-charge{
+    font-size: 28/@rem;
+    color: #666;
+    background: #f7f7f7;
+    .itd-tr{
+        padding-left: 48/@rem;
+        height: 84/@rem;
+        line-height: 84/@rem;
+        
+        span.charge-title{
+            margin-right: 44/@rem;
+            font-size: 32/@rem;
+            font-weight: 700;
+            color: #000;
+        }
+        span.city-tip{
+            width: 150/@rem;
+            height: 46/@rem;
+            line-height: 46/@rem;
+            border-radius: 23/@rem;
+        }
+    }
+    .itd-tr:nth-child(2){
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.itd-more-city{
+    margin: 30/@rem auto 10/@rem;
+    width: 420/@rem;
+    height: 70/@rem;
+    line-height: 70/@rem;
+    font-size: 30/@rem;
+    border-radius: 35/@rem;
+}
+// 加盟问答
+.itd-customer-service:last-child{
+    margin-bottom: 0!important;
+}
+.itd-customer-service{
+    line-height: 45/@rem;
+    font-size: 32/@rem;
+    margin-bottom: 34/@rem;
+}
+.itd-questions{
+    margin-top: 10/@rem;
+    font-weight:700;
+    color: #000;
+    span{
+        margin-right: 40/@rem;
+    }
+    .icon-questions{
+        background-image: url('../images/main/icon_wen@3x.png');
+    }
+}
+.icon-questions,.icon-answers{
+    vertical-align: middle;
+    width: 47/@rem;
+    height: 37/@rem;
+}
+// 三角形
+.icon-triangle{
+    position: absolute;
+    top: -48/@rem;
+    left: 33/@rem;
+    width: 0;height: 0;
+    border: 24/@rem solid;
+    border-color:transparent transparent #f7f7f7 transparent;
+}
+.itd-answers{
+    position: relative;
+    margin-top: 28/@rem;
+    padding: 30/@rem;
+    color: #999;
+    background: #f7f7f7;
+    border-radius: 6/@rem;
+    span{
+        margin-right: 40/@rem;
+    }
+    .icon-answers{
+        background-image: url('../images/main/icon_da@3x.png')
+    }
+}
+// 火锅的相关文章
+.itd-news-content{
+    li{
+        width: 100%;
+    }
+    .itd-item-p{
+        line-height: 44/@rem;
+        font-weight: 700;
+    }
+    .itd-online-desc{
+        margin-top: 10/@rem;
+    }
+}
+.special-bottom30{
+    padding-bottom: 30/@rem!important;
+}
+.itd-news-content>li{
+    margin-bottom: 44/@rem!important;
+}
+.itd-news-content>li:last-child{
+    margin-bottom: 0!important;
+}
+.itd-item-img{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24/@rem;
+    width: 100%;
+    li{
+        width: 210/@rem;
+        height: 139/@rem;
+        border-radius: 6/@rem;
+        overflow: hidden;
+    }
+}
+
 // 头图描述
 .itd-header-img-wrap{
-    .dl{
+    dt{
         width: 100%;
         height: 500/@rem;
+        overflow: hidden;
     }
     dd{
         padding: 30/@rem 40/@rem;
@@ -383,9 +643,9 @@ img{height: 100%;}
         height: 500/@rem!important;
     }
 }
-// 项目详情页 end
+/* 项目详情页 end */ 
 
-// 首页 start
+/* 首页 start */ 
 // 头部搜索弹框
 .back-btn {
     position: relative;
@@ -398,7 +658,7 @@ img{height: 100%;}
     left: 0;
     top: 0;
 }
-.layer-search-mask{
+.layer-search-mask,.common-search-mask{
     position: fixed;
     top: 0;left: 0;right:0;
     bottom: 0;
@@ -425,15 +685,15 @@ img{height: 100%;}
             background: #f1f0f0;
             border-radius: 35/@rem;
             overflow: hidden;
-            i{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 32/@rem;
-                width: 30/@rem;
-                height: 27/@rem;
-                background-image: url('../images/main/icon_search@3x.png'); 
-            }
+            // i{
+            //     position: absolute;
+            //     top: 50%;
+            //     transform: translateY(-50%);
+            //     left: 32/@rem;
+            //     width: 30/@rem;
+            //     height: 27/@rem;
+            //     background-image: url('../images/main/icon_search@3x.png'); 
+            // }
             input{
                 width: 100%;
                 height: 60/@rem;
@@ -448,6 +708,7 @@ img{height: 100%;}
         h3{
             line-height: 34/@rem;
             font-size: 34/@rem;
+            font-weight: 700;
             color: #000;
         }
         .i-hot-search-list{
@@ -469,10 +730,10 @@ img{height: 100%;}
             }
             a:active{
                 color: #fff;
-                background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
-                background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
-                background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
-                background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
+                background: -webkit-linear-gradient(left, #f85100, #fe8645); 
+                background: -o-linear-gradient(right, #f85100, #fe8645); 
+                background: -moz-linear-gradient(right, #f85100, #fe8645); 
+                background: linear-gradient(to right, #f85100 , #fe8645); 
             }
         }
         .i-recently-search-list{
@@ -499,11 +760,6 @@ img{height: 100%;}
     }
 }
 // 头部
-// .header-wrapper{
-//     display: fixed;
-//     top: 0;left: 0;right: 0;
-//     height: 88/@rem;
-// }
 header.i-header{
     display: flex;
     justify-content: space-between;
@@ -539,15 +795,15 @@ header.i-header{
         background: #f1f0f0;
         border-radius: 35/@rem;
         overflow: hidden;
-        i{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 32/@rem;
-            width: 30/@rem;
-            height: 27/@rem;
-            background-image: url('../images/main/icon_search@3x.png'); 
-        }
+        // i{
+        //     position: absolute;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     left: 32/@rem;
+        //     width: 30/@rem;
+        //     height: 27/@rem;
+        //     background-image: url('../images/main/icon_search@3x.png'); 
+        // }
         input{
             width: 100%;
             height: 60/@rem;
@@ -691,10 +947,10 @@ header.i-header{
             font-size: 28/@rem;
             color: #fefefe;
             margin-bottom: 0;
-            background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
-            background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
-            background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
-            background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
+            background: -webkit-linear-gradient(left, #f85100, #fe8645); 
+            background: -o-linear-gradient(right, #f85100, #fe8645);
+            background: -moz-linear-gradient(right, #f85100, #fe8645);
+            background: linear-gradient(to right, #f85100 , #fe8645); 
         }
     }
 }
@@ -781,10 +1037,10 @@ header.i-header{
         li{
             box-sizing: border-box;
             width: 150/@rem;
+            height: 95/@rem;
             line-height: 95/@rem;
             font-size: 30/@rem;
             font-weight: 700;
-            // border-bottom: 6/@rem solid #fff;
         }
     }
     dl{
@@ -822,6 +1078,7 @@ header.i-header{
             display: inline-block;
             width: 234/@rem;
             font-size: 22/@rem;
+            text-align: right;
             color: #999;
         }
     }
@@ -849,9 +1106,11 @@ header.i-header{
     .i-news-time{
         width: 234/@rem;
         font-size: 22/@rem;
+        text-align: right;
         color: #999;
     }
 }
+// tab 高亮
 .tabactive{
     color: #f85100;
     background: url('../images/main/icon_option@3x.png') no-repeat center bottom;
@@ -971,7 +1230,6 @@ header.i-header{
 /* 底部备案信息 */
 footer{
     padding: 49/@rem 0 168/@rem;
-    // margin-bottom: 130/@rem;
     font-size: 24/@rem;
     color: #565554;
     background: #f7f7f7;
@@ -1064,6 +1322,12 @@ footer{
 /*color*/
 .bgcolor-fff{
     background-color: #fff;
+}
+.pb-30{
+    padding-bottom: 30/@rem;
+}
+.mt-30{
+    margin-top: 30/@rem!important;
 }
 .mb-30{
     margin-bottom: 30/@rem;

@@ -1,55 +1,3 @@
-// 最近搜索
-var recently = [];
-// 搜索回车
-$(".search").bind('keypress', function(e){
-    if(e.keyCode == '13'){
-        var searchName = $(this).val();
-        searchName = $.trim( searchName );
-        window.location.href = '/' + "keywords="+ searchName;
-        $(this).val('');
-        // 回车进行存储
-        setHistoryItems (searchName);
-    }
-})
-// 进入页面进行获取-赋值
-getHistoryItems();
-function getHistoryItems () { // 获取历史列表
-    var history = JSON.parse(getStore('searchHistory'));
-    if (!history) {
-        return false;
-    }
-    // 如果有值，循环放在页面中
-    if (history.length) {
-        recently = history.slice(0, 10); 
-        var str = '';
-        for(var i=0;i<recently.length;i++){
-            str += `
-                <li><a href="#" class="word-br">${recently[i]}</a></li>
-            `;
-        }
-        $('.i-recently-search-list').html(str);
-    }
-}
-function setHistoryItems (value) {
-    if(!value){
-        return false;
-    }
-    var setHistory = JSON.parse(getStore('searchHistory'))
-    if (setHistory) {
-        var checkrepeat = false;
-        setHistory.forEach(item => {
-            if (item == value) {
-                checkrepeat = true;
-            }
-        })
-        if (!checkrepeat) { // 没有重复的添加上
-            recently.unshift(value);
-        }
-    } else {
-        recently.unshift(value);
-    }
-    setStore('searchHistory', recently);
-}
 
 // 关闭弹窗x
 $('.layer-close').on('click', function(){
@@ -95,33 +43,33 @@ function regTelFun (ele) {
     return true;
 }
 
-// 点击首页菜单弹出层
-$(".i-header-menu").on("click",function (e) {
+// 公共搜索菜单弹出层
+$(".header-search").on("click",function (e) {
     e.stopPropagation();
-    $(".i-menu-wrap").slideToggle(300);
-    $(".layer-search-mask").fadeIn(300);
+    $(".common-layer-search").slideToggle(300);
+    $(".common-search-mask").fadeIn(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
 // 点击阴影关闭
-$(".i-menu-wrap a").on("click",function (e) {
+$(".common-layer-search a").on("click",function (e) {
     e.stopPropagation();
-    $(".i-menu-wrap").slideToggle(300);
-    $(".layer-search-mask").fadeOut(300);
+    $(".common-layer-search").slideToggle(300);
+    $(".common-search-mask").fadeOut(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
-$(".back-btn").on("click",function (e) {
+$(".common-back-btn").on("click",function (e) {
     e.stopPropagation();
-    $(".i-menu-wrap").slideToggle(300);
-    $(".layer-search-mask").fadeOut(300);
+    $(".common-layer-search").slideToggle(300);
+    $(".common-search-mask").fadeOut(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
-$(".layer-search-mask").on("click",function (e) {
+$(".common-search-mask").on("click",function (e) {
     e.stopPropagation();
-    $(".i-menu-wrap").slideToggle(300);
-    $(".layer-search-mask").fadeOut(300);
+    $(".common-layer-search").slideToggle(300);
+    $(".common-search-mask").fadeOut(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })

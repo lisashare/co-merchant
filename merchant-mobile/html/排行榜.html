@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">   
+    <meta name="description" content="">    
+    <title>排行榜</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部标题 -->
+        <header class="itd-header header-fixed bgcolor-fff border-bottom">
+            <a href="javascript:history.back(-1)" class="back-btn"></a>
+            <h2 class="text-ellip">子行业排行榜</h2>
+            <div class="itd-header-search header-search">
+                <i class="itd-icon-search"></i>
+            </div>
+        </header>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx相关搜索</h2>
+                <div class="itd-header-search"></div>
+            </header>
+            <div class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input type="text"  class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </div>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
+            </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 餐饮分类 -->
+        <div class="category-wrapper clear bottom-line">
+            <div class="menu-category wrapper fl">
+                <ul class="nav-list content">
+                    <li class="active" data-index="0">进口水果</li>
+                    <li class="" data-index="1">国产水果</li>
+                    <li class="" data-index="2">精选肉类</li>
+                    <li class="" data-index="3">禽类蛋品</li>
+                    <li class="" data-index="4">海鲜水产</li>
+                    <li class="" data-index="5">乳品糕点</li>
+                    <li class="" data-index="6">新鲜蔬菜</li>
+                    <li class="" data-index="7">方便速食</li>
+                    <li class="" data-index="8">粮油杂货</li>
+                    <li class="" data-index="9">饮料酒水</li>
+                    <li class="" data-index="10">礼品礼券</li>
+                    <li class="" data-index="11">进口水果</li>
+                    <li class="" data-index="12">国产水果</li>
+                    <li class="" data-index="13">精选肉类</li>
+                </ul>
+            </div>
+            <div class="category-list foodsWrapper" >
+                <ul class="item food-list">
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/one@2x.png">
+                            <p>火锅火锅</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/two@2x.png">
+                            <p>炸鸡</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/three@2x.png">
+                            <p>鱼火锅</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/four@2x.png">
+                            <p>蟹煲</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/five@2x.png">
+                            <p>奶茶</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/six@2x.png">
+                            <p>冒菜</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/seven@2x.png">
+                            <p>果汁</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/eight@2x.png">
+                            <p>快餐</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/nine@2x.png">
+                            <p>烤鱼</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/ten@2x.png">
+                            <p>麻辣烫</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/eleven@2x.png">
+                            <p>酸菜鱼</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/twelve@2x.png">
+                            <p>西餐</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/thirteen@2x.png">
+                            <p>蛋糕</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/fourteen@2x.png">
+                            <p>甜品</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/fifteen@2x.png">
+                            <p>汉堡</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/fourteen@2x.png">
+                            <p>甜品</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/fifteen@2x.png">
+                            <p>汉堡</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="item foodList none">
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/one@2x.png">
+                            <p>火锅</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/two@2x.png">
+                            <p>炸鸡</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/three@2x.png">
+                            <p>鱼火锅</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/four@2x.png">
+                            <p>蟹煲</p>
+                        </a>
+                    </li>
+                    <li class="items">
+                        <a href="#">
+                            <img src="../images/occupy/five@2x.png">
+                            <p>奶茶</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 留言表单 -->
+        <div class="common-form-message">
+            <p class="form-message-title color-f85100 tac">留言免费获取详情加盟资料</p>
+            <form action="" method="post" class="o-h">
+                <div class="input-wrap br-6 pr">
+                    <i class="icon icon-message-down"></i>
+                    <input type="text" class="form-input form-project-name" name="xingming" placeholder="请留下项目名称或者选择快捷留言">
+                    <span class="color-333 p-a t-c msg"></span>
+                </div>
+                <div class="input-wrap br-6">
+                    <input type="text" class="form-input form-user" name="xingming" placeholder="请输入您的姓名">
+                    <span class="color-333 p-a t-c msg"></span>
+                </div>
+                <div class="input-wrap br-6">
+                    <input type="tel" class="form-input form-tell" name="dianhua" placeholder="电话号码用于接收相关资料">
+                    <span class="color-333 p-a t-c msg"></span>
+                </div>
+                <input type="submit" class="submit-btn bgcolor-gradient" value="获取资料">
+            </form>
+        </div>
+        <div class="common-bread clear">
+            首页>排行榜>小吃加盟排行榜
+            <span class="modiify-time fr">2019-04-20 09:39:23</span>
+        </div>
+        <footer>
+            <div class="footer-link-list"> 
+                <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
+            </div>
+            <p class="">版权所有 &copy; xxx加盟网</p>
+            <p class="">Copyright &copy; www.53.com.cn All Rights Reserved</p>
+            <p class="">备案号：京ICP备18000242号-1</p>
+        </footer>
+        <!-- 底部固定按钮 -->
+        <div class="i-foot-fixed o-h bgcolor-fff"> 
+            <a href="javascript:;" class="i-online-btn online-btn">
+                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
+            </a> 
+            <p></p>
+            <a href="javascript:;" class="i-tel-btn tel-btn">
+                <i class="icon i-icon-tel icon-tel"></i>电话咨询
+            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a>
+        </div>
+        <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <div class="tel-layer-bottom layer-bottom">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <div class="article-layer-bottom layer-bottom">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<script>
+
+</script>
+</html>

@@ -22,16 +22,79 @@
     <div class="container">
         <!-- 顶部标题 -->
         <header class="itd-header header-fixed bgcolor-fff">
-            <a  href="javascript:history.back(-1)" class="back-btn fl"></a>
+            <a href="javascript:history.back(-1)" class="back-btn"></a>
             <h2 class="text-ellip">xxxx项目</h2>
             <div class="itd-header-search header-search">
                 <i class="itd-icon-search"></i>
             </div>
         </header>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx相关搜索</h2>
+                <div class="itd-header-search"></div>
+            </header>
+            <div class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input type="text"  class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </div>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
+            </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
+        </div>
         <!-- 详情页头图 -->
         <div class="itd-header-img-wrap bottom-line">
             <dl>
-                <dt><img src="../images/occupy/1.jpg"></dt>
+                <dt><img src="../images/occupy/banner@2x.png"></dt>
                 <dd>
                     <p class="itd-online-title text-ellip">李嘉嘉甜品</p>
                     <p class="itd-online-name text-ellip">
@@ -69,9 +132,17 @@
                 </a> 
             </li>
         </ul>
-        <!-- 介绍tab start -->
+        <div class="i-industry-news-wrap fixTab fixed-tab none">
+            <ul class="itd-main-tab itd-tab i-industry-news-tabs bgcolor-fff">
+                <li class="tac tabactive" data-index="0">介绍</li>
+                <li class="tac" data-index="1">优势</li>
+                <li class="tac" data-index="2">费用</li>
+                <li class="tac" data-index="3">案例</li>
+            </ul>
+        </div>
+        <!-- 品牌介绍 start -->
         <div class="i-industry-news-wrap bottom-line">
-            <ul class="itd-tab i-industry-news-tabs tab bgcolor-fff" id="detatab">
+            <ul class="itd-main-tab itd-tab i-industry-news-tabs bgcolor-fff">
                 <li class="tac tabactive" data-index="0">介绍</li>
                 <li class="tac" data-index="1">优势</li>
                 <li class="tac" data-index="2">费用</li>
@@ -84,7 +155,7 @@
                     </div>
                     <div class="section-content">
                         <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                        <p><img src="../images/occupy/1.jpg" alt=""></p>
+                        <p><img src="../images/occupy/2@2x.png" alt=""></p>
                         <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                     </div>
                 </div>
@@ -94,28 +165,28 @@
                     </div>
                     <div class="section-content">
                         <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                        <p><img src="../images/occupy/2.jpg" alt=""></p>
-                    </div>
-                </div>
-                <div class="section i-project-wrap border-bottom">
-                    <div>
-                        <h2 class="i-title">费用</h2>
-                    </div>
-                    <div class="section-content">
-                        <ul class="itd-join-charge br-6">
-                            <li class="itd-tr">
-                                <span class="charge-title dib">费用详情</span><span class="city-tip bgcolor-gradient tac dib">一线城市</span>
-                            </li>
-                            <li class="itd-tr">加盟费：60400</li>
-                            <li class="itd-tr">设备费：46000</li>
-                        </ul>
-                        <a href="" class="db itd-more-city bgcolor-gradient tac">
-                            查看其它城市费用详情
-                            <i class="icon icon-hot-more"></i>
-                        </a>
+                        <p><img src="../images/occupy/3@2x.png" alt=""></p>
                     </div>
                 </div>
                 <div class="section">
+                    <div class="i-project-wrap border-bottom">
+                        <div>
+                            <h2 class="i-title">费用</h2>
+                        </div>
+                        <div class="section-content">
+                            <ul class="itd-join-charge br-6">
+                                <li class="itd-tr">
+                                    <span class="charge-title dib">费用详情</span><span class="city-tip bgcolor-gradient tac dib">一线城市</span>
+                                </li>
+                                <li class="itd-tr">加盟费：60400</li>
+                                <li class="itd-tr">设备费：46000</li>
+                            </ul>
+                            <a href="" class="db itd-more-city bgcolor-gradient tac">
+                                查看其它城市费用详情
+                                <i class="icon icon-hot-more"></i>
+                            </a>
+                        </div>
+                    </div>
                     <div class="i-project-wrap border-bottom">
                         <div>
                             <h2 class="i-title">加盟问答</h2>
@@ -147,7 +218,7 @@
                         </div>
                         <div class="section-content">
                             <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                            <p><img src="../images/occupy/1.jpg" alt=""></p>
+                            <p><img src="../images/occupy/4@2x.png" alt=""></p>
                             <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                         </div>
                     </div>
@@ -157,48 +228,48 @@
                         </div>
                         <div class="section-content">
                             <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                            <p><img src="../images/occupy/1.jpg" alt=""></p>
+                            <p><img src="../images/occupy/5@2x.png" alt=""></p>
                             <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                         </div>
                     </div>
-                    <div class="i-project-wrap">
-                        <div>
-                            <h2 class="i-title">加盟案例</h2>
-                        </div>
-                        <div class="section-content">
-                            <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                            <p><img src="../images/occupy/4.jpg" alt=""></p>
-                            <p>锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
-                        </div>
+                </div>
+                <div class="section i-project-wrap">
+                    <div>
+                        <h2 class="i-title">加盟案例</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                        <p><img src="../images/occupy/6@2x.png" alt=""></p>
+                        <p>锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                     </div>
                 </div>
             </div>
             <div class="itd-zkgd-wrap">
                 <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
                 <div class="itd-djzk-btn">
-                    <span class="hide">展开全文<img src="../images/main/icon_arrow_down@2x.png" alt=""></span>
+                    <span class="zhankai hide">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
                     <span class="shouqi">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
                 </div>
             </div>
         </div>
-        <!-- 介绍tab end -->
+        <!-- 品牌介绍 end -->
         <!-- 下部分轮播图 -->
         <div class="i-top-banner itd-top-banner">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
-                            <img src="http://www.blmcy.com/tuku/banner/20181217m_qqc.jpg" alt="浅浅茶">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
-                            <img src="http://www.blmcy.com/tuku/banner/20181217m_qqc.jpg" alt="浅浅茶">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
                         </a>
                     </div>
                     <div class="swiper-slide">
                         <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
-                            <img src="http://www.blmcy.com/tuku/banner/20181217m_qqc.jpg" alt="浅浅茶">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
                         </a>
                     </div>
                 </div>
@@ -214,7 +285,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/4.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/13@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name text-ellip">
@@ -230,7 +301,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/3.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/7@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">猪小嫚爱野菜</p>
                                 <p class="i-online-name text-ellip">
@@ -246,7 +317,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/2.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/8@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">巴蜀大将巴蜀大将巴蜀大将巴蜀大将</p>
                                 <p class="i-online-name text-ellip">
@@ -262,7 +333,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/1.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/9@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">日式海鲜</p>
                                 <p class="i-online-name text-ellip">
@@ -286,7 +357,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/4.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name text-ellip">
@@ -302,7 +373,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/3.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">猪小嫚爱野菜</p>
                                 <p class="i-online-name text-ellip">
@@ -318,7 +389,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/2.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/11@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">巴蜀大将巴蜀大将巴蜀大将巴蜀大将</p>
                                 <p class="i-online-name text-ellip">
@@ -334,7 +405,7 @@
                 <li>
                     <a href="#">
                         <dl>
-                            <dt class="br-6"><img src="../images/occupy/1.jpg"></dt>
+                            <dt class="br-6"><img src="../images/occupy/12@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">日式海鲜</p>
                                 <p class="i-online-name text-ellip">
@@ -350,7 +421,7 @@
             </ul>
         </div>
         <!-- 火锅的相关文章 -->
-        <div class="i-project-wrap">
+        <div class="i-project-wrap special-bottom30">
             <div>
                 <h2 class="i-title">火锅的相关文章</h2>
             </div>
@@ -358,9 +429,9 @@
                 <li>
                     <a href="#" class="db">
                         <ul class="itd-item-img">
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
+                            <li><img src="../images/occupy/1@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/2@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/3@2x.png" alt=""></li>
                         </ul>
                         <div class="itd-item-p text-ellip">
                             从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费...
@@ -373,9 +444,9 @@
                 <li>
                     <a href="#" class="db">
                         <ul class="itd-item-img">
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
-                            <li><img src="../images/occupy/1.jpg" alt=""></li>
+                            <li><img src="../images/occupy/1@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/2@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/3@2x.png" alt=""></li>
                         </ul>
                         <div class="itd-item-p text-ellip">
                             从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费...
@@ -392,7 +463,7 @@
                 <li>
                     <a class="db" href="#">
                         <dl class="clear border-top">
-                            <dt class="br-6 fl"><img src="../images/occupy/4.jpg"></dt>
+                            <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
                             <dd class="fr">
                                 <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
                                 <p class="i-online-desc clear">
@@ -406,7 +477,7 @@
                     </a>
                     <a class="db" href="#">
                         <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/1.jpg"></dt>
+                            <dt class="br-6 fl"><img src="../images/occupy/5@2x.png"></dt>
                             <dd class="fr">
                                 <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
                                 <p class="i-online-desc clear">
@@ -420,7 +491,7 @@
                     </a>
                     <a class="db" href="#">
                         <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/1.jpg"></dt>
+                            <dt class="br-6 fl"><img src="../images/occupy/6@2x.png"></dt>
                             <dd class="fr">
                                 <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
                                 <p class="i-online-desc clear">
@@ -453,7 +524,6 @@
             <a href="javascript:;" class="itd-article-btn article-btn"><i class="icon itd-icon-article icon-article"></i>获取资料</a>
         </div>
         <!-- 点击获取开店方案弹出框 -->
-        <!-- 点击获取开店方案弹出框 -->
         <div class="tel-layer-wrap layer-wrap" style="display: none;">
             <div class="layer-content bgcolor-fff">
                 <div class="tel-layer-top layer-top"></div>
@@ -465,7 +535,6 @@
                 <div class="icon layer-close"></div>
             </div>
         </div>
-
         <div class="article-layer-wrap layer-wrap" style="display: none;">
             <div class="layer-content bgcolor-fff">
                 <div class="article-layer-top layer-top"></div>
@@ -484,99 +553,43 @@
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
 <script>
-    var topAry = [];
-    getOffset()
-    function getOffset(){ // 将楼梯层距离顶部高度，存放在数组中
-        var oHs = document.querySelectorAll('.section')
-        for (var i = 0; i < oHs.length; i++) {
-            var txtTop = oHs[i].offsetTop;
-            topAry.push(txtTop);
-        }
-    }
-    var offsetTop = document.querySelector('#detatab').offsetTop - document.querySelector('.itd-header').clientHeight;
+    var headHeight = $('.itd-header').height();
+    var tabHeight = $(document).find('.itd-main-tab li').height();
     $(window).scroll(function () {
-        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-        var value = scrollTop + document.querySelector('#detatab').clientHeight*2 + document.querySelector('.itd-header').clientHeight*2;
-        var index = 0;
-        for (var i = 0; i < topAry.length; i++) {
-            if( value >= topAry[i]){
-                if(topAry[i+1] > scrollTop){
-                    index = i;
-                    continue;
-                }
-                index = i
-            }
-        }
-        $('#detatab li').removeClass('tabactive');        
-        $('#detatab li').eq(index).addClass('tabactive');
-        if (scrollTop > offsetTop) {  
-            $("#detatab").addClass('fixed-tab');
-        } else {
-            $("#detatab").removeClass('fixed-tab');
+        var windowScrollTop = $(window).scrollTop();
+        var tabOffsetTop = $(".itd-main-tab")[1].offsetTop - headHeight;
+        if(windowScrollTop >= tabOffsetTop){
+            $(".fixTab").removeClass("none");                     
+        }else{
+            $(".fixTab").addClass("none");                        
         }
     })
-    $('#detatab li').on('click', function(e){
-        var targetIndex = e.target.dataset.index;
-        var top = (document.querySelector('#detatab').clientHeight + document.querySelector('.itd-header').clientHeight)*2;
-        var louti = document.querySelectorAll('.section')[targetIndex].offsetTop + top;     
-        window.scrollTo({ 
-            top: louti, 
-            behavior: "smooth" 
-        });
-        $("#detatab").addClass('fixed-tab');
-    })
-    // $(window).scroll(function () {
-    //     var startX,startY,endX,endY,distanceX,distanceY;
-    //     $('body').bind('touchstart',function(e){
-    //         startX = e.originalEvent.changedTouches[0].pageX;
-    //         startY = e.originalEvent.changedTouches[0].pageY;
-    //         console.log(startX,startY);
-    //     });
-    //     var windowScrollTop = $(window).scrollTop();
-    //     var tabOffsetTop = $("#detatab")[0].offsetTop;
-    //     var height = $(".fixHeader").hasClass("none") ? 0 : $("#detatab").height();
-    //     console.log(tabOffsetTop);
-    //    var header =  $('.itd-header').height();
-    //     console.log(header,'header');
-    //     // // var cur =
 
-    //     if(windowScrollTop >= tabOffsetTop - height){
-    //         console.log(1);
-    //         $("#detatab").addClass('fixed-tab');
-    //         // $(".fixTab").removeClass("none");
-    //     }else{
-    //         console.log(2)
-    //         // $(".fixTab").addClass("none");
-    //         $("#detatab").removeClass('fixed-tab');
-            
-    //     }
-    //     // if ($(window).scrollTop() == 0 || $(document).scrollTop() == 0) {
-    //     //     $(".fixHeader").addClass("none");
-    //     // }
-    //     // $("body").bind("touchmove",function(e) {
-    //     //     //获取滑动屏幕时的X,Y
-    //     //     endX = e.originalEvent.changedTouches[0].pageX;
-    //     //     endY = e.originalEvent.changedTouches[0].pageY;
-    //     //     //获取滑动距离
-    //     //     distanceX = endX - startX;
-    //     //     distanceY = endY - startY;
-    //     //     //判断滑动方向
-    //     //     if (Math.abs(distanceX) < Math.abs(distanceY) && distanceY < 0) {
-    //     //         // console.log('往上滑动');
-    //     //         $(".fixHeader").addClass("none");
-    //     //     } else if (Math.abs(distanceX) < Math.abs(distanceY) && distanceY > 0) {
-    //     //         // console.log('往下滑动');
-    //     //         $(".fixHeader").removeClass("none");
-    //     //     }
-    //     // })
-    // })
-    // 点击搜索放大镜
-    $(".header-search").on("click",function (e) {
-        e.stopPropagation();
-        $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeIn(300);
-        $("html").toggleClass("hei-100");
-        $("body").toggleClass("hei-100");
+    // 点击切换介绍、优势、费用、案例 
+    $(".itd-main-tab li").each(function () {
+        $(this).on("click",function () {
+            var index = $(this).index(); //点击的是第几个
+            var index_1 = index+1;
+            $(".itd-main-tab li").removeClass("tabactive");
+            $(".itd-main-tab li:nth-child("+index_1+")").addClass("tabactive");
+            $(".itd-main-body").removeClass("xmxq-main-hide"); //展开
+            $(".itd-djzk-btn span").addClass("hide").eq(1).removeClass("hide"); //切换展开
+            $(".itd-main-body .section").removeClass("none"); //重置
+
+            $(".section:lt("+index+")").addClass("none"); //上面的隐藏
+            var top = $(".itd-main-body")[0].offsetTop - tabHeight - headHeight; //获取选项卡距离上面的距离
+            $("html,body").animate({scrollTop:top},300); //怼上去
+        })
+    })
+
+    // 点击展开更多
+    $(".itd-djzk-btn").on("click",function () {
+        $(".itd-main-body").toggleClass("xmxq-main-hide");
+        $(this).find("span").toggleClass("hide");
+        if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
+            var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
+            $("html,body").stop().animate({scrollTop:bannerTop},30);
+        }
     })
 </script>
 </html>
