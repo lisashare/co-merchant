@@ -1,4 +1,5 @@
 $(function () {
+    document.body.addEventListener('touchstart',function(){});
     // 最近搜索
     var recently = [];
     $(".search").on('keydown', function(e){
