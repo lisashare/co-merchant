@@ -155,7 +155,6 @@ i.i-icon-search {
   line-height: 1.76rem;
   font-size: 0.72rem;
   color: #000;
-  font-weight: 700;
   text-align: center;
 }
 .itd-header .itd-header-search {
@@ -205,7 +204,6 @@ i.i-icon-search {
   line-height: 1.76rem;
   font-size: 0.72rem;
   color: #000;
-  font-weight: 700;
   text-align: center;
 }
 .common-layer-search .common-input-wrap {
@@ -314,6 +312,124 @@ i.i-icon-search {
   width: 0.52rem;
   height: 0.3rem;
 }
+/* 排行榜聚合页 start */
+.top-items-wrap div.top-items-content:nth-child(even) .top-item-all {
+  background: -webkit-linear-gradient(left, #fb3043, #fd3e62);
+  background: -o-linear-gradient(right, #fb3043, #fd3e62);
+  background: -moz-linear-gradient(right, #fb3043, #fd3e62);
+  background: linear-gradient(to right, #fb3043, #fd3e62);
+}
+.top-items-wrap div.top-items-content:nth-child(even) .icon-top-name {
+  background-image: url('../images/main/img6@3x.png');
+}
+.top-items-wrap div.top-items-content:nth-child(even) .top-item-title i {
+  background-image: url('../images/main/img8@3x.png');
+}
+.top-items-content {
+  padding: 1rem 0.8rem;
+}
+.top-items-content .top-item-all {
+  position: absolute;
+  bottom: 0.52rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3.36rem;
+  height: 0.96rem;
+  line-height: 0.96rem;
+  font-size: 0.56rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.48rem;
+  z-index: 1;
+  background: -webkit-linear-gradient(left, #f85100, #fe8645);
+  background: -o-linear-gradient(right, #f85100, #fe8645);
+  background: -moz-linear-gradient(right, #f85100, #fe8645);
+  background: linear-gradient(to right, #f85100, #fe8645);
+}
+.top-item-up {
+  width: 100%;
+  height: 4.2rem;
+  margin-bottom: 0.4rem;
+}
+.top-item-up .top-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.top-item-up .icon-top-name {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0.68rem;
+  left: 0;
+  padding: 0 0.56rem 0 0.36rem;
+  height: 1.24rem;
+  line-height: 1.24rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background-image: url('../images/main/img5@3x.png');
+  color: #fff;
+  letter-spacing: 1px;
+}
+.top-item-up .icon-top-name span {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1rem;
+  font-size: 0.48rem;
+}
+.top-item-down {
+  display: flex;
+  justify-content: space-between;
+}
+.top-item-down a {
+  display: block;
+  width: 4.2rem;
+}
+.top-item-down a img {
+  width: 4.2rem;
+  height: 2.56rem;
+  border-radius: 0.12rem;
+  overflow: hidden;
+}
+.top-item-down a .top-item-title {
+  margin: 0.4rem 0;
+  line-height: 0.6rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: #000;
+}
+.top-item-down a .top-item-title span {
+  display: inline-block;
+  max-width: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.top-item-down a .top-item-title i {
+  width: 0.52rem;
+  height: 0.6rem;
+  vertical-align: top;
+  margin-left: 0.4rem;
+  background-image: url('../images/main/img7@3x.png');
+}
+.top-item-down a p {
+  line-height: 0.56rem;
+  font-size: 0.56rem;
+  font-weight: 700;
+  color: #666;
+}
+.top-other .common-find-more {
+  width: 100%!important;
+  line-height: 2.64rem;
+}
+.top-other .common-find-more img {
+  width: 0.38rem;
+  height: 0.66rem;
+}
+/* 排行榜聚合页 end */
 /* 排行榜 start */
 .category-wrapper {
   height: 19.4rem;
@@ -729,6 +845,18 @@ i.i-icon-search {
 }
 .itd-link-wrap .itd-num span {
   font-size: 0.72rem;
+}
+.top-link-wrap {
+  padding-top: 0.8rem !important;
+  padding-bottom: 0.52rem !important;
+}
+.top-link-wrap img {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+}
+.top-link-wrap .itd-type {
+  font-size: 0.56rem !important;
+  color: #000!important;
 }
 .itd-top-banner {
   padding-top: 1rem;
@@ -1302,7 +1430,7 @@ header.i-header .i-header-search input {
 }
 .icon {
   display: inline-block;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }

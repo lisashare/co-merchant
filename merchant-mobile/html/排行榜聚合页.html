@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">   
+    <meta name="description" content="">    
+    <title>排行榜聚合页</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <!-- 顶部搜索 -->
+    <div class="container">
+        <header class="itd-header i-header header-fixed bgcolor-fff">
+            <h1 class="i-header-logo">
+                <img src="../images/main/icon_more@3x.png" alt="logo">
+            </h1>
+            <h2 class="text-ellip">餐饮加盟排行榜</h2>
+            <div class="itd-header-search header-search">
+                <i class="itd-icon-search"></i>
+            </div>
+        </header>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx相关搜索</h2>
+                <div class="itd-header-search"></div>
+            </header>
+            <form acrion="#" method="get" class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input name="wd" type="text" class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </form>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
+            </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯品牌</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯品</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 排行榜聚合页banner -->
+        <div class="i-top-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 图标 -->
+        <ul class="top-link-wrap itd-link-wrap bottom-line">
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="db tac"> 
+                    <img src="../images/main/icon_qwpt@3x.png" alt="权威平台"> 
+                    <p class="itd-type tac">权威平台</p> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="dbtac"> 
+                    <img src="../images/main/icon_plqq@3x.png" alt="品类齐全">
+                    <p class="itd-type tac">品类齐全</p> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="db tac"> 
+                    <img src="../images/main/icon_sjzs@3x.png" alt="数据真实">
+                    <p class="itd-type tac">数据真实</p> 
+                </a> 
+            </li>
+        </ul>
+        <!-- 排行榜 -->
+        <div class="top-items-wrap">
+            <div class="top-items-content bottom-line">
+                <div class="top-item-up br-6 pr">
+                    <img src="../images/occupy/10@2x.png" alt="">
+                    <div class="top-img"><i class="icon icon-top-name">奶茶<span>/排行榜</span></i></div>
+                    <a class="top-item-all db" href="#">查看全部</a>
+                </div>
+                <ul class="top-item-down">
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/12@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>奶茶</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/4@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>小吃</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/5@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>熟食卤味</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-items-content bottom-line">
+                <div class="top-item-up br-6 pr">
+                    <img src="../images/occupy/9@2x.png" alt="">
+                    <div class="top-img"><i class="icon icon-top-name">奶茶奶茶<span>/排行榜</span></i></div>
+                    <a class="top-item-all db" href="#">查看全部</a>
+                </div>
+                <ul class="top-item-down">
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/9@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>奶茶</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/2@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>小吃</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/3@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>熟食卤味</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-items-content bottom-line">
+                <div class="top-item-up br-6 pr">
+                    <img src="../images/occupy/10@2x.png" alt="">
+                    <div class="top-img"><i class="icon icon-top-name">奶茶<span>/排行榜</span></i></div>
+                    <a class="top-item-all db" href="#">查看全部</a>
+                </div>
+                <ul class="top-item-down">
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/12@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>奶茶</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/4@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>小吃</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/5@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>熟食卤味</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-items-content bottom-line">
+                <div class="top-item-up br-6 pr">
+                    <img src="../images/occupy/9@2x.png" alt="">
+                    <div class="top-img"><i class="icon icon-top-name">奶茶奶茶<span>/排行榜</span></i></div>
+                    <a class="top-item-all db" href="#">查看全部</a>
+                </div>
+                <ul class="top-item-down">
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/9@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>奶茶</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/2@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>小吃</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/occupy/3@2x.png" alt="">
+                            <div class="top-item-title">
+                                <span>熟食卤味</span><i class="icon"></i>
+                            </div>
+                            <p>加盟排行榜</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-other tac">
+            <a href="javascript:;" class="common-find-more">
+                <span>其它热门排行榜<img src="../images/main/img-arrow@3x.png" alt=""></span>
+            </a>
+        </div>
+        <footer>
+            <div class="footer-link-list"> 
+                <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
+            </div>
+            <p class="">版权所有 &copy; xxx加盟网</p>
+            <p class="">Copyright &copy; www.53.com.cn All Rights Reserved</p>
+            <p class="">备案号：京ICP备18000242号-1</p>
+        </footer>
+        <!-- 底部固定按钮 -->
+        <div class="i-foot-fixed o-h bgcolor-fff"> 
+            <a href="javascript:;" class="i-online-btn online-btn">
+                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
+            </a> 
+            <p></p>
+            <a href="javascript:;" class="i-tel-btn tel-btn">
+                <i class="icon i-icon-tel icon-tel"></i>电话咨询
+            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a>
+        </div>
+        <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <form action="#" method="get" class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <button type="submit" class="icon tel-layer-btn layer-btn"></button>
+                </form>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <form action="#" method="get" class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </form>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
+<script>
+    // banner swiper
+    new Swiper('.i-top-banner .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        observer: true, 
+        observeParents: true
+    })
+</script>
+</html>
+

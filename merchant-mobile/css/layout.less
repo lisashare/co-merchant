@@ -151,7 +151,6 @@ i.i-icon-search{
         line-height: 88/@rem;
         font-size: 36/@rem;
         color:#000;
-        font-weight: 700;
         text-align: center;
     }
     .itd-header-search{
@@ -198,7 +197,6 @@ i.i-icon-search{
             line-height: 88/@rem;
             font-size: 36/@rem;
             color:#000;
-            font-weight: 700;
             text-align: center;
         }
     }
@@ -306,6 +304,127 @@ i.i-icon-search{
         height: 15/@rem; 
     }
 }
+/* 排行榜聚合页 start */ 
+.top-items-wrap{
+    div.top-items-content:nth-child(even){ // 偶
+        .top-item-all{
+            background: -webkit-linear-gradient(left, #fb3043, #fd3e62); 
+            background: -o-linear-gradient(right, #fb3043, #fd3e62); 
+            background: -moz-linear-gradient(right, #fb3043, #fd3e62); 
+            background: linear-gradient(to right, #fb3043 , #fd3e62); 
+        }
+        .icon-top-name{
+            background-image: url('../images/main/img6@3x.png');
+        }
+        .top-item-title{
+            i{
+                background-image: url('../images/main/img8@3x.png');
+            }
+        }
+    }
+}
+.top-items-content{
+    padding: 50/@rem 40/@rem;
+    .top-item-all{
+        position: absolute;
+        bottom: 26/@rem;left: 50%;
+        transform: translateX(-50%);
+        width: 168/@rem;
+        height: 48/@rem;
+        line-height: 48/@rem;
+        font-size: 28/@rem;
+        text-align: center;
+        color: #fff;
+        border-radius: 24/@rem;
+        z-index: 1;
+        background: -webkit-linear-gradient(left, #f85100, #fe8645); 
+        background: -o-linear-gradient(right, #f85100, #fe8645); 
+        background: -moz-linear-gradient(right, #f85100, #fe8645); 
+        background: linear-gradient(to right, #f85100 , #fe8645); 
+    }
+}
+.top-item-up{
+    width: 100%;
+    height: 210/@rem;
+    margin-bottom: 20/@rem;
+    .top-img{
+        position: absolute;
+        top: 0;right: 0;bottom:0;left: 0;
+        background: rgba( 0, 0, 0, 0.4);
+        z-index: 1;               
+    }
+    .icon-top-name{
+        box-sizing: border-box;
+        position: absolute;
+        top: 34/@rem;left: 0;
+        padding: 0 28/@rem 0 18/@rem;
+        height: 62/@rem;
+        line-height: 62/@rem;
+        font-size: 36/@rem;
+        font-weight: 700;
+        background-image: url('../images/main/img5@3x.png');
+        color: #fff;
+        letter-spacing: 1px;
+        span{
+            display: inline-block;
+            vertical-align: bottom;
+            line-height: 50/@rem;
+            font-size: 24/@rem;
+        }
+    }
+}
+.top-item-down{
+    display: flex;
+    justify-content: space-between;
+    a{
+        display: block;
+        width: 210/@rem;
+        img{
+            width: 210/@rem;
+            height: 128/@rem;
+            border-radius: 6/@rem;
+            overflow: hidden; 
+        }
+        .top-item-title{
+            margin: 20/@rem 0;
+            line-height: 30/@rem;
+            font-size: 32/@rem;
+            font-weight: 700;
+            color: #000;
+            span{
+                display: inline-block;
+                max-width: 150/@rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            i{
+                width: 26/@rem;
+                height: 30/@rem;
+                vertical-align: top;
+                margin-left: 20/@rem;
+                background-image: url('../images/main/img7@3x.png');
+            }
+        }
+        p{
+            line-height: 28/@rem;
+            font-size: 28/@rem;
+            font-weight: 700;
+            color: #666;
+        }
+    }
+}
+.top-other{
+    .common-find-more{
+        width: 100%!important;
+        line-height: 132/@rem;
+        img{
+            width: 19/@rem;
+            height: 33/@rem;
+        }
+    }
+}
+/* 排行榜聚合页 end */ 
 /* 排行榜 start */
 .category-wrapper{
     height: 970/@rem;
@@ -725,8 +844,8 @@ i.i-icon-search{
     }
     img{
         width: 69/@rem;
-        height:69/@rem;
-        margin:0 auto;
+        height: 69/@rem;
+        margin: 0 auto;
     }
     .itd-type{
         margin: 4/@rem 0;
@@ -739,6 +858,18 @@ i.i-icon-search{
         span{
             font-size: 36/@rem;
         }
+    }
+}
+.top-link-wrap{
+    padding-top: 40/@rem!important;
+    padding-bottom: 26/@rem!important;
+    img{
+        width: 60/@rem!important;
+        height: 60/@rem!important;
+    }
+    .itd-type{
+        font-size: 28/@rem!important;
+        color: #000!important;
     }
 }
 // 详情页banner
@@ -1331,7 +1462,7 @@ header.i-header{
 }
 .icon{
     display: inline-block;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
