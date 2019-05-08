@@ -195,7 +195,7 @@
             </div>
             <ul class="i-recommed-ul">
                 <li>
-                    <a href="#" data-id="58750" data-type="cmsad">
+                    <a href="#">
                         <dl>
                             <dt class="br-6"><img src="../images/occupy/4@2x.png"></dt>
                             <dd>
@@ -231,7 +231,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-id="58750" data-type="cmsad">
+                    <a href="#">
                         <dl>
                             <dt class="br-6"><img src="../images/occupy/6@2x.png"></dt>
                             <dd>
@@ -249,7 +249,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" data-id="58750" data-type="cmsad">
+                    <a href="#">
                         <dl>
                             <dt class="br-6"><img src="../images/occupy/7@2x.png"></dt>
                             <dd>
@@ -764,8 +764,9 @@
 <script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
 <script>
-    // 新闻公告 start
+     // 新闻公告 start
     var iliHeight = $("#noticeBox").height();//单行滚动的高度
     var area = document.getElementById('noticeBox');
     var speed = 2;//滚动的速度
@@ -791,58 +792,6 @@
     }
     setTimeout(startScroll, delay);
     // 新闻公告 end
-    // 最近搜索
-    var recently = [];
-    // 搜索回车
-    $(".search").on('keydown', function(e){
-        if(e.keyCode == '13'){
-            var searchName = $(this).val();
-            searchName = $.trim( searchName );
-            // window.location.href = '/' + "keywords="+ searchName;
-            // $(this).val('');
-            // 回车进行存储
-            setHistoryItems (searchName);
-        }
-    })
-    // 进入页面进行获取-赋值
-    getHistoryItems();
-    function getHistoryItems () { // 获取历史列表
-        var history = JSON.parse(getStore('searchHistory'));
-        if (!history) {
-            return false;
-        }
-        // 如果有值，循环放在页面中
-        if (history.length) {
-            recently = history.slice(0, 10); 
-            var str = '';
-            for(var i=0;i<recently.length;i++){
-                str += `
-                    <li><a href="#" class="word-br">${recently[i]}</a></li>
-                `;
-            }
-            $('.i-recently-search-list').html(str);
-        }
-    }
-    function setHistoryItems (value) {
-        if(!value){
-            return false;
-        }
-        var setHistory = JSON.parse(getStore('searchHistory'))
-        if (setHistory) {
-            var checkrepeat = false;
-            setHistory.forEach(item => {
-                if (item == value) {
-                    checkrepeat = true;
-                }
-            })
-            if (!checkrepeat) { // 没有重复的添加上
-                recently.unshift(value);
-            }
-        } else {
-            recently.unshift(value);
-        }
-        setStore('searchHistory', recently);
-    }
 
     // 点击首页菜单弹出层
     $(".i-header-menu").on("click",function (e) {
@@ -876,7 +825,7 @@
     })
     // 搜索关闭阴影
 
-    // banner swiper
+    // 首页 banner
     new Swiper('.i-top-banner .swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,

@@ -17,6 +17,15 @@ img{height: 100%;}
 .border-bottom{
     border-bottom: 1px solid #f0f0f0;
 }
+.mt-16{
+    margin-top: 16/@rem;
+}
+.pt-88{
+    padding-top: 88/@rem;
+}
+.mt-88{
+    margin-top: 88/@rem;
+}
 .bgcolor-gradient{
     color: #fff;
     background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
@@ -261,10 +270,10 @@ i.i-icon-search{
             }
             a:active{
                 color: #fff;
-                background: -webkit-linear-gradient(left, #f85100, #fe8645); /* Safari 5.1 - 6.0 */
-                background: -o-linear-gradient(right, #f85100, #fe8645); /* Opera 11.1 - 12.0 */
-                background: -moz-linear-gradient(right, #f85100, #fe8645); /* Firefox 3.6 - 15 */
-                background: linear-gradient(to right, #f85100 , #fe8645); /* 标准的语法（必须放在最后） */
+                background: -webkit-linear-gradient(left, #f85100, #fe8645); 
+                background: -o-linear-gradient(right, #f85100, #fe8645);
+                background: -moz-linear-gradient(right, #f85100, #fe8645); 
+                background: linear-gradient(to right, #f85100 , #fe8645); 
             }
         }
     }
@@ -275,9 +284,13 @@ i.i-icon-search{
 }
 // 展开全文
 .xmxq-main-hide {
+    width: 100%;
     height: 600px!important;
     overflow: hidden;
-    width: 100%;
+}
+.jh-hide {
+    height: 80/@rem!important;
+    overflow: hidden;
 }
 .itd-zkgd-wrap{
     text-align: center;
@@ -302,6 +315,56 @@ i.i-icon-search{
         display: inline-block;
         width: 26/@rem;
         height: 15/@rem; 
+    }
+}
+/* 项目聚合页 */
+.jh-section-content{
+    padding: 42/@rem 40/@rem 22/@rem;
+    line-height: 40/@rem!important;
+    font-size: 28/@rem!important;
+    color: #666;
+}
+.jh-high-quality{
+    padding-bottom: 69/@rem!important;
+    .swiper-container{
+        margin-bottom: 44/@rem;
+    }
+    .swiper-pagination{
+        left: 50%;
+        transform: translateX(-50%);
+        .swiper-pagination-bullet{
+            width: 56/@rem;
+            height: 9/@rem;
+            margin-left: 8/@rem;
+            margin-right: 8/@rem;
+            border-radius: 5/@rem;
+            background: #e0dede;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active{
+            background: -webkit-linear-gradient(left, #f85100, #fe8645); 
+            background: -o-linear-gradient(right, #f85100, #fe8645);
+            background: -moz-linear-gradient(right, #f85100, #fe8645); 
+            background: linear-gradient(to right, #f85100 , #fe8645); 
+        }
+    }
+}
+.jh-brand-title{
+    display: flex;
+    justify-content: space-between;
+    .jh-brand-more{
+        text-align: right;
+        width: 120/@rem;
+        padding: 48/@rem 0 30/@rem;
+        line-height: 40/@rem;
+        font-size: 24/@rem;
+        color: #999;
+        i{
+            width: 11/@rem;
+            height: 20/@rem;
+            margin-left: 10/@rem;
+            background-image: url('../images/main/icon_more_gray@3x.png');
+        }
     }
 }
 /* 排行榜聚合页 start */ 
@@ -427,11 +490,14 @@ i.i-icon-search{
 /* 排行榜聚合页 end */ 
 /* 排行榜 start */
 .category-wrapper{
-    height: 970/@rem;
+    box-sizing: border-box;
+    padding: 88/@rem 0 130/@rem;
+    height: 100%;
+    // height: 970/@rem;
     .menu-category{
         box-sizing: border-box;
         width: 206/@rem;
-        height: 970/@rem;
+        height: 100%;
         overflow-y: scroll;
         border-right: 1px solid #f0f0f0;
         li{
@@ -451,10 +517,10 @@ i.i-icon-search{
     }
     .category-list{
         padding-bottom: 28/@rem;
-        height: 960/@rem;
+        height: 100%;
         overflow: hidden;
         .food-list{
-            height: 960/@rem;
+            height: 100%;
             overflow-y: scroll;
         }
         li{
@@ -662,7 +728,7 @@ i.i-icon-search{
     color: #999; 
 }
 // 详情页tab content
-.section-content{
+.section-content, .jh-section-content{
     line-height: 46/@rem!important;
     font-size: 30/@rem!important;
     color: #666!important;

@@ -1,6 +1,6 @@
 $(function () {
+    // 最近搜索
     var recently = [];
-    // 搜索回车
     $(".search").on('keydown', function(e){
         if(e.keyCode == '13'){
             var searchName = $(this).val();
@@ -18,6 +18,15 @@ $(function () {
         // 如果有值，循环放在页面中
         if (history.length) {
             recently = history.slice(0, 10); 
+            if( $(document).find('.i-recently-search-list').length ){
+                var str = '';
+                for(var i=0;i<recently.length;i++){
+                    str += `
+                        <li><a href="#" class="word-br">${recently[i]}</a></li>
+                    `;
+                }
+                $('.i-recently-search-list').html(str);
+            }
         }
     }
     function setHistoryItems (value) {

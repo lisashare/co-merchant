@@ -14,99 +14,289 @@
     <link rel="stylesheet" href="../css/common.css">
     <!-- layout -->
     <link rel="stylesheet" href="../css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
     <script src="../js/rem.js"></script>
 </head>
 <body>
     <div class="container">
         <!-- 顶部标题 -->
-        <header class="itd-header res-header header-fixed bgcolor-fff border-bottom">
+        <header class="itd-header header-fixed bgcolor-fff border-bottom">
             <a href="javascript:history.back(-1)" class="back-btn"></a>
-            <form action="#" method="get" class="fl">
-                <i class="icon i-icon-search"></i>
-                <input name="wd" type="text" class="search header-input" id="layer-search" placeholder="请输入关键词搜索" value="">
-            </form>
+            <h2 class="text-ellip">xxxx项目</h2>
+            <div class="itd-header-search header-search">
+                <i class="itd-icon-search"></i>
+            </div>
         </header>
-        <!-- 搜索结果品牌列表 -->
-        <div class="res-brand-wrap bottom-line">
-            <ul class="res-brand-content">
-                <li class="border-bottom">
-                    <a class="db" href="#">
-                        <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
-                            <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品1</p>
-                                <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
-                                <p class="res-brand-pay">
-                                    ￥<span class="rmb">50~70</span>万
-                                </p>
-                            </dd>
-                        </dl>
-                    </a>
-                    <div class="res-contact">
-                        <a href="javascript:;" data-name="李嘉嘉甜品1" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" data-name="李嘉嘉甜品1" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
-                    </div>
-                </li>
-                <li class="border-bottom">
-                    <a class="db" href="#">
-                        <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/11@2x.png"></dt>
-                            <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品2</p>
-                                <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
-                                <p class="res-brand-pay">
-                                    ￥<span class="rmb">50~70</span>万
-                                </p>
-                            </dd>
-                        </dl>
-                    </a>
-                    <div class="res-contact">
-                        <a href="javascript:;" data-name="李嘉嘉甜品2" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" data-name="李嘉嘉甜品2" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
-                    </div>
-                </li>
-                <li class="border-bottom">
-                    <a class="db" href="#">
-                        <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/3@2x.png"></dt>
-                            <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品3</p>
-                                <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
-                                <p class="res-brand-pay">
-                                    ￥<span class="rmb">50~70</span>万
-                                </p>
-                            </dd>
-                        </dl>
-                    </a>
-                    <div class="res-contact">
-                        <a href="javascript:;" data-name="李嘉嘉甜品3" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" data-name="李嘉嘉甜品3" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
-                    </div>
-                </li>
-                <li class="border-bottom">
-                    <a class="db" href="#">
-                        <dl class="clear">
-                            <dt class="br-6 fl"><img src="../images/occupy/13@2x.png"></dt>
-                            <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品4</p>
-                                <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
-                                <p class="res-brand-pay">
-                                    ￥<span class="rmb">50~70</span>万
-                                </p>
-                            </dd>
-                        </dl>
-                    </a>
-                    <div class="res-contact">
-                        <a href="javascript:;" data-name="李嘉嘉甜品4" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" data-name="李嘉嘉甜品4" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
-                    </div>
-                </li>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx相关搜索</h2>
+                <div class="itd-header-search"></div>
+            </header>
+            <form acrion="#" method="get" class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input name="wd" type="text" class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </form>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
             </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯品牌</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯品</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- 火锅的相关文章 -->
+        <!-- 项目文章内容 -->
+        <div class="jh-article bottom-line">
+            <div class="jh-section-content jh-hide">
+                <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                <p><img src="../images/occupy/3@2x.png" alt=""></p>
+            </div>
+            <div class="itd-zkgd-wrap">
+                <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
+                <div class="itd-djzk-btn">
+                    <span class="zhankai ">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    <span class="shouqi hide">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
+                </div>
+            </div>
+        </div>
+        <!-- 优质品牌 -->
+        <div class="jh-high-quality i-project-wrap bottom-line">
+            <div class="jh-brand-title">
+                <h2 class="i-title">优质品牌</h2>
+                <a href="#" class="db jh-brand-more">
+                    更多<i class="icon icon-right-more"></i>
+                </a>
+            </div>
+            <div class="swiper-container br-6">
+                <div class="swiper-wrapper">
+                    <ul class="swiper-slide i-recommed-ul">
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/4@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/5@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">3~500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/6@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/7@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide i-recommed-ul">
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/1@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/2@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">3~500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/3@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/4@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide i-recommed-ul">
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/12@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/11@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">3~500</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <dl>
+                                    <dt class="br-6"><img src="../images/occupy/9@2x.png"></dt>
+                                    <dd>
+                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                        <p class="i-online-desc clear mt-16">
+                                            <span class="i-online-money">
+                                                ￥<i class="rmb">30~50</i>万</span>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 资讯推荐 -->
         <div class="i-project-wrap bottom-line special-bottom30">
             <div>
-                <h2 class="i-title">火锅的相关文章</h2>
+                <h2 class="i-title">资讯推荐</h2>
             </div>
             <ul class="i-recommed-ul itd-news-content border-bottom pb-30">
                 <li>
@@ -249,10 +439,29 @@
     </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
 <script type="text/javascript" src="../js/search.js"></script>
 <script>
-    
+    // 点击展开更多
+    $(".itd-djzk-btn").on("click",function () {
+        $(".jh-section-content").toggleClass("jh-hide");
+        $(this).find("span").toggleClass("hide");
+        // if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
+            // var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
+            // $("html,body").stop().animate({scrollTop:bannerTop},30);
+        // }
+    })
+
+    // banner swiper
+    new Swiper('.jh-high-quality .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        observer: true, 
+        observeParents: true
+    })
 </script>
 </html>
