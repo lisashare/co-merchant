@@ -254,19 +254,26 @@
         <!-- 留言表单 -->
         <div class="common-form-message">
             <p class="form-message-title color-f85100 tac">留言免费获取详情加盟资料</p>
-            <form action="" method="post" class="o-h">
-                <div class="input-wrap br-6 pr">
-                    <i class="icon icon-message-down"></i>
-                    <input type="text" class="form-input form-project-name" name="xingming" placeholder="请留下项目名称或者选择快捷留言">
-                    <span class="color-333 p-a t-c msg"></span>
+            <form action="#" method="get" class="o-h">
+                <div class="input-wrap pr">
+                    <i class="icon icon-message-down choose-up"></i>
+                    <input type="text" name="liuyan" class="br-6 form-input form-project-name"  placeholder="请留下项目名称或者选择快捷留言">
+                    <ul class="form-express-list br-6 none">
+                        <li>有兴趣开一个店，请寄资料给我或给我打电话。</li>
+                        <li>详细研究过您的项目，想加入请来电。</li>
+                        <li>请尽快将详细投资方案和其他资料寄给本人。</li>
+                        <li>初步打算加入贵公司，请寄资料。</li>
+                        <li>我加入你们后，您们还会提供哪些服务？</li>
+                    </ul>
+                    <span class="msg"></span>
                 </div>
                 <div class="input-wrap br-6">
-                    <input type="text" class="form-input form-user" name="xingming" placeholder="请输入您的姓名">
-                    <span class="color-333 p-a t-c msg"></span>
+                    <input type="text" name="xingming" class="br-6 form-input form-user"  placeholder="请输入您的姓名">
+                    <span class="msg"></span>
                 </div>
                 <div class="input-wrap br-6">
-                    <input type="tel" class="form-input form-tell" name="dianhua" placeholder="电话号码用于接收相关资料">
-                    <span class="color-333 p-a t-c msg"></span>
+                    <input type="tel" name="dianhua" class="br-6 form-input form-tell" placeholder="电话号码用于接收相关资料">
+                    <span class="msg"></span>
                 </div>
                 <input type="submit" class="submit-btn bgcolor-gradient" value="获取资料">
             </form>

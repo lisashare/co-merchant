@@ -249,6 +249,8 @@ i.i-icon-search{
             a{
                 display: block;
                 width: 154/@rem;
+                box-sizing: border-box;
+                padding: 0 10/@rem;
                 margin-top: 20/@rem;
                 margin-right: 15/@rem;
                 line-height: 56/@rem;
@@ -430,6 +432,14 @@ i.i-icon-search{
     }
 }
 /* 搜索结果页 end */
+// 表单提交
+.msg{
+    display: block;
+    padding: 0 30/@rem;
+    height: 40/@rem;
+    line-height: 40/@rem;
+    color: #f85100;
+}
 .common-form-message{
     width: 668/@rem;
     margin: 0 auto;
@@ -443,7 +453,7 @@ i.i-icon-search{
         padding-top:28/@rem;
         .input-wrap{
             width: 100%;
-            margin-bottom: 40/@rem;
+            margin-bottom: 5/@rem;
             font-size: 24/@rem;
             color: #999;
         }
@@ -459,15 +469,15 @@ i.i-icon-search{
     }
     .form-project-name{
         padding-right: 86/@rem;
-        
     }
     .icon-message-down{
         position: absolute;
-        top: 39/@rem;
-        right: 30/@rem;
-        width: 26/@rem;
-        height: 15/@rem;
+        top: 0;
+        right: 0;
+        width: 86/@rem;
+        height: 80/@rem;
         background-image: url('../images/main/icon_down_gray@3x.png');
+        background-size: 26/@rem 15/@rem;
     }
     .submit-btn{
         width: 668/@rem;
@@ -493,7 +503,9 @@ i.i-icon-search{
     font-size: 22/@rem;
     color: #666;
     .modiify-time{
-
+        width: 234/@rem;
+        font-size: 22/@rem;
+        text-align: right;
     }
 }
 /* 搜索结果页 end */
@@ -795,6 +807,8 @@ i.i-icon-search{
             a{
                 display: block;
                 width: 154/@rem;
+                box-sizing: border-box;
+                padding: 0 10/@rem;
                 margin-top: 20/@rem;
                 line-height: 56/@rem;
                 font-size: 28/@rem;

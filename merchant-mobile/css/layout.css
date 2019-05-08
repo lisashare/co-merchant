@@ -254,6 +254,8 @@ i.i-icon-search {
 .common-layer-search .common-layer-search-wrap .common-shortcut-search a {
   display: block;
   width: 3.08rem;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
   margin-top: 0.4rem;
   margin-right: 0.3rem;
   line-height: 1.12rem;
@@ -435,6 +437,13 @@ i.i-icon-search {
   border-radius: 0.48rem;
 }
 /* 搜索结果页 end */
+.msg {
+  display: block;
+  padding: 0 0.6rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  color: #f85100;
+}
 .common-form-message {
   width: 13.36rem;
   margin: 0 auto;
@@ -450,7 +459,7 @@ i.i-icon-search {
 }
 .common-form-message form .input-wrap {
   width: 100%;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.1rem;
   font-size: 0.48rem;
   color: #999;
 }
@@ -468,11 +477,12 @@ i.i-icon-search {
 }
 .common-form-message .icon-message-down {
   position: absolute;
-  top: 0.78rem;
-  right: 0.6rem;
-  width: 0.52rem;
-  height: 0.3rem;
+  top: 0;
+  right: 0;
+  width: 1.72rem;
+  height: 1.6rem;
   background-image: url('../images/main/icon_down_gray@3x.png');
+  background-size: 0.52rem 0.3rem;
 }
 .common-form-message .submit-btn {
   width: 13.36rem;
@@ -496,6 +506,11 @@ i.i-icon-search {
   line-height: 0.44rem;
   font-size: 0.44rem;
   color: #666;
+}
+.common-bread .modiify-time {
+  width: 4.68rem;
+  font-size: 0.44rem;
+  text-align: right;
 }
 /* 搜索结果页 end */
 /* 项目详情页 start */
@@ -777,6 +792,8 @@ i.i-icon-search {
 .i-layer-search .i-layer-search-wrap .i-hot-search-list a {
   display: block;
   width: 3.08rem;
+  box-sizing: border-box;
+  padding: 0 0.2rem;
   margin-top: 0.4rem;
   line-height: 1.12rem;
   font-size: 0.56rem;

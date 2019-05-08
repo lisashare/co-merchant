@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="../css/common.css">
     <!-- layout -->
     <link rel="stylesheet" href="../css/layout.css">
-    <!-- swiper -->
-    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
     <script src="../js/rem.js"></script>
 </head>
 <body>
@@ -23,9 +21,9 @@
         <!-- 顶部标题 -->
         <header class="itd-header res-header header-fixed bgcolor-fff border-bottom">
             <a href="javascript:history.back(-1)" class="back-btn"></a>
-            <form class="fl" onsubmit="return false;">
+            <form action="#" method="get" class="fl">
                 <i class="icon i-icon-search"></i>
-                <input type="text"  class="search header-input" id="layer-search" placeholder="请输入关键词搜索">
+                <input name="wd" type="text" class="search header-input" id="layer-search" placeholder="请输入关键词搜索" value="">
             </form>
         </header>
         <!-- 搜索结果品牌列表 -->
@@ -36,7 +34,7 @@
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
                             <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品李嘉嘉甜品</p>
+                                <p class="res-brand-name text-ellip">李嘉嘉甜品1</p>
                                 <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
                                 <p class="res-brand-pay">
                                     ￥<span class="rmb">50~70</span>万
@@ -45,8 +43,8 @@
                         </dl>
                     </a>
                     <div class="res-contact">
-                        <a href="javascript:;" class="tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" class="article-contact db bgcolor-gradient-purple">获取资料</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品1" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品1" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
                     </div>
                 </li>
                 <li class="border-bottom">
@@ -54,7 +52,7 @@
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/11@2x.png"></dt>
                             <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品李嘉嘉甜品</p>
+                                <p class="res-brand-name text-ellip">李嘉嘉甜品2</p>
                                 <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
                                 <p class="res-brand-pay">
                                     ￥<span class="rmb">50~70</span>万
@@ -63,8 +61,8 @@
                         </dl>
                     </a>
                     <div class="res-contact">
-                        <a href="javascript:;" class="tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" class="article-contact db bgcolor-gradient-purple">获取资料</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品2" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品2" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
                     </div>
                 </li>
                 <li class="border-bottom">
@@ -72,7 +70,7 @@
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/3@2x.png"></dt>
                             <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品李嘉嘉甜品</p>
+                                <p class="res-brand-name text-ellip">李嘉嘉甜品3</p>
                                 <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
                                 <p class="res-brand-pay">
                                     ￥<span class="rmb">50~70</span>万
@@ -81,8 +79,8 @@
                         </dl>
                     </a>
                     <div class="res-contact">
-                        <a href="javascript:;" class="tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" class="article-contact db bgcolor-gradient-purple">获取资料</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品3" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品3" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
                     </div>
                 </li>
                 <li class="border-bottom">
@@ -90,7 +88,7 @@
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/13@2x.png"></dt>
                             <dd class="fr">
-                                <p class="res-brand-name text-ellip">李嘉嘉甜品李嘉嘉甜品</p>
+                                <p class="res-brand-name text-ellip">李嘉嘉甜品4</p>
                                 <p class="res-brand-company text-ellip">北京城山餐饮股份有限公司</p>
                                 <p class="res-brand-pay">
                                     ￥<span class="rmb">50~70</span>万
@@ -99,8 +97,8 @@
                         </dl>
                     </a>
                     <div class="res-contact">
-                        <a href="javascript:;" class="tel-contact db bgcolor-gradient">电话咨询</a>
-                        <a href="javascript:;" class="article-contact db bgcolor-gradient-purple">获取资料</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品4" class="tel-btn tel-contact db bgcolor-gradient">电话咨询</a>
+                        <a href="javascript:;" data-name="李嘉嘉甜品4" class="article-btn article-contact db bgcolor-gradient-purple">获取资料</a>
                     </div>
                 </li>
             </ul>
@@ -175,11 +173,10 @@
         <!-- 留言表单 -->
         <div class="common-form-message">
             <p class="form-message-title color-f85100 tac">留言免费获取详情加盟资料</p>
-            <form action="" method="post" class="o-h">
+            <form action="#" method="get" class="o-h">
                 <div class="input-wrap pr">
                     <i class="icon icon-message-down choose-up"></i>
-                    <input type="text" class="br-6 form-input form-project-name" name="xingming" placeholder="请留下项目名称或者选择快捷留言">
-                    <span class="color-333 p-a t-c msg"></span>
+                    <input type="text" name="liuyan" class="br-6 form-input form-project-name"  placeholder="请留下项目名称或者选择快捷留言">
                     <ul class="form-express-list br-6 none">
                         <li>有兴趣开一个店，请寄资料给我或给我打电话。</li>
                         <li>详细研究过您的项目，想加入请来电。</li>
@@ -187,14 +184,15 @@
                         <li>初步打算加入贵公司，请寄资料。</li>
                         <li>我加入你们后，您们还会提供哪些服务？</li>
                     </ul>
+                    <span class="msg"></span>
                 </div>
                 <div class="input-wrap br-6">
-                    <input type="text" class="form-input form-user" name="xingming" placeholder="请输入您的姓名">
-                    <span class="color-333 p-a t-c msg"></span>
+                    <input type="text" name="xingming" class="br-6 form-input form-user"  placeholder="请输入您的姓名">
+                    <span class="msg"></span>
                 </div>
                 <div class="input-wrap br-6">
-                    <input type="tel" class="form-input form-tell" name="dianhua" placeholder="电话号码用于接收相关资料">
-                    <span class="color-333 p-a t-c msg"></span>
+                    <input type="tel" name="dianhua" class="br-6 form-input form-tell" placeholder="电话号码用于接收相关资料">
+                    <span class="msg"></span>
                 </div>
                 <input type="submit" class="submit-btn bgcolor-gradient" value="获取资料">
             </form>
@@ -226,6 +224,8 @@
             <div class="layer-content bgcolor-fff">
                 <div class="tel-layer-top layer-top"></div>
                 <div class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
                     <input type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
                     <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
@@ -237,6 +237,8 @@
             <div class="layer-content bgcolor-fff">
                 <div class="article-layer-top layer-top"></div>
                 <div class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
                     <input type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
                     <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
@@ -247,10 +249,10 @@
     </div>
 </body>
 <script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
 <script>
-
+    
 </script>
 </html>

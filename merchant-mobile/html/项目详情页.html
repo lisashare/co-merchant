@@ -36,10 +36,10 @@
                 <h2 class="text-ellip fl">xxxx相关搜索</h2>
                 <div class="itd-header-search"></div>
             </header>
-            <div class="common-input-wrap">
+            <form acrion="#" method="get" class="common-input-wrap">
                 <i class="icon icon-common-search"></i>
-                <input type="text"  class="search" id="common-layer-search" placeholder="请输入关键词搜索">
-            </div>
+                <input name="wd" type="text" class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </form>
             <ul class="common-keywords clear">
                 <li><a href="#">冰激凌</a></li>
                 <li><a href="#">果饮</a></li>
@@ -84,9 +84,9 @@
             <div class="common-layer-search-wrap">
                 <h3>新闻资讯</h3>
                 <ul class="common-shortcut-search clear">
-                    <li><a href="#" class="text-ellip">品牌资讯</a></li>
-                    <li><a href="#" class="text-ellip">行业资讯</a></li>
-                    <li><a href="#" class="text-ellip">加盟资讯</a></li>
+                    <li><a href="#" class="text-ellip">品牌资讯品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯品牌</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯品</a></li>
                     <li><a href="#" class="text-ellip">创业故事</a></li>
                 </ul>
             </div>
@@ -516,18 +516,20 @@
         </footer>
         <!-- 底部固定按钮 -->
         <div class="i-foot-fixed o-h"> 
-            <a class="itd-tel-btn tel-btn bgcolor-gradient">
+            <a data-name="项目详情中项目标题" class="itd-tel-btn tel-btn bgcolor-gradient">
                 <i class="icon itd-icon-tel"></i>免费通话</a>           
-            <a href="" class="itd-online-btn online-btn">
+            <a href="#" class="itd-online-btn online-btn">
                 <i class="icon itd-icon-consultation icon-consultation"></i>立即咨询
             </a> 
-            <a href="javascript:;" class="itd-article-btn article-btn"><i class="icon itd-icon-article icon-article"></i>获取资料</a>
+            <a data-name="项目详情中项目标题" class="itd-article-btn article-btn"><i class="icon itd-icon-article icon-article"></i>获取资料</a>
         </div>
         <!-- 点击获取开店方案弹出框 -->
         <div class="tel-layer-wrap layer-wrap" style="display: none;">
             <div class="layer-content bgcolor-fff">
                 <div class="tel-layer-top layer-top"></div>
                 <div class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
                     <input type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
                     <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
@@ -539,6 +541,8 @@
             <div class="layer-content bgcolor-fff">
                 <div class="article-layer-top layer-top"></div>
                 <div class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
                     <input type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
                     <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
@@ -552,6 +556,7 @@
 <script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
 <script>
     var headHeight = $('.itd-header').height();
     var tabHeight = $(document).find('.itd-main-tab li').height();
@@ -590,6 +595,16 @@
             var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
             $("html,body").stop().animate({scrollTop:bannerTop},30);
         }
+    })
+
+    // banner swiper
+    new Swiper('.i-top-banner .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        observer: true, 
+        observeParents: true
     })
 </script>
 </html>

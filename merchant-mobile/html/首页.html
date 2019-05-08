@@ -25,9 +25,9 @@
             <h1 class="i-header-logo">
                 <img src="../images/main/icon_more@3x.png" alt="logo">
             </h1>
-            <form class="i-header-search" onsubmit= "return false;">
+            <form action="#" method="get" class="i-header-search">
                 <i class="icon i-icon-search"></i>
-                <input type="text" class="search header-input" id="search" placeholder="你想在哪里开店？">
+                <input name="wd" type="text" class="search header-input" id="search" placeholder="你想在哪里开店？">
             </form>
             <div class="i-header-menu">
                 <i class="i-icon-menu"></i>
@@ -38,9 +38,9 @@
         <div class="i-layer-search i-menu-wrap" style="display: none;">
             <header class="o-h p-r clear bgcolor-fff">
                 <div class="back-btn back-btn-hide fl"></div>
-                <form class="fl" onsubmit="return false;">
+                <form class="fl" acrion="#" method="get">
                     <i class="icon i-icon-search"></i>
-                    <input type="text"  class="search header-input" id="layer-search" placeholder="你想在哪里开店？">
+                    <input name="" type="text" class="search header-input" id="layer-search" placeholder="你想在哪里开店？">
                 </form>
             </header>
             <!--热门搜索-->
@@ -734,11 +734,13 @@
         <div class="tel-layer-wrap layer-wrap" style="display: none;">
             <div class="layer-content bgcolor-fff">
                 <div class="tel-layer-top layer-top"></div>
-                <div class="tel-layer-bottom layer-bottom">
-                    <input type="text" placeholder="请输入您的手机号">
+                <form action="#" method="get" class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
-                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
-                </div>
+                    <button type="submit" class="icon tel-layer-btn layer-btn"></button>
+                </form>
                 <div class="icon layer-close"></div>
             </div>
         </div>
@@ -746,11 +748,13 @@
         <div class="article-layer-wrap layer-wrap" style="display: none;">
             <div class="layer-content bgcolor-fff">
                 <div class="article-layer-top layer-top"></div>
-                <div class="article-layer-bottom layer-bottom">
-                    <input type="text" placeholder="请输入您的手机号">
+                <form action="#" method="get" class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
                     <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
-                </div>
+                </form>
                 <div class="icon layer-close"></div>
             </div>
         </div>
@@ -790,12 +794,12 @@
     // 最近搜索
     var recently = [];
     // 搜索回车
-    $(".search").bind('keypress', function(e){
+    $(".search").on('keydown', function(e){
         if(e.keyCode == '13'){
             var searchName = $(this).val();
             searchName = $.trim( searchName );
-            window.location.href = '/' + "keywords="+ searchName;
-            $(this).val('');
+            // window.location.href = '/' + "keywords="+ searchName;
+            // $(this).val('');
             // 回车进行存储
             setHistoryItems (searchName);
         }
@@ -839,6 +843,7 @@
         }
         setStore('searchHistory', recently);
     }
+
     // 点击首页菜单弹出层
     $(".i-header-menu").on("click",function (e) {
         e.stopPropagation();
@@ -870,6 +875,16 @@
         $("body").toggleClass("hei-100");
     })
     // 搜索关闭阴影
+
+    // banner swiper
+    new Swiper('.i-top-banner .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        observer: true, 
+        observeParents: true
+    })
 </script>
 </html>
 

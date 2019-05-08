@@ -1,30 +1,47 @@
 
-// 关闭弹窗x
+// 固定底部-关闭弹窗x
 $('.layer-close').on('click', function(){
     $('.tel-layer-wrap').fadeOut();
     $('.article-layer-wrap').fadeOut();
 })
 $('.article-btn').on('click', function(){
+    // 取值data-name
+    var projectNameTel = $(this).data("name");
+    if(projectNameTel){
+        $(".project-name").val(projectNameTel);
+    }else{
+        $(".project-name").val("");
+    }
     $('.article-layer-wrap').fadeIn();
 })
 $('.tel-btn').on('click', function(){
+    var projectName = $(this).data("name");
+    if(projectName){
+        $(".project-name").val(projectName);
+    }else{
+        $(".project-name").val("");
+    }
     $('.tel-layer-wrap').fadeIn();
 })
-// 留言电话
+// 固定底部-留言电话
 $(".tel-layer-btn").on("click",function () {
     // 验证电话
-    var telEle = $(this).siblings('input');
+    var telEle = $(this).siblings('.tel');
     var flag = regTelFun (telEle);
     if(flag){
         $('.tel-layer-wrap').fadeOut();
+    }else{
+        return false;
     }
 })
 $(".article-layer-btn").on("click",function () {
      // 验证电话
-    var articleEle = $(this).siblings('input');
+    var articleEle = $(this).siblings('.tel');
     var flag = regTelFun (articleEle);
     if(flag){
         $('.article-layer-wrap').fadeOut();
+    }else{
+        return false;
     }
 })
 
@@ -86,22 +103,13 @@ function ellipEle(){
         }
     }
 }
-// banner swiper
-new Swiper('.i-top-banner .swiper-container', {
-    pagination: '.swiper-pagination',
-    paginationClickable: true,
-    autoplay: 3000,
-    loop: true,
-    observer: true, 
-    observeParents: true
-})
 
 // 切换隐藏显示
 $("#FengTab").FengTab({
     callBack:  ellipEle
 });
 
-// 选择留言
+// 选择留言 form start
 $(".choose-up").on("click",function () {
     $(".form-express-list").toggleClass("none");
 })
@@ -112,3 +120,34 @@ $(".form-express-list li").each(function () {
         $(".form-express-list").toggleClass("none");
     })
 })
+
+$(".form-tell").focus(function(){
+    $(".form-tell").siblings().text("");
+})
+$(".form-user").focus(function(){
+    $(".form-user").siblings().text("");
+})
+
+$(".submit-btn").on("click",function(){
+    $(".form-user").blur();
+    $(".form-tell").blur();
+    var name = $(".form-user").val();
+    var tell = $(".form-tell").val();
+    var myreg=/^[1][3,4,5,6,7,8,9][0-9]{9}$/;
+    if(!name){
+        // $(".form-user").focus();
+        $(".form-user").siblings().text("请输入您的姓名");
+        return false;
+    }
+    if(!tell){
+        // $(".form-tell").focus();
+        $(".form-tell").siblings().text("请输入您的手机号码");
+        return false;
+    }else{
+        if (!myreg.test(tell)) {
+            $(".form-tell").siblings().text("请输入正确的手机号码");
+            return false;
+        }
+    }
+})
+// form end
