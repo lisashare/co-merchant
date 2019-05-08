@@ -100,3 +100,15 @@ new Swiper('.i-top-banner .swiper-container', {
 $("#FengTab").FengTab({
     callBack:  ellipEle
 });
+
+// 选择留言
+$(".choose-up").on("click",function () {
+    $(".form-express-list").toggleClass("none");
+})
+$(".form-express-list li").each(function () {
+    $(this).click(function () {
+        $(".form-project-name").val($(this).text());
+        $(this).addClass("choose-right").siblings().removeClass("choose-right");
+        $(".form-express-list").toggleClass("none");
+    })
+})

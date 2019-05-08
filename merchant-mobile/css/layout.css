@@ -448,9 +448,11 @@ i.i-icon-search {
 .common-form-message form {
   padding-top: 0.56rem;
 }
-.common-form-message .input-wrap {
+.common-form-message form .input-wrap {
   width: 100%;
   margin-bottom: 0.8rem;
+  font-size: 0.48rem;
+  color: #999;
 }
 .common-form-message .form-input {
   box-sizing: border-box;
@@ -466,8 +468,7 @@ i.i-icon-search {
 }
 .common-form-message .icon-message-down {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0.78rem;
   right: 0.6rem;
   width: 0.52rem;
   height: 0.3rem;
@@ -479,6 +480,16 @@ i.i-icon-search {
   font-size: 0.64rem;
   text-align: center;
   border-radius: 1.12rem;
+}
+.common-form-message .form-express-list {
+  margin-top: 0.28rem;
+  background: #f1f0f0;
+}
+.common-form-message .form-express-list li {
+  padding: 0.28rem 0.6rem;
+}
+.common-form-message .form-express-list .choose-right {
+  color: #f85100;
 }
 .common-bread {
   margin: 0.6rem 0.8rem;
