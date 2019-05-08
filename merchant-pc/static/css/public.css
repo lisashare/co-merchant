@@ -51,6 +51,7 @@ a { font-size: 14px; color: #333333; }
 }
 
 .orangeColor { color: #ff5909; }
+.whiteColor { color: #ffffff!important; }
 
 .icon-icon {
     transform: translate(0, -50%);
@@ -60,6 +61,7 @@ a { font-size: 14px; color: #333333; }
     left: 0;
     top: 50%;
 }
+
 .btn-btn {
     line-height: 38px;
     text-align: center;
@@ -70,6 +72,9 @@ a { font-size: 14px; color: #333333; }
 }
 .btn-btn a {
     color: #ffffff;
+}
+.btn-btn-gray {
+    background-color: #dddddd;
 }
 
 .section-pub {
@@ -85,6 +90,9 @@ a { font-size: 14px; color: #333333; }
     top: -20px;
     left: 16px;
     z-index: 100;
+}
+.section-pub span.btn-btn-gray {
+    left: 176px;
 }
 
 .btn-circle {
@@ -111,4 +119,9 @@ a { font-size: 14px; color: #333333; }
   margin-top: 1px;
 }
 
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
