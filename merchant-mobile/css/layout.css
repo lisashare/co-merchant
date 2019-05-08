@@ -321,38 +321,55 @@ i.i-icon-search {
 .category-wrapper .menu-category {
   box-sizing: border-box;
   width: 4.12rem;
-  height: 11.4rem;
+  height: 19.4rem;
   overflow-y: scroll;
   border-right: 1px solid #f0f0f0;
 }
 .category-wrapper .menu-category li {
-  padding: 0.6rem;
-  text-align: center;
-  line-height: 0.64rem;
+  box-sizing: border-box;
+  margin: 0.68rem 0;
+  padding: 0.48rem 0.2rem 0.46rem;
+  line-height: 0.72rem;
   font-size: 0.64rem;
   color: #333;
+  text-align: center;
+}
+.category-wrapper .menu-category .sidehigh {
+  color: #f85100;
+  background: url('../images/main/icon-label@3x.png') center left no-repeat;
+  background-size: 0.12rem 1.66rem;
 }
 .category-wrapper .category-list {
   padding-bottom: 0.56rem;
-  height: 19.4rem;
+  height: 19.2rem;
   overflow: hidden;
 }
 .category-wrapper .category-list .food-list {
-  height: 19.4rem;
+  height: 19.2rem;
   overflow-y: scroll;
 }
 .category-wrapper .category-list li {
   float: left;
   margin: 0.6rem 0.7rem 0.32rem;
 }
+.category-wrapper .category-list li a {
+  width: 2.2rem;
+  float: left;
+}
 .category-wrapper .category-list li img {
   width: 2.2rem;
-  height: 2.2rem;
+  height: 2rem;
 }
 .category-wrapper .category-list li p {
+  width: 100%;
   line-height: 0.8rem;
   font-size: 0.48rem;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 /* 排行榜 end */
 /* 搜索结果页 start */
@@ -626,6 +643,7 @@ i.i-icon-search {
 }
 .itd-news-content .itd-item-p {
   line-height: 0.88rem;
+  font-size: 0.64rem;
   font-weight: 700;
 }
 .itd-news-content .itd-online-desc {

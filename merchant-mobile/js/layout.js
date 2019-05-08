@@ -104,9 +104,17 @@ function ellipEle(){
     }
 }
 
-// 切换隐藏显示
+// 切换隐藏显示-首页
 $("#FengTab").FengTab({
     callBack:  ellipEle
+});
+// 切换隐藏显示-排行榜
+$("#FengTab2").FengTab({
+    Con : ".foodsWrapper", 
+    // 设定选项卡内容区域 class 
+    ConDiv : "ul", 
+    // 设定选项卡内容 元素 
+    CurName : "sidehigh", 
 });
 
 // 选择留言 form start

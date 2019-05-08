@@ -9,10 +9,10 @@
             Tab             : ".tab",           // 设定选项卡菜单区域 class
             TabLi           : "li",             // 设定选项卡菜单 元素
             Con             : ".con",           // 设定选项卡内容区域 class
-            ConDiv          : "li",            // 设定选项卡内容 元素
-            CurName         : "tabactive",             // 设定选项卡菜单选中时 class
-            showWay         : "slow",            // 设定切换方式 有 slow down 和 show 三个选项
-            callBack :  "callBack"
+            ConDiv          : "li",             // 设定选项卡内容 元素
+            CurName         : "tabactive",      // 设定选项卡菜单选中时 class
+            showWay         : "slow",           // 设定切换方式 有 slow down 和 show 三个选项
+            callBack :  ""
         }, F);
 
         var Obj = $(this),
@@ -29,7 +29,7 @@
             T.on(F.trigger,function(){
                 T.addClass(F.CurName).siblings(F.TabLi).removeClass(F.CurName);
                 Action(I);
-                F.callBack();
+                if(F.callBack){F.callBack()};
             });
         });
         ConDiv.each(function() {
