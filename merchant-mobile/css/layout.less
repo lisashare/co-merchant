@@ -1,7 +1,7 @@
 /* 独立样式 */
 @rem: 50rem;
 img{height: 100%;}
-
+* { touch-action: pan-y; } 
 // 出现弹层禁止滚动
 .hei-100 {
     height: 100%;
@@ -316,7 +316,69 @@ i.i-icon-search{
         height: 15/@rem; 
     }
 }
+/* 资讯列表 */
+.info-list{
+    padding-top: 20/@rem!important;
+    padding-bottom: 5/@rem!important;
+    li a{
+        padding-bottom: 15/@rem;
+        border-bottom: 1px solid #f1f0f0;
+    }
+    li:last-child a{
+        border-bottom: 0!important;
+    }
+    dl{
+        padding-bottom: 24/@rem!important;
+        border: 0!important;
+    }
+    .info-tip{
+        font-size: 0;
+        span{
+            display: inline-block;
+            padding: 0 26/@rem;
+            margin-right: 30/@rem;
+            margin-bottom: 15/@rem;
+            line-height: 36/@rem;
+            font-size: 22/@rem;
+            color: #f85100;
+            border: 1px solid #f85100;
+            border-radius: 24/@rem;
+        }
+    }
+} 
 /* 项目列表 start */
+.paging{
+    margin-bottom: 60/@rem;
+    text-align: center;
+    a{
+        display: inline-block;
+        width: 210/@rem;
+        height: 66/@rem;
+        line-height: 66/@rem;
+        font-size:28/@rem;
+        color: #fff;
+        text-align: center;
+        border-radius: 6/@rem;
+        overflow: hidden;
+    }
+    .paging-pre{
+        background: -webkit-linear-gradient(left, #fe8645, #f85100); 
+        background: -o-linear-gradient(right, #fe8645, #f85100); 
+        background: -moz-linear-gradient(right, #fe8645, #f85100); 
+        background: linear-gradient(to right, #fe8645, #f85100); 
+    }
+    .paging-next{
+        background: -webkit-linear-gradient(left, #ffcc00, #ffb606); 
+        background: -o-linear-gradient(right, #ffcc00, #ffb606); 
+        background: -moz-linear-gradient(right, #ffcc00, #ffb606); 
+        background: linear-gradient(to right, #ffcc00, #ffb606); 
+    }
+    .paging-num{
+        margin: 0 20/@rem;
+        color: #000;
+        background: #dcdada;
+    }
+}
 .load{
     margin-top: -15/@rem;
     margin-bottom: 25/@rem;

@@ -339,14 +339,17 @@
                 </a>
             </li>
         </ul>
+        <div class="paging">
+            <a href="#" class="paging-pre">上一页</a>
+            <a href="#" class="paging-num">
+                <span>1</span>/<span>20</span>
+            </a>
+            <a href="#" class="paging-next">下一页</a>
+        </div>
         <input type="hidden" name="industry" value="">
         <input type="hidden" name="subindustry" value="">
         <input type="hidden" name="investamount" value="">
         <input type="hidden" name="region" value="">
-        <div class="load" data-pageindex="3" data-pagesize="5" style="display: none">
-            <i class="icon icon-load"></i>
-            <span class="load-text">数据加载中...</span>
-        </div>
         <footer>
             <div class="footer-link-list"> 
                 <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
@@ -419,70 +422,5 @@
         $('.shade').addClass('none');
     }
     // 行业分类-点击
-
-    // 分页
-    var isloading = false; // flag
-    var footerHeight = $('footer').outerHeight(true);//底部导航栏高度
-    $(window).scroll(function() {
-        //当时滚动条离底部高度时开始加载下一页的内容
-        if (($(window).height() + $(window).scrollTop() + footerHeight) >= $(document).height()) {
-            if (!$(".load").hasClass("no-more") && isloading === false) {
-                $(".load").show();  
-                $(".load-text").html("数据加载中...");
-                httpGetMore(".load");
-            }
-        }
-    })
-    function showDataList(arr, wrap) {
-        var html = '';
-        for (var i = 0; i < arr.length; i++) {
-            var o = arr[i];
-            var ind = $.inArray(o.investmentamount, ["0", "30", "15", "530", "310", "80", "550", "15200", "1", "3", "5", "10", "20", "50", "100", "200"]);
-            var money = ["0", "30万以上", "1-5万", "5-30万", "3-10万", "80-200万", "5-50万", "15-200万", "1万以下", "1-3万", "3-5万", "5-10万", "10-20万", "20-50万", "50-100万", "100万以上"];
-            html += '<li><a href="' + o.link + '">';
-            html += '<img src="' + prefix + o.adimage + '">';
-            html += '<p class="online-title">' + o.title + '</p>';
-            html += '<p class="online-name">' + o.companyname + '</p>';
-            html += '<p class="online-money"><span class="rmb">￥</span>' + money[ind] + '</p>';
-            html += '</a></li>';
-        }
-        $(wrap).append(html);
-    }
-    var industry = $("input[name=industry]").val(),
-        subindustry = $("input[name=subindustry]").val(),
-        investamount = $("input[name=investamount]").val(),
-        region = $("input[name=region]").val();
-    function httpGetMore(moreEl) {
-        isloading = true;
-        var pageIndex = parseFloat($(moreEl).attr("data-pageindex"));
-        var pageSize = parseFloat($(moreEl).attr("data-pagesize"));
-        var _data = {
-            industry: industry,
-            subindustry: subindustry,
-            investamount: investamount,
-            region: region,
-            pageindex: pageIndex,
-            pagesize: pageSize
-        };
-        // $.ajax({
-        //     url: "api/jiameng/projectlibdata",
-        //     type: "GET",
-        //     data: _data,
-        //     dataType: "json",
-        //     success: function (data) {
-        //         console.log(data);
-        //         $(moreEl).attr("data-pageindex", pageIndex + 1);
-        //         var arr = data._RESULT;
-        //         showDataList(arr, ".project-classify-content");
-        //         isloading = false;
-        //         if (data.pagesize * data.pageindex >= data.total) {
-        //             $(".load").html("没有更多数据了").addClass("no-more");
-        //         }
-        //     },
-        //     error: function (XMLHttpRequest, textStatus, errorThrown) {
-        //         $(".load").html("没有更多数据了").addClass("no-more");
-        //     }
-        // });
-    }
 </script>
 </html>

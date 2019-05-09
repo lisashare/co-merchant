@@ -2,6 +2,9 @@
 img {
   height: 100%;
 }
+* {
+  touch-action: pan-y;
+}
 .hei-100 {
   height: 100%;
   overflow: hidden;
@@ -318,7 +321,69 @@ i.i-icon-search {
   width: 0.52rem;
   height: 0.3rem;
 }
+/* 资讯列表 */
+.info-list {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.1rem !important;
+}
+.info-list li a {
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #f1f0f0;
+}
+.info-list li:last-child a {
+  border-bottom: 0!important;
+}
+.info-list dl {
+  padding-bottom: 0.48rem !important;
+  border: 0!important;
+}
+.info-list .info-tip {
+  font-size: 0;
+}
+.info-list .info-tip span {
+  display: inline-block;
+  padding: 0 0.52rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.3rem;
+  line-height: 0.72rem;
+  font-size: 0.44rem;
+  color: #f85100;
+  border: 1px solid #f85100;
+  border-radius: 0.48rem;
+}
 /* 项目列表 start */
+.paging {
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.paging a {
+  display: inline-block;
+  width: 4.2rem;
+  height: 1.32rem;
+  line-height: 1.32rem;
+  font-size: 0.56rem;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.12rem;
+  overflow: hidden;
+}
+.paging .paging-pre {
+  background: -webkit-linear-gradient(left, #fe8645, #f85100);
+  background: -o-linear-gradient(right, #fe8645, #f85100);
+  background: -moz-linear-gradient(right, #fe8645, #f85100);
+  background: linear-gradient(to right, #fe8645, #f85100);
+}
+.paging .paging-next {
+  background: -webkit-linear-gradient(left, #ffcc00, #ffb606);
+  background: -o-linear-gradient(right, #ffcc00, #ffb606);
+  background: -moz-linear-gradient(right, #ffcc00, #ffb606);
+  background: linear-gradient(to right, #ffcc00, #ffb606);
+}
+.paging .paging-num {
+  margin: 0 0.4rem;
+  color: #000;
+  background: #dcdada;
+}
 .load {
   margin-top: -0.3rem;
   margin-bottom: 0.5rem;
