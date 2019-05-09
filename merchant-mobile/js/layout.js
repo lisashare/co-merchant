@@ -158,6 +158,14 @@ $(".submit-btn").on("click",function(){
         }
     }
 })
+
+$(".input-wrap li").each(function(e){
+    e.stopPropagation;
+    $(this).on("click",function(){
+        $(this).addClass("bgcolor-gradient").siblings().removeClass("bgcolor-gradient");
+        return false;
+    })
+})
 // form end
 
 // 行业分类-点击
