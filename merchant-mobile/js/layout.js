@@ -64,7 +64,7 @@ function regTelFun (ele) {
 $(".header-search").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
-    $(".common-search-mask").fadeIn(300);
+    $(".common-search-mask").fadeToggle(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
@@ -72,21 +72,21 @@ $(".header-search").on("click",function (e) {
 $(".common-layer-search a").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
-    $(".common-search-mask").fadeOut(300);
+    $(".common-search-mask").fadeToggle(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
 $(".common-back-btn").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
-    $(".common-search-mask").fadeOut(300);
+    $(".common-search-mask").fadeToggle(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
 $(".common-search-mask").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
-    $(".common-search-mask").fadeOut(300);
+    $(".common-search-mask").fadeToggle(300);
     $("html").toggleClass("hei-100");
     $("body").toggleClass("hei-100");
 })
