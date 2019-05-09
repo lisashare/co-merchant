@@ -797,7 +797,7 @@
     $(".i-header-menu").on("click",function (e) {
         e.stopPropagation();
         $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeIn(300);
+        $(".layer-search-mask").fadeToggle(300);
         $("html").toggleClass("hei-100");
         $("body").toggleClass("hei-100");
     })
@@ -805,21 +805,21 @@
     $(".i-menu-wrap a").on("click",function (e) {
         e.stopPropagation();
         $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
+        $(".layer-search-mask").fadeToggle(300);
         $("html").toggleClass("hei-100");
         $("body").toggleClass("hei-100");
     })
     $(".back-btn").on("click",function (e) {
         e.stopPropagation();
         $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
+        $(".layer-search-mask").fadeToggle(300);
         $("html").toggleClass("hei-100");
         $("body").toggleClass("hei-100");
     })
     $(".layer-search-mask").on("click",function (e) {
         e.stopPropagation();
         $(".i-menu-wrap").slideToggle(300);
-        $(".layer-search-mask").fadeOut(300);
+        $(".layer-search-mask").fadeToggle(300);
         $("html").toggleClass("hei-100");
         $("body").toggleClass("hei-100");
     })

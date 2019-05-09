@@ -19,7 +19,7 @@
 <body>
     <div class="container">
         <!-- 顶部标题 -->
-        <header class="itd-header header-fixed bgcolor-fff border-bottom">
+        <header class="itd-header header-fixed bgcolor-fff">
             <a href="javascript:history.back(-1)" class="back-btn"></a>
             <h2 class="text-ellip">xxxx项目</h2>
             <div class="itd-header-search header-search">
@@ -89,60 +89,156 @@
             </div>
         </div>
         <!-- 项目分类 -->
-        <div class="project-classify">
-            <div class="synthesize">
-                <ul class="clearfix">
-                <li class="li-first " onclick="linkClick(this)"><span>热门关注</span><i></i>
-                </li>
-                <li onclick="linkClick(this)">
-                <span>行业分类</span><i></i>
-                </li>
-                <li onclick="linkClick(this)">
-                <span>项目分类</span><i></i>
-                </li>
-                <li onclick="linkClick(this)"><span>投资金额</span><i></i></li>
+        <div class="project-classify bgcolr-fff">
+            <div class="project-synthesize pf">
+                <ul class="project-classify-ul border-bottom clear">
+                    <li onclick="linkClick(this)" class="classify">
+                        <span class="text-ellip">行业分类</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">子行业分类</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">投资金额</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">加盟地区</span><i class="icon"></i>
+                    </li>
                 </ul>
-                <div class="dorp-down">
-                <div class="down li-first">
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=4">综合排序</a>
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=1" class="activt">热门关注<i></i></a>
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=2" class="">推荐项目</a>
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=3" class="">人气排序</a>
+                <div class="dorp-down bgcolr-fff">
+                    <div class="down li-first clear none">
+                        <a href="#" class="classify">不限</a>
+                        <a href="#">中式快餐</a>
+                        <a href="#">饮品</a>
+                        <a href="#">小吃</a>
+                        <a href="#">甜品烘焙</a>
+                        <a href="#">西式快餐</a>
+                        <a href="#">海鲜</a>
+                        <a href="#">烤肉</a>
+                        <a href="#">韩餐</a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="classify">不限<i></i></a>
+                        <a href="#">母婴</a>
+                        <a href="#">零售</a>
+                        <a href="#">餐饮</a>
+                        <a href="#">服装</a>
+                        <a href="#">教育</a>
+                        <a href="#">建材</a>
+                        <a href="#">服务</a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="classify">不限<i></i></a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="activt">不限<i></i></a>
+                        <a href="#" class="">1万以下</a>
+                        <a href="#" class="">1-3万</a>
+                        <a href="#" class="">3-5万</a>
+                        <a href="#" class="">5-10万</a>
+                        <a href="#" class="">10-20万</a>
+                        <a href="#" class="">20-50万</a>
+                        <a href="#" class="">50-100万</a>
+                        <a href="#" class="">100万以上</a>
+                    </div>
                 </div>
-                <div class="down">
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=1" class="activt">不限<i></i></a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000001.shtml?s=1">餐饮</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000009.shtml?s=1">母婴</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000012.shtml?s=1">零售</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000003.shtml?s=1">服装</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000006.shtml?s=1">教育</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000005.shtml?s=1">建材</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000011.shtml?s=1">服务</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000002.shtml?s=1">游乐</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000008.shtml?s=1">珠宝礼品</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000007.shtml?s=1">美容保健</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000004.shtml?s=1">家居</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000010.shtml?s=1">环保</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000014.shtml?s=1">微商</a>
-                <a href="https://m.kmway.com/project/search/1_0_001336000015.shtml?s=1">金融</a>
-                </div>
-                <div class="down">
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=1" class="activt">不限<i></i></a>
-                </div>
-                <div class="down">
-                <a href="https://m.kmway.com/project/search/1_0_0.shtml?s=1" class="activt">不限<i></i></a>
-                <a href="https://m.kmway.com/project/search/1_1_0.shtml?s=1" class="">1万以下</a>
-                <a href="https://m.kmway.com/project/search/1_3_0.shtml?s=1" class="">1-3万</a>
-                <a href="https://m.kmway.com/project/search/1_5_0.shtml?s=1" class="">3-5万</a>
-                <a href="https://m.kmway.com/project/search/1_10_0.shtml?s=1" class="">5-10万</a>
-                <a href="https://m.kmway.com/project/search/1_20_0.shtml?s=1" class="">10-20万</a>
-                <a href="https://m.kmway.com/project/search/1_50_0.shtml?s=1" class="">20-50万</a>
-                <a href="https://m.kmway.com/project/search/1_100_0.shtml?s=1" class="">50-100万</a>
-                <a href="https://m.kmway.com/project/search/1_200_0.shtml?s=1" class="">100万以上</a>
-                </div>
-                </div>
-                </div>
+            </div>
+            <div class="shade none"></div>
         </div>
+        <ul class="project-classify-content">
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/1@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/3@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
         <footer>
             <div class="footer-link-list"> 
                 <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
@@ -195,6 +291,31 @@
 <script type="text/javascript" src="../js/layout.js"></script>
 <script type="text/javascript" src="../js/search.js"></script>
 <script>
-
+function linkClick(el) {
+        // var HG = document.documentElement.clientHeight;//可视区域高度
+        var index = $(el).index();
+        $('.shade').remove();
+        if ($(el).hasClass('classify')) {
+            fun()
+        } else {
+            // $('.project-right').unbind('touchmove').css({'overflow-y': 'hidden'});
+            $(el).addClass('classify').siblings().removeClass('classify');
+            $('.dorp-down .down').eq(index).removeClass('none').siblings().addClass('none');
+            $('.pronav ul .nne a').append('<i class="nav-i"></i>');
+            // $('.project-synthesize').append('<div class="shade"></div>');
+            
+            $('.shade').removeClass('none');
+            $('.shade').on("click", function () {
+                fun()
+            })
+        }
+    }
+    function fun() {
+        $('.dorp-down .down').addClass('none');
+        $('.project-synthesize li').removeClass('classify');
+        // $('.nav-i').remove();
+        $('.shade').addClass('none');
+        $('.project-right').css({'overflow': 'auto'}).bind('touchmove')
+    }
 </script>
 </html>

@@ -49,13 +49,13 @@ img{height: 100%;}
     position: fixed;
     position: fixed;
     top: 0;left: 0;right: 0;
-    z-index: 2;
+    z-index: 10;
 }
 .fixed-tab{
     position: fixed;
     top: 88/@rem;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 i.i-icon-search{
     position: absolute;
@@ -71,7 +71,7 @@ i.i-icon-search{
     position: fixed;
     top: 0;right: 0;bottom: 0;left: 0;
     background: rgba(0, 0, 0, .5);
-    z-index: 4;
+    z-index: 99;
     .layer-content{
         position: absolute;
         top: 28%;
@@ -190,7 +190,7 @@ i.i-icon-search{
 .common-layer-search{
     position: fixed;
     top: 0;left: 0;right:0;
-    z-index: 5;
+    z-index: 11;
     .back-btn{
         width: 108/@rem;
         background-position: 40/@rem 50%;
@@ -295,7 +295,7 @@ i.i-icon-search{
     text-align: center;
     margin-top: -16/@rem;
     margin-bottom: 44/@rem;
-    z-index: 1;
+    z-index: 2;
 }
 .itd-djzk-btn, .common-find-more{
     display: inline-block;
@@ -317,8 +317,137 @@ i.i-icon-search{
     }
 }
 /* 项目列表 start */
-.project-classify{
-    min-height: 800/@rem;
+.project-classify-content{
+    min-height: 700/@rem;
+    padding: 98/@rem 40/@rem 20/@rem;
+    li{
+        a{
+            padding: 30/@rem 0;
+        }
+    }
+    li:not(:last-child){
+        border-bottom: 1px solid #f1f0f0;
+    }
+    dt{
+        width: 228/@rem;
+        height: 152/@rem;
+    }
+    dd{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        width: 416/@rem;
+        height: 152/@rem;
+        p.i-online-title{
+            width: 300/@rem;
+            line-height: 40/@rem;
+            font-size: 32/@rem;
+            color: #333;
+            font-weight: 700;
+        }
+        p.i-online-name{
+            width: 300/@rem;
+            line-height: 30/@rem;
+            font-size: 24/@rem;
+            font-weight: 700;
+            color: #666;
+        }
+        p.i-online-desc{
+            height: 36/@rem;
+            font-weight: 700;
+        }
+        .i-online-money{
+            display: inline-block;
+            color: #f85100;
+            font-size: 20/@rem;
+            .rmb{
+                line-height: 36/@rem;
+                font-size: 36/@rem;
+            }  
+        }
+        .i-online-area{
+            line-height: 26/@rem;
+            font-size: 24/@rem;
+            color: #666;
+            span{
+                display: inline-block;
+            }
+        }
+        .i-online-city, .i-online-store{
+            span{
+                width: 60/@rem;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.project-synthesize{
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+    .project-classify-ul{
+        display: flex;
+        padding: 0 15/@rem;
+        justify-content: space-between;
+        li{
+            width: 170/@rem;
+            font-size: 28/@rem;
+            color: #000;
+            text-align: center;
+            span{
+                display: inline-block;
+                min-width: 70/@rem;
+                max-width: 140/@rem;
+                line-height: 78/@rem;
+                text-align: center;
+            }
+            i{
+                width: 28/@rem;
+                height: 78/@rem;
+                background-image: url('../images/main/icon_arrow4@3x.png');
+                background-size: 16/@rem 9/@rem;
+            }
+        }
+        .classify{
+            color: #f85100;
+            i{
+                background-image: url('../images/main/icon_arrow5@3x.png');
+            }
+        }
+    }
+}
+.dorp-down{
+    .down{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20/@rem 40/@rem;
+        height: 340/@rem;
+        overflow: auto;
+        a{
+            box-sizing: border-box;
+            padding: 10/@rem 20/@rem;
+            display: block;
+            float: left;
+            width: 50%;
+            min-height: 60/@rem;
+            font-size: 26/@rem;
+        }
+        .classify{
+            color: #f85100;
+            // border-bottom: 1px solid #f85100;
+            i{
+                // background-image: url('../images/main/icon_arrow5@3x.png');
+            }
+        }
+    }
+}
+.shade{
+    position: fixed;
+    top: 0;
+    left: 0;right:0;bottom: 0;
+    width: 100%;
+    z-index: 2;
+    background: rgba( 0, 0, 0, 0.5);
 }
 /* 项目列表 end */
 /* 项目聚合页 */
@@ -1433,7 +1562,7 @@ header.i-header{
     font-size: 32/@rem;
     display: flex;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     p{
         display: inline-block;
         width: 1px;
