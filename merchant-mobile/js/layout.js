@@ -159,3 +159,24 @@ $(".submit-btn").on("click",function(){
     }
 })
 // form end
+
+// 行业分类-点击
+function linkClick(el) {
+    var index = $(el).index();
+    if ($(el).hasClass('current')) {
+        hideFun();
+    } else {
+        $(el).addClass('current').siblings().removeClass('current');
+        $('.dorp-down .down').eq(index).removeClass('none').siblings().addClass('none');
+        $('.shade').removeClass('none');
+        $('.shade').on("click", function () {
+            hideFun();
+        })
+    }
+}
+function hideFun() {
+    $('.dorp-down .down').addClass('none');
+    $('.project-synthesize li').removeClass('current');
+    $('.shade').addClass('none');
+}
+// 行业分类-点击

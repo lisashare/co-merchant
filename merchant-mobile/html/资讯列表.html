@@ -162,62 +162,63 @@
             </ul>
         </div>
         <!-- 推荐项目 -->
-        <div class="jh-high-quality i-project-wrap bottom-line">
-            <div class="jh-brand-title">
+        <div class="info-referral">
+            <div>
                 <h2 class="i-title">推荐项目</h2>
             </div>
-            <div class="swiper-container br-6">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <ul class="swiper-slide i-recommed-ul">
-                        <li>
-                            <a href="#">
-                                <dl>
-                                    <dt class="br-6"><img src="../images/occupy/4@2x.png"></dt>
-                                    <dd>
-                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                        <p class="i-online-desc clear mt-16">
-                                            <span class="i-online-money">
-                                                ￥<i class="rmb">500</i>万</span>
-                                        </p>
-                                    </dd>
-                                </dl>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="swiper-slide i-recommed-ul">
-                        <li>
-                            <a href="#">
-                                <dl>
-                                    <dt class="br-6"><img src="../images/occupy/1@2x.png"></dt>
-                                    <dd>
-                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                        <p class="i-online-desc clear mt-16">
-                                            <span class="i-online-money">
-                                                ￥<i class="rmb">500</i>万</span>
-                                        </p>
-                                    </dd>
-                                </dl>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="swiper-slide i-recommed-ul">
-                        <li>
-                            <a href="#">
-                                <dl>
-                                    <dt class="br-6"><img src="../images/occupy/12@2x.png"></dt>
-                                    <dd>
-                                        <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                        <p class="i-online-desc clear mt-16">
-                                            <span class="i-online-money">
-                                                ￥<i class="rmb">500</i>万</span>
-                                        </p>
-                                    </dd>
-                                </dl>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="swiper-slide info-view">
+                        <dl>
+                            <dt><img src="../images/occupy/4@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
+                                </p>
+                                <a href="#" class="info-detail bgcolor-gradient db tac">
+                                    查看详情
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="swiper-slide info-view">
+                        <dl>
+                            <dt><img src="../images/occupy/4@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
+                                </p>
+                                <a href="#" class="info-detail bgcolor-gradient db tac">
+                                    查看详情
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="swiper-slide info-view">
+                        <dl>
+                            <dt><img src="../images/occupy/4@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
+                                </p>
+                                <a href="#" class="info-detail bgcolor-gradient db tac">
+                                    查看详情
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="paging">
+            <a href="#" class="paging-pre">上一页</a>
+            <a href="#" class="paging-num">
+                <span>1</span>/<span>20</span>
+            </a>
+            <a href="#" class="paging-next">下一页</a>
         </div>
         <footer>
             <div class="footer-link-list"> 
@@ -272,22 +273,10 @@
 <script type="text/javascript" src="../js/layout.js"></script>
 <script type="text/javascript" src="../js/search.js"></script>
 <script>
-    // 点击展开更多
-    $(".itd-djzk-btn").on("click",function () {
-        $(".jh-section-content").toggleClass("jh-hide");
-        $(this).find("span").toggleClass("hide");
-        // if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
-            // var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
-            // $("html,body").stop().animate({scrollTop:bannerTop},30);
-        // }
-    })
-
     // banner swiper
-    new Swiper('.jh-high-quality .swiper-container', {
+    new Swiper('.info-referral .swiper-container', {
         pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 3000,
-        loop: true,
+        slidesPerView: 1.8,
         observer: true, 
         observeParents: true
     })

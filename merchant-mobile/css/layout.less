@@ -1,7 +1,6 @@
 /* 独立样式 */
 @rem: 50rem;
 img{height: 100%;}
-* { touch-action: pan-y; } 
 // 出现弹层禁止滚动
 .hei-100 {
     height: 100%;
@@ -345,7 +344,61 @@ i.i-icon-search{
             border-radius: 24/@rem;
         }
     }
+}
+.info-referral{
+    // padding: 0 20/@rem 50/@rem;
+    // padding-left: 30/@rem;
+    // padding-right: 30/@rem;
+    padding-bottom: 50/@rem;
+    .i-title{
+        padding: 48/@rem 40/@rem 30/@rem;
+        line-height:40/@rem;
+        font-size: 40/@rem;
+        font-weight: 700;
+    }
+    .swiper-container{
+        border-radius: 6/@rem!important;
+    }
+    .info-view{
+        // width: 386/@rem!important;
+        margin: 0 40/@rem 50/@rem;
+        box-shadow: #ededed 0 0 39/@rem;
+        margin-right: 0;
+    }
+    dl{
+        width: 386/@rem!important;
+        border-radius: 6/@rem!important;
+        overflow: hidden;
+        dt{
+            width: 386/@rem;
+            height: 256/@rem;
+            overflow: hidden;
+        }
+        dd{
+            box-sizing: border-box;
+            padding: 28/@rem 26/@rem 26/@rem;
+            p.i-online-title{
+                line-height: 34/@rem;
+                font-size: 32/@rem;
+                color: #000;
+                font-weight: 700;
+            }
+            p.i-online-name{
+                margin: 15/@rem 0;
+                line-height: 50/@rem;
+                font-size: 32/@rem;
+                color: #666;
+            }
+        }
+    }
 } 
+.info-detail{
+    width: 200/@rem;
+    height: 64/@rem;
+    line-height: 64/@rem;
+    margin: 0 auto;
+    border-radius: 35/@rem;
+}
 /* 项目列表 start */
 .paging{
     margin-bottom: 60/@rem;
@@ -470,7 +523,7 @@ i.i-icon-search{
                 background-size: 16/@rem 9/@rem;
             }
         }
-        .classify{
+        .current{
             color: #f85100;
             i{
                 background-image: url('../images/main/icon_arrow5@3x.png');
@@ -494,12 +547,8 @@ i.i-icon-search{
             min-height: 60/@rem;
             font-size: 26/@rem;
         }
-        .classify{
+        .current{
             color: #f85100;
-            // border-bottom: 1px solid #f85100;
-            i{
-                // background-image: url('../images/main/icon_arrow5@3x.png');
-            }
         }
     }
 }
@@ -520,7 +569,6 @@ i.i-icon-search{
     color: #666;
 }
 .jh-high-quality{
-    padding-bottom: 69/@rem!important;
     .swiper-container{
         margin-bottom: 44/@rem;
     }

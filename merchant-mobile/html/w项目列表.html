@@ -107,7 +107,7 @@
                 </ul>
                 <div class="dorp-down bgcolr-fff">
                     <div class="down li-first clear none">
-                        <a href="#" class="classify">不限</a>
+                        <a href="#" class="current">不限</a>
                         <a href="#">中式快餐</a>
                         <a href="#">饮品</a>
                         <a href="#">小吃</a>
@@ -118,7 +118,7 @@
                         <a href="#">韩餐</a>
                     </div>
                     <div class="down none clear">
-                        <a href="#" class="classify">不限<i></i></a>
+                        <a href="#" class="current">不限<i></i></a>
                         <a href="#">母婴</a>
                         <a href="#">零售</a>
                         <a href="#">餐饮</a>
@@ -128,7 +128,7 @@
                         <a href="#">服务</a>
                     </div>
                     <div class="down none clear">
-                        <a href="#" class="classify">不限</a>
+                        <a href="#" class="current">不限</a>
                         <a href="#" class="">1万以下</a>
                         <a href="#" class="">1-3万</a>
                         <a href="#" class="">3-5万</a>
@@ -139,7 +139,7 @@
                         <a href="#" class="">100万以上</a>
                     </div>
                     <div class="down none clear">
-                        <a href="#" class="classify">不限</a>
+                        <a href="#" class="current">不限</a>
                         <a href="#" class="">北京</a>
                         <a href="#" class="">上海</a>
                         <a href="#" class="">广州</a>
@@ -401,26 +401,4 @@
 <script type="text/javascript" src="../js/tool.js"></script>
 <script type="text/javascript" src="../js/layout.js"></script>
 <script type="text/javascript" src="../js/search.js"></script>
-<script>
-    // 行业分类-点击
-    function linkClick(el) {
-        var index = $(el).index();
-        if ($(el).hasClass('classify')) {
-            hideFun();
-        } else {
-            $(el).addClass('classify').siblings().removeClass('classify');
-            $('.dorp-down .down').eq(index).removeClass('none').siblings().addClass('none');
-            $('.shade').removeClass('none');
-            $('.shade').on("click", function () {
-                hideFun();
-            })
-        }
-    }
-    function hideFun() {
-        $('.dorp-down .down').addClass('none');
-        $('.project-synthesize li').removeClass('classify');
-        $('.shade').addClass('none');
-    }
-    // 行业分类-点击
-</script>
 </html>
