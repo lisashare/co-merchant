@@ -47,9 +47,6 @@ $(function () {
             }
         });
     }
-
-
-
 });
 function linkClick(el) {
     var HG = document.documentElement.clientHeight;//可视区域高度
