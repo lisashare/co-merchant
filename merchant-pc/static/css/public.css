@@ -16,7 +16,7 @@ a { font-size: 14px; color: #333333; }
     zoom: 1;
 }
 .fl { float:left; }
-.fr { float:right; }
+.fr { float:right!important; }
 .gradient {
     background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
     background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
