@@ -318,6 +318,11 @@ i.i-icon-search {
   width: 0.52rem;
   height: 0.3rem;
 }
+/* 项目列表 start */
+.project-classify {
+  min-height: 16rem;
+}
+/* 项目列表 end */
 /* 项目聚合页 */
 .jh-section-content {
   padding: 0.84rem 0.8rem 0.44rem;
