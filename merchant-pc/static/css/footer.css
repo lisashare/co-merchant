@@ -1,0 +1,125 @@
+.footer__black{
+    width: 100%;
+    background: #333333;
+    min-width: 1200px;
+    padding-bottom: 20px;
+    
+}
+.footer__black .footer__black__content{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.footer__black .footer__black__content .footer__black__img{
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
+}
+.footer__black .footer__black__content  .footer__black__phone{
+    display: inline-block;
+    width: 18%;
+    vertical-align: middle;
+}
+.footer__black .footer__black__content  .footer__black__phone .number{
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+}
+.footer__black .footer__black__content  .footer__black__phone .name{
+    color: #fff;
+    font-size: 12px;
+    text-align: right;
+}
+.footer__black .ul__text{
+    width: 100%;
+    overflow: hidden;
+  
+
+}
+.footer__black .ul__text ul{
+    overflow: hidden;
+    float: left;
+    width: 50%;
+    margin-left: -15px;
+    
+}
+.footer__black .ul__text ul li{
+    border-right: 1px solid #FF5909;
+    float: left;
+    color: #FF5909;
+    padding: 0 15px;
+}
+.ul__phone__box{
+    float: right;
+    width: 22%;
+    color: #ffffff;
+
+}
+.ul__phone__box .big__phone__text{
+    font-size: 24px;
+}
+/* --------- */
+.footer__orange{
+    width: 100%;
+    background: #FF5909;
+    min-width: 1200px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.footer__orange .footer__orange__content{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer__orange .logo__text__wrapper{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+.footer__orange .logo__text__wrapper .logo__box{
+    display: inline-block;
+    vertical-align: middle;
+    width: 232px;
+    height: 71px;
+}
+.footer__orange .logo__text__wrapper .logo__box img {
+    width: 232px;
+    height: 71px;
+}
+.footer__orange .logo__text__wrapper .logo__text{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.footer__orange .logo__text__wrapper .logo__text .logo__text--white{
+    font-size: 12px;
+    color: #fff;
+    padding-bottom: 5px;
+    margin-left: 40px;
+}
+.footer__orange .erweima__box{
+    float: right;
+    width: 33%;
+    margin-top: 20px;
+
+}
+.footer__orange .erweima__box .item__box{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+.footer__orange .erweima__box .item__box .item__img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.footer__orange .erweima__box .item__box .item__text__box{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.footer__orange .erweima__box .item__box .item__text__box .item__text{
+    color: #fff;
+
+}
