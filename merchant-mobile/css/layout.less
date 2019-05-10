@@ -327,7 +327,8 @@ i.i-icon-search{
     ul{
         width: 100%;
         li{
-            min-width: 75%!important;
+            width: 100%;
+            // min-width: 75%!important;
             height: 62/@rem;
             margin-bottom: 20/@rem;
             background: -webkit-linear-gradient(left, #e0a266, #ddb677); 
@@ -345,10 +346,10 @@ i.i-icon-search{
                 display: block;
                 height: 62/@rem;
                 font-size: 0;
-                padding-left: 14/@rem;
-                padding-right: 24/@rem;
-                // padding-left: 24/@rem;
-                // padding-right: 32/@rem;
+                // padding-left: 14/@rem;
+                // padding-right: 24/@rem;
+                padding-left: 24/@rem;
+                padding-right: 32/@rem;
                 font-size: 0.24rem;
                 color: #fff;
                 span{
@@ -357,16 +358,11 @@ i.i-icon-search{
                 }
                 span:nth-child(1){
                     font-size: 36/@rem;
-                    // font-size: 40/@rem;
-                    // font-weight: 700;
                     float: left;
                 }
                 span:nth-child(2){
-                    // min-width: 60/@rem;
-                    max-width: 360/@rem;
-                    margin-left: 20/@rem;
+                    margin-left: 30/@rem;
                     margin-right: 10/@rem;
-                    // font-size: 32/@rem;
                     font-size: 30/@rem;
                     float: left;
                 }
@@ -525,6 +521,59 @@ i.i-icon-search{
 }
 // 排行榜分类页 end
 // 资讯详情 start
+.foot-special{
+    height: 130/@rem;
+    font-size: 32/@rem;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 0 30/@rem;
+    .form-brand-desc{
+        width: 260/@rem;        
+    }
+    .i-online-title{
+        width: 260/@rem;
+        font-size: 32/@rem;
+        font-weight: 700;
+        color:#000;
+    }
+    .i-online-money{
+        margin-top: 10/@rem;
+        font-size: 20/@rem;
+        font-weight: 700;
+        color: #f85100;
+        .rmb{
+            line-height: 36/@rem;
+            font-size: 36/@rem;
+        }  
+    }
+    form{
+        width: 522/@rem;
+        display: flex;
+        justify-content: space-between;
+        input{
+            box-sizing: border-box;
+            width: 300/@rem;
+            height: 80/@rem;
+            padding: 0 18/@rem;
+            font-size:26/@rem;
+            color: #999;
+            border-radius: 10/@rem;
+            background: #fff;
+            overflow: hidden;
+        }
+        button{
+            width: 200/@rem;
+            height: 80/@rem;
+            font-size: 32/@rem;
+        }
+    }
+    .foot-img{
+        margin-right: 20/@rem;
+        width: 148/@rem;
+        height: 100/@rem;
+    }
+}
 .info-detail-title{
     padding: 48/@rem 40/@rem;
     h3{
@@ -2204,6 +2253,9 @@ footer{
 /*color*/
 .bgcolor-fff{
     background-color: #fff;
+}
+.bgcolor-f0{
+    background-color: #f0f0f0;
 }
 .pb-20{
     padding-bottom: 20/@rem;

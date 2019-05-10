@@ -90,6 +90,16 @@
                 </ul>
             </div>
         </div>
+        <div class="foot-special o-h bgcolor-f0">
+            <img class="foot-img br-6" src="../images/occupy/1@2x.png" alt="">
+            <form>
+                <div class="form-brand-desc">
+                    <p class="i-online-title text-ellip">李嘉嘉甜品啦啦啦啦啦啦</p>
+                    <p class="i-online-money">￥<i class="rmb">30~50</i>万</p>
+                </div>
+                <button type="submit" class="br-6 bgcolor-gradient">免费咨询</button>
+            </form>
+        </div>
         <!-- 项目文章内容 -->
         <div class="jh-article bottom-line">
             <div class="info-detail-title">
@@ -201,8 +211,7 @@
                 </li>
             </ul>
         </div>
-        <div class="pb-20 bottom-line ">
-
+        <div class="pb-20 bottom-line">
             <div class="zx-detail i-industry-news-wrap itd-industry-news-wrap pb-20 bgcolor-fff">
                 <ul class="zx-detail-ul i-industry-news-content">
                     <li>
@@ -349,7 +358,12 @@
             <p class="">备案号：京ICP备18000242号-1</p>
         </footer>
         <!-- 底部固定按钮 -->
-        <div class="i-foot-fixed o-h bgcolor-fff"> 
+        <div class="foot-show foot-special i-foot-fixed o-h bgcolor-f0" style="display:none;">
+            <img class="foot-img br-6" src="../images/occupy/1@2x.png" alt="">
+            <form action="#">
+                <input type="text" maxlength="11" placeholder="请输入手机号">
+                <button type="submit" class="br-6 bgcolor-gradient">免费咨询</button>
+            </form>
             <!-- <a href="javascript:;" class="i-online-btn online-btn">
                 <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
             </a> 
@@ -357,33 +371,6 @@
             <a href="javascript:;" class="i-tel-btn tel-btn">
                 <i class="icon i-icon-tel icon-tel"></i>电话咨询
             <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a> -->
-        </div>
-        <!-- 点击获取开店方案弹出框 -->
-        <div class="tel-layer-wrap layer-wrap" style="display: none;">
-            <div class="layer-content bgcolor-fff">
-                <div class="tel-layer-top layer-top"></div>
-                <div class="tel-layer-bottom layer-bottom">
-                    <input name="project_name" class="project-name" type="hidden" value="">
-                    <input name="category_name" type="hidden" value="">
-                    <input type="text" placeholder="请输入您的手机号">
-                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
-                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
-                </div>
-                <div class="icon layer-close"></div>
-            </div>
-        </div>
-        <div class="article-layer-wrap layer-wrap" style="display: none;">
-            <div class="layer-content bgcolor-fff">
-                <div class="article-layer-top layer-top"></div>
-                <div class="article-layer-bottom layer-bottom">
-                    <input name="project_name" class="project-name" type="hidden" value="">
-                    <input name="category_name" type="hidden" value="">
-                    <input type="text" placeholder="请输入您的手机号">
-                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
-                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
-                </div>
-                <div class="icon layer-close"></div>
-            </div>
         </div>
     </div>
 </body>
@@ -423,5 +410,15 @@
         $(".zx-detail-ul").css("top",topValue);
     },80)
 
+    // foot 滑动显示
+    var footHeight = $('.foot-special').height();
+    footHeight = footHeight + 5;
+    $(window).scroll(function(){
+        if($(window).scrollTop() > footHeight ){
+            $('.foot-show').fadeIn();
+        }else{
+            $('.foot-show').fadeOut();
+        }
+    })
 </script>
 </html>
