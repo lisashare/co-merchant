@@ -185,6 +185,12 @@ $(document).ready(function () {
     // 餐饮需求动态start
     jQuery(".catering-demand").slide({mainCell:".wraper",autoPlay:true,effect:"topMarquee",vis:3,interTime:50,trigger:"click"});
     // 餐饮需求动态end
+
+    //提交快捷留言start
+    $("#quickMessage a").click(function(){
+        $(".message").val( $(this).html() );
+    });
+     //提交快捷留言end
 })
 
 //超出多少字显示省略号

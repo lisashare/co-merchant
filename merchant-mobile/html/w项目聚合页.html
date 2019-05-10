@@ -97,7 +97,8 @@
                 <p><img src="../images/occupy/3@2x.png" alt=""></p>
             </div>
             <div class="itd-zkgd-wrap">
-                <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
+                <div class="itd-zkgd-shade">
+                    <img src="../images/main/jianbian.png" alt=""></div>
                 <div class="itd-djzk-btn">
                     <span class="zhankai ">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
                     <span class="shouqi hide">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
@@ -447,10 +448,6 @@
     $(".itd-djzk-btn").on("click",function () {
         $(".jh-section-content").toggleClass("jh-hide");
         $(this).find("span").toggleClass("hide");
-        // if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
-            // var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
-            // $("html,body").stop().animate({scrollTop:bannerTop},30);
-        // }
     })
 
     // banner swiper
@@ -458,6 +455,7 @@
         pagination: '.swiper-pagination',
         paginationClickable: true,
         autoplay: 3000,
+        autoplayDisableOnInteraction : false,
         loop: true,
         observer: true, 
         observeParents: true

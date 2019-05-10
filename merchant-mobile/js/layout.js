@@ -159,10 +159,17 @@ $(".submit-btn").on("click",function(){
     }
 })
 
-$(".input-wrap li").each(function(e){
+$("ul.input-wrap li").each(function(e){
     e.stopPropagation;
     $(this).on("click",function(){
         $(this).addClass("bgcolor-gradient").siblings().removeClass("bgcolor-gradient");
+        return false;
+    })
+})
+$(".form-express-list li").each(function(e){
+    e.stopPropagation;
+    $(this).on("click",function(){
+        $(this).addClass("choose-right").siblings().removeClass("choose-right");
         return false;
     })
 })
