@@ -53,7 +53,7 @@ body {
 
 .content__details__wrapper .adress__icon {
     display: inline-block;
-    background: url('/images/icon/icon_add@3x.png')no-repeat;
+    background: url('../images/icon/icon_add@3x.png')no-repeat;
     background-size: 100% 100%;
     width: 13px;
     height: 16px;
@@ -116,7 +116,7 @@ body {
     display: inline-block;
     width: 13px;
     height: 13px;
-    background: url('/images/icon/icon_star@3x.png') no-repeat;
+    background: url('../images/icon/icon_star@3x.png') no-repeat;
     background-size: 100% 100%;
     margin-left: 5px;
 }
@@ -125,7 +125,7 @@ body {
     display: inline-block;
     width: 15px;
     height: 12px;
-    background: url('/images/icon/icon_dh@3x.png') no-repeat;
+    background: url('../images/icon/icon_dh@3x.png') no-repeat;
     background-size: 100% 100%;
     margin-left: 5px;
 }
@@ -196,7 +196,7 @@ body {
     display: inline-block;
     width: 19px;
     height: 16px;
-    background: url('/images/icon/icon_resources@3x.png') no-repeat;
+    background: url('../images/icon/icon_resources@3x.png') no-repeat;
     background-size: 100% 100%;
     vertical-align: middle;
 
@@ -538,7 +538,7 @@ body {
     display: inline-block;
     width: 9px;
     height: 9px;
-    background: url('/images/icon/icon_orange@3x.png') no-repeat;
+    background: url('../images/icon/icon_orange@3x.png') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -546,7 +546,7 @@ body {
     display: inline-block;
     width: 9px;
     height: 9px;
-    background: url('/images/icon/icon_gray@3x.png') no-repeat;
+    background: url('../images/icon/icon_gray@3x.png') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -628,12 +628,12 @@ body {
 }
 
 .form__box .form__group .form__icon--user {
-    background: url('/images/icon/icon_people@3x.png') no-repeat;
+    background: url('../images/icon/icon_people@3x.png') no-repeat;
     background-size: 100% 100%;
 }
 
 .form__box .form__group .form__icon--phone {
-    background: url('/images/icon/icon_phone@3x.png') no-repeat;
+    background: url('../images/icon/icon_phone@3x.png') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -727,60 +727,60 @@ body {
     margin-left: 10px;
 }
 .fixed__nav__list .fixed__icon--defult-1{
-    background: url(/images/icon/icon_detail_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_detail_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-2{
-    background: url(/images/icon/icon_advantage_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_advantage_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-3{
-    background: url(/images/icon/icon_cost_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_cost_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-4{
-    background: url(/images/icon/icon_condition_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_condition_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-5{
-    background: url(/images/icon/icon_process_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_process_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-6{
-    background: url(/images/icon/icon_answer_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_answer_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--defult-7{
-    background: url(/images/icon/icon_case_gray@3x.png) no-repeat;
+    background: url(../images/icon/icon_case_gray@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 
 .fixed__nav__list .fixed__icon--active-1{
-    background: url(/images/icon/icon_detail@3x.png) no-repeat;
+    background: url(../images/icon/icon_detail@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-2{
-    background: url(/images/icon/icon_advantage@3x.png) no-repeat;
+    background: url(../images/icon/icon_advantage@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-3{
-    background: url(/images/icon/icon_cost@3x.png) no-repeat;
+    background: url(../images/icon/icon_cost@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-4{
-    background: url(/images/icon/icon_condition@3x.png) no-repeat;
+    background: url(../images/icon/icon_condition@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-5{
-    background: url(/images/icon/icon_process@3x.png) no-repeat;
+    background: url(../images/icon/icon_process@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-6{
-    background: url(/images/icon/icon_answer@3x.png) no-repeat;
+    background: url(../images/icon/icon_answer@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 .fixed__nav__list .fixed__icon--active-7{
-    background: url(/images/icon/icon_case@3x.png) no-repeat;
+    background: url(../images/icon/icon_case@3x.png) no-repeat;
     background-size:100% 100%; 
 }
 

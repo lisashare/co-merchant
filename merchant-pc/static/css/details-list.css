@@ -59,14 +59,14 @@ img {
     float: left;
     width: 14px;
     height: 10px;
-    background: url('/images/icon/icon_down@3x.png')no-repeat;
+    background: url('../images/icon/icon_down@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-top: 13px;
     cursor: pointer;
 
 }
 .filter__content  .fliter__list__item .filter__icon--up{
-    background: url('/images/icon/icon_up拷贝@3x.png')no-repeat !important;
+    background: url('../images/icon/icon_up拷贝@3x.png')no-repeat !important;
     background-size: 100% 100%!important;
 }
 .filter__content  .fliter__list__item  .filter__item__name{
@@ -309,7 +309,7 @@ img {
     height: 16px;
     display: inline-block;
     vertical-align: middle;
-    background: url('/images/icon/icon_more@3x.png')no-repeat;
+    background: url('../images/icon/icon_more@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-left: 10px;
 
@@ -355,7 +355,7 @@ img {
 .ranking__list .ranking__list__item .ranking__top__icon{
     width: 13px;
     height: 16px;
-    background: url('/images/icon/icon_rise_org@3x.png')no-repeat;
+    background: url('../images/icon/icon_rise_org@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-left: 5px;
 
@@ -417,7 +417,7 @@ img {
 .infomation__list__item__icon{
     width: 6px;
     height: 10px;
-    background: url('/images/icon/icon_orange@3x.png')no-repeat;
+    background: url('../images/icon/icon_orange@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-right: 10px;
 
