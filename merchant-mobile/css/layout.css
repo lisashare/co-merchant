@@ -535,16 +535,6 @@ i.i-icon-search {
   font-weight: 700;
   color: #000;
 }
-.foot-special .i-online-money {
-  margin-top: 0.2rem;
-  font-size: 0.4rem;
-  font-weight: 700;
-  color: #f85100;
-}
-.foot-special .i-online-money .rmb {
-  line-height: 0.72rem;
-  font-size: 0.72rem;
-}
 .foot-special form {
   width: 10.44rem;
   display: flex;
@@ -570,6 +560,20 @@ i.i-icon-search {
   margin-right: 0.4rem;
   width: 2.96rem;
   height: 2rem;
+}
+.info-detail-swiper .i-only-money {
+  margin-top: 0.36rem;
+  margin-bottom: 0.08rem;
+}
+.i-only-money {
+  margin-top: 0.2rem;
+  font-size: 0.4rem;
+  font-weight: 700;
+  color: #f85100;
+}
+.i-only-money .rmb {
+  line-height: 0.72rem;
+  font-size: 0.72rem;
 }
 .info-detail-title {
   padding: 0.96rem 0.8rem;
@@ -599,6 +603,7 @@ i.i-icon-search {
   left: 0.6rem;
   width: 1.28rem;
   padding: 0.28rem 0;
+  line-height: 1rem;
   font-size: 0.96rem;
   color: #f85100;
   text-align: center;
@@ -711,9 +716,14 @@ i.i-icon-search {
   font-weight: 700;
 }
 .info-referral .swiper-container {
+  padding-right: 0.6rem;
   border-radius: 0.12rem !important;
 }
+.info-referral .swiper-wrapper {
+  width: 7.72rem !important;
+}
 .info-referral .info-view {
+  width: 7.72rem !important;
   margin: 0 0.8rem 1rem;
   box-shadow: #ededed 0 0 0.78rem;
   margin-right: 0;

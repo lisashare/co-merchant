@@ -95,7 +95,7 @@
             <form>
                 <div class="form-brand-desc">
                     <p class="i-online-title text-ellip">李嘉嘉甜品啦啦啦啦啦啦</p>
-                    <p class="i-online-money">￥<i class="rmb">30~50</i>万</p>
+                    <p class="i-only-money">￥<i class="rmb">30~50</i>万</p>
                 </div>
                 <button type="submit" class="br-6 bgcolor-gradient">免费咨询</button>
             </form>
@@ -305,46 +305,49 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide info-view">
-                        <dl>
-                            <dt><img src="../images/occupy/4@2x.png"></dt>
-                            <dd>
-                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                <p class="i-online-name text-ellip">
-                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
-                                </p>
-                                <a href="#" class="info-detail bgcolor-gradient db tac">
-                                    查看详情
-                                </a>
-                            </dd>
-                        </dl>
+                        <a href="#">
+                            <dl>
+                                <dt><img src="../images/occupy/1@2x.png"></dt>
+                                <dd>
+                                    <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                    <p class="i-only-money">￥<i class="rmb">30~50</i>万</p>
+                                </dd>
+                            </dl>
+                        </a>
                     </div>
                     <div class="swiper-slide info-view">
-                        <dl>
-                            <dt><img src="../images/occupy/4@2x.png"></dt>
-                            <dd>
-                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                <p class="i-online-name text-ellip">
-                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
-                                </p>
-                                <a href="#" class="info-detail bgcolor-gradient db tac">
-                                    查看详情
-                                </a>
-                            </dd>
-                        </dl>
+                        <a href="#">
+                            <dl>
+                                <dt><img src="../images/occupy/2@2x.png"></dt>
+                                <dd>
+                                    <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                    <p class="i-only-money">￥<i class="rmb">30~50</i>万</p>
+
+                                </dd>
+                            </dl>
+                        </a>
                     </div>
                     <div class="swiper-slide info-view">
-                        <dl>
-                            <dt><img src="../images/occupy/4@2x.png"></dt>
-                            <dd>
-                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
-                                <p class="i-online-name text-ellip">
-                                    老北京火锅，正宗老北京的风味，来来来你请客，我尝尝巴拉巴拉
-                                </p>
-                                <a href="#" class="info-detail bgcolor-gradient db tac">
-                                    查看详情
-                                </a>
-                            </dd>
-                        </dl>
+                        <a href="#">
+                            <dl>
+                                <dt><img src="../images/occupy/3@2x.png"></dt>
+                                <dd>
+                                    <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                    <p class="i-only-money">￥<i class="rmb">30~50</i>万</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="swiper-slide info-view">
+                        <a href="#">
+                            <dl>
+                                <dt><img src="../images/occupy/4@2x.png"></dt>
+                                <dd>
+                                    <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                    <p class="i-only-money">￥<i class="rmb">30~50</i>万</p>
+                                </dd>
+                            </dl>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -386,21 +389,16 @@
         $(this).find("span").toggleClass("hide");
     })
 
-    // banner swiper
     new Swiper('.info-detail-swiper .swiper-container', {
         pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay: 3000,
-        loop: true,
+        slidesPerView: 'auto',
         observer: true, 
         observeParents: true
     })
-
     // 相关资讯无限滚动
     var topValue = 0;
     var per_height = $(".zx-detail-ul li").eq(1).outerHeight(true);
     setInterval(function(){
-        // console.log(topValue)
         if(topValue > -per_height){
             topValue--;
         }else if(topValue == -per_height){
