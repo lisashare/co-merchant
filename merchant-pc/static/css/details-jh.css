@@ -119,13 +119,13 @@ img {
     width: 82px;
     height: 24px;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     line-height: 24px;
     margin-bottom: 12px;
     cursor: pointer;
     color: #666;
-    border: 1px dashed #666;
+    border: 1px dashed #BFBFBF;
     border-radius: 4px;
 
 }
@@ -179,7 +179,7 @@ img {
     width: 100%;
     min-width: 1200px;
     background: #fff;
-    padding: 80px 0 20px 0;
+    padding: 60px 0 20px 0;
     box-sizing: border-box;
     margin: 50px 0;
     position: relative;
@@ -198,7 +198,7 @@ img {
 
 .big__wrapper .btn__group {
     position: absolute;
-    top: -110px;
+    top: -85px;
 
 }
 
@@ -209,7 +209,7 @@ img {
     height: 60px;
     background: #FF5909 !important;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     line-height: 60px;
     cursor: pointer;
@@ -223,7 +223,7 @@ img {
     height: 60px;
     background: #DDDDDD;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
     line-height: 60px;
     cursor: pointer;
@@ -232,8 +232,8 @@ img {
 
 .big__wrapper .group__more {
     position: absolute;
-    top: -70px;
-    right: 0px;
+    top: -50px;
+    right: 16px;
 }
 
 .big__wrapper .img__list {
@@ -275,12 +275,16 @@ img {
 .item__title_1 {
     color: #666;
     vertical-align: middle;
+   
 
 }
 
 .item__title_2 {
+    vertical-align: middle;
+  
     color: #F85100;
     margin-left: 34px;
+    font-weight: bold;
 }
 
 .big__wrapper .img__list .img__item .item__title__sub {
@@ -305,6 +309,7 @@ img {
     display: inline-block;
     vertical-align: middle;
     color: #FF5909;
+    font-weight: bold;
 
 }
 
@@ -312,6 +317,7 @@ img {
     display: inline-block;
     vertical-align: middle;
     color: #999;
+    font-size: 12px;
 }
 
 .big__wrapper .img__list .img__item .item__title__sub .sub__icon__pl {
@@ -321,7 +327,7 @@ img {
     height: 11px;
     background: url('../images/icon/icon_zx_gray@3x.png') no-repeat;
     background-size: 100% 100%;
-    margin-left: 25px;
+    margin-left: 45px;
 }
 
 .big__wrapper .product__list {
@@ -474,8 +480,9 @@ img {
 
 .info__content .info__content__middle__title {
     width: 100%;
-    margin: 0px 0 14px 0;
+    margin: 36px 0 14px 0;
     position: relative;
+
 }
 
 .info__content .middle__title__icon {
@@ -562,7 +569,7 @@ img {
     color: #999;
 }
 .text_box-border{
-    border-bottom: 1px solid #999;
+    border-bottom: 1px dashed #999;
     padding-bottom: 10px;
 }
 .text_box-border:last-child{

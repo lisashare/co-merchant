@@ -97,7 +97,7 @@ img { border:none; vertical-align:top; }
 table { border-collapse:collapse; }
 input,textarea { outline:none; }
 textarea { resize:none; overflow:auto; }
-body { font-size:14px; font-family:"微软雅黑, PingFangSC-Regular, sans-serif"; }
+body { font-size:14px; font-family: PingFangSC-Regular, sans-serif"; }
 
 ::-webkit-input-placeholder {
     /* WebKit browsers */

@@ -20,7 +20,7 @@
 .header-top .text-scroll .icon-news {
     width: 17px;
     height: 12px;
-    background-image: url("/images/icon/icon_news.png");
+    background-image: url("../images/icon/icon_news.png");
 }
 
 .header-top .text-scroll .text-scroll-ul li {

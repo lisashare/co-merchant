@@ -32,4 +32,9 @@ $(function(){
           el: '.swiper-pagination',
         },
       })     
+     
+    
+     
+     
+     
 })
