@@ -447,10 +447,6 @@
     $(".itd-djzk-btn").on("click",function () {
         $(".jh-section-content").toggleClass("jh-hide");
         $(this).find("span").toggleClass("hide");
-        // if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
-            // var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
-            // $("html,body").stop().animate({scrollTop:bannerTop},30);
-        // }
     })
 
     // banner swiper
@@ -458,6 +454,7 @@
         pagination: '.swiper-pagination',
         paginationClickable: true,
         autoplay: 3000,
+        autoplayDisableOnInteraction : false,
         loop: true,
         observer: true, 
         observeParents: true

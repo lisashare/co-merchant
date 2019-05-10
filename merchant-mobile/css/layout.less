@@ -51,10 +51,10 @@ img{height: 100%;}
     z-index: 10;
 }
 .fixed-tab{
-    position: fixed;
+    position: fixed!important;
     top: 88/@rem;
     width: 100%;
-    z-index: 10;
+    z-index: 1;
 }
 i.i-icon-search{
     position: absolute;
@@ -327,7 +327,7 @@ i.i-icon-search{
     ul{
         width: 100%;
         li{
-            width: 100%;
+            width: 75%;
             // min-width: 75%!important;
             height: 62/@rem;
             margin-bottom: 20/@rem;
@@ -346,10 +346,10 @@ i.i-icon-search{
                 display: block;
                 height: 62/@rem;
                 font-size: 0;
-                // padding-left: 14/@rem;
-                // padding-right: 24/@rem;
-                padding-left: 24/@rem;
-                padding-right: 32/@rem;
+                padding-left: 14/@rem;
+                padding-right: 24/@rem;
+                // padding-left: 24/@rem;
+                // padding-right: 32/@rem;
                 font-size: 0.24rem;
                 color: #fff;
                 span{
@@ -361,7 +361,7 @@ i.i-icon-search{
                     float: left;
                 }
                 span:nth-child(2){
-                    margin-left: 30/@rem;
+                    margin-left: 18/@rem;
                     margin-right: 10/@rem;
                     font-size: 30/@rem;
                     float: left;
@@ -865,7 +865,8 @@ i.i-icon-search{
         .i-online-city, .i-online-store{
             span{
                 width: 60/@rem;
-                vertical-align: middle;
+                line-height: 26/@rem;
+                vertical-align: top;
             }
         }
     }
@@ -879,7 +880,11 @@ i.i-icon-search{
         padding: 0 15/@rem;
         justify-content: space-between;
         li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 170/@rem;
+            height: 78/@rem;
             font-size: 28/@rem;
             color: #000;
             text-align: center;
@@ -887,14 +892,16 @@ i.i-icon-search{
                 display: inline-block;
                 min-width: 70/@rem;
                 max-width: 140/@rem;
+                height: 78/@rem;
                 line-height: 78/@rem;
                 text-align: center;
             }
             i{
-                width: 28/@rem;
+                width: 30/@rem;
                 height: 78/@rem;
                 background-image: url('../images/main/icon_arrow4@3x.png');
                 background-size: 16/@rem 9/@rem;
+                background-position: center center;
             }
         }
         .current{
@@ -1581,6 +1588,25 @@ i.i-icon-search{
         height: 500/@rem!important;
     }
 }
+// 项目详情页tab
+.itd-main-tab{
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26/@rem;
+    padding: 0 40/@rem;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+     li{
+         box-sizing: border-box;
+         width: 150/@rem;
+         height: 95/@rem;
+         line-height: 95/@rem;
+         font-size: 30/@rem;
+         font-weight: 700;
+     }
+ }
 /* 项目详情页 end */ 
 
 /* 首页 start */ 
@@ -1811,7 +1837,7 @@ header.i-header{
         background: url("../images/main/icon_news@3x.png") no-repeat left center;
         background-size: 42/@rem 36/@rem;
         li,a{
-            width: 90%;
+            width: 97%;
             height: 36/@rem;
             line-height: 36/@rem;
             font-size: 28/@rem;
@@ -1966,6 +1992,7 @@ header.i-header{
 .i-industry-news-wrap{
     position: relative;
     ul.i-industry-news-tabs, ul.i-industry-news-content{
+       position: relative;
        box-sizing: border-box;
        width: 100%;
        padding: 0 40/@rem;

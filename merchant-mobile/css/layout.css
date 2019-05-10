@@ -56,10 +56,10 @@ img {
   z-index: 10;
 }
 .fixed-tab {
-  position: fixed;
+  position: fixed!important;
   top: 1.76rem;
   width: 100%;
-  z-index: 10;
+  z-index: 1;
 }
 i.i-icon-search {
   position: absolute;
@@ -331,7 +331,7 @@ i.i-icon-search {
   width: 100%;
 }
 .info-sort ul li {
-  width: 100%;
+  width: 75%;
   height: 1.24rem;
   margin-bottom: 0.4rem;
   background: -webkit-linear-gradient(left, #e0a266, #ddb677);
@@ -353,8 +353,8 @@ i.i-icon-search {
   display: block;
   height: 1.24rem;
   font-size: 0;
-  padding-left: 0.48rem;
-  padding-right: 0.64rem;
+  padding-left: 0.28rem;
+  padding-right: 0.48rem;
   font-size: 0.24rem;
   color: #fff;
 }
@@ -367,7 +367,7 @@ i.i-icon-search {
   float: left;
 }
 .info-sort ul li a span:nth-child(2) {
-  margin-left: 0.6rem;
+  margin-left: 0.36rem;
   margin-right: 0.2rem;
   font-size: 0.6rem;
   float: left;
@@ -853,7 +853,8 @@ i.i-icon-search {
 .project-classify-content dd .i-online-city span,
 .project-classify-content dd .i-online-store span {
   width: 1.2rem;
-  vertical-align: middle;
+  line-height: 0.52rem;
+  vertical-align: top;
 }
 .project-synthesize {
   width: 100%;
@@ -866,7 +867,11 @@ i.i-icon-search {
   justify-content: space-between;
 }
 .project-synthesize .project-classify-ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 3.4rem;
+  height: 1.56rem;
   font-size: 0.56rem;
   color: #000;
   text-align: center;
@@ -875,14 +880,16 @@ i.i-icon-search {
   display: inline-block;
   min-width: 1.4rem;
   max-width: 2.8rem;
+  height: 1.56rem;
   line-height: 1.56rem;
   text-align: center;
 }
 .project-synthesize .project-classify-ul li i {
-  width: 0.56rem;
+  width: 0.6rem;
   height: 1.56rem;
   background-image: url('../images/main/icon_arrow4@3x.png');
   background-size: 0.32rem 0.18rem;
+  background-position: center center;
 }
 .project-synthesize .project-classify-ul .current {
   color: #f85100;
@@ -1543,6 +1550,24 @@ i.i-icon-search {
   display: block;
   height: 10rem !important;
 }
+.itd-main-tab {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.52rem;
+  padding: 0 0.8rem;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+}
+.itd-main-tab li {
+  box-sizing: border-box;
+  width: 3rem;
+  height: 1.9rem;
+  line-height: 1.9rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
 /* 项目详情页 end */
 /* 首页 start */
 .back-btn {
@@ -1758,7 +1783,7 @@ header.i-header .i-header-search input {
 }
 .i-news-lb-wrap .i-news-box li,
 .i-news-lb-wrap .i-news-box a {
-  width: 90%;
+  width: 97%;
   height: 0.72rem;
   line-height: 0.72rem;
   font-size: 0.56rem;
@@ -1904,6 +1929,7 @@ header.i-header .i-header-search input {
 }
 .i-industry-news-wrap ul.i-industry-news-tabs,
 .i-industry-news-wrap ul.i-industry-news-content {
+  position: relative;
   box-sizing: border-box;
   width: 100%;
   padding: 0 0.8rem;

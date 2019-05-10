@@ -109,15 +109,15 @@
                 <p class="info-tip">摘要</p>
                 <p>中国第一家必胜客餐厅于1990年在北京开设， 就像它的名字所表达的意思一般，始终坚持 “必 胜”的信念，从而获得了广大中国顾客的认可。必胜客在中国极其快速地发展壮大，并且获得了一系列耀眼的成就。截止到2016年12月，必胜客在国内共开设了超过 1700家餐厅，覆盖 中国400多个城市。 从1958年必胜客传统薄皮比萨上市</p>
             </div>
-            <div class="jh-section-content">
+            <div class="jh-section-content jh-hide">
                 <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                 <p><img src="../images/occupy/3@2x.png" alt=""></p>
             </div>
             <div class="itd-zkgd-wrap">
                 <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
                 <div class="itd-djzk-btn">
-                    <span class="zhankai hide">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
-                    <span class="shouqi">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
+                    <span class="zhankai">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    <span class="shouqi hide">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
                 </div>
             </div>
             <div class="info-post-tags clear">
@@ -406,7 +406,7 @@
             $(".zx-detail-ul").find("li:first-child").remove().appendTo($(".zx-detail-ul"));
         }
         $(".zx-detail-ul").css("top",topValue);
-    },80)
+    }, 50)
 
     // foot 滑动显示
     var footHeight = $('.foot-special').height();
