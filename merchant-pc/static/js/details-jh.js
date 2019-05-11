@@ -28,13 +28,18 @@ $(function(){
         loop: true, // 循环模式选项
         
         // 如果需要分页器
-        pagination: {
-          el: '.swiper-pagination',
-        },
+        pagination : '.swiper-pagination',
+        paginationClickable :true,
       })     
-     
+     console.log($('.words').length)
     
-     
-     
+     $('.words').each(function(){
+      var maxwidth=30;
+      if($(this).text().length>maxwidth){
+      $(this).text($(this).text().substring(0,maxwidth));
+      $(this).html($(this).html()+'...');
+      }
+      });
+   
      
 })
