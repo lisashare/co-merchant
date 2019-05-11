@@ -80,7 +80,7 @@
     height: 42px;
     display: flex;
     justify-content: space-between;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .header .header-search .header-searchbox .icon-text {
@@ -94,82 +94,13 @@
     line-height: 42px;
 
 }
-/*20190511 start*/
-.header .header-search .header-searchbox .icon-wraper {
-    width: 97px;
-    height: 42px;
-    background-color: #f85100;
-    position: absolute;
-    left: 0;
-    top: 0;
-    cursor: pointer;
-}
-.header .header-search .header-searchbox .icon-txt {
-    font-size: 16px;
-    color: #ffffff;
-    /*padding-left: 10px;*/
-    line-height: 42px;
-    text-align: center;
-    display: block;
-    transform: translateX(-4px);
-}
-.header .header-search .header-searchbox .icon-triangle-down {
-    width: 9px;
-    height: 6px;
-    background-image: url("../images/icons/icon_triangle_white@3x.png");
-    background-size: 9px 6px;
-    background-repeat: no-repeat;
-    left: auto;
-    right: 6px;
-}
-.header .header-search .header-searchbox .catering-inner {
-    width: 450px;
-    height: 130px;
-    padding: 0 6px;
-    border: 1px solid #f85100;
-    background-color: #ffffff;
-    position: absolute;
-    top: 52px;
-    left: 0;
-}
-.header .header-search .header-searchbox .catering-inner li {
-    float: left;
-    margin: 14px 14px 0 14px;
-}
-.header .header-search .header-searchbox .catering-inner li a {
-    font-size: 14px;
-    color: #666666;
-    width: 84px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    border-radius: 12px;
-    background-color: #f6f7f8;
-    display: block;
-}
-.header .header-search .header-searchbox .catering-inner .icon-up-triangle {
-    width: 14px;
-    height: 10px;
-    background-image: url("../images/icons/icon_up_triagnle.png");
-    background-size: 14px 10px;
-    background-repeat: no-repeat;
-    left: 79px;
-    top: -5px;
-}
-.header .header-search .header-searchbox .catering-inner  li a:hover, .header .header-search .header-searchbox .catering-inner  li a.cur{
-    color: #f85100;
-    border: 1px dashed #f85100;
-    background-color: #ffffff;
-    box-sizing: border-box;
-}
-/*20190511 end*/
 
 .header .header-search .header-searchbox input {
     font-size: 20px;
     color: #999999;
     width: 423px;
     height: 42px;
-    padding-left: 107px;
+    padding-left: 90px;
     border: 2px solid #ff5909;
     border-right: none;
     box-sizing: border-box;

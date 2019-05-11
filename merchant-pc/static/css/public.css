@@ -25,6 +25,10 @@ a { font-size: 14px; color: #333333; }
     -ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
     +background:#f9f9f9;
 }
+.center {
+    text-align: center!important;
+}
+
 .triangle-up, .triangle-down-red, .triangle-down-gray { position:absolute; width:0; height:0; overflow:hidden; border-left:4px solid transparent; border-right:4px solid transparent; }
 .triangle-up { border-bottom:4px solid #ca0309; }
 .triangle-down-red { border-top:4px solid #ca0309; }

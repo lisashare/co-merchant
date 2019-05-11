@@ -1,0 +1,265 @@
+body {
+  background-color: #f7f7f7;
+}
+.bread-nav {
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+}
+.bread-nav .position {
+  font-size: 12px;
+  color: #666666;
+}
+.bread-nav .position a {
+  font-size: 12px;
+  color: #666666;
+}
+.bread-nav .time {
+  font-size: 12px;
+  color: #999999;
+}
+.container .content-list {
+  width: 842px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+.container .content-list .title {
+  font-size: 24px;
+  color: #333333;
+}
+.container .content-list .info {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #dddddd;
+}
+.container .content-list .info .updatetime,
+.container .content-list .info .source,
+.container .content-list .info .author {
+  margin-right: 50px;
+}
+.container .content-list .remark {
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.container .content-list .remark b {
+  font-weight: bold;
+  padding-left: 20px;
+  background-image: url("../images/icons/icon_zhaiyao@3x.png");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.container .content-list .article {
+  font-size: 16px;
+  color: #333333;
+  line-height: 24px;
+  padding: 0 20px;
+  margin-top: 9px;
+}
+.container .content-list .article p {
+  text-indent: 2em;
+}
+.container .content-list .article img {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+}
+.container .content-list .reading-mounts {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+}
+.container .content-list .relate-article {
+  height: 132px;
+  border-top: 1px dashed #dddddd;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  box-sizing: border-box;
+}
+.container .content-list .relate-article li {
+  font-size: 14px;
+  color: #666666;
+  margin-bottom: 14px;
+}
+.container .content-list .relate-article .back-list {
+  font-size: 16px;
+  color: #666666;
+  padding-left: 21px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  background-image: url("../images/icons/icon_fanhui1@3x.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.container .aside {
+  width: 278px;
+}
+.container .aside .section {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.container .aside .section .title {
+  font-size: 20px;
+  color: #333333;
+  line-height: 44px;
+  margin-left: 16px;
+  margin-bottom: 14px;
+  display: inline-block;
+  border-bottom: 3px solid #f26f68;
+}
+.container .aside .section .section-con li {
+  overflow: hidden;
+}
+.container .aside .section .section-con.section-con-pad0 {
+  padding: 0 4px 0 6px;
+}
+.container .aside .section.relate-program {
+  height: 232px;
+}
+.container .aside .section.relate-program .section-con {
+  padding: 20px 17px 0;
+}
+.container .aside .section.relate-program .div-img {
+  width: 243px;
+  height: 162px;
+  display: block;
+}
+.container .aside .section.relate-program .div-img img {
+  width: 243px;
+  height: 162px;
+}
+.container .aside .section.relate-program .div-text {
+  font-size: 14px;
+  margin-top: 16px;
+}
+.container .aside .section.relate-program .div-text .relate-tit {
+  color: #333333;
+}
+.container .aside .section.relate-program .div-text .money {
+  color: #999999;
+}
+.container .aside .section.relate-program .div-text .money em {
+  color: #f85100;
+}
+.container .aside .section.relate-brand {
+  height: 365px;
+}
+.container .aside .section.relate-brand .section-con {
+  padding: 0 17px;
+}
+.container .aside .section.relate-brand .div-img {
+  width: 243px;
+  height: 162px;
+  display: block;
+  position: relative;
+}
+.container .aside .section.relate-brand .div-img img {
+  width: 243px;
+  height: 162px;
+}
+.container .aside .section.relate-brand .div-img .footer-shade {
+  font-size: 14px;
+  color: #dddddd;
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  line-height: 40px;
+  background-color: rgba(51, 51, 51, 0.8);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.container .aside .section.relate-brand .div-text li {
+  float: left;
+  width: 118px;
+  line-height: 24px;
+}
+.container .aside .section.relate-brand .div-text li a {
+  font-size: 16px;
+  color: #666666;
+  display: block;
+}
+.container .aside .section.relate-brand .div-text li a em {
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #999999;
+}
+.container .aside .section.relate-article2 {
+  height: 501px;
+}
+.container .aside .section.relate-article2 .section-con {
+  padding: 0 17px;
+}
+.container .aside .section.relate-article2 .div-img {
+  width: 243px;
+  height: 162px;
+  display: block;
+  position: relative;
+}
+.container .aside .section.relate-article2 .div-img img {
+  width: 243px;
+  height: 162px;
+}
+.container .aside .section.relate-article2 .div-img .footer-shade {
+  font-size: 14px;
+  color: #dddddd;
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  background-color: rgba(51, 51, 51, 0.8);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.container .aside .section.relate-article2 .div-img .footer-shade .article-name,
+.container .aside .section.relate-article2 .div-img .footer-shade .time {
+  font-size: 14px;
+  display: block;
+}
+.container .aside .section.relate-article2 .div-img .footer-shade .article-name {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.container .aside .section.relate-article2 .div-img .footer-shade .time {
+  color: #dddddd;
+}
+.container .aside .section.relate-article2 .div-text li {
+  margin-top: 10px;
+}
+.container .aside .section.relate-article2 .div-text li a {
+  font-size: 14px;
+  color: #666666;
+  display: block;
+}
+.container .aside .section.relate-article2 .div-text li .time-mounts {
+  color: #999999;
+  overflow: hidden;
+  margin-top: 3px;
+}
+.container .aside .section.relate-article2 .div-text li .time-mounts .time {
+  padding-left: 16px;
+  background-image: url("../images/icons/icon_time@3x.png");
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.container .aside .section.relate-article2 .div-text li .time-mounts .mounts {
+  padding-left: 15px;
+  background-image: url("../images/icons/icon_chakan@3x.png");
+  background-size: 11px 9px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}

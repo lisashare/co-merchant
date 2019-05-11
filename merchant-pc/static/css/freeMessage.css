@@ -1,0 +1,137 @@
+.freegossip-section {
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+}
+.freegossip-section  .centerbox{
+  height: 286px;
+}
+.freegossip-section .tip {
+  font-size: 16px;
+  color: #333333;
+}
+.freegossip-section input,
+.freegossip-section textarea {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #999999;
+}
+.freegossip-section input::-webkit-input-placeholder,
+.freegossip-section textarea::-webkit-input-placeholder {
+  font-size: 16px;
+}
+.freegossip-section input:-moz-placeholder,
+.freegossip-section textarea:-moz-placeholder {
+  font-size: 16px;
+}
+.freegossip-section input::-moz-placeholder,
+.freegossip-section textarea::-moz-placeholder {
+  font-size: 16px;
+}
+.freegossip-section input:-ms-input-placeholder,
+.freegossip-section textarea:-ms-input-placeholder {
+  font-size: 16px;
+}
+.freegossip-section .wraper {
+  width: 460px;
+  height: 286px;
+}
+.freegossip-section .wraper .form-group {
+  width: 460px;
+  margin-top: 18px;
+  overflow: hidden;
+}
+.freegossip-section .wraper .form-group .form-input {
+  width: 166px;
+  height: 42px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+.freegossip-section .wraper .form-group .form-input:nth-of-type(2) {
+  width: 280px;
+  margin-left: 14px;
+}
+.freegossip-section .wraper .form-group .form-input.form-input1 {
+  width: 460px;
+  height: 120px;
+}
+.freegossip-section .wraper .form-group .form-input input[name="username"] {
+  width: 130px;
+  height: 42px;
+  padding-left: 36px;
+}
+.freegossip-section .wraper .form-group .form-input input[name="tel"] {
+  width: 244px;
+  height: 42px;
+  padding-left: 36px;
+}
+.freegossip-section .wraper .form-group .form-input .icon-username {
+  width: 16px;
+  height: 20px;
+  background-image: url("../images/icons/icon_people@3x.png");
+  background-size: 16px 20px;
+  left: 12px;
+}
+.freegossip-section .wraper .form-group .form-input .icon-tel {
+  width: 13px;
+  height: 20px;
+  background-image: url("../images/icons/icon_phone@3x.png");
+  background-size: 13px 20px;
+  left: 12px;
+}
+.freegossip-section .wraper .form-group .form-input .icon-message {
+  width: 17px;
+  height: 17px;
+  background-image: url("../images/icons/icon_online@3x.png");
+  background-size: 17px 17px;
+  top: 20px;
+  left: 12px;
+}
+.freegossip-section .wraper .form-group .form-input .message {
+  width: 414px;
+  height: 96px;
+  padding: 12px 12px 12px 34px;
+}
+.freegossip-section .wraper .form-group .btn-submit {
+  font-size: 20px;
+  color: #ffffff;
+  width: 288px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #f85100;
+}
+.freegossip-section .quick-message {
+  width: 371px;
+  height: 252px;
+  margin-top: 34px;
+  margin-left: 6px;
+  background-image: url("../images/occupy/line_message@3x.png");
+  background-size: 371px 252px;
+  background-repeat: no-repeat;
+}
+.freegossip-section .quick-message ul {
+  padding: 0 20px 0 30px;
+}
+.freegossip-section .quick-message ul li {
+  line-height: 40px;
+  border-bottom: 1px dashed #666666;
+}
+.freegossip-section .quick-message ul li:last-child {
+  border-bottom: none;
+}
+.freegossip-section .quick-message ul li a {
+  font-size: 16px;
+  color: #666666;
+}
+.freegossip-section .message-img {
+  width: 270px;
+  height: 286px;
+}
+.freegossip-section .message-img img {
+  width: 270px;
+  height: 286px;
+}
