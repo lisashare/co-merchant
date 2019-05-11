@@ -17,7 +17,7 @@ img {
 
 .content .content__title__info {
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .content .content__title__info .content__title__text__box {
@@ -52,7 +52,7 @@ img {
     color: #999;
     margin-top: 8px;
     margin-right: 20px;
-    width: 100px;
+    width: 85px;
 
 }
 .filter__content  .fliter__list__item .filter__icon{
@@ -211,22 +211,35 @@ img {
 
 .list__wrpper .list__item__info .item__text__box  .text__title__sub{
     font-size: 14px;
-    color: #666;
+    color: #999;
     margin-bottom: 8px;
 }
+.list__wrpper .list__item__info .item__text__box  .text__title__sub_1{
+    color: #666;
+}
+.list__wrpper .list__item__info .item__text__box  .text__title__sub_1 span{
+    display: inline-block;
+    vertical-align: middle;
+}
 .text__title__sub--orange{
+   
     color: #FF5909;
+    font-size: 16px;
 }
 .text__info__sub__box{
     width: 100%;
     color: #666;
+    margin-top: 10px;
 }
 .text__info__sub__box .text__info__1{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 3px;
 
 
+}
+.text__info__sub__box .text__info__1:last-child{
+    margin-right: 0;
 }
 .text__info__sub__box .text__info__1:last-child{
     margin: 0;
@@ -259,7 +272,8 @@ img {
     display: inline-block;
     padding: 15px 10px;
     border-bottom: 4px solid #FF5909;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
 
 }
 .big__wrapper  .right__wrapper  .like__box__right ul{
@@ -280,6 +294,7 @@ img {
     margin-right: 8px;
     margin-bottom: 22px;
     cursor: pointer;
+    font-size: 16px;
 }
 .big__wrapper  .right__wrapper  .like__box__right ul li:nth-child(4n){margin-right:0;}
 .big__wrapper  .right__wrapper  .like__box__right ul .active{
@@ -303,6 +318,7 @@ img {
     float: right;
     cursor: pointer;
     margin-top: 20px;
+    margin-right: 3px;
 }
 .ranking__title__box .ranking__more__box .ranking__more__icon{
     width: 16px;
@@ -331,7 +347,7 @@ img {
 .ranking__list .ranking__list__item span{
     display: inline-block;
     vertical-align: middle;
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
 }
 .ranking__list .ranking__list__item .ranking__index{
@@ -349,8 +365,14 @@ img {
 }
 .ranking__list .ranking__list__item .ranking__name{
     margin-left: 16px;
-    margin-right: 130px;
+    margin-right: 118px;
 
+}
+.ranking__number .text__title__sub--orange{
+    font-weight: 700!important;
+}
+.ranking__list .ranking__list__item .ranking__number{
+    font-weight: 700!important;
 }
 .ranking__list .ranking__list__item .ranking__top__icon{
     width: 13px;
@@ -394,8 +416,8 @@ img {
     width: 100%;
 }
 .information__box .infomation__list .infomation__list__item{
-    margin-bottom: 5px;
-    width: 70%;
+    margin-bottom: 10px;
+    width: 90%;
     
     
 
