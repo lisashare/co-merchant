@@ -1690,10 +1690,9 @@ header.i-header {
   height: 1.76rem;
 }
 header.i-header .i-header-logo {
-  width: 1.4rem;
+  width: 1.32rem;
   height: 1.4rem;
-  margin-left: 0.8rem;
-  background: #f1f0f0;
+  margin-left: 0.84rem;
 }
 header.i-header .i-header-menu {
   box-sizing: border-box;

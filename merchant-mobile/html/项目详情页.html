@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">   
+    <meta name="description" content="">    
+    <title>项目详情页</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部标题 -->
+        <header class="itd-header header-fixed bgcolor-fff">
+            <a href="javascript:history.back(-1)" class="back-btn"></a>
+            <h2 class="text-ellip">xxxx项目</h2>
+            <div class="itd-header-search header-search">
+                <i class="itd-icon-search"></i>
+            </div>
+        </header>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx相关搜索</h2>
+            </header>
+            <form acrion="#" method="get" class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input name="wd" type="text" class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </form>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
+            </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯品牌</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯品</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 详情页头图 -->
+        <div class="itd-header-img-wrap bottom-line">
+            <dl>
+                <dt><img src="../images/occupy/banner@2x.png"></dt>
+                <dd>
+                    <p class="itd-online-title text-ellip">李嘉嘉甜品</p>
+                    <p class="itd-online-name text-ellip">
+                        北京诚膳餐饮有限公司
+                    </p>
+                    <p class="itd-online-desc clear">
+                        <span class="itd-online-money">
+                            ￥<i class="rmb">3~500</i>万</span>
+                        <span class="itd-online-time fr">2019-03-19 18:17:58</span>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+        <!-- 图标 -->
+        <ul class="itd-link-wrap bottom-line">
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="db tac"> 
+                    <img src="../images/main/icon_shop@3x.png" alt="全国门店"> 
+                    <p class="itd-type tac">全国门店</p> 
+                    <p class="itd-num tac"><span>57</span>家</p>
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="dbtac"> 
+                    <img src="../images/main/icon_gzgxm@3x.png" alt="关注该项目">
+                    <p class="itd-type tac">关注该项目</p> 
+                    <p class="itd-num tac"><span>57</span>家</p>
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="javascript:;" class="db tac"> 
+                    <img src="../images/main/icon_tele_xq@3x.png" alt="电话沟通过">
+                    <p class="itd-type tac">电话沟通过</p> 
+                    <p class="itd-num tac"><span>35</span>家</p>
+                </a> 
+            </li>
+        </ul>
+        <ul class="itd-main-tab itd-tab bgcolor-fff fixTab fixed-tab none">
+            <li class="tac tabactive" data-index="0">介绍</li>
+            <li class="tac" data-index="1">优势</li>
+            <li class="tac" data-index="2">费用</li>
+            <li class="tac" data-index="3">案例</li>
+        </ul>
+        <!-- 品牌介绍 start -->
+        <ul class="itd-main-tab itd-tab bgcolor-fff">
+            <li class="tac tabactive" data-index="0">介绍</li>
+            <li class="tac" data-index="1">优势</li>
+            <li class="tac" data-index="2">费用</li>
+            <li class="tac" data-index="3">案例</li>
+        </ul>
+        <div class="itd-main-body o-h bottom-line">
+            <div class="section i-project-wrap border-bottom">
+                <div>
+                    <h2 class="i-title">项目详情</h2>
+                </div>
+                <div class="section-content">
+                    <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                    <p><img src="../images/occupy/2@2x.png" alt=""></p>
+                    <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                </div>
+            </div>
+            <div class="section i-project-wrap border-bottom">
+                <div>
+                    <h2 class="i-title">优势</h2>
+                </div>
+                <div class="section-content">
+                    <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                    <p><img src="../images/occupy/3@2x.png" alt=""></p>
+                </div>
+            </div>
+            <div class="section">
+                <div class="i-project-wrap border-bottom">
+                    <div>
+                        <h2 class="i-title">费用</h2>
+                    </div>
+                    <div class="section-content">
+                        <ul class="itd-join-charge br-6">
+                            <li class="itd-tr">
+                                <span class="charge-title dib">费用详情</span><span class="city-tip bgcolor-gradient tac dib">一线城市</span>
+                            </li>
+                            <li class="itd-tr">加盟费：60400</li>
+                            <li class="itd-tr">设备费：46000</li>
+                        </ul>
+                        <a href="" class="db itd-more-city bgcolor-gradient tac">
+                            查看其它城市费用详情
+                            <i class="icon icon-hot-more"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="i-project-wrap border-bottom">
+                    <div>
+                        <h2 class="i-title">加盟问答</h2>
+                    </div>
+                    <div class="section-content">
+                        <div class="itd-customer-service">
+                            <div class="itd-questions">
+                                <span>从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费？</span><i class="icon icon-questions"></i>
+                            </div>
+                            <div class="itd-answers">
+                                <i class="icon-triangle"></i>
+                                <span>从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费</span><i class="icon icon-answers"></i>
+                            </div>
+                        </div>
+                        <div class="itd-customer-service">
+                            <div class="itd-questions">
+                                <span>从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费？</span><i class="icon icon-questions"></i>
+                            </div>
+                            <div class="itd-answers">
+                                <i class="icon-triangle"></i>
+                                <span>从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费</span><i class="icon icon-answers"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="i-project-wrap border-bottom">
+                    <div>
+                        <h2 class="i-title">加盟流程</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                        <p><img src="../images/occupy/4@2x.png" alt=""></p>
+                        <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                    </div>
+                </div>
+                <div class="i-project-wrap border-bottom">
+                    <div>
+                        <h2 class="i-title">加盟条件</h2>
+                    </div>
+                    <div class="section-content">
+                        <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                        <p><img src="../images/occupy/5@2x.png" alt=""></p>
+                        <p>编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section i-project-wrap">
+                <div>
+                    <h2 class="i-title">加盟案例</h2>
+                </div>
+                <div class="section-content">
+                    <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                    <p><img src="../images/occupy/6@2x.png" alt=""></p>
+                    <p>锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
+                </div>
+            </div>
+        </div>
+        <div class="itd-zkgd-wrap">
+            <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
+            <div class="itd-djzk-btn">
+                <span class="zhankai hide">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                <span class="shouqi">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
+            </div>
+        </div>
+        <!-- 品牌介绍 end -->
+        <!-- 下部分轮播图 -->
+        <div class="i-top-banner itd-top-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="http://m.blmcy.com/pinpai/34999.html">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 相关项目推荐 -->
+        <div class="i-project-wrap bottom-line">
+            <div>
+                <h2 class="i-title">相关项目推荐</h2>
+            </div>
+            <ul class="i-recommed-ul">
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/13@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">34</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">500</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/7@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">猪小嫚爱野菜</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">24</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">50~70</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/8@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">巴蜀大将巴蜀大将巴蜀大将巴蜀大将</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">98</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">35~58</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/9@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">日式海鲜</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">96</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">50~70</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 热门项目推荐 -->
+        <div class="i-project-wrap bottom-line">
+            <div>
+                <h2 class="i-title">热门项目推荐</h2>
+            </div>
+            <ul class="i-recommed-ul">
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">34</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">500</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">猪小嫚爱野菜</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">24</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">50~70</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/11@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">巴蜀大将巴蜀大将巴蜀大将巴蜀大将</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">98</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">35~58</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/12@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">日式海鲜</p>
+                                <p class="i-online-name text-ellip">
+                                    门店总数：<span class="color-f85100">96</span>
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">￥<i class="rmb">50~70</i>万</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 火锅的相关文章 -->
+        <div class="i-project-wrap special-bottom30">
+            <div>
+                <h2 class="i-title">火锅的相关文章</h2>
+            </div>
+            <ul class="i-recommed-ul itd-news-content">
+                <li>
+                    <a href="#" class="db">
+                        <ul class="itd-item-img">
+                            <li><img src="../images/occupy/1@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/2@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/3@2x.png" alt=""></li>
+                        </ul>
+                        <div class="itd-item-p text-ellip">
+                            从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费...
+                        </div>
+                        <p class="itd-online-desc clear">
+                            <span class="itd-news-time fr">2019-03-19 12:34:00</span>
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="db">
+                        <ul class="itd-item-img">
+                            <li><img src="../images/occupy/1@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/2@2x.png" alt=""></li>
+                            <li><img src="../images/occupy/3@2x.png" alt=""></li>
+                        </ul>
+                        <div class="itd-item-p text-ellip">
+                            从顾客视角到餐饮人视角的转变，餐饮人你真的懂消费...
+                        </div>
+                        <p class="itd-online-desc clear">
+                            <span class="itd-news-time fr">2019-03-19 12:34:00</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="i-industry-news-wrap itd-industry-news-wrap mb-30">
+            <ul class="i-industry-news-content">
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear border-top">
+                            <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/5@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/6@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <div class="footer-link-list"> 
+                <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
+            </div>
+            <p class="">版权所有 &copy; xxx加盟网</p>
+            <p class="">Copyright &copy; www.53.com.cn All Rights Reserved</p>
+            <p class="">备案号：京ICP备18000242号-1</p>
+        </footer>
+        <!-- 底部固定按钮 -->
+        <div class="i-foot-fixed o-h"> 
+            <a data-name="项目详情中项目标题" class="itd-tel-btn tel-btn bgcolor-gradient">
+                <i class="icon itd-icon-tel"></i>免费通话</a>           
+            <a href="#" class="itd-online-btn online-btn">
+                <i class="icon itd-icon-consultation icon-consultation"></i>立即咨询
+            </a> 
+            <a data-name="项目详情中项目标题" class="itd-article-btn article-btn"><i class="icon itd-icon-article icon-article"></i>获取资料</a>
+        </div>
+        <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <div class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <div class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
+<script>
+    var headHeight = $('.itd-header').height();
+    var tabHeight = $(document).find('.itd-main-tab li').height();
+    $(window).scroll(function () {
+        var tabOffsetTop = $(".itd-main-tab")[1].offsetTop - headHeight;
+        var windowScrollTop = $(window).scrollTop();
+        if(windowScrollTop >= tabOffsetTop){
+            $(".fixTab").removeClass("none");                     
+        }else{
+            $(".fixTab").addClass("none");                        
+        }
+    })
+
+    // 点击切换介绍、优势、费用、案例 
+    $(".itd-main-tab li").each(function () {
+        $(this).on("click",function () {
+            var index = $(this).index(); //点击的是第几个
+            var index_1 = index+1;
+            $(".itd-main-tab li").removeClass("tabactive");
+            $(".itd-main-tab li:nth-child("+index_1+")").addClass("tabactive");
+            $(".itd-main-body").removeClass("xmxq-main-hide"); //展开
+            $(".itd-djzk-btn span").addClass("hide").eq(1).removeClass("hide"); //切换展开
+            $(".itd-main-body .section").removeClass("none"); //重置
+
+            $(".section:lt("+index+")").addClass("none"); //上面的隐藏
+            var top = $(".itd-main-body")[0].offsetTop - tabHeight - headHeight; //获取选项卡距离上面的距离
+            $("html,body").animate({scrollTop:top},300); //怼上去
+        })
+    })
+
+    // 点击展开更多
+    $(".itd-djzk-btn").on("click",function () {
+        $(".itd-main-body").toggleClass("xmxq-main-hide");
+        $(this).find("span").toggleClass("hide");
+        if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
+            var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
+            $("html,body").stop().animate({scrollTop:bannerTop},30);
+        }
+    })
+
+    // 项目详情页 banner
+    new Swiper('.i-top-banner .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        autoplayDisableOnInteraction : false,
+        observer: true, 
+        observeParents: true
+    })
+</script>
+</html>

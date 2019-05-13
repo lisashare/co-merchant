@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">   
+    <meta name="description" content="">    
+    <title>首页</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="../css/swiper3.4.2.min.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <!-- 顶部搜索 -->
+    <div class="container">
+        <header class="i-header header-fixed bgcolor-fff">
+            <h1 class="i-header-logo">
+                <a href="#"><img src="../images/main/logo@3x.png" alt="logo"></a>
+            </h1>
+            <form action="#" method="get" class="i-header-search">
+                <i class="icon i-icon-search"></i>
+                <input name="wd" type="text" class="search header-input" id="search" placeholder="你想在哪里开店？">
+            </form>
+            <div class="i-header-menu">
+                <i class="i-icon-menu"></i>
+            </div>
+        </header>
+        <!-- 顶部按钮搜索弹出框 -->
+        <div class="layer-search-mask" style="display: none;"></div>
+        <div class="i-layer-search i-menu-wrap" style="display: none;">
+            <header class="o-h p-r clear bgcolor-fff">
+                <div class="back-btn back-btn-hide fl"></div>
+                <form class="fl" acrion="#" method="get">
+                    <i class="icon i-icon-search"></i>
+                    <input name="" type="text" class="search header-input" id="layer-search" placeholder="你想在哪里开店？">
+                </form>
+            </header>
+            <!--热门搜索-->
+            <div class="i-layer-search-wrap bgcolor-fff">
+                <h3>热门搜索</h3>
+                <ul class="i-hot-search-list">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                </ul>
+            </div>
+            <!--最近搜索-->
+            <div class="i-layer-search-wrap bgcolor-fff">
+                <h3>最近搜索</h3>
+                <ul class="i-recently-search-list">
+                </ul>
+            </div>
+        </div>
+        <!-- 首页banner -->
+        <div class="i-top-banner">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a rel="nofollow" href="#">
+                            <img src="../images/occupy/banner@2x.png" alt="浅浅茶">
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 图标链接 -->
+        <ul class="i-link-wrap o-h bottom-line">
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_one@3x.png" alt="饮品"> 
+                    <span class="db tac">饮品</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="dbtac"> 
+                    <img src="../images/main/icon_two@3x.png" alt="小吃"> <span class="db tac">小吃</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="dbtac"> 
+                    <img src="../images/main/icon_three@3x.png" alt="中式快餐"> 
+                    <span class="db tac">中式快餐</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_four@3x.png" alt="甜品烘培"> 
+                    <span class="db tac">甜品烘培</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_five@3x.png" alt="西式快餐"> 
+                    <span class="db tac">西式快餐</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon-six@3x.png" alt="海鲜"> 
+                    <span class="db tac">海鲜</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_seven@3x.png" alt="烤肉"> 
+                    <span class="db tac">烤肉</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_eight@3x.png" alt="韩餐"> 
+                    <span class="db tac">韩餐</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_nine@3x.png" alt="全部分类"> 
+                    <span class="db tac">全部分类</span> 
+                </a> 
+            </li>
+            <li class="i-per-link"> 
+                <a href="#" class="db tac"> 
+                    <img src="../images/main/icon_ten@3x.png" alt="排行榜"> 
+                    <span class="db tac">排行榜</span> 
+                </a> 
+            </li>
+        </ul>
+        <!-- 新闻轮播 -->
+        <div class="i-news-lb-wrap bottom-line">
+            <div class="i-news-box notice o-h" id="noticeBox">
+                <ul class="i-news-list">
+                    <li><a class="db text-ellip" href="#">1指定内容是当前页面中的某些元素，那么这些元素将从原位置上消失。简而言之</a></li>
+                    <li><a class="db text-ellip" href="#">2立刻把七叶和茶项目分享给大家，这项目太神了立刻把七叶和茶项目分享给大家，这项目太神了</a></li>
+                    <li><a class="db text-ellip" href="#">3回调函数，每次动画完成，marginTop归零，并把此时第一条信息添加到列表最后</a></li>
+                    <li><a class="db text-ellip" href="#">4这篇文章主要给大家介绍了关于利用10行js代码实现滚动公告效果的相关资</a></li>
+                    <li><a class="db text-ellip" href="#">5立刻把七叶和茶项目分享给大家</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 热门项目 -->
+        <div class="i-project-wrap i-hot-project bottom-line">
+            <div>
+                <h2 class="i-title">热门项目</h2>
+            </div>
+            <div class="i-hot-project-content clear">
+                <a href="" class="i-hot-left fl br-6">
+                    <i class="icon"></i>
+                    <div><img src="../images/occupy/1@2x.png" alt=""></div>
+                    <span class="text-ellip">巴蜀大将</span>
+                </a>
+                <div class="i-hot-right fr">
+                    <a href="" class="br-6">
+                        <div><img src="../images/occupy/2@2x.png" alt=""></div>
+                        <span class="text-ellip">猪小嫚爱野菜猪小嫚爱野菜猪小嫚爱野菜</span>
+                    </a>
+                    <a href="" class="br-6">
+                        <div><img src="../images/occupy/2@2x.png" alt=""></div>
+                        <span class="text-ellip">李嘉嘉饮品</span>
+                    </a>
+                    <a href="" class="i-hot-more br-6">
+                        寻找更多优质项目
+                        <i class="icon icon-hot-more"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 精品项目 -->
+        <div class="i-project-wrap bottom-line">
+            <div>
+                <h2 class="i-title">精品项目</h2>
+            </div>
+            <ul class="i-recommed-ul">
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/4@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">500</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-id="58750" data-type="cmsad">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/5@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">3~500</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/6@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/7@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 新品推荐 -->
+        <div class="i-project-wrap bottom-line">
+            <div>
+                <h2 class="i-title">新品推荐</h2>
+            </div>
+            <ul class="i-recommed-ul">
+                <li>
+                    <a href="#" data-id="58750" data-type="cmsad">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/8@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-id="58750" data-type="cmsad">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/9@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-id="58750" data-type="cmsad">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/10@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-id="58750" data-type="cmsad">
+                        <dl>
+                            <dt class="br-6"><img src="../images/occupy/11@2x.png"></dt>
+                            <dd>
+                                <p class="i-online-title text-ellip">李嘉嘉甜品</p>
+                                <p class="i-online-name text-ellip">
+                                    北京诚膳餐饮有限公司
+                                </p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-money">
+                                        ￥<i class="rmb">30~50</i>万</span>
+                                    <span class="i-online-time fr">2019-03-19</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 行业新闻tab start -->
+        <div class="i-industry-news-wrap" id="FengTab">
+            <ul class="i-industry-news-tabs tab">
+                <li class="tac">行业新闻</li>
+                <li class="tac">餐饮资讯</li>
+                <li class="tac">品牌资讯</li>
+                <li class="tac">创业故事</li>
+            </ul>
+            <ul class="i-industry-news-content con">
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <ul class="i-industry-news-list clear">
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/13@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/13@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/13@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <ul class="i-industry-news-list clear">
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <ul class="i-industry-news-list clear">
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩小韩小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <a class="db" href="#">
+                        <dl class="clear">
+                            <dt class="br-6 fl"><img src="../images/occupy/14@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩小韩小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                    <ul class="i-industry-news-list clear">
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                        <li class="fl">
+                            <a class="fl" href="">
+                                <span class="i-news-title fl text-ellip">将优选的新鲜食材放入慢火</span>
+                                <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 行业新闻tab end -->
+        <footer>
+            <div class="footer-link-list"> 
+                <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
+            </div>
+            <p class="">版权所有 &copy; xxx加盟网</p>
+            <p class="">Copyright &copy; www.53.com.cn All Rights Reserved</p>
+            <p class="">备案号：京ICP备18000242号-1</p>
+        </footer>
+        <!-- 底部固定按钮 -->
+        <div class="i-foot-fixed o-h bgcolor-fff"> 
+            <a href="javascript:;" class="i-online-btn online-btn">
+                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
+            </a> 
+            <p></p>
+            <a href="javascript:;" class="i-tel-btn tel-btn">
+                <i class="icon i-icon-tel icon-tel"></i>电话咨询
+            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a>
+        </div>
+        <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <form action="#" method="get" class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <button type="submit" class="icon tel-layer-btn layer-btn"></button>
+                </form>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <form action="#" method="get" class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </form>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/swiper3.4.2.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
+<script>
+     // 新闻公告 start
+    var iliHeight = $("#noticeBox").height();//单行滚动的高度
+    var area = document.getElementById('noticeBox');
+    var speed = 2;//滚动的速度
+    var time;
+    var delay = 3000;
+    area.scrollTop = 0;
+    area.innerHTML += area.innerHTML;//克隆一份一样的内容
+    function startScroll() {
+        time = setInterval("scrollUp()", speed);
+        area.scrollTop++;
+    }
+
+    function scrollUp() {
+        if (area.scrollTop % (iliHeight) == 0) {
+            clearInterval(time);
+            setTimeout(startScroll, delay);
+        } else {
+            area.scrollTop++;
+            if (area.scrollTop >= area.scrollHeight / 2) {
+                area.scrollTop = 0;
+            }
+        }
+    }
+    setTimeout(startScroll, delay);
+    // 新闻公告 end
+
+    // 点击首页菜单弹出层
+    $(".i-header-menu").on("click",function (e) {
+        e.stopPropagation();
+        $(".i-menu-wrap").slideToggle(300);
+        $(".layer-search-mask").fadeToggle(300);
+        $("html").toggleClass("hei-100");
+        $("body").toggleClass("hei-100");
+    })
+    // 点击阴影关闭
+    $(".i-menu-wrap a").on("click",function (e) {
+        e.stopPropagation();
+        $(".i-menu-wrap").slideToggle(300);
+        $(".layer-search-mask").fadeToggle(300);
+        $("html").toggleClass("hei-100");
+        $("body").toggleClass("hei-100");
+    })
+    $(".back-btn").on("click",function (e) {
+        e.stopPropagation();
+        $(".i-menu-wrap").slideToggle(300);
+        $(".layer-search-mask").fadeToggle(300);
+        $("html").toggleClass("hei-100");
+        $("body").toggleClass("hei-100");
+    })
+    $(".layer-search-mask").on("click",function (e) {
+        e.stopPropagation();
+        $(".i-menu-wrap").slideToggle(300);
+        $(".layer-search-mask").fadeToggle(300);
+        $("html").toggleClass("hei-100");
+        $("body").toggleClass("hei-100");
+    })
+    // 搜索关闭阴影
+
+    // 首页 banner
+    new Swiper('.i-top-banner .swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        autoplay: 3000,
+        loop: true,
+        autoplayDisableOnInteraction : false,
+        observer: true, 
+        observeParents: true
+    })
+</script>
+</html>
+
