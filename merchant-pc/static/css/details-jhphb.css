@@ -283,9 +283,143 @@ img {
 }
 .weekend-top {
   height: 486px;
+  margin-bottom: 20px;
 }
 .brand-bottom {
   height: 740px;
+}
+.weekend-top .aside-header {
+  border: 1px solid #ddd;
+}
+.aside-header {
+  padding: 0 14px;
+  margin-bottom: 8px;
+}
+.ranking-list {
+  width: 360px;
+  height: 758px;
+  background-color: #ffffff;
+}
+.ranking-list .ranking-tab {
+  width: 328px;
+  height: 62px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+}
+.ranking-list .ranking-tab li {
+  float: left;
+  font-size: 20px;
+  color: #666;
+  line-height: 52px;
+  padding: 0 8px;
+  margin-top: 6px;
+  margin-left: 32px;
+  cursor: pointer;
+}
+.ranking-list .ranking-tab li:nth-of-type(2) {
+  float: right;
+  margin-right: 32px;
+}
+.ranking-list .ranking-tab li.active {
+  border-bottom: 4px solid #ff5909;
+}
+.ranking-list .ranking-cont {
+  margin-top: 5px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li {
+  height: 57px;
+  margin-bottom: 12px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li a {
+  display: block;
+  position: relative;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .icon-rank1,
+.ranking-list .ranking-cont .ranking-cont-item li .icon-rank2,
+.ranking-list .ranking-cont .ranking-cont-item li .icon-rank3 {
+  width: 22px;
+  height: 28px;
+  background-image: url("../images/icons/icon_gold.png");
+  background-size: 22px 28px;
+  left: 13px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .icon-rank2 {
+  background-image: url("../images/icons/icon_silver.png");
+}
+.ranking-list .ranking-cont .ranking-cont-item li .icon-rank3 {
+  background-image: url("../images/icons/icon_copper.png");
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(1) .wraper {
+  background-image: url("../images/occupy/bg_phb_yl@3x.png");
+  background-size: 297px 57px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(1) .wraper .wraper-child .rank-attention {
+  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(2) .wraper {
+  background-image: url("../images/occupy/bg_phb_ys@3x.png");
+  background-size: 297px 57px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(2) .wraper .wraper-child .rank-attention {
+  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(3) .wraper {
+  background-image: url("../images/occupy/bg_phb_ht@3x.png");
+  background-size: 297px 57px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(3) .wraper .wraper-child .rank-attention {
+  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
+}
+.ranking-list .ranking-cont .ranking-cont-item li .rank-num {
+  font-size: 14px;
+  color: #333333;
+  width: 48px;
+  height: 57px;
+  line-height: 57px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper {
+  width: 297px;
+  height: 57px;
+  margin-left: 48px;
+  overflow: hidden;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .rank-img {
+  float: left;
+  width: 63px;
+  height: 42px;
+  margin: 8px 14px auto 8px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child {
+  width: 206px;
+  margin-top: 8px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child p:nth-of-type(1) {
+  height: 22px;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-name {
+  font-size: 16px;
+  color: #666666;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-money {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f85100;
+}
+.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-attention {
+  font-size: 14px;
+  color: #999999;
+  padding-left: 19px;
+  background-image: url("../images/icons/icon_guanzhudu_gray@3x.png");
+  background-repeat: no-repeat;
+  background-size: 11px 10px;
+  background-position: left center;
 }
 /* 栏目 */
 .big__wrapper {
