@@ -665,6 +665,9 @@ img {
     cursor: pointer;
 
 }
+.like__box__left  .left__content .left__content__item a{
+    font-size: 16px;
+}
 .like__box__left  .left__content .left__content__item a:hover{
     background: #FF5909;
     color: #fff;
@@ -701,6 +704,9 @@ img {
     margin-right: 18px;
     margin-bottom: 22px;
     cursor: pointer;
+}
+.like__box__right ul li a{
+    font-size: 16px;
 }
 .like__box__right ul li a:hover{
     background: #FF5909;

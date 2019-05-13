@@ -12,12 +12,13 @@
 }
 .footer__black .footer__black__content .footer__black__img{
     display: inline-block;
-    width: 80%;
+    width: 930px;
     vertical-align: middle;
 }
 .footer__black .footer__black__content  .footer__black__phone{
-    display: inline-block;
-    width: 18%;
+    float:right;
+    margin-top: 40px;
+    /* width: 18%; */
     vertical-align: middle;
 }
 .footer__black .footer__black__content  .footer__black__phone .number{
@@ -51,19 +52,20 @@
 }
 .ul__phone__box{
     float: right;
-    width: 22%;
+    /* width: 22%; */
     color: #ffffff;
+    font-size: 24px;
 
 }
 .ul__phone__box .big__phone__text{
-    font-size: 24px;
+    font-size: 36px;
 }
 /* --------- */
 .footer__orange{
     width: 100%;
     background: #FF5909;
     min-width: 1200px;
-    padding-bottom: 20px;
+    height: 116px;
     overflow: hidden;
 }
 .footer__orange .footer__orange__content{
@@ -73,7 +75,7 @@
 .footer__orange .logo__text__wrapper{
     width: 60%;
     float: left;
-    margin-top: 30px;
+    margin-top: 24px;
 }
 .footer__orange .logo__text__wrapper .logo__box{
     display: inline-block;
@@ -88,6 +90,7 @@
 .footer__orange .logo__text__wrapper .logo__text{
     display: inline-block;
     vertical-align: middle;
+    margin-top: 10px;
 
 }
 .footer__orange .logo__text__wrapper .logo__text .logo__text--white{
@@ -116,7 +119,7 @@
     background: red;
 }
 .footer__orange .erweima__box .item__box .item__img{
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .footer__orange .erweima__box .item__box .item__img img{
     width: 100%;
@@ -126,6 +129,7 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
+    width: 96px;
 
 }
 .footer__orange .erweima__box .item__box .item__text__box .item__text{
