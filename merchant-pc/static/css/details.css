@@ -233,6 +233,7 @@ body {
 .info__wrapper .info__left_box {
     width: 900px;
     float: left;
+    position: relative;
     /* background: #fff; */
 
 }
@@ -243,11 +244,15 @@ body {
     display: flex;
     border-bottom: 1px solid #edeef5;
     background: #fff;
+    width: 100%;
+    max-width: 900px;
 }
 
 .info__left_box .tab__info__box {
     padding: 34px 54px;
     background: #fff;
+    margin-top: 50px;
+   
 
 }
 
@@ -643,7 +648,7 @@ body {
 }
 
 .form__box .form__group textarea::-webkit-input-placeholder {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .form__box .form__group .form__icon--user {
@@ -711,6 +716,10 @@ body {
     color: #333;
     border-bottom: 1px solid #eee;
     cursor: pointer;
+    margin-bottom: 5px;
+}
+.arrow__box__p:last-child{
+    border: none;
 }
 .img__box{
     display: inline-block;

@@ -45,7 +45,24 @@
 				<div class="header-search">
 					<div class="header-searchbox">
 						<div class="form-input posi-re">
-							<span class="icon-text">餐饮分类</span>
+							<div class="icon-wraper">
+								<span class="icon-txt">餐饮分类</span>
+								<span class="icon-icon icon-triangle-down"></span>
+								<div class="catering-inner hidden">
+									<i class="icon-icon icon-up-triangle"></i>
+									<ul>
+										<li><a href="javascript:void(0);" class="cur">全部</a></li>
+										<li><a href="javascript:void(0);">中式快餐</a></li>
+										<li><a href="javascript:void(0);">饮品</a></li>
+										<li><a href="javascript:void(0);">小吃</a></li>
+										<li><a href="javascript:void(0);">甜品烘培</a></li>
+										<li><a href="javascript:void(0);">西式快餐</a></li>
+										<li><a href="javascript:void(0);">海鲜</a></li>
+										<li><a href="javascript:void(0);">烤肉</a></li>
+										<li><a href="javascript:void(0);">韩餐</a></li>
+									</ul>
+								</div>
+							</div>
 							<input id="searchValue" type="text" placeholder="请输入想找的品牌" />
 						</div>
 						<span id="searchIcon" class="btn-btn btn-search">
@@ -76,10 +93,10 @@
 						<img src="images/icon/icon_paihangbang@3x.png" class="icon-img" alt="">
 						<p class="icon-text">排行榜</p>
 					</div>
-
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 	<!-- 下边内容 -->
 	<div class="content">
@@ -221,8 +238,8 @@
 							<p class="text__title">过三关毛肚麻辣火锅</p>
 							<p class="text__title__sub">北京成山餐饮管理有限公司</p>
 							<p class="text__title__sub">加盟区域：全国</p>
-							<p class="text__title__sub_1" ><span style=" display: inline-block;
-								vertical-align: middle;">门店总数：</span>	<span class="text__title__sub--orange">47</span></p>
+							<p class="text__title__sub_1"><span style=" display: inline-block;
+								vertical-align: middle;">门店总数：</span> <span class="text__title__sub--orange">47</span></p>
 						</div>
 					</div>
 					<div class="text__info__sub__box">
@@ -335,7 +352,7 @@
 				<img src="images/test/11.png" alt="">
 			</div>
 			<div class="like__box__right">
-				<div class="left__title" >
+				<div class="left__title">
 					热门行业
 				</div>
 				<ul id='trade'>
@@ -472,7 +489,7 @@
 
 			</div>
 			<div class="information__box">
-				<div class="tab__wrapper">
+				<div class="tab__wrapper" id='tab-info'>
 					<div class="tab_item tab_item--active" style=" margin-left: 50px;">
 						行业资讯
 					</div>
@@ -576,4 +593,5 @@
 
 </html>
 <script src='js/jquery-1.11.0.min.js'></script>
+<script src='js/header.js'></script>
 <script src='js/details-list.js'></script>

@@ -176,9 +176,9 @@ img {
 .list__wrpper .list__item__info{
     float: left;
     width: 400px;
-    height: 172px;
+    /* height: 172px; */
     background: #fff;
-    padding: 20px 16px;
+    padding: 19px 16px;
     box-sizing: border-box;
     margin-bottom: 20px;
 
@@ -234,7 +234,8 @@ img {
 .text__info__sub__box .text__info__1{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 3px;
+    margin-right: 18px;
+    font-size: 12px;
 
 
 }

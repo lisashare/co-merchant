@@ -29,4 +29,8 @@ $(function(){
         $('#search li').removeClass('active')
         $(this).addClass('active');
     })
+    $('#tab-info .tab_item').on('click',function(){
+        $('#tab-info .tab_item').removeClass('tab_item--active')
+        $(this).addClass('tab_item--active');
+    })
 })
