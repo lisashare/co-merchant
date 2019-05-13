@@ -22,10 +22,11 @@ body {
   color: #999999;
 }
 .container .content-list {
-  width: 842px;
+  width: 820px;
   padding: 30px 16px;
   margin-top: 20px;
   background-color: #ffffff;
+  box-sizing: border-box;
   position: relative;
 }
 .container .content-list .section-title {
@@ -59,8 +60,8 @@ body {
   height: 134px;
 }
 .container .content-list li .div-text {
-  width: 602px;
-  margin-left: 30px;
+  width: 558px;
+  margin-left: 28px;
 }
 .container .content-list li .div-text .title {
   width: 500px;
@@ -96,12 +97,11 @@ body {
   background-position: left center;
 }
 .container .aside {
-  width: 280px;
+  width: 360px;
 }
 .container .aside .section {
   margin-bottom: 20px;
   background-color: #ffffff;
-  height: 500px;
 }
 .container .aside .section .title {
   font-size: 20px;
@@ -121,14 +121,15 @@ body {
 .container .aside .section .section-con.section-con-pad0 {
   padding: 0 4px 0 6px;
 }
-.container .aside .section.hot-brand {
-  height: 570px;
+.container .aside .section.hot-brand .section-con {
+  overflow: hidden;
+  padding-bottom: 20px;
 }
 .container .aside .section.hot-brand li {
   float: left;
-  width: 120px;
-  margin-right: 8px;
-  margin-bottom: 12px;
+  width: 159px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
 .container .aside .section.hot-brand li:nth-of-type(2n) {
   margin-right: 0px;
@@ -138,15 +139,15 @@ body {
   margin-bottom: 0px;
 }
 .container .aside .section.hot-brand .div-img {
-  width: 120px;
-  height: 80px;
+  width: 159px;
+  height: 106px;
 }
 .container .aside .section.hot-brand .div-img img {
-  width: 120px;
-  height: 80px;
+  width: 159px;
+  height: 106px;
 }
 .container .aside .section.hot-brand .div-text {
-  width: 120px;
+  width: 159px;
 }
 .container .aside .section.hot-brand .div-text .tit {
   margin-top: 10px;
@@ -167,104 +168,6 @@ body {
   font-weight: bold;
   color: #ff5909;
 }
-.container .aside .section.brand-rank {
-  height: 778px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li {
-  height: 52px;
-  margin-bottom: 20px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li a {
-  display: block;
-  position: relative;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .icon-rank1,
-.container .aside .section.brand-rank .ranking-cont-item li .icon-rank2,
-.container .aside .section.brand-rank .ranking-cont-item li .icon-rank3 {
-  width: 22px;
-  height: 28px;
-  background-image: url("../images/icons/icon_gold.png");
-  background-size: 22px 28px;
-  left: 0px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .icon-rank2 {
-  background-image: url("../images/icons/icon_silver.png");
-}
-.container .aside .section.brand-rank .ranking-cont-item li .icon-rank3 {
-  background-image: url("../images/icons/icon_copper.png");
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(1) .wraper {
-  background-image: url("../images/occupy/bg_phb_yl@3x.png");
-  background-size: 245px 52px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(1) .wraper .wraper-child .rank-attention {
-  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(2) .wraper {
-  background-image: url("../images/occupy/bg_phb_ys@3x.png");
-  background-size: 245px 52px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(2) .wraper .wraper-child .rank-attention {
-  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(3) .wraper {
-  background-image: url("../images/occupy/bg_phb_ht@3x.png");
-  background-size: 245px 52px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li:nth-of-type(3) .wraper .wraper-child .rank-attention {
-  background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
-}
-.container .aside .section.brand-rank .ranking-cont-item li .rank-num {
-  font-size: 14px;
-  color: #333333;
-  width: 20px;
-  height: 52px;
-  line-height: 52px;
-  text-align: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper {
-  width: 245px;
-  height: 52px;
-  margin-left: 26px;
-  overflow: hidden;
-  background-image: none;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .rank-img {
-  float: left;
-  width: 78px;
-  height: 52px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .wraper-child {
-  width: 154px;
-  margin-top: 8px;
-  margin-left: 8px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .wraper-child p:nth-of-type(1) {
-  height: 22px;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .wraper-child .rank-name {
-  font-size: 16px;
-  color: #666666;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .wraper-child .rank-money {
-  font-size: 14px;
-  font-weight: bold;
-  color: #f85100;
-}
-.container .aside .section.brand-rank .ranking-cont-item li .wraper .wraper-child .rank-attention {
-  font-size: 14px;
-  color: #999999;
-  padding-left: 19px;
-  background-image: url("../images/icons/icon_guanzhudu_gray@3x.png");
-  background-repeat: no-repeat;
-  background-size: 11px 10px;
-  background-position: left center;
-}
 .container .aside .section.hot-news {
   height: 397px;
 }
@@ -281,7 +184,7 @@ body {
   height: 80px;
 }
 .container .aside .section.hot-news .hot-news-top .div-text {
-  width: 116px;
+  width: 182px;
   margin-left: 12px;
 }
 .container .aside .section.hot-news .hot-news-top .div-text .tit {
@@ -298,14 +201,14 @@ body {
   margin-top: 6px;
 }
 .container .aside .section.hot-news .hot-news-item {
-  height: 23px;
-  line-height: 23px;
+  height: 24px;
+  line-height: 24px;
 }
 .container .aside .section.hot-news .hot-news-item a {
   float: left;
   font-size: 14px;
   color: #666666;
-  width: 150px;
+  width: 232px;
 }
 .container .aside .section.hot-news .hot-news-item a em {
   width: 8px;
@@ -327,9 +230,9 @@ body {
   float: left;
   width: 76px;
   height: 40px;
-  margin: 0 10px 6px 0;
+  margin: 0 6px 6px 0;
 }
-.container .aside .section.hot-search2 li:nth-of-type(3n) {
+.container .aside .section.hot-search2 li:nth-of-type(4n) {
   margin: 0 0 6px 0;
 }
 .container .aside .section.hot-search2 li a {
