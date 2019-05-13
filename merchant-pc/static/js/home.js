@@ -209,6 +209,23 @@ $(document).ready(function () {
         $(".likes-section").find(".likes-swiper-container2").eq( $(this).index()-1 ).removeClass("hidden").siblings(".likes-swiper-container2").addClass("hidden")
      });
      //猜你喜欢end-tab
+
+     // 返回顶部start
+      if ($(this).scrollTop() == 0) {
+            $("#toTop").hide();
+        }
+        $(window).scroll(function(event) {
+            if ($(this).scrollTop() == 0) {
+                $("#toTop").hide();
+            }
+            if ($(this).scrollTop() != 0) {
+                $("#toTop").show();
+            }
+        });
+        $("#toTop").click(function(event) {
+            $("html,body").animate({ scrollTop: "0px" }, 100);
+        });
+     // 返回顶部end
 })
 
 //超出多少字显示省略号
