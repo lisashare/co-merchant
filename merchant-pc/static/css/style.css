@@ -3,6 +3,7 @@
     width: 574px;
     position: relative;
     margin: 0 auto;
+    top: -35px;
 }
 
 .mod18 .btn {
@@ -28,7 +29,7 @@
 
 .mod18 #prev,
 .mod18 #next {
-    top: 340px;
+    top: 345px;
     width: 44px;
     height: 90px;
     background: #edeef5;
@@ -70,8 +71,8 @@
 
 .mod18 .cf a {
     display: block;
-    width: 574px;
-    height: 320px;
+    width:100%;
+    height: 100%;
     position: absolute;
     color: #fff;
 }
@@ -93,7 +94,7 @@
 }
 
 .mod18 .picBox {
-    width: 574px;
+    width: 100%;
     height: 320px;
     position: relative;
     overflow: hidden;
@@ -115,7 +116,7 @@
     height: 90px;
     margin: 0 auto;
     position: relative;
-    padding-top: 15px;
+    padding-top: 20px;
     overflow: hidden;
 }
 

@@ -44,8 +44,8 @@ body {
 }
 
 .content .content__details__wrapper .details__wrapper__title__box {
-    width: 50%;
-    float: left;
+    width: 40%;
+    /* float: left; */
     padding-bottom: 10px;
     border-bottom: 1px dashed #EFF0F6;
 }
@@ -75,7 +75,8 @@ body {
 
 .details__wrapper__text__box {
     width: 100%;
-    overflow: hidden;
+    height: 430px;
+    /* overflow: hidden; */
     padding: 10px 0 22px 0;
 }
 .details__wrapper__text__box:after,
@@ -93,13 +94,13 @@ body {
 
 .details__wrapper__text__box .details__wrapper__left__list {
     float: left;
-    width: 50%;
+    width: 454px;
     overflow: hidden;
 }
 .details__wrapper__text__box .details__wrapper__right__list {
     float: left;
     width: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .details__wrapper__text__box .details__wrapper__left__list .left__list__content {
@@ -109,7 +110,7 @@ body {
 }
 
 .details__wrapper__text__box .details__wrapper__left__list .list__text {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
     margin-bottom: 20px;
 }
@@ -135,7 +136,7 @@ body {
     height: 13px;
     background: url('../images/icon/icon_star@3x.png') no-repeat;
     background-size: 100% 100%;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .details__wrapper__text__box .details__wrapper__left__list .list__text div i {
@@ -144,13 +145,14 @@ body {
     height: 12px;
     background: url('../images/icon/icon_dh@3x.png') no-repeat;
     background-size: 100% 100%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     margin-right: 8px;
 }
 
 .details__wrapper__text__box .details__wrapper__right__list {
     float: left;
     width: 50%;
+    margin-left: 100px;
 }
 
 .list__text .list__text__list__right__name {
@@ -159,7 +161,7 @@ body {
 
 /* 3个圆 */
 .circle__banner {
-    width: 90%;
+    width: 100%;
     height: 114px;
     background: #F7F7F7;
     border-radius: 8px;
@@ -297,7 +299,7 @@ body {
     border-left: 9px solid #35AEB6;
     font-size: 20px;
     color: #333;
-    padding-left: 5px;
+    padding-left: 10px;
     margin-left: -20px;
     /* margin-top: 30px; */
     margin-bottom: 30px;
@@ -442,7 +444,7 @@ body {
     margin-bottom: 14px;
 }
 
-.box__1 .box__company__name {
+.box__1 .box__company__name a{
     color: #333;
     font-size: 16px;
     margin: 14px 0 10px 0;
@@ -502,8 +504,8 @@ body {
 }
 .box__1 .box__info__text i {
     display: inline-block;
-    width: 8px;
-    height: 8px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background: #999999;
     vertical-align: middle
@@ -516,6 +518,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color: #666;
 
 
 }
@@ -524,7 +527,7 @@ body {
     width: 35%;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 5px;
+    margin-left: 15px;
 
 }
 

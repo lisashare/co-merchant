@@ -94,6 +94,7 @@ img {
     box-sizing: border-box;
     padding: 8px 14px;
     color: #666;
+    font-size: 16px;
     /* position: absolute; */
 }
 .filter__content  .fliter__list__item  .filter__item__name li:hover > a{
@@ -243,6 +244,11 @@ img {
     color: #FF5909;
     font-size: 16px;
 }
+.text__title__sub--orange--big{
+    font-weight: 700;
+     color: #FF5909;
+     font-size: 18px;
+ }
 .text__info__sub__box{
     width: 100%;
     color: #666;
