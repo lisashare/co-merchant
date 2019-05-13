@@ -1,0 +1,24 @@
+/* 分页 */
+.page{
+    width: 700px;
+    margin: 30px auto 0 auto;
+
+    overflow: hidden;
+
+}
+.page span{
+    float: left;
+   
+margin-right: 2px;
+}
+.page a{
+    font-size: 14px;
+    color: #999;
+    padding: 8px 12px;
+    border:1px solid rgba(221,221,221,1);
+border-radius:4px;
+box-sizing: border-box;
+}
+.page--active{
+    color: #FF5909!important;
+}

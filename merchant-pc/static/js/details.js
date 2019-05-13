@@ -1,4 +1,10 @@
 $(function () {
+    var $li = $('.text-scroll-ul li')
+    var liIndex = $li.length;
+    var liActive = 0
+
+
+
     var $navs = $('.fixed__nav__list ul li')
     var $sections = $('.section')
     var $window = $(document)
