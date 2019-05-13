@@ -498,6 +498,7 @@ body {
 }
 .big-section .img-bottom .item .bg-shade .name-counts .name {
   font-size: 16px;
+  width: 214px;
   margin-bottom: 4px;
 }
 .big-section .img-bottom .item .bg-shade .name-counts .counts {
@@ -592,6 +593,7 @@ body {
 }
 .recomend-section .recomend-con ul li .rem-title .rem-name {
   color: #666666;
+  width: 136px;
 }
 .recomend-section .recomend-con ul li .rem-title .rem-money {
   font-weight: bold;
@@ -682,7 +684,7 @@ body {
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li {
   float: left;
   margin-right: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   text-align: center;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li:nth-of-type(4n) {
@@ -699,9 +701,12 @@ body {
   height: 126px;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name {
-  font-size: 18px;
+  width: 164px;
   line-height: 18px;
   margin: 20px auto 14px;
+}
+.investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name a {
+  font-size: 18px;
   color: #333333;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-wraper {
@@ -884,6 +889,7 @@ body {
 .investment-section .section-pub .ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-name {
   font-size: 16px;
   color: #666666;
+  width: 128px;
 }
 .investment-section .section-pub .ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-money {
   font-size: 18px;
@@ -1036,6 +1042,11 @@ body {
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub a {
   font-size: 16px;
   color: #666666;
+  width: 94px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub .type {
   font-size: 14px;
@@ -1057,6 +1068,12 @@ body {
   background-size: 14px 15px;
   background-repeat: no-repeat;
   background-position: left center;
+}
+.joining-section .section-pub .franchise-discount li .div-text .div-text-mid .company {
+  width: 142px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .joining-section .section-pub .franchise-discount li .div-text .div-text-mid .addr {
   background-image: url("../images/icons/icon_company_here.png");
