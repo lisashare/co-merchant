@@ -669,14 +669,17 @@ i.i-icon-search {
   font-weight: 700;
   color: #000;
 }
-.zx-detail {
+.zx-detail,
+.xm-detail {
   height: 12.88rem;
   overflow: hidden;
 }
-.zx-detail-ul {
+.zx-detail-ul,
+.xm-detail-ul {
   position: absolute;
 }
-.zx-detail-ul li {
+.zx-detail-ul li,
+.xm-detail-ul li {
   border-bottom: 1px solid #f1f0f0;
 }
 /* 资讯列表 */

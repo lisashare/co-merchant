@@ -453,8 +453,8 @@
                 </li>
             </ul>
         </div>
-        <div class="i-industry-news-wrap itd-industry-news-wrap mb-30">
-            <ul class="i-industry-news-content">
+        <div class="xm-detail i-industry-news-wrap itd-industry-news-wrap mb-30">
+            <ul class="xm-detail-ul i-industry-news-content">
                 <li>
                     <a class="db" href="#">
                         <dl class="clear border-top">
@@ -470,6 +470,24 @@
                             </dd>
                         </dl>
                     </a>
+                </li>
+                <li>
+                    <a class="db" href="#">
+                        <dl class="clear border-top">
+                            <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
+                            <dd class="fr">
+                                <p class="i-online-title set-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                                <p class="i-online-desc clear">
+                                    <span class="i-online-editor text-ellip fl">
+                                        编辑：小韩
+                                    </span>
+                                    <span class="i-news-time fr">2019-03-19 12:34:00</span>
+                                </p>
+                            </dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
                     <a class="db" href="#">
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/5@2x.png"></dt>
@@ -484,6 +502,8 @@
                             </dd>
                         </dl>
                     </a>
+                </li>
+                <li>
                     <a class="db" href="#">
                         <dl class="clear">
                             <dt class="br-6 fl"><img src="../images/occupy/6@2x.png"></dt>
@@ -602,5 +622,18 @@
         observer: true, 
         observeParents: true
     })
+
+    // 相关文章无限滚动
+    var topValue = 0;
+    var per_height = $(".xm-detail-ul li").eq(1).outerHeight(true);
+    setInterval(function(){
+        if(topValue > -per_height){
+            topValue--;
+        }else if(topValue == -per_height){
+            topValue = 0;
+            $(".xm-detail-ul").find("li:first-child").remove().appendTo($(".xm-detail-ul"));
+        }
+        $(".xm-detail-ul").css("top",topValue);
+    }, 50)
 </script>
 </html>
