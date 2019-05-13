@@ -2,11 +2,13 @@
     width: 100%;
     background: #333333;
     min-width: 1200px;
-    padding-bottom: 20px;
+    height: 178px;
+    /* padding-bottom: 20px; */
     
 }
 .footer__black .footer__black__content{
     width: 1200px;
+    height: 100%;
     margin: 0 auto;
 
 }
@@ -34,6 +36,7 @@
 .footer__black .ul__text{
     width: 100%;
     overflow: hidden;
+
   
 
 }
@@ -42,6 +45,7 @@
     float: left;
     width: 50%;
     margin-left: -15px;
+    margin-top: 15px;
     
 }
 .footer__black .ul__text ul li{
@@ -49,6 +53,7 @@
     float: left;
     color: #FF5909;
     padding: 0 15px;
+    font-size: 18px;
 }
 .ul__phone__box{
     float: right;
