@@ -40,16 +40,16 @@ body {
   position: relative;
 }
 .header .header-logo {
-  width: 232px;
-  height: 71px;
+  width: 235px;
+  height: 77px;
   transform: translate(0, -50%);
   position: absolute;
   left: 0;
   top: 50%;
 }
 .header .header-logo img {
-  width: 232px;
-  height: 71px;
+  width: 235px;
+  height: 77px;
 }
 .header .header-search {
   width: 464px;
@@ -1639,12 +1639,12 @@ body {
 }
 .copyright-section .copyright-logo {
   width: 183px;
-  height: 56px;
-  margin-top: 34px;
+  height: 59px;
+  margin-top: 24px;
 }
 .copyright-section .copyright-logo img {
   width: 183px;
-  height: 56px;
+  height: 59px;
 }
 .copyright-section .copyright-txt {
   margin-left: 38px;

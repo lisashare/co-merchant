@@ -191,6 +191,24 @@ $(document).ready(function () {
         $(".message").val( $(this).html() );
     });
      //提交快捷留言end
+
+     //手机号验证start
+     function isPhoneNumber(tel) {
+         var reg =/^0?1[3|4|5|6|7|8][0-9]\d{8}$/;
+         return reg.test(tel);
+     }
+     $(".btn-submit").click(function(){
+        if( isPhoneNumber( $("input[name='tel']").val() ) ){
+            return false;
+        }
+     });
+     //手机号验证end
+
+     //猜你喜欢start-tab
+     $(".likes-slider-money li").click(function(){
+        $(".likes-section").find(".likes-swiper-container2").eq( $(this).index()-1 ).removeClass("hidden").siblings(".likes-swiper-container2").addClass("hidden")
+     });
+     //猜你喜欢end-tab
 })
 
 //超出多少字显示省略号

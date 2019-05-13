@@ -669,14 +669,17 @@ i.i-icon-search {
   font-weight: 700;
   color: #000;
 }
-.zx-detail {
+.zx-detail,
+.xm-detail {
   height: 12.88rem;
   overflow: hidden;
 }
-.zx-detail-ul {
+.zx-detail-ul,
+.xm-detail-ul {
   position: absolute;
 }
-.zx-detail-ul li {
+.zx-detail-ul li,
+.xm-detail-ul li {
   border-bottom: 1px solid #f1f0f0;
 }
 /* 资讯列表 */
@@ -1690,10 +1693,9 @@ header.i-header {
   height: 1.76rem;
 }
 header.i-header .i-header-logo {
-  width: 1.4rem;
+  width: 1.32rem;
   height: 1.4rem;
-  margin-left: 0.8rem;
-  background: #f1f0f0;
+  margin-left: 0.84rem;
 }
 header.i-header .i-header-menu {
   box-sizing: border-box;

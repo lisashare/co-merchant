@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>         
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">   
+    <meta name="description" content="">    
+    <title>项目列表</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="../css/base.css">
+    <!-- common -->
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- layout -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部标题 -->
+        <header class="itd-header header-fixed bgcolor-fff">
+            <a href="javascript:history.back(-1)" class="back-btn"></a>
+            <h2 class="text-ellip">xxxx项目</h2>
+            <div class="itd-header-search header-search">
+                <i class="itd-icon-search"></i>
+            </div>
+        </header>
+        <!-- 顶部搜索按钮弹出框 -->
+        <div class="common-search-mask" style="display: none;"></div>
+        <div class="common-layer-search common-menu-wrap bgcolor-fff" style="display: none;">
+            <header class="o-h p-r clear">
+                <div class="common-back-btn back-btn back-btn-hide fl"></div>
+                <h2 class="text-ellip fl">xxxx项目</h2>
+            </header>
+            <form acrion="#" method="get" class="common-input-wrap">
+                <i class="icon icon-common-search"></i>
+                <input name="wd" type="text" class="search" id="common-layer-search" placeholder="请输入关键词搜索">
+            </form>
+            <ul class="common-keywords clear">
+                <li><a href="#">冰激凌</a></li>
+                <li><a href="#">果饮</a></li>
+                <li><a href="#">奶茶</a></li>
+                <li><a href="#">咖啡</a></li>
+            </ul>
+            <!--热门搜索-->
+            <div class="common-layer-search-wrap">
+                <h3>行业细分</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">鸡排</a></li>
+                    <li><a href="#" class="text-ellip">小吃</a></li>
+                    <li><a href="#" class="text-ellip">熟食卤煮</a></li>
+                    <li><a href="#" class="text-ellip">牛肉</a></li>
+                    <li><a href="#" class="text-ellip">黄焖鸡</a></li>
+                    <li><a href="#" class="text-ellip">梁山烤肉</a></li>
+                    <li><a href="#" class="text-ellip">韩式拌饭</a></li>
+                    <li><a href="#" class="text-ellip">羊肉</a></li>
+                    <li><a href="#" class="text-ellip">排骨</a></li>
+                    <li><a href="#" class="text-ellip">串串香</a></li>
+                </ul>
+                <div class="common-find-wrap tac">
+                    <a href="javascript:;" class="common-find-more">
+                        <span>查看更多<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    </a>
+                </div>
+            </div>
+            <!--投资金额-->
+            <div class="common-layer-search-wrap">
+                <h3>投资金额</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">1万以下</a></li>
+                    <li><a href="#" class="text-ellip">1-3万</a></li>
+                    <li><a href="#" class="text-ellip">3-5万</a></li>
+                    <li><a href="#" class="text-ellip">5-10万</a></li>
+                    <li><a href="#" class="text-ellip">10-20万</a></li>
+                    <li><a href="#" class="text-ellip">20-50万</a></li>
+                    <li><a href="#" class="text-ellip">50-100万</a></li>
+                    <li><a href="#" class="text-ellip">100万以上</a></li>
+                </ul>
+            </div>
+            <div class="common-layer-search-wrap">
+                <h3>新闻资讯</h3>
+                <ul class="common-shortcut-search clear">
+                    <li><a href="#" class="text-ellip">品牌资讯品牌资讯</a></li>
+                    <li><a href="#" class="text-ellip">行业资讯品牌</a></li>
+                    <li><a href="#" class="text-ellip">加盟资讯品</a></li>
+                    <li><a href="#" class="text-ellip">创业故事</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 项目分类 -->
+        <div class="project-classify bgcolr-fff">
+            <div class="project-synthesize pf">
+                <ul class="project-classify-ul border-bottom clear">
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">行业分类</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">子行业分类</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">投资金额</span><i class="icon"></i>
+                    </li>
+                    <li onclick="linkClick(this)">
+                        <span class="text-ellip">加盟地区</span><i class="icon"></i>
+                    </li>
+                </ul>
+                <div class="dorp-down bgcolr-fff">
+                    <div class="down li-first clear none">
+                        <a href="#" class="current">不限</a>
+                        <a href="#">中式快餐</a>
+                        <a href="#">饮品</a>
+                        <a href="#">小吃</a>
+                        <a href="#">甜品烘焙</a>
+                        <a href="#">西式快餐</a>
+                        <a href="#">海鲜</a>
+                        <a href="#">烤肉</a>
+                        <a href="#">韩餐</a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="current">不限<i></i></a>
+                        <a href="#">母婴</a>
+                        <a href="#">零售</a>
+                        <a href="#">餐饮</a>
+                        <a href="#">服装</a>
+                        <a href="#">教育</a>
+                        <a href="#">建材</a>
+                        <a href="#">服务</a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="current">不限</a>
+                        <a href="#" class="">1万以下</a>
+                        <a href="#" class="">1-3万</a>
+                        <a href="#" class="">3-5万</a>
+                        <a href="#" class="">5-10万</a>
+                        <a href="#" class="">10-20万</a>
+                        <a href="#" class="">20-50万</a>
+                        <a href="#" class="">50-100万</a>
+                        <a href="#" class="">100万以上</a>
+                    </div>
+                    <div class="down none clear">
+                        <a href="#" class="current">不限</a>
+                        <a href="#" class="">北京</a>
+                        <a href="#" class="">上海</a>
+                        <a href="#" class="">广州</a>
+                        <a href="#" class="">辽宁</a>
+                        <a href="#" class="">江苏</a>
+                        <a href="#" class="">河北</a>
+                        <a href="#" class="">河南</a>
+                        <a href="#" class="">安徽</a>
+                    </div>
+                </div>
+            </div>
+            <div class="shade none"></div>
+        </div>
+        <ul class="project-classify-content">
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/1@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/3@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/12@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/1@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/3@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+            <li>
+                <a class="db" href="#">
+                    <dl class="clear">
+                        <dt class="br-6 fl"><img src="../images/occupy/4@2x.png"></dt>
+                        <dd class="fr">
+                            <p class="i-online-title text-ellip">从顾客视角到餐饮人视角的转变，餐饮人是真的懂消费餐饮人是真的懂消费</p>
+                            <p class="i-online-name text-ellip">
+                                北京诚膳餐饮有限公司北京诚膳餐饮有限公司
+                            </p>
+                            <p class="i-online-desc clear">
+                                <span class="i-online-money">
+                                    ￥<i class="rmb">30~50</i>万</span>
+                            </p>
+                            <p class="i-online-area clear">
+                                <span class="i-online-city fl">
+                                    加盟区域：<span class="text-ellip">北京</span>
+                                </span>
+                                <span class="i-online-store fr">门店总数：<span class="text-ellip color-f85100">68</span></span>
+                            </p>
+                        </dd>
+                    </dl>
+                </a>
+            </li>
+        </ul>
+        <div class="paging">
+            <a href="#" class="paging-pre">上一页</a>
+            <a href="#" class="paging-num">
+                <span>1</span>/<span>20</span>
+            </a>
+            <a href="#" class="paging-next">下一页</a>
+        </div>
+        <input type="hidden" name="industry" value="">
+        <input type="hidden" name="subindustry" value="">
+        <input type="hidden" name="investamount" value="">
+        <input type="hidden" name="region" value="">
+        <footer>
+            <div class="footer-link-list"> 
+                <a href="" class="dib tac ys-footer-link">关于我们</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">联系我们</a> <span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">免责声明</a><span class="footer-line">|</span><a href="" class="dib tac ys-footer-link">电脑端</a> 
+            </div>
+            <p class="">版权所有 &copy; xxx加盟网</p>
+            <p class="">Copyright &copy; www.53.com.cn All Rights Reserved</p>
+            <p class="">备案号：京ICP备18000242号-1</p>
+        </footer>
+        <!-- 底部固定按钮 -->
+        <div class="i-foot-fixed o-h bgcolor-fff"> 
+            <a href="javascript:;" class="i-online-btn online-btn">
+                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
+            </a> 
+            <p></p>
+            <a href="javascript:;" class="i-tel-btn tel-btn">
+                <i class="icon i-icon-tel icon-tel"></i>电话咨询
+            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a>
+        </div>
+        <!-- 点击获取开店方案弹出框 -->
+        <div class="tel-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="tel-layer-top layer-top"></div>
+                <div class="tel-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，企业招商经理立即给您拨回。</p>
+                    <a href="javascript:;" class="icon tel-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+        <div class="article-layer-wrap layer-wrap" style="display: none;">
+            <div class="layer-content bgcolor-fff">
+                <div class="article-layer-top layer-top"></div>
+                <div class="article-layer-bottom layer-bottom">
+                    <input name="project_name" class="project-name" type="hidden" value="">
+                    <input name="category_name" type="hidden" value="">
+                    <input type="text" placeholder="请输入您的手机号">
+                    <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
+                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                </div>
+                <div class="icon layer-close"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../js/tool.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<script type="text/javascript" src="../js/search.js"></script>
+</html>
