@@ -18,6 +18,13 @@ body {
   font-size: 12px;
   color: #999999;
 }
+.container .content-wraper {
+  width: 902px;
+  margin-bottom: 30px;
+}
+.container .content-wraper .page {
+  overflow: visible;
+}
 .container .content-list {
   width: 842px;
   padding: 30px;

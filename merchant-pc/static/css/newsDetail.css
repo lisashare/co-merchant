@@ -74,6 +74,11 @@ body {
   color: #666666;
   margin-top: 20px;
 }
+.container .content-list .share-section {
+  height: 60px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
 .container .content-list .relate-article {
   height: 132px;
   border-top: 1px dashed #dddddd;

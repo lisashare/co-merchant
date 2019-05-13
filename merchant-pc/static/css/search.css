@@ -21,13 +21,19 @@ body {
   font-size: 12px;
   color: #999999;
 }
+.container .content-wraper {
+  width: 820px;
+  margin-bottom: 30px;
+}
+.container .content-wraper .page {
+  overflow: visible;
+}
 .container .content-list {
   width: 820px;
   padding: 30px 16px;
   margin-top: 20px;
   background-color: #ffffff;
   box-sizing: border-box;
-  position: relative;
 }
 .container .content-list .section-title {
   font-size: 20px;
@@ -37,12 +43,18 @@ body {
   line-height: 60px;
   text-align: center;
   background-color: #ff5909;
-  position: absolute;
-  left: 16px;
-  top: -20px;
+  /*position: absolute;
+			left: 16px; 
+			top: -20px;*/
+  position: relative;
+  top: -70px;
+  left: 0;
 }
 .container .content-list ul {
-  margin-top: 40px;
+  margin-top: -40px;
+  background-color: #ffffff;
+  /*position: relative;
+			top: -60px;*/
 }
 .container .content-list li {
   overflow: hidden;
