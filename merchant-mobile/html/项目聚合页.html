@@ -96,11 +96,9 @@
                 <p>作为我国青少年编程教育的知名品牌，编程猫(Codemao)坚持“无趣味，不编程”的教育理念，致力于开发面向世界各地青少年的图形化编程平台和系列编程课程。编程猫通过编程猫的课程学习，可以很容易地创造出有创意的作品，如学科游戏、应用程序、动画、互动故事等等，锻炼了孩子们的逻辑思维能力、任务分解能力、跨学科组合能力、审美能力和团队合作能力等综合素养，奠定了坚实的STEAM学科基础。</p>
                 <p><img src="../images/occupy/3@2x.png" alt=""></p>
             </div>
-            <div class="itd-zkgd-wrap">
-                <div class="itd-zkgd-shade">
-                    <img src="../images/main/jianbian.png" alt=""></div>
+            <div class="itd-zkgd-wrap more-btn-shade">
                 <div class="itd-djzk-btn">
-                    <span class="zhankai ">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
+                    <span class="zhankai">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
                     <span class="shouqi hide">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
                 </div>
             </div>
@@ -445,9 +443,10 @@
 <script type="text/javascript" src="../js/search.js"></script>
 <script>
     // 点击展开更多
-    $(".itd-djzk-btn").on("click",function () {
+    $(".itd-zkgd-wrap").on("click",function () {
         $(".jh-section-content").toggleClass("jh-hide");
         $(this).find("span").toggleClass("hide");
+        $(this).toggleClass("more-btn-shade");
     })
 
     // banner swiper

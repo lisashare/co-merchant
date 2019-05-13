@@ -95,9 +95,9 @@
             <dl>
                 <dt><img src="../images/occupy/banner@2x.png"></dt>
                 <dd>
-                    <p class="itd-online-title text-ellip">李嘉嘉甜品</p>
+                    <p class="itd-online-title text-ellip">李嘉嘉甜品李嘉嘉</p>
                     <p class="itd-online-name text-ellip">
-                        北京诚膳餐饮有限公司
+                        四川天使之翼餐饮管理有限公司
                     </p>
                     <p class="itd-online-desc clear">
                         <span class="itd-online-money">
@@ -144,7 +144,7 @@
             <li class="tac" data-index="2">费用</li>
             <li class="tac" data-index="3">案例</li>
         </ul>
-        <div class="itd-main-body o-h bottom-line">
+        <div class="itd-main-body o-h">
             <div class="section i-project-wrap border-bottom">
                 <div>
                     <h2 class="i-title">项目详情</h2>
@@ -241,12 +241,12 @@
             </div>
         </div>
         <div class="itd-zkgd-wrap">
-            <div class="itd-zkgd-shade"><img src="../images/main/jianbian.png" alt=""></div>
             <div class="itd-djzk-btn">
                 <span class="zhankai hide">展开全文<img src="../images/main/icon_arrow_down@3x.png" alt=""></span>
                 <span class="shouqi">收起全文<img src="../images/main/icon_arrow_up@3x.png" alt=""></span>
             </div>
         </div>
+        <div class="bottom-line"></div>
         <!-- 品牌介绍 end -->
         <!-- 下部分轮播图 -->
         <div class="i-top-banner itd-top-banner">
@@ -603,9 +603,10 @@
     })
 
     // 点击展开更多
-    $(".itd-djzk-btn").on("click",function () {
+    $(".itd-zkgd-wrap").on("click",function () {
         $(".itd-main-body").toggleClass("xmxq-main-hide");
         $(this).find("span").toggleClass("hide");
+        $(this).toggleClass("more-btn-shade");
         if($('.itd-djzk-btn span.shouqi').hasClass('hide')){
             var bannerTop = $(".itd-top-banner")[0].offsetTop - tabHeight - headHeight;
             $("html,body").stop().animate({scrollTop:bannerTop},30);
