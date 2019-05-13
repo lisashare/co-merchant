@@ -41,6 +41,9 @@ img {
 .content-header-left .net-ranking-list {
   padding: 0 16px;
 }
+.content-header-left .net-ranking-list i {
+  background-image: url('../images/icon/icon_network@3x.png');
+}
 .content-header-middle {
   width: 408px;
   padding: 0 16px;
