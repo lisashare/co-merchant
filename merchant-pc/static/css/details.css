@@ -4,7 +4,11 @@
 body {
     background-color: #f7f7f7;
 }
-
+* a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 /* —————————————————————————————内容——————————————————————————————————————————————— */
 .content {
     width: 1200px;
@@ -122,6 +126,7 @@ body {
 
 .details__wrapper__text__box .details__wrapper__left__list .list__text .list__text--orange {
     color: #FF5800;
+    font-weight: 700;
 }
 
 .details__wrapper__text__box .details__wrapper__left__list .list__text .list__text__star {
@@ -198,13 +203,17 @@ body {
 
 .get__button--orange .button__icon__box {
     width: 177px;
-    height: 16px;
+    /* height: 16px; */
     color: #fff;
     margin: 10px auto;
-    font-size: 18px;
+  
     cursor: pointer;
 }
+.get__button--orange .button__icon__box a{
+    color: #fff;
+    font-size: 18px;
 
+}
 .get__button--orange .button__icon__box i {
     display: inline-block;
     width: 19px;
@@ -414,6 +423,7 @@ body {
 
 .info__wrapper .info__right_box .box__1 .box_text {
     color: #999999;
+    line-height: 22px;
 }
 
 /* 盒子2 */
@@ -435,13 +445,13 @@ body {
 
 /* 盒子3 */
 .box__1 .img_list {
-    width: 100%;
+    width: 248px;
     overflow: hidden;
 }
 
 .box__1 .img_list .img_list__item {
     float: left;
-    width: 45%;
+    width: 120px;
 
     margin-bottom: 18px;
 }
@@ -453,7 +463,7 @@ body {
 }
 
 .box__1 .img_list .img_list__item:nth-child(even) {
-    margin-left: 5%;
+    margin-left: 8px;
 }
 
 .box__1 .img_list .img_list__item .img__text {
@@ -471,6 +481,7 @@ body {
 .box__1 .img_list .img_list__item .img__text__sub--orange {
     font-size: 14px;
     color: #FF5909;
+    font-weight: 700;
 }
 
 .box__1 .box__info__text {
@@ -480,7 +491,9 @@ body {
     cursor: pointer;
     margin-bottom: 5px;
 }
-
+.box__1 .box__info__text a {
+    color: #999999;
+}
 .box__1 .box__info__text i {
     display: inline-block;
     width: 8px;
@@ -726,7 +739,7 @@ body {
     vertical-align: bottom;
     width: 200px;
     height: 250px;
-    background: red;
+    /* background: red; */
     /* margin-left: 30px; */
 }
 
