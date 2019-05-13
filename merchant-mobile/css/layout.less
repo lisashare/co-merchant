@@ -587,9 +587,9 @@ i.i-icon-search{
     }  
 }
 .info-detail-title{
-    padding: 48/@rem 40/@rem;
+    padding: 48/@rem 40/@rem 42/@rem ;
     h3{
-        line-height: 44/@rem;
+        line-height: 56/@rem;
         font-size: 40/@rem;
         font-weight: 700;
         color: #000;
@@ -602,14 +602,15 @@ i.i-icon-search{
     position: relative;
     margin: 0 40/@rem;
     padding: 42/@rem 30/@rem 42/@rem 122/@rem;
-    min-height: 184/@rem;
+    min-height: 138/@rem;
     line-height: 46/@rem;
     font-size: 30/@rem;
     color: #666;
     background: #f7f7f7;
     .info-tip{
         position: absolute;
-        top: 75/@rem;
+        top: 50%;
+        transform: translateY(-50%);
         left: 30/@rem;
         width: 64/@rem;
         padding: 14/@rem 0;
@@ -678,8 +679,7 @@ i.i-icon-search{
     p{
         width: 480/@rem;
         line-height: 52/@rem;
-        font-size: 32/@rem;
-        font-weight: 700;
+        font-size: 30/@rem;
         color: #000;
     }
 }
@@ -930,20 +930,39 @@ i.i-icon-search{
     .down{
         width: 100%;
         box-sizing: border-box;
-        padding: 20/@rem 40/@rem;
+        padding: 20/@rem 30/@rem;
         height: 340/@rem;
         overflow: auto;
+        // display: flex;
+        // justify-content: space-between;
         a{
+            // box-sizing: border-box;
+            // padding: 10/@rem 20/@rem;
+            // display: block;
+            // float: left;
+            // width: 50%;
+            // min-height: 60/@rem;
+            // font-size: 26/@rem;
+            display: inline-block;
+            width: 154/@rem;
             box-sizing: border-box;
-            padding: 10/@rem 20/@rem;
-            display: block;
-            float: left;
-            width: 50%;
-            min-height: 60/@rem;
-            font-size: 26/@rem;
+            padding: 0 10/@rem;
+            margin-top: 20/@rem;
+            margin-right: 12/@rem;
+            line-height: 56/@rem;
+            font-size: 28/@rem;
+            color: #666;
+            text-align:center;
+            background: #f7f7f7;
+            border-radius: 28/@rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
         }
         .current{
-            color: #f85100;
+            color: #fff;
+            background: #f85100;
         }
     }
 }

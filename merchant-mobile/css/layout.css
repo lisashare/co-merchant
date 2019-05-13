@@ -581,10 +581,10 @@ i.i-icon-search {
   font-size: 0.72rem;
 }
 .info-detail-title {
-  padding: 0.96rem 0.8rem;
+  padding: 0.96rem 0.8rem 0.84rem;
 }
 .info-detail-title h3 {
-  line-height: 0.88rem;
+  line-height: 1.12rem;
   font-size: 0.8rem;
   font-weight: 700;
   color: #000;
@@ -596,7 +596,7 @@ i.i-icon-search {
   position: relative;
   margin: 0 0.8rem;
   padding: 0.84rem 0.6rem 0.84rem 2.44rem;
-  min-height: 3.68rem;
+  min-height: 2.76rem;
   line-height: 0.92rem;
   font-size: 0.6rem;
   color: #666;
@@ -604,7 +604,8 @@ i.i-icon-search {
 }
 .info-abstract .info-tip {
   position: absolute;
-  top: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0.6rem;
   width: 1.28rem;
   padding: 0.28rem 0;
@@ -670,8 +671,7 @@ i.i-icon-search {
 .piece-wrap p {
   width: 9.6rem;
   line-height: 1.04rem;
-  font-size: 0.64rem;
-  font-weight: 700;
+  font-size: 0.6rem;
   color: #000;
 }
 .zx-detail,
@@ -915,21 +915,30 @@ i.i-icon-search {
 .dorp-down .down {
   width: 100%;
   box-sizing: border-box;
-  padding: 0.4rem 0.8rem;
+  padding: 0.4rem 0.6rem;
   height: 6.8rem;
   overflow: auto;
 }
 .dorp-down .down a {
+  display: inline-block;
+  width: 3.08rem;
   box-sizing: border-box;
-  padding: 0.2rem 0.4rem;
-  display: block;
-  float: left;
-  width: 50%;
-  min-height: 1.2rem;
-  font-size: 0.52rem;
+  padding: 0 0.2rem;
+  margin-top: 0.4rem;
+  margin-right: 0.24rem;
+  line-height: 1.12rem;
+  font-size: 0.56rem;
+  color: #666;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: 0.56rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .dorp-down .down .current {
-  color: #f85100;
+  color: #fff;
+  background: #f85100;
 }
 .shade {
   position: fixed;
