@@ -365,17 +365,10 @@
         <!-- 底部固定按钮 -->
         <div class="foot-show foot-special i-foot-fixed o-h bgcolor-f0" style="display:none;">
             <img class="foot-img br-6" src="../images/occupy/1@2x.png" alt="">
-            <form action="#">
-                <input type="text" maxlength="11" placeholder="请输入手机号">
-                <button type="submit" class="br-6 bgcolor-gradient">免费咨询</button>
+            <form action="#" method="get">
+                <input type="text" name="mobileNum" class="mobileNum" maxlength="11" placeholder="请输入手机号">
+                <button type="submit" class="free-consult br-6 bgcolor-gradient">免费咨询</button>
             </form>
-            <!-- <a href="javascript:;" class="i-online-btn online-btn">
-                <i class="icon i-icon-consultation icon-consultation"></i>在线咨询
-            </a> 
-            <p></p>
-            <a href="javascript:;" class="i-tel-btn tel-btn">
-                <i class="icon i-icon-tel icon-tel"></i>电话咨询
-            <a href="javascript:;" class="i-article-btn article-btn bgcolor-gradient">获取资料</a> -->
         </div>
     </div>
 </body>
@@ -418,6 +411,21 @@
             $('.foot-show').fadeIn();
         }else{
             $('.foot-show').fadeOut();
+        }
+    })
+
+    $(".free-consult").on("click",function(){
+        $(".mobileNum").blur();
+        var mobileNum = $(".mobileNum").val();
+        var myreg=/^[1][3,4,5,6,7,8,9][0-9]{9}$/;
+        if(!mobileNum){
+            alert("请输入您的手机号码");
+            return false;
+        }else{
+            if (!myreg.test(mobileNum)) {
+                alert("请输入正确的手机号码");
+                return false;
+            }
         }
     })
 </script>

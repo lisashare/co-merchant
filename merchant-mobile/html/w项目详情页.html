@@ -578,7 +578,6 @@
 
             $(".section:lt("+index+")").addClass("none"); //上面的隐藏
             var top = $(".itd-main-body")[0].offsetTop - tabHeight - headHeight; //获取选项卡距离上面的距离
-            console.log($(".itd-main-body")[0].offsetTop);
             $("html,body").animate({scrollTop:top},300); //怼上去
         })
     })
