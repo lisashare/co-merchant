@@ -186,14 +186,14 @@ img {
 }
 .net-ranking-content .net-ranking-bottom .bt-brand-name {
   margin: 0 10px 0 14px;
-  width: 118px;
+  width: 110px;
 }
 .net-ranking-content .net-ranking-bottom .bt-brand-rmb {
-  width: 77px;
+  width: 85px;
   margin-right: 5px;
 }
 .net-ranking-content .net-ranking-bottom .bt-brand-rmb span {
-  width: 63px;
+  width: 70px;
   text-align: right;
 }
 .net-ranking-content .net-ranking-bottom .bt-brand-num {
@@ -277,37 +277,15 @@ img {
 .join-ranking-content li:nth-child(3n) a {
   margin-right: 0;
 }
-/* 中 */
-.content__header__middle {
-  float: left;
-  width: 670px;
-  height: 455px;
-  margin-left: 20px;
-  margin-right: 20px;
+.content-aside {
+  width: 358px;
+  border: 1px solid #ddd;
 }
-.content__header__middle img {
-  width: 100%;
-  height: 100%;
+.weekend-top {
+  height: 486px;
 }
-/* 右 */
-.content__header__right {
-  float: left;
-  width: 270px;
-}
-.content__header__right ul {
-  width: 100%;
-}
-.content__header__right ul li {
-  width: 100%;
-  height: 137px;
-  margin-bottom: 22px;
-}
-.content__header__right ul li:last-child {
-  margin: 0;
-}
-.content__header__right ul li img {
-  width: 100%;
-  height: 100%;
+.brand-bottom {
+  height: 740px;
 }
 /* 栏目 */
 .big__wrapper {
@@ -319,7 +297,8 @@ img {
   margin: 50px 0;
   position: relative;
 }
-.big__wrapper .text__content {
+.big__wrapper .text__content,
+.center-content {
   width: 1200px;
   margin: 0 auto;
   color: #666;
@@ -442,42 +421,39 @@ img {
   background-size: 100% 100%;
   margin-left: 45px;
 }
-.big__wrapper .product__list {
-  width: 100%;
+.big__wrapper .product__list__wrap {
+  width: 822px;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
 }
-.big__wrapper .product__list li {
+.big__wrapper .product__list__wrap li {
   width: 223px;
   height: 245px;
   margin-right: 20px;
   margin-bottom: 18px;
   font-size: 14px;
 }
-.big__wrapper .product__list li:nth-child(5n) {
-  margin-right: 0;
-}
-.big__wrapper .product__list li .product__img__box {
+.big__wrapper .product__list__wrap li .product__img__box {
   width: 100%;
   height: 110px;
   overflow: hidden;
 }
-.big__wrapper .product__list li .product__img__box img {
+.big__wrapper .product__list__wrap li .product__img__box img {
   width: 100%;
   height: 100%;
 }
-.big__wrapper .product__list li .product__title {
+.big__wrapper .product__list__wrap li .product__title {
   display: inline-block;
   vertical-align: middle;
   padding: 10px;
   box-sizing: border-box;
 }
-.big__wrapper .product__list li .product__btn {
+.big__wrapper .product__list__wrap li .product__btn {
   display: inline-block;
   vertical-align: middle;
 }
-.big__wrapper .product__list li .product__btn .product__btn__font--orange {
+.big__wrapper .product__list__wrap li .product__btn .product__btn__font--orange {
   display: inline-block;
   vertical-align: middle;
   width: 80px;
@@ -490,7 +466,7 @@ img {
   margin-left: 35px;
   cursor: pointer;
 }
-.big__wrapper .product__list li .product__icon {
+.big__wrapper .product__list__wrap li .product__icon {
   display: inline-block;
   vertical-align: middle;
   width: 13px;
@@ -498,7 +474,7 @@ img {
   background: url('../images/icon/icon_sq@3x.png') no-repeat;
   background-size: 100% 100%;
 }
-.big__wrapper .product__list li .product__icon_1 {
+.big__wrapper .product__list__wrap li .product__icon_1 {
   display: inline-block;
   vertical-align: middle;
   width: 15px;
