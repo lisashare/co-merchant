@@ -287,19 +287,19 @@ i.i-icon-search {
   overflow: hidden;
 }
 .jh-hide {
-  height: 2rem !important;
+  height: 4rem !important;
   overflow: hidden;
 }
 .itd-zkgd-wrap {
+  position: relative;
   text-align: center;
-  margin-top: -0.32rem;
   margin-bottom: 0.88rem;
-  z-index: 2;
 }
 .itd-djzk-btn,
 .common-find-more {
   display: inline-block;
-  width: 3.6rem;
+  min-width: 3.6rem;
+  max-width: 6.2rem;
   line-height: 0.88rem;
   font-size: 0.64rem;
   font-weight: 700;
@@ -317,6 +317,11 @@ i.i-icon-search {
   display: inline-block;
   width: 0.52rem;
   height: 0.3rem;
+}
+.more-btn-shade {
+  -webkit-box-shadow: 0 -10px 30px 30px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 -10px 30px 30px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 -10px 30px 30px rgba(255, 255, 255, 0.9);
 }
 .info-sort {
   padding: 0.96rem 0.8rem 0.6rem;
@@ -681,6 +686,10 @@ i.i-icon-search {
 .zx-detail-ul li,
 .xm-detail-ul li {
   border-bottom: 1px solid #f1f0f0;
+}
+.zx-news-wrap-height {
+  height: 800px;
+  overflow: hidden;
 }
 /* 资讯列表 */
 .info-list {

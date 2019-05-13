@@ -287,18 +287,19 @@ i.i-icon-search{
     overflow: hidden;
 }
 .jh-hide {
-    height: 100/@rem!important;
+    height: 200/@rem!important;
     overflow: hidden;
 }
 .itd-zkgd-wrap{
+    position: relative;
     text-align: center;
-    margin-top: -16/@rem;
+    // margin-top: -16/@rem;
     margin-bottom: 44/@rem;
-    z-index: 2;
 }
 .itd-djzk-btn, .common-find-more{
     display: inline-block;
-    width: 180/@rem;
+    min-width: 180/@rem;
+    max-width: 310/@rem;
     line-height: 44/@rem;
     font-size: 32/@rem;
     font-weight: 700;
@@ -314,6 +315,11 @@ i.i-icon-search{
         width: 26/@rem;
         height: 15/@rem; 
     }
+}
+.more-btn-shade {
+    -webkit-box-shadow: 0 -10px 30px 30px rgba(255,255,255,0.9);
+    -moz-box-shadow: 0 -10px 30px 30px rgba(255,255,255,0.9);
+    box-shadow: 0 -10px 30px 30px rgba(255,255,255,0.9);
 }
 // 排行榜分类页 start
 .info-sort{
@@ -687,6 +693,11 @@ i.i-icon-search{
         border-bottom: 1px solid #f1f0f0;
     }
 }
+.zx-news-wrap-height{
+    height: 800px;
+    overflow: hidden;
+}
+
 // 资讯详情 end
 /* 资讯列表 */
 .info-list{
