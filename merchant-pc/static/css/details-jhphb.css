@@ -12,9 +12,6 @@ img {
 .bgcolor-fff {
   background-color: #fff;
 }
-.item__title_1:hover {
-  color: #FF5909;
-}
 /* —————————————————————————————内容——————————————————————————————————————————————— */
 .content-header-wrap {
   width: 1200px;
@@ -607,9 +604,15 @@ img {
   box-sizing: border-box;
 }
 .item__title_1 {
+  display: block;
   margin-bottom: 6px;
-  color: #666;
   line-height: 16px;
+  font-size: 16px;
+  color: #666;
+}
+.item__title_1:hover {
+  color: #FF5909;
+  cursor: pointer;
 }
 .item__title_2 {
   color: #F85100;
