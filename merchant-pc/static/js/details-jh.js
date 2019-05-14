@@ -34,13 +34,12 @@ $(function(){
     // })
     //swiper
     var mySwiper = new Swiper ('.swiper-container', {
-        loop: true, // 循环模式选项
-        
-        // 如果需要分页器
-        pagination : '.swiper-pagination',
-        paginationClickable :true,
-      })     
-     console.log($('.words').length)
+      autoplay: 3000,
+      loop: true, // 循环模式选项
+      pagination : '.swiper-pagination',
+      paginationClickable :true,
+      autoplayDisableOnInteraction : false
+    })  
     
      $('.words').each(function(){
       var maxwidth=30;
