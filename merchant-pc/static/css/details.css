@@ -250,7 +250,19 @@ body {
 }
 
 
-
+.info__wrapper .other__table{
+    width: 100%;
+    background: #F1F7F9;
+    height: 90px;
+    margin-bottom: 45px;
+    width: 100%;
+    background: #F1F7F9;
+    height: 90px;
+    margin-bottom: 45px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #666;
+}
 .info__wrapper .tab__wrapper {
     display: flex;
     border-bottom: 1px solid #edeef5;
@@ -315,7 +327,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     border: 0px solid #fff;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 16px;
 }
 

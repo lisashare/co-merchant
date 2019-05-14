@@ -2,7 +2,7 @@ $(function(){
   //左边图片切换卡
   var imgUrlFirst = $('.content__header__right img').eq(0).attr('src')
   $('.content__header__middle img').attr('src',imgUrlFirst)
-  $('.content__header__right li').on('click',function(){
+  $('.content__header__right li').on('mouseover',function(){
    var url =  $('.content__header__right img').eq($(this).index()).attr('src')
    $('.content__header__middle img').attr('src',url)
   })

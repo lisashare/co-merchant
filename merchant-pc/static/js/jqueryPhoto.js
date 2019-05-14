@@ -97,13 +97,13 @@ $(document).ready(function(){
 		Change();
 	}
 	
-	// var timer=null;
-	// timer=setInterval(autoPlay,4000);
-	// function autoPlay(){
-	// 	    index ++;
-	// 		index = index == len2 ? 0 : index;
-	// 		Change();
-	// 	}
+	var timer=null;
+	timer=setInterval(autoPlay,4000);
+	function autoPlay(){
+		    index ++;
+			index = index == len2 ? 0 : index;
+			Change();
+		}
 	
 	
 
