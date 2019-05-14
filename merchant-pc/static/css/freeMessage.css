@@ -46,6 +46,9 @@
   margin-top: 18px;
   overflow: hidden;
 }
+.freegossip-section .wraper .form-group  input[type ='submit']{
+  cursor: pointer;
+}
 .freegossip-section .wraper .form-group .form-input {
   width: 166px;
   height: 42px;

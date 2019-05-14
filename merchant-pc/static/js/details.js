@@ -59,10 +59,11 @@ $(function () {
         }, 500
         );
     })
-    //点击输入框值
-    $('.arrow__box__p').click(function(){
-       $('#textarea').val($(this).text())
-    })
+    //提交快捷留言start
+    $("#quickMessage a").click(function(){
+        $(".message").val( $(this).html() );
+    });
+     //提交快捷留言end
     // $('.tab__item').click(function(){
     //     $('.tab__item a').removeClass('tab__item--active')
     //     $(this).find('a').addClass('tab__item--active')
