@@ -655,14 +655,25 @@ body {
     vertical-align: middle;
     background: #F7F7F7;
     margin-top: 15px;
+    position: relative;
 }
+.form__box .form__group .textarea__icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url('../images/icons/icon_online.png') no-repeat;
+    background-size: 100% 100%;
+    top: 13px;
+    left: 11px;
 
+}
 .form__box .form__group .form__icon {
     display: inline-block;
     vertical-align: middle;
     width: 15px;
     height: 18px;
     margin: 8px 0 10px 10px;
+
 
 }
 
