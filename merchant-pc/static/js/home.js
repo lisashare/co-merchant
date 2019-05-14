@@ -72,7 +72,7 @@ var swiper1 = new Swiper('.swiper-container1', {
     observeParents: true,  //修改swiper的父元素时，自动初始化swiper
     pagination: '.swiper-pagination1',
     paginationClickable: true,
-    // autoplay: 5000,
+    autoplay: 5000,
     loop: true,
 });
 
