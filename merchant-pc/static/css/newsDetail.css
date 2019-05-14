@@ -213,7 +213,7 @@ body {
   background-color: #999999;
 }
 .container .aside .section.relate-article2 {
-  height: 501px;
+  padding-bottom: 20px;
 }
 .container .aside .section.relate-article2 .section-con {
   padding: 0 17px;

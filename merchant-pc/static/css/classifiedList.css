@@ -114,7 +114,6 @@ body {
 }
 .container .content-list .content-list-top li:nth-of-type(1) .div-text {
   width: 494px;
-  overflow: hidden;
 }
 .container .content-list .content-list-top li:nth-of-type(1) .div-text .title a {
   color: #ffffff;
