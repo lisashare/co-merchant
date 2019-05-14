@@ -74,6 +74,7 @@ img {
     background: url('../images/icons/icon_up_kb@3x.png')no-repeat !important;
     background-size: 100% 100%!important;
 }
+
 .filter__content  .fliter__list__item  .filter__item__name{
     float: left;
     overflow: hidden;
@@ -231,6 +232,9 @@ img {
     font-size: 14px;
     color: #999;
     margin-bottom: 8px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
 }
 .list__wrpper .list__item__info .item__text__box  .text__title__sub_1{
     color: #666;
@@ -394,6 +398,7 @@ img {
     color: #fff;
     margin-left: 10px;
 }
+
 .ranking__list .ranking__list__item .ranking__index--grey{
     background: #999999!important;
 }
@@ -414,6 +419,15 @@ img {
     background: url('../images/icons/icon_rise_org@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-left: 5px;
+
+}
+.ranking__list .ranking__list__item .ranking__down__icon{
+    width: 13px;
+    height: 16px;
+    background: url('../images/icons/icon_drop_gray@3x.png')no-repeat!important;
+    background-size: 100% 100%!important;;
+    margin-left: 5px;
+    margin-top: 3px;
 
 }
  .information__box{
@@ -453,9 +467,6 @@ img {
 .information__box .infomation__list .infomation__list__item{
     margin-bottom: 10px;
     width: 90%;
-    
-    
-
 }
 .information__box .infomation__list .infomation__list__item span{
     display: inline-block;
@@ -463,6 +474,9 @@ img {
     font-size: 14px;
     color: #666;
 
+}
+.information__box .infomation__list .infomation__list__item span:hover{
+    color: #FF5909;
 }
 .infomation__list__item__words{
     width: 90%;
