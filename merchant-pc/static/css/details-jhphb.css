@@ -102,8 +102,21 @@ img {
   border-radius: 5px;
   border: 3px solid #fff;
 }
-.net-ranking-content .net-ranking-top a dt img {
+.net-ranking-content .net-ranking-top a dt .img-box {
+  overflow: hidden;
   border-radius: 5px;
+}
+.net-ranking-content .net-ranking-top a dt img {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.net-ranking-content .net-ranking-top a dt img:hover {
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .net-ranking-content .net-ranking-top a dt i {
   position: absolute;
@@ -229,13 +242,24 @@ img {
 .content-header-middle .today-ranking-list i {
   background-image: url('../images/icons/icon_oneday@3x.png');
 }
-.today-ranking-content .today-ranking-left {
-  width: 195px;
-  margin-right: 18px;
+.today-ranking-content img {
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
-.today-ranking-content .today-ranking-left img {
+.today-ranking-content img:hover {
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.today-ranking-content .today-ranking-left {
+  display: block;
   width: 195px;
   height: 429px;
+  margin-right: 18px;
+  overflow: hidden;
 }
 .today-ranking-content .today-ranking-right {
   width: 195px;
@@ -243,10 +267,9 @@ img {
 .today-ranking-content .today-ranking-right a {
   display: block;
   margin-bottom: 20px;
-}
-.today-ranking-content .today-ranking-right img {
   width: 195px;
   height: 130px;
+  overflow: hidden;
 }
 .content-header-right {
   width: 328px;

@@ -74,6 +74,7 @@ var swiper1 = new Swiper('.swiper-container1', {
     paginationClickable: true,
     autoplay: 5000,
     loop: true,
+    autoplayDisableOnInteraction : false,
 });
 
 //热门品牌
@@ -88,6 +89,7 @@ var swiper2 = new Swiper('.swiper-container2', {
     loop: true,
     prevButton:'.swiper-button-prev',
 	nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
 });
 
 //猜你喜欢轮播图
@@ -102,6 +104,7 @@ var swiper3 = new Swiper('.likes-swiper-container2', {
     loop: true,
     prevButton:'.swiper-button-prev',
 	nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
 });
 
 //火爆招商
@@ -119,6 +122,7 @@ var swiper4 = new Swiper('.swiper-container4', {
     autoplay: 1500,
     prevButton:'.swiper-button-prev',
 	nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
 });
 
 $(document).ready(function () {
@@ -206,6 +210,7 @@ $(document).ready(function () {
 
      //猜你喜欢start-tab
      $(".likes-slider-money li").click(function(){
+        $(this).find("a").addClass("cur").closest("li").siblings("li").find("a").removeClass("cur");
         $(".likes-section").find(".likes-swiper-container2").eq( $(this).index()-1 ).removeClass("hidden").siblings(".likes-swiper-container2").addClass("hidden")
      });
      //猜你喜欢end-tab
