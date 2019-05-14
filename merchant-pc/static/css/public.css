@@ -117,4 +117,15 @@ a { font-size: 14px; color: #333333; }
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.hover-img img {
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+  .hover-img img:hover {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    transform: scale(1.08);
+  }

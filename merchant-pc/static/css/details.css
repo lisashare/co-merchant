@@ -392,6 +392,7 @@ body {
     width: 100%;
     height: 110px;
     border-radius: 6px;
+    overflow: hidden;
 }
 
 .info__wrapper .info__right_box .box__1 .box__title {
@@ -479,6 +480,7 @@ body {
 .box__1 .img_list .img_list__item .img__box {
     width: 100%;
     height: 90px;
+    overflow: hidden;
 
 }
 

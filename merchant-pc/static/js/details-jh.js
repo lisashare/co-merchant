@@ -1,11 +1,11 @@
 $(function(){
   //左边图片切换卡
-  var imgUrlFirst = $('.content__header__right img').eq(0).attr('src')
-  $('.content__header__middle img').attr('src',imgUrlFirst)
-  $('.content__header__right li').on('mouseover',function(){
-   var url =  $('.content__header__right img').eq($(this).index()).attr('src')
-   $('.content__header__middle img').attr('src',url)
-  })
+  // var imgUrlFirst = $('.content__header__right img').eq(0).attr('src')
+  // $('.content__header__middle img').attr('src',imgUrlFirst)
+  // $('.content__header__right li').on('mouseover',function(){
+  //  var url =  $('.content__header__right img').eq($(this).index()).attr('src')
+  //  $('.content__header__middle img').attr('src',url)
+  // })
     // 切换卡 行业细分
     // $('.content__header__left__list li').click(function(){
     //     $('.content__header__left__list li').removeClass('li--active')
@@ -17,7 +17,7 @@ $(function(){
     //     $(this).addClass('money--active');
     // })
      // 
-     $('.btn__item--defult').click(function(){
+     $('.btn__item--defult').mouseover(function(){
         $('.btn__item--defult').removeClass('btn__item--orange')
         $(this).addClass('btn__item--orange');
         $('.product__list').removeClass('product__list--show')

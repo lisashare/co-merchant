@@ -154,6 +154,7 @@ img {
     height: 455px;
     margin-left: 20px;
     margin-right: 20px;
+    overflow: hidden;
 }
 
 .content__header__middle img {
@@ -175,6 +176,7 @@ img {
     width: 100%;
     height: 137px;
     margin-bottom: 22px;
+    overflow: hidden;
 }
 
 .content__header__right ul li:last-child {
@@ -685,7 +687,7 @@ img {
     margin-top: 19px;
     position: relative;
 }
-.text_box-border a:hover{
+.text_box-border a{
     color: #FF5909;
 }
 .text_box-border:last-child{
