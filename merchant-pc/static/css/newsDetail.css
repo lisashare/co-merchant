@@ -151,6 +151,9 @@ body {
 .container .aside .section.relate-program .div-text .relate-tit {
   color: #333333;
 }
+.container .aside .section.relate-program .div-text .relate-tit:hover {
+  color: #ff5909;
+}
 .container .aside .section.relate-program .div-text .money {
   color: #999999;
 }

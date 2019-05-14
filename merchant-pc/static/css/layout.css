@@ -463,6 +463,9 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.big-section a:hover .name {
+  color: #ff5909;
+}
 .big-section .img-top {
   width: 1168px;
   height: 383px;
@@ -634,6 +637,9 @@ body {
   margin-bottom: 4px;
   display: inline-block;
 }
+.recomend-section .recomend-con ul li .rem-title .rem-name a:hover {
+  color: #ff5909;
+}
 .recomend-section .recomend-con ul li .rem-title .rem-money {
   font-weight: bold;
 }
@@ -747,6 +753,9 @@ body {
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name a {
   font-size: 18px;
   color: #333333;
+}
+.investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name a:hover {
+  color: #ff5909;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-wraper {
   font-size: 14px;
@@ -1090,6 +1099,9 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub a:hover {
+  color: #ff5909;
+}
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub .type {
   font-size: 14px;
   color: #999999;
@@ -1335,6 +1347,10 @@ body {
   font-size: 16px;
   color: #666666;
 }
+.likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .title a:hover {
+  color: #ff5909;
+  cursor: pointer;
+}
 .likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .money {
   margin: 2px auto;
 }
@@ -1506,6 +1522,9 @@ body {
   font-size: 14px;
   color: #666666;
   display: block;
+}
+.likes-section .likes-bottom .suggested-reading .wraper .list-recom li .div-text a:hover {
+  color: #ff5909;
 }
 .likes-section .likes-bottom .catering-demand {
   width: 314px;

@@ -79,6 +79,9 @@ body {
   margin-left: 30px;
   border-bottom: 1px solid #edeef5;
 }
+.container .content-list .content-list-top li .tag-img {
+  z-index: 100;
+}
 .container .content-list .content-list-top li:last-child {
   border-bottom: none;
 }
