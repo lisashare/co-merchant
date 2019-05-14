@@ -1218,8 +1218,7 @@
 <script src='js/swiper.min.js'></script>
 <script src='js/header.js'></script>
 <script>
-	// 本周人们排行榜 tab
-	//排行榜tab
+	// 本周热门排行榜 tab
     $(".weekend-top .aside-header li").mouseenter(function(){
     	$(this).addClass("active").siblings().removeClass("active");
     	$(".time-cycle-items").eq( $(this).index() ).removeClass("hidden").siblings(".time-cycle-items").addClass("hidden")
@@ -1227,7 +1226,7 @@
 	
 	var mySwiper = new Swiper ('.swiper-container', {
 		autoplay: 3000,
-		loop: true, // 循环模式选项
+		loop: true, 
 		pagination : '.swiper-pagination',
 		paginationClickable :true,
 		autoplayDisableOnInteraction : false
