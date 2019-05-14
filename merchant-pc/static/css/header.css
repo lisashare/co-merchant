@@ -124,8 +124,9 @@
 }
 .header .header-search .header-searchbox .catering-inner {
     width: 450px;
-    height: 130px;
-    padding: 0 6px;
+    /*height: 130px;*/
+    height: auto;
+    padding: 0 6px 10px;
     border: 1px solid #f85100;
     background-color: #ffffff;
     position: absolute;

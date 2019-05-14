@@ -90,6 +90,9 @@ body {
 				font-size: 14px;
 				color: #666666;
 				margin-bottom: 14px;
+				a:hover {
+					color: #ff5909;
+				}
 			}
 			.back-list {
 				font-size: 16px;
@@ -164,6 +167,7 @@ body {
 				.div-img {
 					width: 243px;
 					height: 162px;
+					margin-bottom: 8px;
 					display: block;
 					position: relative;
 					img {
@@ -187,12 +191,20 @@ body {
 				.div-text {
 					li {
 						float: left;
-						width: 118px;
+						// width: 118px;
+						width: 50%;
 						line-height: 24px;
 						a {
 							font-size: 16px;
 							color: #666666;
 							display: block;
+							width: 99%;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						    &:hover {
+						    	color: #ff5909;
+						    }
 							em {
 								width: 8px;
 								height: 8px;
@@ -209,6 +221,11 @@ body {
 				height: 501px;
 				.section-con {
 					padding: 0 17px;
+					a:hover {
+						.article-name {
+							color: #ff5909;
+						}
+					}
 				}
 				.div-img {
 					width: 243px;
@@ -251,6 +268,11 @@ body {
 							font-size: 14px;
 							color: #666666;
 							display: block;
+							&:hover {
+								.tit {
+									color: #ff5909;
+								}
+							}
 						}
 						.time-mounts {
 							color: #999999;
