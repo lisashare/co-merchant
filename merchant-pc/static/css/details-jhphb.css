@@ -12,6 +12,11 @@ img {
 .bgcolor-fff {
   background-color: #fff;
 }
+.text-ellip {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 /* —————————————————————————————内容——————————————————————————————————————————————— */
 .content-header-wrap {
   width: 1200px;
@@ -285,92 +290,100 @@ img {
   height: 486px;
   margin-bottom: 20px;
 }
-.brand-bottom {
-  height: 740px;
-}
 .weekend-top .aside-header {
-  border: 1px solid #ddd;
-}
-.aside-header {
-  padding: 0 14px;
-  margin-bottom: 8px;
-}
-.ranking-list {
-  width: 360px;
-  height: 758px;
-  background-color: #ffffff;
-}
-.ranking-list .ranking-tab {
-  width: 328px;
-  height: 62px;
-  margin: 0 auto;
   border-bottom: 1px solid #ddd;
 }
-.ranking-list .ranking-tab li {
+.brand-bottom {
+  height: 740px;
+  margin-bottom: 30px;
+}
+.aside-header {
+  margin: 3px 14px 8px;
+}
+.aside-header li {
   float: left;
+  display: inline-block;
+  line-height: 52px;
   font-size: 20px;
   color: #666;
-  line-height: 52px;
-  padding: 0 8px;
-  margin-top: 6px;
-  margin-left: 32px;
   cursor: pointer;
 }
-.ranking-list .ranking-tab li:nth-of-type(2) {
+.aside-header li:nth-of-type(2) {
   float: right;
-  margin-right: 32px;
 }
-.ranking-list .ranking-tab li.active {
+.aside-header li.active {
+  color: #333;
   border-bottom: 4px solid #ff5909;
 }
-.ranking-list .ranking-cont {
-  margin-top: 5px;
+.brand-ranking-list {
+  margin-bottom: 30px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li {
-  height: 57px;
-  margin-bottom: 12px;
-}
-.ranking-list .ranking-cont .ranking-cont-item li a {
-  display: block;
-  position: relative;
-}
-.ranking-list .ranking-cont .ranking-cont-item li .icon-rank1,
-.ranking-list .ranking-cont .ranking-cont-item li .icon-rank2,
-.ranking-list .ranking-cont .ranking-cont-item li .icon-rank3 {
+.brand-ranking-list .ranking-cont-items li:nth-child(1) a > i,
+.brand-ranking-list .ranking-cont-items li:nth-child(2) a > i,
+.brand-ranking-list .ranking-cont-items li:nth-child(3) a > i {
+  transform: translate(0, -50%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 50%;
   width: 22px;
   height: 28px;
   background-image: url("../images/icons/icon_gold.png");
   background-size: 22px 28px;
   left: 13px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .icon-rank2 {
-  background-image: url("../images/icons/icon_silver.png");
+.brand-ranking-list .ranking-cont-items li:nth-child(1) .wraper-child .rank-name,
+.brand-ranking-list .ranking-cont-items li:nth-child(2) .wraper-child .rank-name,
+.brand-ranking-list .ranking-cont-items li:nth-child(3) .wraper-child .rank-name,
+.brand-ranking-list .ranking-cont-items li:nth-child(1) .wraper-child .rank-money,
+.brand-ranking-list .ranking-cont-items li:nth-child(2) .wraper-child .rank-money,
+.brand-ranking-list .ranking-cont-items li:nth-child(3) .wraper-child .rank-money,
+.brand-ranking-list .ranking-cont-items li:nth-child(1) .wraper-child .rank-attention,
+.brand-ranking-list .ranking-cont-items li:nth-child(2) .wraper-child .rank-attention,
+.brand-ranking-list .ranking-cont-items li:nth-child(3) .wraper-child .rank-attention {
+  color: #fff;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .icon-rank3 {
-  background-image: url("../images/icons/icon_copper.png");
-}
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(1) .wraper {
+.brand-ranking-list .ranking-cont-items li:nth-child(1) .wraper {
+  border-radius: 5px;
+  overflow: hidden;
   background-image: url("../images/occupy/bg_phb_yl@3x.png");
   background-size: 297px 57px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(1) .wraper .wraper-child .rank-attention {
+.brand-ranking-list .ranking-cont-items li:nth-child(1) .wraper .wraper-child .rank-attention {
   background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
 }
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(2) .wraper {
+.brand-ranking-list .ranking-cont-items li:nth-child(2) a > i {
+  background-image: url("../images/icons/icon_silver.png");
+}
+.brand-ranking-list .ranking-cont-items li:nth-child(2) .wraper {
+  border-radius: 5px;
   background-image: url("../images/occupy/bg_phb_ys@3x.png");
   background-size: 297px 57px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(2) .wraper .wraper-child .rank-attention {
+.brand-ranking-list .ranking-cont-items li:nth-child(2) .wraper .wraper-child .rank-attention {
   background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
 }
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(3) .wraper {
+.brand-ranking-list .ranking-cont-items li:nth-child(3) a > i {
+  background-image: url("../images/icons/icon_copper.png");
+}
+.brand-ranking-list .ranking-cont-items li:nth-child(3) .wraper {
+  border-radius: 5px;
   background-image: url("../images/occupy/bg_phb_ht@3x.png");
   background-size: 297px 57px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li:nth-of-type(3) .wraper .wraper-child .rank-attention {
+.brand-ranking-list .ranking-cont-items li:nth-child(3) .wraper .wraper-child .rank-attention {
   background-image: url("../images/icons/icon_guanzhudi_white@3x.png");
 }
-.ranking-list .ranking-cont .ranking-cont-item li .rank-num {
+.brand-ranking-list .ranking-cont-items li {
+  height: 57px;
+  margin-bottom: 12px;
+}
+.brand-ranking-list .ranking-cont-items li a {
+  position: relative;
+  display: block;
+}
+.brand-ranking-list .ranking-cont-items li a > i {
   font-size: 14px;
   color: #333333;
   width: 48px;
@@ -381,38 +394,52 @@ img {
   left: 0;
   top: 0;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper {
-  width: 297px;
-  height: 57px;
+.brand-ranking-list .ranking-cont-items li .wraper {
+  width: 281px;
+  height: 41px;
+  padding: 8px;
   margin-left: 48px;
   overflow: hidden;
   background-image: none;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .rank-img {
-  float: left;
+.brand-ranking-list .ranking-cont-items li .wraper .rank-img {
   width: 63px;
   height: 42px;
-  margin: 8px 14px auto 8px;
+  border-radius: 2px;
+  overflow: hidden;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child {
-  width: 206px;
-  margin-top: 8px;
+.brand-ranking-list .ranking-cont-items .wraper-child {
+  width: 204px;
+  font-size: 0;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child p:nth-of-type(1) {
+.brand-ranking-list .ranking-cont-items .wraper-child span {
+  display: inline-block;
+  vertical-align: top;
+}
+.brand-ranking-list .ranking-cont-items .wraper-child p:nth-of-type(1) {
   height: 22px;
+  line-height: 22px;
+  margin-bottom: 4px;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-name {
+.brand-ranking-list .ranking-cont-items .wraper-child .rank-name {
+  width: 112px;
   font-size: 16px;
   color: #666666;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-money {
+.brand-ranking-list .ranking-cont-items .wraper-child .rank-money {
   font-size: 18px;
   font-weight: bold;
   color: #f85100;
 }
-.ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-attention {
+.brand-ranking-list .ranking-cont-items .wraper-child .rank-money .rank-rmb {
+  width: 70px;
+  text-align: right;
+}
+.brand-ranking-list .ranking-cont-items .wraper-child .rank-attention {
+  height: 16px;
+  line-height: 16px;
   font-size: 14px;
   color: #999999;
   padding-left: 19px;
@@ -431,14 +458,12 @@ img {
   margin: 50px 0;
   position: relative;
 }
-.big__wrapper .text__content,
-.center-content {
+.big__wrapper .text__content {
   width: 1200px;
   margin: 0 auto;
   color: #666;
   font-size: 16px;
   line-height: 24px;
-  /* padding: 0 20px; */
   box-sizing: border-box;
   position: relative;
 }
@@ -562,20 +587,16 @@ img {
   align-content: flex-start;
 }
 .big__wrapper .product__list__wrap li {
-  width: 223px;
-  height: 245px;
+  width: 252px;
+  height: 256px;
   margin-right: 20px;
   margin-bottom: 18px;
   font-size: 14px;
 }
 .big__wrapper .product__list__wrap li .product__img__box {
   width: 100%;
-  height: 110px;
+  height: 168px;
   overflow: hidden;
-}
-.big__wrapper .product__list__wrap li .product__img__box img {
-  width: 100%;
-  height: 100%;
 }
 .big__wrapper .product__list__wrap li .product__title {
   display: inline-block;

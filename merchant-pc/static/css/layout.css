@@ -498,6 +498,7 @@ body {
 }
 .big-section .img-bottom .item .bg-shade .name-counts .name {
   font-size: 16px;
+  width: 214px;
   margin-bottom: 4px;
 }
 .big-section .img-bottom .item .bg-shade .name-counts .counts {
@@ -592,6 +593,7 @@ body {
 }
 .recomend-section .recomend-con ul li .rem-title .rem-name {
   color: #666666;
+  width: 136px;
 }
 .recomend-section .recomend-con ul li .rem-title .rem-money {
   font-weight: bold;
@@ -682,7 +684,7 @@ body {
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li {
   float: left;
   margin-right: 16px;
-  margin-bottom: 36px;
+  margin-bottom: 33px;
   text-align: center;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li:nth-of-type(4n) {
@@ -699,9 +701,12 @@ body {
   height: 126px;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name {
-  font-size: 18px;
+  width: 164px;
   line-height: 18px;
   margin: 20px auto 14px;
+}
+.investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-name a {
+  font-size: 18px;
   color: #333333;
 }
 .investment-section .section-pub .hots-invest .inverst-cont .inverst-cont-item li .invest-wraper {
@@ -884,6 +889,7 @@ body {
 .investment-section .section-pub .ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-name {
   font-size: 16px;
   color: #666666;
+  width: 128px;
 }
 .investment-section .section-pub .ranking-list .ranking-cont .ranking-cont-item li .wraper .wraper-child .rank-money {
   font-size: 18px;
@@ -1036,10 +1042,19 @@ body {
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub a {
   font-size: 16px;
   color: #666666;
+  width: 94px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .drink-name-sub .type {
   font-size: 14px;
   color: #999999;
+  width: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .joining-section .section-pub .franchise-discount li .div-text .div-text-top .money {
   font-size: 16px;
@@ -1058,7 +1073,17 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
 }
+.joining-section .section-pub .franchise-discount li .div-text .div-text-mid .company {
+  width: 142px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .joining-section .section-pub .franchise-discount li .div-text .div-text-mid .addr {
+  width: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   background-image: url("../images/icons/icon_company_here.png");
 }
 .joining-section .section-pub .franchise-discount li .div-text .div-text-bottom {
@@ -1108,6 +1133,12 @@ body {
   position: relative;
 }
 .joining-section .section-pub .popularity-project li .div-text .title {
+  width: 114px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.joining-section .section-pub .popularity-project li .div-text .title a {
   font-size: 16px;
   color: #666666;
 }
@@ -1115,6 +1146,10 @@ body {
   font-size: 18px;
   color: #333333;
   margin-top: 4px;
+  width: 122px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .joining-section .section-pub .popularity-project li .div-text .btn-look {
   font-size: 16px;
@@ -1241,6 +1276,12 @@ body {
   margin-left: 18px;
   position: relative;
 }
+.likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .title {
+  width: 122px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .title a {
   font-size: 16px;
   color: #666666;
@@ -1250,6 +1291,10 @@ body {
 }
 .likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .money,
 .likes-section .likes-slider .likes-swiper-container2 .swiper-slide .div-text .shops {
+  width: 141px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 14px;
   color: #666666;
 }
@@ -1332,6 +1377,10 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #f85100;
+  width: 116px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .likes-section .likes-bottom .franchise-dynamics .wraper li .news-btn {
   font-size: 14px;
@@ -1673,4 +1722,23 @@ body {
   color: #ffffff;
   margin-left: 3px;
   margin-top: 20px;
+}
+#toTop {
+  width: 38px;
+  height: 38px;
+  z-index: 999999;
+  cursor: pointer;
+  position: fixed;
+  margin-left: 626px;
+  left: 50%;
+  bottom: 40px;
+  background-image: url("../images/occupy/button_backbox.png");
+  background-repeat: no-repeat;
+}
+#toTop:hover {
+  background-image: url("../images/occupy/button_backbox_click.png");
+}
+#toTop img {
+  width: 38px;
+  height: 38px;
 }

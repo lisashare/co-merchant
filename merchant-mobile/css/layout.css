@@ -1,4 +1,37 @@
 /* 独立样式 */
+#toast {
+  position: fixed;
+  top: 44%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 80px;
+  max-width: 180px;
+  min-height: 18px;
+  padding: 10px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  display: none;
+  z-index: 999;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999;
+}
+.bottom-line {
+  border-bottom: 0.4rem solid #f7f7f7;
+}
 img {
   height: 100%;
 }
@@ -691,7 +724,6 @@ i.i-icon-search {
   height: 800px;
   overflow: hidden;
 }
-/* 资讯列表 */
 .info-list {
   padding-top: 0.4rem !important;
   padding-bottom: 0.1rem !important;
@@ -950,8 +982,6 @@ i.i-icon-search {
   z-index: 2;
   background: rgba(0, 0, 0, 0.5);
 }
-/* 项目列表 end */
-/* 项目聚合页 */
 .jh-section-content {
   padding: 0.84rem 0.8rem 0.44rem;
   line-height: 0.8rem !important;
@@ -998,7 +1028,6 @@ i.i-icon-search {
   margin-left: 0.2rem;
   background-image: url('../images/main/icon_more_gray@3x.png');
 }
-/* 排行榜聚合页 start */
 .top-items-wrap div.top-items-content:nth-child(even) .top-item-all {
   background: -webkit-linear-gradient(left, #fb3043, #fd3e62);
   background: -o-linear-gradient(right, #fb3043, #fd3e62);
@@ -1115,8 +1144,6 @@ i.i-icon-search {
   width: 0.38rem;
   height: 0.66rem;
 }
-/* 排行榜聚合页 end */
-/* 排行榜 start */
 .category-wrapper {
   box-sizing: border-box;
   padding: 1.76rem 0 2.6rem;
@@ -1175,8 +1202,6 @@ i.i-icon-search {
   word-break: break-all;
   word-wrap: break-word;
 }
-/* 排行榜 end */
-/* 搜索结果页 start */
 .res-header {
   justify-content: flex-start !important;
 }
@@ -1257,7 +1282,6 @@ i.i-icon-search {
   text-align: center;
   border-radius: 0.48rem;
 }
-/* 搜索结果页 end */
 .msg {
   display: block;
   padding: 0 0.6rem;
@@ -1351,8 +1375,6 @@ i.i-icon-search {
   font-size: 0.44rem;
   text-align: right;
 }
-/* 搜索结果页 end */
-/* 项目详情页 start */
 .itd-tab {
   margin-bottom: 0!important;
 }
@@ -1592,8 +1614,6 @@ i.i-icon-search {
   font-size: 0.6rem;
   font-weight: 700;
 }
-/* 项目详情页 end */
-/* 首页 start */
 .back-btn {
   position: relative;
   width: 2.08rem;
@@ -2120,13 +2140,9 @@ header.i-header .i-header-search input {
   text-align: center;
   flex: 1;
   background: -webkit-linear-gradient(left, #a978ff, #8847fd);
-  /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(right, #a978ff, #8847fd);
-  /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(right, #a978ff, #8847fd);
-  /* Firefox 3.6 - 15 */
   background: linear-gradient(to right, #a978ff, #8847fd);
-  /* 标准的语法（必须放在最后） */
 }
 .i-foot-fixed .itd-online-btn {
   width: 4.28rem;
@@ -2134,13 +2150,9 @@ header.i-header .i-header-search input {
   color: #fff;
   text-align: center;
   background: -webkit-linear-gradient(left, #ffb606, #ffcc00);
-  /* Safari 5.1 - 6.0 */
   background: -o-linear-gradient(right, #ffb606, #ffcc00);
-  /* Opera 11.1 - 12.0 */
   background: -moz-linear-gradient(right, #ffb606, #ffcc00);
-  /* Firefox 3.6 - 15 */
   background: linear-gradient(to right, #ffb606, #ffcc00);
-  /* 标准的语法（必须放在最后） */
 }
 .i-foot-fixed .itd-icon-tel {
   margin-right: 0.28rem;
@@ -2164,7 +2176,6 @@ header.i-header .i-header-search input {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* 底部备案信息 */
 footer {
   padding: 0.98rem 0 3.36rem;
   font-size: 0.48rem;
@@ -2261,7 +2272,6 @@ footer p {
   word-break: break-all;
   word-wrap: break-word;
 }
-/*常用样式*/
 .w-100 {
   width: 100%;
 }
@@ -2284,32 +2294,3 @@ footer p {
 .mb-30 {
   margin-bottom: 0.6rem;
 }
-/*margin*/
-/*font-size*/
-/*padding*/
-/*input:-moz-placeholder { !* Mozilla Firefox 4 to 18 *!*/
-/*font-size:14px;color: #999;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*input::-moz-placeholder { !* Mozilla Firefox 19+ *!*/
-/*font-size:14px;color: #999;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*input:-ms-input-placeholder { !* Internet Explorer 10+ *!*/
-/*font-size:14px;color: #999;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*textarea,::-webkit-input-placeholder { !* WebKit browsers *!*/
-/*font-size:24px;color: #727272;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*textarea:-moz-placeholder { !* Mozilla Firefox 4 to 18 *!*/
-/*font-size:24px;color: #727272;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*textarea::-moz-placeholder { !* Mozilla Firefox 19+ *!*/
-/*font-size:24px;color: #727272;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*textarea:-ms-input-placeholder { !* Internet Explorer 10+ *!*/
-/*font-size:24px;color: #727272;font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
-/*.placeholder{*/
-/*font-size: 14px;*/
-/*color: #999;*/
-/*font-family: "\5FAE\8F6F\96C5\9ED1";*/
-/*}*/
