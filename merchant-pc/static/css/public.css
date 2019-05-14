@@ -16,14 +16,7 @@ a { font-size: 14px; color: #333333; }
 }
 .fl { float:left; }
 .fr { float:right!important; }
-.gradient {
-    background:-moz-linear-gradient(top, #FFFFFF, #f8f8f8);
-    background:-webkit-linear-gradient(top, #FFFFFF, #f8f8f8);
-    background:-ms-linear-gradient(top, #FFFFFF, #f8f8f8);
-    background:linear-gradient(top, #FFFFFF, #f8f8f8);
-    -ms-filter:"progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#FFFFFF, endColorstr=#f8f8f8)";
-    +background:#f9f9f9;
-}
+
 .center {
     text-align: center!important;
 }
