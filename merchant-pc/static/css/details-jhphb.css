@@ -106,18 +106,6 @@ img {
   overflow: hidden;
   border-radius: 5px;
 }
-.net-ranking-content .net-ranking-top a dt img {
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-.net-ranking-content .net-ranking-top a dt img:hover {
-  -webkit-transform: scale(1.08);
-  -moz-transform: scale(1.08);
-  -o-transform: scale(1.08);
-  transform: scale(1.08);
-}
 .net-ranking-content .net-ranking-top a dt i {
   position: absolute;
   bottom: -15px;
@@ -241,18 +229,6 @@ img {
 }
 .content-header-middle .today-ranking-list i {
   background-image: url('../images/icons/icon_oneday@3x.png');
-}
-.today-ranking-content img {
-  -webkit-transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-.today-ranking-content img:hover {
-  -webkit-transform: scale(1.08);
-  -moz-transform: scale(1.08);
-  -o-transform: scale(1.08);
-  transform: scale(1.08);
 }
 .today-ranking-content .today-ranking-left {
   display: block;

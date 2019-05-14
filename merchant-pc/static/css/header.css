@@ -214,12 +214,13 @@
     float: left;
     margin: 0 7px;
 }
-
+.header .header-search-hot ul li a:hover{
+    color: #ff5909;
+}
 .header .header-icon-list {
     height: 100px;
     float: left;
     margin-left: 60px;
-
 }
 
 .header .header-icon-list .header-icon-list-box {
