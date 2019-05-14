@@ -69,10 +69,11 @@ $("div.text-scroll").myScroll({
 });
 // 滚动新闻end
 
-//下载选择
+//下拉选择
 $(".icon-wraper").click(function(){
 	if( $(".catering-inner").hasClass("hidden") ){
 		$(".catering-inner").removeClass("hidden");
+        return false;
 	}else{
 		$(".catering-inner").addClass("hidden");
 	}
@@ -82,3 +83,7 @@ $(".icon-wraper").click(function(){
 $(".catering-inner li a").click(function(){
 	$(".icon-txt").html( $(this).text() )
 });
+
+$(document).click(function(){
+    $(".catering-inner").addClass("hidden");
+})

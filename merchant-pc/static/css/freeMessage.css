@@ -18,6 +18,8 @@
   border: none;
   font-size: 16px;
   color: #999999;
+  font-family: "PingFangSC-Regular, sans-serif";
+  color: #666666;
 }
 .freegossip-section input::-webkit-input-placeholder,
 .freegossip-section textarea::-webkit-input-placeholder {
@@ -87,7 +89,7 @@
   height: 17px;
   background-image: url("../images/icons/icon_online@3x.png");
   background-size: 17px 17px;
-  top: 20px;
+  top: 23px;
   left: 12px;
 }
 .freegossip-section .wraper .form-group .form-input .message {

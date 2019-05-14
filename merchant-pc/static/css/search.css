@@ -47,11 +47,11 @@ body {
 			left: 16px; 
 			top: -20px;*/
   position: relative;
-  top: -70px;
+  top: -50px;
   left: 0;
 }
 .container .content-list ul {
-  margin-top: -40px;
+  margin-top: -20px;
   background-color: #ffffff;
   /*position: relative;
 			top: -60px;*/
@@ -81,6 +81,9 @@ body {
 .container .content-list li .div-text .title a {
   font-size: 20px;
   color: #333333;
+}
+.container .content-list li .div-text .title a:hover {
+  color: #ff5909;
 }
 .container .content-list li .div-text .company {
   font-size: 14px;
@@ -200,11 +203,14 @@ body {
   margin-left: 12px;
 }
 .container .aside .section.hot-news .hot-news-top .div-text .tit {
-  width: 116px;
+  width: 140px;
 }
 .container .aside .section.hot-news .hot-news-top .div-text .tit a {
   font-size: 16px;
   color: #666666;
+}
+.container .aside .section.hot-news .hot-news-top .div-text .tit a:hover {
+  color: #ff5909;
 }
 .container .aside .section.hot-news .hot-news-top .div-text .desc {
   font-size: 14px;
@@ -221,6 +227,9 @@ body {
   font-size: 14px;
   color: #666666;
   width: 232px;
+}
+.container .aside .section.hot-news .hot-news-item a:hover {
+  color: #ff5909;
 }
 .container .aside .section.hot-news .hot-news-item a em {
   width: 8px;
