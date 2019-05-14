@@ -20,7 +20,7 @@
 .header-top .text-scroll .icon-news {
     width: 17px;
     height: 12px;
-    background-image: url("../images/icon/icon_news.png");
+    background-image: url("../images/icons/icon_news.png");
 }
 
 .header-top .text-scroll .text-scroll-ul li {
@@ -183,7 +183,7 @@
     width: 15px;
     height: 17px;
     left: 13px;
-    background-image: url("../images/icon/icon_serch_white@3x.png");
+    background-image: url("../images/icons/icon_serch_white@3x.png");
     cursor: pointer;
 }
 

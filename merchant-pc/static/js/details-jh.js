@@ -43,7 +43,7 @@ $(function(){
      console.log($('.words').length)
     
      $('.words').each(function(){
-      var maxwidth=30;
+      var maxwidth=25;
       if($(this).text().length>maxwidth){
       $(this).text($(this).text().substring(0,maxwidth));
       $(this).html($(this).html()+'...');

@@ -43,7 +43,7 @@ img {
     vertical-align: middle;
     width: 25px;
     height: 16px;
-    background: url('../images/icon/icon_hyxf@3x.png')no-repeat;
+    background: url('../images/icons/icon_hyxf@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-right: 8px;
    
@@ -90,7 +90,7 @@ img {
 
 .content__header__left--more {
     /* height: 20px; */
-    width: 100px;
+    /* width: 100px; */
     float: right;
     margin-bottom: 30px;
     cursor: pointer;
@@ -99,7 +99,7 @@ img {
 .content__header__left--more .more__text {
     color: #666;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: middle;
 
 }
@@ -109,9 +109,9 @@ img {
     height: 16px;
     display: inline-block;
     vertical-align: middle;
-    background: url('../images/icon/icon_more@3x.png')no-repeat;
+    background: url('../images/icons/icon_more@3x.png')no-repeat;
     background-size: 100% 100%;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 
 }
 
@@ -290,20 +290,32 @@ img {
 }
 
 .item__title_1 {
-    color: #999;
+    display: inline-block;
+    width: 100px;
+    color: #666;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 16px;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap
 
+}
+.item__title_1-sub{
+    display: inline-block;
+    width: 100px;
+    color: #999;
+    vertical-align: middle;
+    font-size: 16px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
 }
 
 .item__title_2 {
     vertical-align: middle;
   
     color: #F85100;
-    margin-left: 34px;
+    margin-left: 16px;
     font-weight: bold;
 }
 
@@ -319,7 +331,7 @@ img {
     vertical-align: middle;
     width: 10px;
     height: 12px;
-    background: url('../images/icon/icon_fire@3x.png') no-repeat;
+    background: url('../images/icons/icon_fire@3x.png') no-repeat;
     background-size: 100% 100%;
     margin-left: 16px;
 
@@ -345,9 +357,9 @@ img {
     vertical-align: middle;
     width: 12px;
     height: 11px;
-    background: url('../images/icon/icon_zx_gray@3x.png') no-repeat;
+    background: url('../images/icons/icon_zx_gray@3x.png') no-repeat;
     background-size: 100% 100%;
-    margin-left: 45px;
+    margin-left: 68px;
 }
 
 .big__wrapper .product__list {
@@ -417,7 +429,7 @@ img {
     vertical-align: middle;
     width: 13px;
     height: 14px;
-    background: url('../images/icon/icon_sq@3x.png') no-repeat;
+    background: url('../images/icons/icon_sq.png') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -426,7 +438,7 @@ img {
     vertical-align: middle;
     width: 15px;
     height: 14px;
-    background: url('../images/icon/icon_md_gray@3x.png') no-repeat;
+    background: url('../images/icons/icon_md.png') no-repeat;
     background-size: 100% 100%;
     margin-left: 40px;
 }
@@ -615,8 +627,8 @@ img {
 }
 .text_box-border{
     border-bottom: 1px dashed #999;
-    padding-bottom: 20px;
-    margin-top: 20px;
+    padding-bottom: 19px;
+    margin-top: 19px;
     position: relative;
 }
 
@@ -631,12 +643,14 @@ img {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     margin-bottom: 5px;
+    font-size: 16px;
 }
 .info__content .info__content__text__box .date{
     text-align: right;
     position: absolute;
     right: 5px;
     top: 25px;
+    font-size: 14px;
 }
 /* 结尾 */
 .like__box__left{
