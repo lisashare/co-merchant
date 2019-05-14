@@ -502,6 +502,16 @@ body {
 .box__1 .box__info__text a {
     color: #999999;
 }
+.box__1 .box__info__text a:hover i{
+    background: #FF5909;
+
+}
+.box__1 .box__info__text a:hover .info__name{
+    color: #FF5909;
+}
+.box__1 .box__info__text a:hover .box__date{
+    color: #FF5909;
+}
 
 .box__1 .box__info__text i {
     display: inline-block;

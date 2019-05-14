@@ -545,7 +545,14 @@ img {
     text-indent: 14px;
 
 }
+/* .info__content__middle__text__item  a:hover .info__content__middle__text__item__icon{
+    background: #FF5909;
 
+}
+.info__content__middle__text__item  a:hover .info__content__middle__text__item__text{
+    color: #FF5909;
+
+} */
 .info__content .info__content__middle__text__item {
     display: inline-block;
     vertical-align: middle;
