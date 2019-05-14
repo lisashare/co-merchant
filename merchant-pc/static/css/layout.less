@@ -68,7 +68,7 @@ body {
 			justify-content: space-between;
 			overflow: hidden;
 			input {
-				font-size: 20px;
+				font-size: 16px;
 				color: #999999;
 				width: 332px;
 				height: 42px;
@@ -148,7 +148,8 @@ body {
 	.banner-navlist {
 		position: relative;
 		background-color: pink;
-		z-index: 3;
+		z-index: 101;
+		top: -3px;
 		.cate-menu {
 			width: 234px;
 			height: 432px;
@@ -254,6 +255,10 @@ body {
 			top: 0;
 			.cate_pop_item {
 				padding: 10px 0;
+				height: 412px;
+				/*overflow-x: hidden;
+    			overflow-y: scroll;*/
+    			overflow: auto;
 				li {
 					float: left;
 					padding: 10px 20px;
@@ -282,7 +287,8 @@ body {
 		    height: 432px;
 		    overflow: hidden;
 		    position: relative;
-		    top: -2px;
+		    // top: -2px;
+		    top: -5px;
 		}
 		a,img {
 			width: 100%;
@@ -588,13 +594,13 @@ body {
 			}
 			margin-left: 14px;
 			a {
-				width: 222px;
-				height: 148px;
-				margin-bottom: 20px;
 				display: block;
 				img {
-					width: 100%;
-					height: 100%;
+					/*width: 100%;
+					height: 100%;*/
+					width: 222px;
+					height: 148px;
+					margin-bottom: 20px;
 				}
 			}
 			.rem-title {
@@ -604,8 +610,14 @@ body {
 				margin-bottom: 8px;
 				position: relative;
 				.rem-name {
-					color: #666666;
 					width: 136px;
+					a {
+						font-size: 16px;
+						color: #666666;
+						height: 18px;
+						margin-bottom: 4px;
+						display: inline-block;
+					}
 				}
 				.rem-money {
 					font-weight: bold;
@@ -952,6 +964,11 @@ body {
 				display: block;
 				height: 32px;
 				line-height: 32px;
+				&:hover {
+					.title {
+						color: #f85100;
+					}
+				}
 				.title {
 					font-size: 16px;
 					color: #666666;
@@ -1230,6 +1247,9 @@ body {
 					}
 					a {
 						font-size: 16px;
+						&:hover {
+							color: #ff5909;
+						}
 					}
 					.time {
 						font-size: 14px;
@@ -1281,6 +1301,9 @@ body {
 				a {
 					font-size: 16px;
 					font-weight: bold;
+					&:hover, &.cur {
+						color: #ff5909;
+					}
 				}
 			}
 		}
@@ -1557,9 +1580,10 @@ body {
 		background-color: transparent;
 		border: none;
 		font-size: 16px;
-		color: #999999;
+		font-family: "PingFangSC-Regular, sans-serif";
+		color: #666666;
 	}
-	input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	/*input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	  font-size: 16px;
 	}
 	input:-moz-placeholder, textarea:-moz-placeholder {
@@ -1570,7 +1594,7 @@ body {
 	}
 	input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 	  font-size: 16px;
-	}
+	}*/
 	.wraper {
 		width: 460px;
 		height: 286px;
@@ -1592,16 +1616,19 @@ body {
 					height: 120px;
 				}
 				input[name="username"] {
+					color: #666666;
 					width: 130px;
 					height: 42px;
 					padding-left: 36px;
 				}
 				input[name="tel"] {
+					color: #666666;
 					width: 244px;
 					height: 42px;
 					padding-left: 36px;
 				}
 				.icon-username {
+					color: #666666;
 					width: 16px;
 					height: 20px;
 					background-image: url("../images/icons/icon_people@3x.png");
@@ -1620,7 +1647,8 @@ body {
 					height: 17px;
 					background-image: url("../images/icons/icon_online@3x.png");
 					background-size: 17px 17px;
-					top: 20px;
+					// top: 20px;
+					top: 23px;
 					left: 12px;
 				}
 				.message {
@@ -1723,7 +1751,7 @@ body {
 		}
 		.friend-link-hotline {
 			position: relative;
-			top: -10px;
+			// top: -10px;
 			color: #ffffff;
 			.hotline-title {
 				font-size: 18px;

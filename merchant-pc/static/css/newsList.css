@@ -56,6 +56,9 @@ body {
   font-size: 20px;
   color: #333333;
 }
+.container .content-list li .div-text .title a:hover {
+  color: #ff5909;
+}
 .container .content-list li .div-text .desc {
   font-size: 14px;
   color: #666666;
@@ -263,6 +266,9 @@ body {
   font-size: 16px;
   color: #666666;
 }
+.container .aside .section.hot-news .hot-news-top .div-text .tit a:hover {
+  color: #ff5909;
+}
 .container .aside .section.hot-news .hot-news-top .div-text .desc {
   font-size: 14px;
   color: #999999;
@@ -278,6 +284,9 @@ body {
   font-size: 14px;
   color: #666666;
   width: 150px;
+}
+.container .aside .section.hot-news .hot-news-item a:hover {
+  color: #ff5909;
 }
 .container .aside .section.hot-news .hot-news-item a em {
   width: 8px;
