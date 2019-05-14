@@ -667,6 +667,15 @@ img {
     font-size: 14px;
    
 }
+.info__content .info__content__middle a:hover {
+    color: #ff5909;
+  }
+  .info__content__middle__text__items a:hover i {
+    background: #FF5909;
+  }
+  .info__content__middle__text__items a:hover span {
+    color: #FF5909;
+  }
 .info__content .info__content__text__box a{
     color: #999;
 }
