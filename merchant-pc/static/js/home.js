@@ -187,7 +187,7 @@ $(document).ready(function () {
     // 加盟动态end
 
     // 餐饮需求动态start
-    jQuery(".catering-demand").slide({mainCell:".wraper",autoPlay:true,effect:"topMarquee",vis:3,interTime:50,trigger:"click"});
+    jQuery(".catering-demand").slide({mainCell:".wraper",autoPlay:true,effect:"topMarquee",vis:4,interTime:50,trigger:"click"});
     // 餐饮需求动态end
 
     //提交快捷留言start
