@@ -1204,6 +1204,9 @@ body {
   font-size: 16px;
   color: #666666;
 }
+.joining-section .section-pub .popularity-project li .div-text .title a:hover {
+  color: #ff5909;
+}
 .joining-section .section-pub .popularity-project li .div-text .money {
   font-size: 16px;
   color: #333333;
@@ -1712,6 +1715,7 @@ body {
 .freegossip-section .message-img {
   width: 270px;
   height: 286px;
+  overflow: hidden;
 }
 .freegossip-section .message-img img {
   width: 270px;
