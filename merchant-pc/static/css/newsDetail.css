@@ -139,6 +139,7 @@ body {
   width: 243px;
   height: 162px;
   display: block;
+  overflow: hidden;
 }
 .container .aside .section.relate-program .div-img img {
   width: 243px;

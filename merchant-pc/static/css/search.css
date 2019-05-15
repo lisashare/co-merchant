@@ -66,6 +66,7 @@ body {
 .container .content-list li .div-img {
   width: 201px;
   height: 134px;
+  overflow: hidden;
 }
 .container .content-list li .div-img img {
   width: 201px;
@@ -196,6 +197,7 @@ body {
 .container .aside .section.hot-news .hot-news-top .div-img {
   width: 120px;
   height: 80px;
+  overflow: hidden;
 }
 .container .aside .section.hot-news .hot-news-top .div-img img {
   width: 120px;
