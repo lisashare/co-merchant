@@ -161,12 +161,12 @@ $(document).ready(function () {
     //手风琴end
 
     //大牌精选start
-    $(".big-section .img-bottom li a").hover(function(){
+    /*$(".big-section .img-bottom li a").hover(function(){
     	$(".big-section .img-top img").prop("src", $(this).find("img").prop("src") );
     	$(".big-section .img-top .name").html( $(this).find(".name").html() );
     	$(".big-section .img-top .counts").html( $(this).find(".counts").html() );
     	$(".big-section .img-top .btn-circle").html( $(this).find(".btn-circle").html() );
-    });
+    });*/
     //大牌精选end
 
     //品牌推荐start
@@ -183,7 +183,7 @@ $(document).ready(function () {
     });
 
     // 加盟动态start
-    jQuery(".franchise-dynamics").slide({mainCell:".wraper ul",autoPlay:true,effect:"topMarquee",vis:7,interTime:50,trigger:"click"});
+    jQuery(".franchise-dynamics").slide({mainCell:".wraper ul",autoPlay:true,effect:"topMarquee",vis:8,interTime:50,trigger:"click"});
     // 加盟动态end
 
     // 餐饮需求动态start

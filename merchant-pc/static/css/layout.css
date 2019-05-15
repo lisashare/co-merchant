@@ -67,7 +67,7 @@ body {
 }
 .header .header-search .header-searchbox input {
   font-size: 16px;
-  color: #999999;
+  color: #000000;
   width: 332px;
   height: 42px;
   padding-left: 47px;
@@ -1435,7 +1435,6 @@ body {
 .likes-section .likes-bottom .franchise-dynamics .wraper {
   height: 290px;
   margin-top: 20px;
-  overflow: hidden;
 }
 .likes-section .likes-bottom .franchise-dynamics .wraper li {
   height: 40px;
@@ -1477,8 +1476,8 @@ body {
 .likes-section .likes-bottom .franchise-dynamics .footer {
   font-size: 16px;
   color: #333333;
-  height: 70px;
-  padding-top: 26px;
+  height: 42px;
+  padding-top: 36px;
 }
 .likes-section .likes-bottom .franchise-dynamics .footer em {
   font-weight: bold;
