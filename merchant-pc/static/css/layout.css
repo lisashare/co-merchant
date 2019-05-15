@@ -471,7 +471,7 @@ body {
   height: 383px;
   margin: 0 auto;
   position: relative;
-  background-color: lightgreen;
+  overflow: hidden;
 }
 .big-section .img-top img {
   width: 1168px;
@@ -523,6 +523,10 @@ body {
 }
 .big-section .img-bottom .item:nth-of-type(3) {
   margin-right: 0;
+}
+.big-section .img-bottom .item a {
+  display: block;
+  overflow: hidden;
 }
 .big-section .img-bottom .item .bg-shade {
   width: 100%;
