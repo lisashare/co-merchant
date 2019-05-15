@@ -55,6 +55,10 @@
     padding: 0 15px;
     font-size: 18px;
 }
+.footer__black .ul__text ul li a{
+    color: #FF5909;
+    font-size: 18px;
+}
 .ul__phone__box{
     float: right;
     /* width: 22%; */

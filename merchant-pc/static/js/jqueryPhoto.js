@@ -78,7 +78,6 @@ $(document).ready(function(){
 	}
 	
 	oNextTop.onclick = oNext.onclick = function(){
-		console.log(index)
 		index ++;
 		index = index == len2 ? 0 : index;
 		Change();
@@ -92,7 +91,6 @@ $(document).ready(function(){
 	// 	}
 
 	oPrevTop.onclick = oPrev.onclick = function(){
-		
 		index --;
 		index = index == -1 ? len2 -1 : index;
 		Change();

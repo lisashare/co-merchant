@@ -5,19 +5,19 @@ $(function () {
     navLength = $navs.length - 1;
     var titleTop = $('.tab__wrapper').offset().top;
     $window.on('scroll', function () {
-        if($(document).scrollTop() > titleTop){
+        if ($(document).scrollTop() > titleTop) {
             $('.tab__wrapper').css({
-                "position":"fixed",
-                "top":0
-        })
-       }else{
-    
-          $('.tab__wrapper').css({
-              "position":"absolute",
-              "top":"0px"
-          })
+                "position": "fixed",
+                "top": 0
+            })
+        } else {
+
+            $('.tab__wrapper').css({
+                "position": "absolute",
+                "top": "0px"
+            })
         }
-  
+
         // var scrollTop = $window.scrollTop(),
         //     len = navLength;
         // if (scrollTop > $('#new-info').offset().top && scrollTop < $('#form__content').offset().top - $('#form__content').height()) {
@@ -41,29 +41,28 @@ $(function () {
         //     }
         // }
     });
-    $('.tab__wrapper .tab__item').on('click',function(){
+    $('.tab__wrapper .tab__item').on('click', function () {
         var index = $(this).index()
-        var top = $('#tab'+Number(index+1)).offset().top-60
-        $('body,html').stop().animate({  
-            scrollTop: top  
-        }, 500  
-    );  
+        var top = $('#tab' + Number(index + 1)).offset().top - 60
+        $('body,html').stop().animate({
+            scrollTop: top
+        }, 500
+        );
 
     })
     //点击右侧滚动定位
     $('.fixed__nav__list ul li').click(function () {
         var index = $(this).index()
-        console.log( $sections.eq(index).offset().top)
         $('body,html').animate({
             scrollTop: $sections.eq(index).offset().top
         }, 500
         );
     })
     //提交快捷留言start
-    $("#quickMessage a").click(function(){
-        $(".message").val( $(this).html() );
+    $("#quickMessage a").click(function () {
+        $(".message").val($(this).html());
     });
-     //提交快捷留言end
+    //提交快捷留言end
     // $('.tab__item').click(function(){
     //     $('.tab__item a').removeClass('tab__item--active')
     //     $(this).find('a').addClass('tab__item--active')
