@@ -633,6 +633,7 @@ body {
 			margin-left: 14px;
 			a {
 				display: block;
+				overflow: hidden;
 				img {
 					/*width: 100%;
 					height: 100%;*/
@@ -799,6 +800,10 @@ body {
 					.swiper-slide {
 						width: 800px;
 						height: 666px;
+						li a {
+							overflow: hidden;
+							display: block;
+						}
 					}
 					.swiper-button-prev,.swiper-button-next {
 						top: 64px;
@@ -994,6 +999,7 @@ body {
 			overflow: hidden;
 			.aImg {
 				float: left;
+				overflow: hidden;
 				&:nth-of-type(1) {
 					margin-right: 16px;
 				}
@@ -1098,6 +1104,7 @@ body {
 					margin-top: 70px;
 					margin-bottom: 20px;
 					position: relative;
+					overflow: hidden;
 					img {
 						width: 100%;
 						height: 100%;
@@ -1211,6 +1218,7 @@ body {
 				.div-img {
 					width: 146px;
 					height: 98px;
+					overflow: hidden;
 					img {
 						width: 100%;
 						height: 100%;
@@ -1222,7 +1230,7 @@ body {
 					margin-left: 16px;
 					position: relative;
 					.title {
-						width: 114px;
+						width: 170px;
 						overflow: hidden;
 					    text-overflow: ellipsis;
 					    white-space: nowrap;
@@ -1232,13 +1240,17 @@ body {
 						}
 					}
 					.money {
-						font-size: 18px;
+						font-size: 16px;
 						color: #333333;
 						margin-top: 4px;
-						width: 122px;
+						width: 156px;
 						overflow: hidden;
 					    text-overflow: ellipsis;
 					    white-space: nowrap;
+					    em {
+					    	font-size: 18px;
+					    	font-weight: bold;
+					    }
 					}
 					.btn-look {
 						font-size: 16px;
@@ -1277,6 +1289,7 @@ body {
 				height: 216px;
 				margin: 70px auto 20px;
 				display: block;
+				overflow: hidden;
 				img {
 					width: 378px;
 					height: 216px;
@@ -1369,6 +1382,7 @@ body {
 				.div-img {
 					width: 159px;
 					height: 106px;
+					overflow: hidden;
 					img {
 						width: 100%;
 						height: 100%;
@@ -1537,6 +1551,9 @@ body {
 					a {
 						font-size: 16px;
 						color: #666666;
+						&:hover {
+							color: #ff5909;
+						}
 					}
 				}
 				.desc {
@@ -1560,6 +1577,7 @@ body {
 							width: 150px;
 							height: 100px;
 							display: block;
+							overflow: hidden;
 							img {
 								width: 150px;
 								height: 100px;
@@ -1568,7 +1586,7 @@ body {
 						.div-text {
 							margin-top: 12px;
 							a {
-								width: 100px;
+								width: 138px;
 								font-size: 14px;
 								color: #666666;
 								display: block;
@@ -1584,6 +1602,9 @@ body {
 		.catering-demand {
 			width: 314px;
 			margin-right: 0;
+			.tempWrap {
+				margin-top: 20px;
+			}
 			.wraper {
 				height: 356px;
 				margin-top: 20px;
@@ -1591,8 +1612,10 @@ body {
 				
 				.item {
 					line-height: 24px;
-					padding-bottom: 25px;
-					margin-bottom: 25px;
+					/*padding-bottom: 25px;
+					margin-bottom: 25px;*/
+					padding-bottom: 10px;
+					margin-bottom: 10px;
 					border-bottom: 1px dashed #dddddd;
 					a {
 						padding-left: 24px;
@@ -1602,6 +1625,9 @@ body {
 						background-size: 17px 13px;
 						background-position: left center;
 						background-repeat: no-repeat;
+						&:hover {
+							color: #ff5909;
+						}
 					}
 				}
 			}
@@ -1635,7 +1661,8 @@ body {
 		border: none;
 		font-size: 16px;
 		font-family: "PingFangSC-Regular, sans-serif";
-		color: #666666;
+		// color: #666666;
+		color: #000000;
 	}
 	/*input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 	  font-size: 16px;
@@ -1670,13 +1697,15 @@ body {
 					height: 120px;
 				}
 				input[name="username"] {
-					color: #666666;
+					// color: #666666;
+					color: #000000;
 					width: 130px;
 					height: 42px;
 					padding-left: 36px;
 				}
 				input[name="tel"] {
-					color: #666666;
+					// color: #666666;
+					color: #000000;
 					width: 244px;
 					height: 42px;
 					padding-left: 36px;
@@ -1786,6 +1815,9 @@ body {
 				background-position: left center;
 				&:nth-of-type(7n){
 					margin-right: 0;
+				}
+				&:hover {
+					color: #ff5909;
 				}
 			}
 		}

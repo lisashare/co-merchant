@@ -139,6 +139,7 @@ body {
   width: 243px;
   height: 162px;
   display: block;
+  overflow: hidden;
 }
 .container .aside .section.relate-program .div-img img {
   width: 243px;
@@ -257,6 +258,9 @@ body {
 }
 .container .aside .section.relate-article2 .div-img .footer-shade .time {
   color: #dddddd;
+}
+.container .aside .section.relate-article2 .div-text .tempWrap {
+  margin-top: 10px;
 }
 .container .aside .section.relate-article2 .div-text li {
   margin-top: 10px;

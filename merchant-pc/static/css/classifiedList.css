@@ -167,6 +167,7 @@ body {
   width: 200px;
   height: 134px;
   margin: 30px 20px auto 0;
+  overflow: hidden;
 }
 .container .content-list .content-list-top li .div-img img {
   width: 200px;
@@ -304,6 +305,7 @@ body {
   height: 132px;
   margin: 9px 14px auto 9px;
   position: relative;
+  overflow: hidden;
 }
 .container .content-list .content-list-bottom .rank-wraper li .div-img img {
   width: 198px;
@@ -477,6 +479,7 @@ body {
 .container .aside .section.hot-news .hot-news-top .div-img {
   width: 120px;
   height: 80px;
+  overflow: hidden;
 }
 .container .aside .section.hot-news .hot-news-top .div-img img {
   width: 120px;

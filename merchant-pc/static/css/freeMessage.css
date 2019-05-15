@@ -17,9 +17,8 @@
   background-color: transparent;
   border: none;
   font-size: 16px;
-  color: #999999;
   font-family: "PingFangSC-Regular, sans-serif";
-  color: #666666;
+  color: #000000;
 }
 .freegossip-section input::-webkit-input-placeholder,
 .freegossip-section textarea::-webkit-input-placeholder {
