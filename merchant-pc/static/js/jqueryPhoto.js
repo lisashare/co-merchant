@@ -55,9 +55,9 @@ $(document).ready(function(){
 	
 	var num = 3;
 	var num2 = Math.ceil(num / 2);
-
+	$('.pic_page').html(index+1+'/'+len2)
 	function Change(){
-
+		$('.pic_page').html(index+1+'/'+len2)
 		Animate(oPicUl, {left: - index * w1});
 		
 		if(index < num2){
@@ -74,6 +74,7 @@ $(document).ready(function(){
 				oListLi[i].className = "on";
 			}
 		}
+		
 	}
 	
 	oNextTop.onclick = oNext.onclick = function(){

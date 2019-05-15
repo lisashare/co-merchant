@@ -302,6 +302,9 @@ img {
     white-space:nowrap
 
 }
+.item__title_1:hover{
+    color: #FF5909;
+}
 .item__title_1—sub{
     display: inline-block;
     /* width: 100px; */
@@ -479,7 +482,9 @@ img {
     margin: 30px 0 16px 0;
     font-size: 0;
 }
-
+.info__content .info__content__left__title  a:hover .left__title__name{
+    color: #FF5909;
+}
 .info__content .left__title__icon {
     display: inline-block;
     vertical-align: middle;
@@ -514,7 +519,10 @@ img {
     line-height: 22px;
 
 }
-
+.info__content .info__content__left__words .text_a{
+    color: #999999;
+    display: inline;
+}
 .info__content .info__content__left__words .info__content__left__words--orange {
     color: #FF5909;
     cursor: pointer;
@@ -687,7 +695,7 @@ img {
     margin-top: 19px;
     position: relative;
 }
-.text_box-border a{
+.text_box-border a:hover{
     color: #FF5909;
 }
 .text_box-border:last-child{

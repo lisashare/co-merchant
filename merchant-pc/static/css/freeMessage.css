@@ -135,6 +135,7 @@
 .freegossip-section .message-img {
   width: 270px;
   height: 286px;
+  overflow: hidden;
 }
 .freegossip-section .message-img img {
   width: 270px;

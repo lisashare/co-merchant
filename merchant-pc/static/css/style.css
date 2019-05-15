@@ -13,7 +13,12 @@
     font-size: 50px;
     font-weight: bold;
 }
-
+.mod18 .pic_page{
+    font-size: 18px;
+    right: 20px;
+    bottom: 120px;
+    color: #FF5909;
+}
 .mod18 .prev {
     /* left: 10px; */
     background: url(/images/icons/button_left_small@3x.png) no-repeat;
