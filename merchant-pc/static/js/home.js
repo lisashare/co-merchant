@@ -119,7 +119,7 @@ var swiper4 = new Swiper('.swiper-container4', {
     paginationBulletRender: function (swiper, index, className) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
   	},
-    autoplay: 1500,
+    autoplay: 4000,
     prevButton:'.swiper-button-prev',
 	nextButton:'.swiper-button-next',
     autoplayDisableOnInteraction : false,
@@ -161,7 +161,7 @@ $(document).ready(function () {
     //手风琴end
 
     //大牌精选start
-    $(".big-section .img-bottom li a").click(function(){
+    $(".big-section .img-bottom li a").hover(function(){
     	$(".big-section .img-top img").prop("src", $(this).find("img").prop("src") );
     	$(".big-section .img-top .name").html( $(this).find(".name").html() );
     	$(".big-section .img-top .counts").html( $(this).find(".counts").html() );
@@ -170,14 +170,14 @@ $(document).ready(function () {
     //大牌精选end
 
     //品牌推荐start
-    $(".recomend-section .btn-btn").click(function(){
+    $(".recomend-section .btn-btn").hover(function(){
     	$(this).removeClass("btn-btn-gray").siblings(".btn-btn").addClass("btn-btn-gray");
     	$(".recomend-con ul").eq( $(this).index() ).removeClass("hidden").siblings("ul").addClass("hidden");
     });
     //品牌推荐end
 
     //排行榜tab
-    $(".ranking-list .ranking-tab ul>li").click(function(){
+    $(".ranking-list .ranking-tab ul>li").hover(function(){
     	$(this).addClass("active").siblings().removeClass("active");
     	$(".ranking-cont .ranking-cont-item").eq( $(this).index() ).removeClass("hidden").siblings(".ranking-cont-item").addClass("hidden")
     });

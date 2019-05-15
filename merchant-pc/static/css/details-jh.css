@@ -299,8 +299,19 @@ img {
     font-size: 16px;
     overflow:hidden;
     text-overflow:ellipsis;
-    white-space:nowrap
-
+    white-space:nowrap;
+}
+.item__title_1 a {
+     font-size: 16px;
+     color: #666;
+     width: 100px;
+     display: inline-block;
+     overflow:hidden;
+     text-overflow:ellipsis;
+     white-space:nowrap;
+}
+.item__title_1 a:hover {
+    color: #ff5909;
 }
 .item__title_1:hover{
     color: #FF5909;

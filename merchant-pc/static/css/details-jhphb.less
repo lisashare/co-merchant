@@ -637,10 +637,16 @@ img {
 }
 
 .item__title_1 {
+    display: block;
     margin-bottom: 6px;
+    line-height: 16px;
+    font-size: 16px;
     color: #666;
     // vertical-align: middle;
-    line-height: 16px;
+}
+.item__title_1:hover{
+    color: #FF5909;
+    cursor: pointer;
 }
 
 .item__title_2 {
@@ -770,9 +776,6 @@ img {
     float: left;
     width: 390px;
     font-size: 0;
-    a:hover{
-        color: #ff5909;
-    }
 }
 
 .info__content .info__content__left .info__content__left__item {
@@ -807,7 +810,11 @@ img {
     text-align: center;
     border-radius: 2px;
 }
-
+.info__content__left__title {
+    a:hover{
+        color: #ff5909;
+    }
+}
 .info__content .left__title__name , .middle__title__name{
     display: inline-block;
     vertical-align: middle;
@@ -819,6 +826,7 @@ img {
 }
 
 .info__content .info__content__left__words {
+    display: block;
     font-size: 14px;
     color: #999;
     letter-spacing:2px;
@@ -828,8 +836,6 @@ img {
 
 .info__content .info__content__left__words .info__content__left__words--orange {
     color: #FF5909;
-    cursor: pointer;
-
 }
 
 /* 中 */

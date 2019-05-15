@@ -130,6 +130,9 @@ body {
   font-size: 16px;
   color: #333333;
 }
+.container .aside .section.hot-brand .div-text .tit a:hover {
+  color: #ff5909;
+}
 .container .aside .section.hot-brand .div-text .shops,
 .container .aside .section.hot-brand .div-text .money {
   font-size: 14px;
