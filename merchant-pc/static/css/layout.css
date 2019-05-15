@@ -1204,6 +1204,9 @@ body {
   font-size: 16px;
   color: #666666;
 }
+.joining-section .section-pub .popularity-project li .div-text .title a:hover {
+  color: #ff5909;
+}
 .joining-section .section-pub .popularity-project li .div-text .money {
   font-size: 16px;
   color: #333333;
