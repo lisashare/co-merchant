@@ -29,11 +29,15 @@ body {
 .content .content__title__info .content__title__text__box .content__title__text {
     margin-left: 8px;
     color: #949494;
-    font-size: 14px;
     float: left;
 
 }
-
+.content .content__title__info .content__title__text__box .content__title__text  a{
+    display: inline;
+    color: #949494;
+    font-size: 14px;
+    
+}
 /* 产品详情 */
 .content .content__details__wrapper {
     width: 100%;

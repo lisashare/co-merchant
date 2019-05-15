@@ -36,6 +36,12 @@ img {
     float: left;
 
 }
+.content .content__title__info .content__title__text__box .content__title__text  a{
+    display: inline;
+    color: #949494;
+    font-size: 14px;
+    
+}
 /* 筛选 */
 .filter__content{
     width: 1200px;
