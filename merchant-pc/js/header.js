@@ -81,7 +81,8 @@ $(".icon-wraper").click(function(){
 });
 
 $(".catering-inner li a").click(function(){
-	$(".icon-txt").html( $(this).text() )
+	$(".icon-txt").html( $(this).text() );
+    $("#hidden1").val( $(this).data("cateid") );
 });
 
 $(document).click(function(){

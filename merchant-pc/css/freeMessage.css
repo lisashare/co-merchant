@@ -57,6 +57,7 @@
 .freegossip-section .wraper .form-group .form-input:nth-of-type(2) {
   width: 280px;
   margin-left: 14px;
+  box-sizing: border-box;
 }
 .freegossip-section .wraper .form-group .form-input.form-input1 {
   width: 460px;

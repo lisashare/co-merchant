@@ -202,10 +202,18 @@ $(document).ready(function () {
          return reg.test(tel);
      }
      $(".btn-submit").click(function(){
-        if( isPhoneNumber( $("input[name='tel']").val() ) ){
+        if( !isPhoneNumber( $("input[name='tel']").val() ) ){
+            // alert("请输入正确的手机号");
+            $("input[name='tel']").val("");
+            $("input[name='tel']").attr("placeholder","请输入正确的手机号");
+            $(".form-input-tel").css("border","1px solid red");
             return false;
         }
      });
+
+     $("input[name='tel']").on('input propertychange',function() {
+            $(".form-input-tel").css("border","none");
+        });
      //手机号验证end
 
      //猜你喜欢start-tab

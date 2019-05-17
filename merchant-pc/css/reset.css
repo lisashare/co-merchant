@@ -95,7 +95,8 @@ ul, ol, li { list-style:none; }
 a { text-decoration:none;  outline: 0;cursor: pointer; }
 img { border:none; vertical-align:top; }
 table { border-collapse:collapse; }
-input,textarea { outline:none; }
+input,textarea,button { outline:none; }
+button { border: none; }
 textarea { resize:none; overflow:auto; }
 body { font-size:14px; font-family: PingFangSC-Regular, sans-serif; }
 

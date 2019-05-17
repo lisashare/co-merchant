@@ -48,6 +48,7 @@
 			</a>
 			<div class="header-search-wrapper">
 				<div class="header-search">
+			     <form>
 					<div class="header-searchbox">
 						<div class="form-input posi-re">
 							<div class="icon-wraper">
@@ -56,24 +57,26 @@
 								<div class="catering-inner hidden">
 									<i class="icon-icon icon-up-triangle"></i>
 									<ul>
-										<li><a href="javascript:void(0);" class="cur">全部</a></li>
-										<li><a href="javascript:void(0);">中式快餐</a></li>
-										<li><a href="javascript:void(0);">饮品</a></li>
-										<li><a href="javascript:void(0);">小吃</a></li>
-										<li><a href="javascript:void(0);">甜品烘培</a></li>
-										<li><a href="javascript:void(0);">西式快餐</a></li>
-										<li><a href="javascript:void(0);">海鲜</a></li>
-										<li><a href="javascript:void(0);">烤肉</a></li>
-										<li><a href="javascript:void(0);">韩餐</a></li>
+										<li><a href="javascript:void(0);" class="cur" data-cateid="0">全部</a></li>
+										<li><a href="javascript:void(0);" data-cateid="1">中式快餐</a></li>
+										<li><a href="javascript:void(0);" data-cateid="2">饮品</a></li>
+										<li><a href="javascript:void(0);" data-cateid="3">小吃</a></li>
+										<li><a href="javascript:void(0);" data-cateid="4">甜品烘培</a></li>
+										<li><a href="javascript:void(0);" data-cateid="5">西式快餐</a></li>
+										<li><a href="javascript:void(0);" data-cateid="6">海鲜</a></li>
+										<li><a href="javascript:void(0);" data-cateid="7">烤肉</a></li>
+										<li><a href="javascript:void(0);" data-cateid="8">韩餐</a></li>
 									</ul>
 								</div>
 							</div>
 							<input id="searchValue" type="text" placeholder="请输入想找的品牌" />
+							<input type="hidden" name="dataID" id="hidden1" value="0" />
 						</div>
-						<span id="searchIcon" class="btn-btn btn-search">
+						<button type="submit" id="searchIcon" class="btn-btn btn-search">
 							<i class="icon-icon icon-search"></i>
-						</span>
+						</button>
 					</div>
+                  </form>
 					<div class="header-search-hot">
 						<p>热门搜索：</p>
 						<ul>
@@ -353,9 +356,79 @@
 
 						</div>
 					</div>
+					<div class="tab__info__box__title " >
+						xxxxx加盟费率
+					</div>
+					<div class="tab__content" style="background:#f1f7f9">
+						<table class="table__wrapper">
+							<tr>
+								<td>
+									类别
+								</td>
+								<td>
+									一线城市
+								</td>
+								<td>
+									二线城市
+								</td>
+								<td class="lastCol">
+									其他城市
+								</td>
+							</tr>
+							<tr>
+								<td>
+									加盟费
+								</td>
+								<td>
+									50000
+								</td>
+								<td>
+									20000
+								</td>
+								<td class="lastCol">
+									20000
+								</td>
+							</tr>
+							<tr>
+								<td>
+									设备费用
+								</td>
+								<td>
+									一线城市
+								</td>
+								<td>
+									二线城市
+								</td>
+								<td class="lastCol">
+									其他城市
+								</td>
+							</tr>
+							<tr>
+								<td>
+									房租
+								</td>
+								<td>
+									一线城市
+								</td>
+								<td>
+									二线城市
+								</td>
+								<td class="lastCol">
+									其他城市
+								</td>
+							</tr>
+						</table>
+						<div class="other__table">
+								
+
+						</div>
+					</div>
+					
+					
 					<div class="tab__info__box__title section" id='tab4'>
 						xxxxx加盟条件
 					</div>
+					
 					<div class="tab__content">
 						<div class="content__text">
 							一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一一段话一段话一一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一段话一一段话
@@ -365,7 +438,7 @@
 
 						</div>
 					</div>
-					<div class="tab__info__box__title section" id='tab5'>
+					<div class="tab__info__box__title section" id='tab5'> 
 						xxxxx加盟流程
 					</div>
 					<div class="tab__content">
@@ -374,7 +447,6 @@
 						</div>
 						<div class="content__img">
 							<img src="images/test/5.jpg" style="width:100%" alt="">
-
 						</div>
 					</div>
 
@@ -431,7 +503,7 @@
 					</div>
 					<p class="box__title">我们立即与您沟通</p>
 					<div class="box__input">
-						<input type="text" placeholder="请输入手机号码">
+						<input type="text"  id="area-right-tel1" maxlength="11" name="tel_right" placeholder="请输入手机号码"  />
 					</div>
 					<div class="btn__phone">
 						免费电话
@@ -607,7 +679,7 @@
 						<form name="form1" method="POST" action="">
 							<div class="form-group">
 								<div class="fl form-input"><span class="icon-icon icon-username"></span><input type="text" name="username" placeholder="请输入您的姓名"></div>
-								<div class="fl form-input"><span class="icon-icon icon-tel"></span><input type="text" name="tel" placeholder="请输入您的电话"></div>
+								<div class="fl form-input form-input-tel"><span class="icon-icon icon-tel"></span><input type="text" name="tel" placeholder="请输入您的电话"></div>
 							</div>
 							<div class="form-group">
 								<div class="fl form-input form-input1"><span class="icon-icon icon-message"></span><textarea class="message" placeholder="留下您的宝贵意见或根据意向选择右侧快捷键留言"></textarea></div>

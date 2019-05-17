@@ -466,6 +466,9 @@ body {
 .big-section a:hover .name {
   color: #ff5909;
 }
+.big-section a:hover {
+  color: #ff5909;
+}
 .big-section .img-top {
   width: 1168px;
   height: 383px;
@@ -537,9 +540,16 @@ body {
   margin-top: 20px;
 }
 .big-section .img-bottom .item .bg-shade .name-counts .name {
-  font-size: 16px;
   width: 214px;
   margin-bottom: 4px;
+}
+.big-section .img-bottom .item .bg-shade .name-counts .name a {
+  font-size: 16px;
+  width: 214px;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .big-section .img-bottom .item .bg-shade .name-counts .counts {
   font-size: 14px;
@@ -1638,6 +1648,7 @@ body {
 .freegossip-section .wraper .form-group .form-input:nth-of-type(2) {
   width: 280px;
   margin-left: 14px;
+  box-sizing: border-box;
 }
 .freegossip-section .wraper .form-group .form-input.form-input1 {
   width: 460px;

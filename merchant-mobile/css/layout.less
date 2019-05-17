@@ -1438,36 +1438,85 @@ i.i-icon-search{
         text-indent: 1.5em;
     }
 }
-// 费用
-.itd-join-charge{
-    font-size: 28/@rem;
-    color: #666;
-    background: #f7f7f7;
-    .itd-tr{
-        padding-left: 48/@rem;
-        height: 84/@rem;
-        line-height: 84/@rem;
-        
-        span.charge-title{
-            margin-right: 44/@rem;
-            font-size: 32/@rem;
-            font-weight: 700;
-            color: #000;
+// 表格
+.tab__info__box__title{
+    padding: 48/@rem 0 30/@rem;
+    line-height:40/@rem;
+    font-size: 40/@rem;
+    color: #333;
+    font-weight: 700;
+}
+.tab__content{
+    box-sizing: border-box;
+    border-radius: 6/@rem;
+    border: 1px solid #f7f7f7;
+    overflow: hidden;
+}
+.table__wrapper{
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    td{
+        box-sizing: border-box;
+        width: 50%;
+        line-height: 28/@rem;
+        padding: 26/@rem 0;
+    }
+    tr{
+        font-size: 28/@rem;
+        color: #666;
+        td:first-child{
+            padding-left: 48/@rem;
         }
-        span.city-tip{
-            width: 150/@rem;
-            height: 46/@rem;
-            line-height: 46/@rem;
-            border-radius: 23/@rem;
+        td:last-child{
+            padding-left: 48/@rem;
         }
     }
-    .itd-tr:nth-child(2){
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
+    tr:last-child{
+        td{
+            padding-left: 0;
+            color: #f85100;
+            text-align: center;
+        }
     }
 }
+.table__wrapper tr:nth-child(odd) {
+    background: #f7f7f7;
+}
+.table__wrapper tr:nth-child(even) {
+    background: #fff;
+}
+// 费用
+// .itd-join-charge{
+//     font-size: 28/@rem;
+//     color: #666;
+//     background: #f7f7f7;
+//     .itd-tr{
+//         padding-left: 48/@rem;
+//         height: 84/@rem;
+//         line-height: 84/@rem;
+        
+//         span.charge-title{
+//             margin-right: 44/@rem;
+//             font-size: 32/@rem;
+//             font-weight: 700;
+//             color: #000;
+//         }
+//         span.city-tip{
+//             width: 150/@rem;
+//             height: 46/@rem;
+//             line-height: 46/@rem;
+//             border-radius: 23/@rem;
+//         }
+//     }
+//     .itd-tr:nth-child(2){
+//         border-top: 1px solid #ddd;
+//         border-bottom: 1px solid #ddd;
+//     }
+// }
 .itd-more-city{
-    margin: 30/@rem auto 10/@rem;
+    margin: 60/@rem auto 10/@rem;
     width: 420/@rem;
     height: 70/@rem;
     line-height: 70/@rem;
@@ -1475,53 +1524,123 @@ i.i-icon-search{
     border-radius: 35/@rem;
 }
 // 加盟问答
-.itd-customer-service:last-child{
-    margin-bottom: 0!important;
+// .itd-customer-service:last-child{
+//     margin-bottom: 0!important;
+// }
+// .itd-customer-service{
+//     line-height: 45/@rem;
+//     font-size: 32/@rem!important;
+//     margin-bottom: 34/@rem;
+//     p{
+//         text-indent: 0!important;
+//     }
+// }
+.answer__right{
+    position: relative;
+    width: 100%;
+    &:after,.clear:before {content: "";display: table;}
+    &:after {content: "";display: block;height: 0;clear: both;visibility: hidden;}
+    .answer__text{
+        line-height: 45/@rem;
+    }
 }
-.itd-customer-service{
-    line-height: 45/@rem;
-    font-size: 32/@rem;
+.answer__item{
+    position: relative;
+    margin-bottom: 28/@rem;
+    .answer__text{
+        float: left;
+        width: 600/@rem;
+    }
+}
+.answer__item:nth-of-type(odd){
+    .answer__text{
+        font-size: 32/@rem!important;
+        font-weight:700;
+        color: #000;
+    }
+}
+.answer__item:nth-of-type(even){
     margin-bottom: 34/@rem;
-}
-.itd-questions{
-    margin-top: 10/@rem;
-    font-weight:700;
-    color: #000;
-    span{
-        margin-right: 40/@rem;
+    padding: 30/@rem;
+    border-radius: 6/@rem;
+    background: #f7f7f7;
+    .answer__text{
+        width: 540/@rem;
+        color: #999;
+        font-size: 32/@rem!important;
     }
-    .icon-questions{
-        background-image: url('../images/main/icon_wen@3x.png');
+    .answer__name{
+        position: absolute;
+        top: -44/@rem;
+        left: 33/@rem;
+        width: 0;height: 0;
+        border: 24/@rem solid;
+        border-color:transparent transparent #f7f7f7 transparent;
     }
 }
-.icon-questions,.icon-answers{
+.answer__icon-q,.answer__icon-a{
+    float: left;
+    margin-top: 6/@rem;
+    margin-right: 15/@rem;
+    display: block;
     vertical-align: middle;
     width: 47/@rem;
     height: 37/@rem;
+    background-image: url('../images/main/icon_wen@3x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-// 三角形
-.icon-triangle{
-    position: absolute;
-    top: -48/@rem;
-    left: 33/@rem;
-    width: 0;height: 0;
-    border: 24/@rem solid;
-    border-color:transparent transparent #f7f7f7 transparent;
+.answer__icon-a{
+    background-image: url('../images/main/icon_da@3x.png');
 }
-.itd-answers{
-    position: relative;
-    margin-top: 28/@rem;
-    padding: 30/@rem;
-    color: #999;
-    background: #f7f7f7;
-    border-radius: 6/@rem;
-    span{
-        margin-right: 40/@rem;
-    }
-    .icon-answers{
-        background-image: url('../images/main/icon_da@3x.png')
-    }
-}
+
+
+// .itd-questions{
+//     margin-top: 10/@rem;
+//     font-weight:700;
+//     color: #000;
+//     strong{
+//         margin-right: 40/@rem;
+//         line-height: 45/@rem;
+//         font-size: 32/@rem;
+//         font-weight:700;
+//     }
+//     .icon-questions{
+//         background-image: url('../images/main/icon_wen@3x.png');
+//     }
+// }
+// .icon-questions,.icon-answers{
+//     vertical-align: middle;
+//     width: 47/@rem;
+//     height: 37/@rem;
+// }
+// // 三角形
+// .icon-triangle{
+//     position: absolute;
+//     top: -48/@rem;
+//     left: 33/@rem;
+//     width: 0;height: 0;
+//     border: 24/@rem solid;
+//     border-color:transparent transparent #f7f7f7 transparent;
+// }
+// .itd-answers{
+//     position: relative;
+//     margin-top: 28/@rem;
+//     padding: 30/@rem;
+//     color: #999;
+//     background: #f7f7f7;
+//     border-radius: 6/@rem;
+//     strong{
+//         margin-right: 40/@rem;
+//         line-height: 45/@rem;
+//         font-size: 32/@rem;
+//         font-weight:700;
+//     }
+//     .icon-answers{
+//         background-image: url('../images/main/icon_da@3x.png')
+//     }
+// }
 // 火锅的相关文章
 .itd-news-content{
     li{

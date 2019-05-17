@@ -304,10 +304,10 @@ body {
     color: #fff;
 }
 
-/* .info__wrapper .tab__wrapper .tab__item--active {
+.info__wrapper .tab__wrapper .tab__item--active {
     background: #FF5909;
-    color: #fff;
-} */
+    color: #fff!important;
+}
 
 .tab__info__box .tab__info__box__title {
     width: 100%;
