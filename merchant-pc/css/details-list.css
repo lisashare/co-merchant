@@ -30,7 +30,6 @@ img {
 }
 
 .content .content__title__info .content__title__text__box .content__title__text {
-    margin-left: 8px;
     color: #949494;
     font-size: 14px;
     float: left;
@@ -115,8 +114,8 @@ img {
 .other__item{
     vertical-align: top;
     display: inline-block;
-    width: 90%;
-    height: 0;
+    width: 100%;
+    height: 45px;
 }
 .other__item--auto{
     height: auto!important;
@@ -161,9 +160,10 @@ img {
     height: 100%;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
-  
-
+    margin-right: 7px;
+}
+.big__wrapper .left__hot__wrapper .img__list__box .img__list__item:last-child{
+    margin-right: 0;
 }
 .big__wrapper .left__hot__wrapper .img__list__box .img__list__item .img__text{
     font-size: 18px;
@@ -216,7 +216,10 @@ img {
     padding: 19px 16px;
     box-sizing: border-box;
     margin-bottom: 20px;
-
+    margin-right: 20px;
+}
+.list__wrpper .list__item__info:nth-child(2n){
+    margin-right: 0;
 }
 .list__wrpper .list__item__info .list__item__info__top{
     overflow: hidden;
@@ -236,6 +239,7 @@ img {
     font-size: 14px;
     color: #999;
     margin-left: 20px;
+    width: 195px;
 
 }
 .list__wrpper .list__item__info .item__text__box .text__title{
@@ -249,7 +253,7 @@ img {
 .list__wrpper .list__item__info .item__text__box  .text__title__sub{
     font-size: 14px;
     color: #999;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap
@@ -279,11 +283,11 @@ img {
 .text__info__sub__box .text__info__1{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 13px;
+    margin-right: 12px;
     font-size: 12px;
-
-
+    
 }
+
 .text__info__sub__box .text__info__1:last-child{
     margin-right: 0;
 }
@@ -294,7 +298,7 @@ img {
     width: 360px;
     float: right;
     position: relative;
-    top: -30px;
+    top: -28px;
 }
 .big__wrapper  .right__wrapper .right__wrapper__img__box{
     width: 360px;
@@ -316,8 +320,8 @@ img {
 }
 .left__title{
     display: inline-block;
-    padding: 15px 10px;
-    border-bottom: 4px solid #FF5909;
+    padding: 0 0px 10px 0;
+    border-bottom: 3px solid #FF5909;
     font-size: 20px;
     text-align: left;
 
@@ -328,12 +332,14 @@ img {
     flex-wrap: wrap;
     align-content: flex-start;
     margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 10px;
 }
 .big__wrapper  .right__wrapper  .like__box__right ul li{
     width: 76px;
     height: 40px;
     text-align: center;
-    
+    float: left;
     background: rgba(255,89,9,.2);
     line-height: 40px;
     border-radius: 4px;
@@ -341,11 +347,14 @@ img {
     margin-bottom: 22px;
     cursor: pointer;
     font-size: 16px;
+   
 }
 .big__wrapper  .right__wrapper  .like__box__right ul li a{
     border-radius: 4px;
     font-size: 16px;
     color: #666;
+    padding: 0 5px;
+    box-sizing: border-box;
 }
 .big__wrapper  .right__wrapper  .like__box__right ul li:nth-child(4n){margin-right:0;}
 .big__wrapper  .right__wrapper  .like__box__right ul a:hover{
@@ -368,12 +377,15 @@ img {
 .ranking__wrapper .ranking__title__box{
     width: 100%;
     overflow: hidden;
+    padding-left: 10px;
+    box-sizing: border-box;
+    padding-top: 20px;
 
 }
 .ranking__title__box .ranking__more__box{
     float: right;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-right: 3px;
 }
 .ranking__title__box .ranking__more__box .ranking__more__icon{
@@ -398,6 +410,16 @@ img {
 .ranking__list .ranking__list__item{
     width: 100%;
     margin-bottom: 10px;
+    overflow: hidden;
+
+}
+.ranking__list__item .left__ranking{
+    float: left;
+ 
+
+}
+.ranking__list__item .right__ranking{
+    float: right;
 
 }
 .ranking__list .ranking__list__item span{
@@ -416,20 +438,31 @@ img {
     color: #fff;
     margin-left: 10px;
 }
-
-.ranking__list .ranking__list__item .ranking__index--grey{
+.ranking__list .ranking__list__item:nth-child(n+4) .ranking__index{
     background: #999999!important;
 }
+
 .ranking__list .ranking__list__item .ranking__name{
     margin-left: 16px;
-    margin-right: 118px;
+    width: 150px;
+
 
 }
 .ranking__number .text__title__sub--orange{
+    display: inline-block;
+    vertical-align: middle;
     font-weight: 700!important;
+    /* width: 80px; */
+    text-align: left;
+}
+.ranking__number  .text__title__sub--grey{
+    display: inline-block;
+    vertical-align: middle;
 }
 .ranking__list .ranking__list__item .ranking__number{
     font-weight: 700!important;
+      width: 100px;
+      text-align: right;
 }
 .ranking__list .ranking__list__item .ranking__top__icon{
     width: 13px;
@@ -464,7 +497,7 @@ img {
 .tab__wrapper .tab_item{
     display: inline-block;
     vertical-align: middle;
-    width: 100px;
+    /* width: 100px; */
     height: 100%;
     line-height: 50px;
     text-align: center;
@@ -484,7 +517,7 @@ img {
 }
 .information__box .infomation__list .infomation__list__item{
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
 }
 .information__box .infomation__list .infomation__list__item span{
     display: inline-block;
@@ -509,5 +542,6 @@ img {
     background: url('../images/icons/icon_orange@3x.png')no-repeat;
     background-size: 100% 100%;
     margin-right: 10px;
+    margin-left: 5px;
 
 }

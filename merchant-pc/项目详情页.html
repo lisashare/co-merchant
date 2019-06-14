@@ -3,7 +3,7 @@
 
 <head>
 	<meta name="applicable-device" content="pc">
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Cache-Control" content="no-transform">
 	<meta http-equiv="Cache-Control" content="no-siteapp">
@@ -14,7 +14,9 @@
 	<link rel="canonical" href="#">
 	<link rel="stylesheet" href="./css/reset.css" />
 	<link rel="stylesheet" href="./css/public.css" />
-	<link rel="stylesheet" href="./css/style.css" />
+	<!-- <link rel="stylesheet" href="./css/style.css" /> -->
+	<link rel="stylesheet" href="./css//idangerous.swiper.css">
+	<link rel="stylesheet" href="./css/style-swiper.css">
 	<link rel="stylesheet" href="./css/header.css" />
 	<link rel="stylesheet" href="./css/footer.css" />
 	<link rel="stylesheet" href="./css/freeMessage.css" />
@@ -23,6 +25,7 @@
 <style>
 
 </style>
+
 <body>
 	<div class="header-top bg1">
 		<div class="centerbox1 clear">
@@ -48,38 +51,38 @@
 			</a>
 			<div class="header-search-wrapper">
 				<div class="header-search">
-			     <form>
-					<div class="header-searchbox">
-						<div class="form-input posi-re">
-							<div class="icon-wraper">
-								<span class="icon-txt">餐饮分类</span>
-								<span class="icon-icon icon-triangle-down"></span>
-								<div class="catering-inner hidden">
-									<i class="icon-icon icon-up-triangle"></i>
-									<ul>
-										<li><a href="javascript:void(0);" class="cur" data-cateid="0">全部</a></li>
-										<li><a href="javascript:void(0);" data-cateid="1">中式快餐</a></li>
-										<li><a href="javascript:void(0);" data-cateid="2">饮品</a></li>
-										<li><a href="javascript:void(0);" data-cateid="3">小吃</a></li>
-										<li><a href="javascript:void(0);" data-cateid="4">甜品烘培</a></li>
-										<li><a href="javascript:void(0);" data-cateid="5">西式快餐</a></li>
-										<li><a href="javascript:void(0);" data-cateid="6">海鲜</a></li>
-										<li><a href="javascript:void(0);" data-cateid="7">烤肉</a></li>
-										<li><a href="javascript:void(0);" data-cateid="8">韩餐</a></li>
-									</ul>
+					<form>
+						<div class="header-searchbox">
+							<div class="form-input posi-re fl">
+								<div class="icon-wraper">
+									<span class="icon-txt">餐饮分类</span>
+									<span class="icon-icon icon-triangle-down"></span>
+									<div class="catering-inner hidden">
+										<i class="icon-icon icon-up-triangle"></i>
+										<ul>
+											<li><a href="javascript:void(0);" class="cur" data-cateid="0">全部</a></li>
+											<li><a href="javascript:void(0);" data-cateid="1">中式快餐</a></li>
+											<li><a href="javascript:void(0);" data-cateid="2">饮品</a></li>
+											<li><a href="javascript:void(0);" data-cateid="3">小吃</a></li>
+											<li><a href="javascript:void(0);" data-cateid="4">甜品烘培</a></li>
+											<li><a href="javascript:void(0);" data-cateid="5">西式快餐</a></li>
+											<li><a href="javascript:void(0);" data-cateid="6">海鲜</a></li>
+											<li><a href="javascript:void(0);" data-cateid="7">烤肉</a></li>
+											<li><a href="javascript:void(0);" data-cateid="8">韩餐</a></li>
+										</ul>
+									</div>
 								</div>
+								<input id="searchValue" type="text" placeholder="请输入想找的品牌" />
+								<input type="hidden" name="dataID" id="hidden1" value="0" />
 							</div>
-							<input id="searchValue" type="text" placeholder="请输入想找的品牌" />
-							<input type="hidden" name="dataID" id="hidden1" value="0" />
+							<button type="submit" id="searchIcon" class="btn-btn btn-search fr">
+								<i class="icon-icon icon-search"></i>
+							</button>
 						</div>
-						<button type="submit" id="searchIcon" class="btn-btn btn-search">
-							<i class="icon-icon icon-search"></i>
-						</button>
-					</div>
-                  </form>
+					</form>
 					<div class="header-search-hot">
-						<p>热门搜索：</p>
-						<ul>
+						<p class="fl">热门搜索：</p>
+						<ul class="fl">
 							<li><a target="_blank" href="#">炸鸡</a></li>
 							<li><a target="_blank" href="#">奶茶</a></li>
 							<li><a target="_blank" href="#">卡兹乐汉堡</a></li>
@@ -115,7 +118,8 @@
 	<div class="content">
 		<div class="content__title__info">
 			<div class="content__title__text__box">
-				<span class="content__title__text">当前位置：<a href="#"> 首页 </a>> <a href="#"> xx </a> > <a href="#"> xxx </a>  > <a href="#"> xx </a> </span>
+				<span class="content__title__text">当前位置：<a href="#"> 首页 </a>> <a href="#"> xx </a> > <a href="#"> xxx
+					</a> > <a href="#"> xx </a> </span>
 				<span class="content__title__text" style="float:right">更新时间：2019-03-25 19:34:24</span>
 			</div>
 		</div>
@@ -177,7 +181,9 @@
 					</div>
 					<div class="get__button--orange">
 						<div class="button__icon__box">
-							<a href="#">
+							<!-- 2019、5、24修改 -->
+							<a href="#get-info">
+									<!-- 2019、5、24修改 -->
 								<i></i>
 								<span>免费获得项目资料</span>
 							</a>
@@ -185,7 +191,62 @@
 					</div>
 				</div>
 				<div class="details__wrapper__right__list">
-					<div class="mod18">
+					<!-- 5.27日更改 -->
+						<div class="pc-slide">
+								<div class="view">
+									<div class="swiper-container">
+										<span class="pic_page"></span>
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1598&extra="><img src="./images/test/b1.jpg" alt=""></a>
+											</div>
+											<div class="swiper-slide">
+												<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1598&extra="><img src="./images/test/b2.jpg" alt=""></a>
+											</div>
+											<div class="swiper-slide">
+												<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1598&extra=" ><img src="./images/test/b3.jpg" alt=""></a>
+											</div>
+											<div class="swiper-slide">
+												<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1598&extra=" ><img src="./images/test/b4.jpg" alt=""></a>
+											</div>
+											<div class="swiper-slide">
+												<a href="http://bbs.swiper.com.cn/forum.php?mod=viewthread&tid=1598&extra="><img src="./images/test/b5.jpg" alt=""></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="preview">
+									<a class="arrow-left" href="#">
+										<span></span>
+									</a>
+									<a class="arrow-right" href="#">
+											<span></span>
+									</a>
+									<div class="swiper-container">
+										<div class="swiper-wrapper swiper-tab">
+											<div class="swiper-slide active-nav">
+												<img src="./images/test/s1.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/test/s2.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/test/s3.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/test/s4.jpg" alt="">
+											</div>
+											<div class="swiper-slide">
+												<img src="./images/test/s5.jpg" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 5.27日更改 结束 -->
+
+							
+					<!-- <div class="mod18">
 						<span class="btn pic_page"></span>
 						<span id="prev" class="btn prev">
 							<i class="icon-left"></i>
@@ -196,7 +257,7 @@
 						<span id="prevTop"></span>
 						<span id="nextTop"></span>
 						<div id="picBox" class="picBox">
-							
+
 							<ul class="cf">
 								<li> <a href="#"><img src="./images/test/83293306.jpg" alt=""></a>
 								</li>
@@ -236,18 +297,10 @@
 								<li><img src="./images/test/83293300.jpg" alt=""></li>
 								<li><img src="./images/test/83293306.jpg" alt=""></li>
 								<li><img src="./images/test/83293339.jpg" alt=""></li>
-								<!-- <li><img src="images1/83293794.jpg" alt=""></li>
-								<li><img src="images1/83293795.jpg" alt=""></li>
-								<li><img src="images1/83293809.jpg" alt=""></li>
-								<li><img src="images1/83293810.jpg" alt=""></li>
-								<li><img src="images1/83293811.jpg" alt=""></li>
-								<li><img src="images1/83293812.jpg" alt=""></li>
-								<li><img src="images1/83293831.jpg" alt=""></li>
-								<li><img src="images1/83293832.jpg" alt=""></li> -->
 							</ul>
 						</div>
 						<div class="clear"></div>
-					</div>
+					</div> -->
 
 				</div>
 			</div>
@@ -292,7 +345,9 @@
 					<div class="tab__info__box__title section" id='tab3'>
 						xxxxx加盟费
 					</div>
-					<div class="tab__content" style="background:#f1f7f9">
+					<!-- 20190529修改开始 -->
+					<div class="tab__content">
+						<!-- 20190529修改结束 -->
 						<table class="table__wrapper">
 							<tr>
 								<td>
@@ -352,14 +407,16 @@
 							</tr>
 						</table>
 						<div class="other__table">
-								
+
 
 						</div>
 					</div>
-					<div class="tab__info__box__title " >
+					<div class="tab__info__box__title ">
 						xxxxx加盟费率
 					</div>
-					<div class="tab__content" style="background:#f1f7f9">
+					<!-- 20190529修改开始 -->
+					<div class="tab__content" >
+							<!-- 20190529修改结束 -->
 						<table class="table__wrapper">
 							<tr>
 								<td>
@@ -419,16 +476,16 @@
 							</tr>
 						</table>
 						<div class="other__table">
-								
+
 
 						</div>
 					</div>
-					
-					
+
+
 					<div class="tab__info__box__title section" id='tab4'>
 						xxxxx加盟条件
 					</div>
-					
+
 					<div class="tab__content">
 						<div class="content__text">
 							一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一一段话一段话一一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一段话一一段话
@@ -438,7 +495,7 @@
 
 						</div>
 					</div>
-					<div class="tab__info__box__title section" id='tab5'> 
+					<div class="tab__info__box__title section" id='tab5'>
 						xxxxx加盟流程
 					</div>
 					<div class="tab__content">
@@ -456,8 +513,16 @@
 					<div class="answers__header ">
 						xxxxx加盟加盟回答
 					</div>
+					<!-- 5.22修改结构 -->
 					<div class="answer__item__box">
-						<div class="answer__item">
+						<p>
+							<strong>元祖蛋糕属元祖蛋糕属于什么档次？元祖蛋糕属于什么档次？元祖蛋糕属于什么档次？元祖蛋糕属于什么档次？于什么档次？</strong>
+						</p>
+						<p>
+
+							您好，该品牌市场定位明确，小成本打造中上等档次是它保持长久竞争您好，该品牌市场定位明确，小成本打造中上等档次是它保持长久竞争力的重您好，该品牌市场定位明确，小成本打造中上等档次是它保持长久竞争力的重力的重要原因。
+						</p>
+						<!-- <div class="answer__item">
 							<span class="answer__name">Q</span>
 							<div class="answer__right">
 								<span class="answer__icon-q"></span>
@@ -472,14 +537,17 @@
 								<span class="answer__text"
 									style="font-size:14px;">阿三卡积分开发电视机分厘卡时间撒娇的分厘卡即使对方卢卡斯的积分</span>
 							</div>
-						</div>
+						</div> -->
 					</div>
+					<!-- 5.22修改 -->
 				</div>
 				<div class="content__answers section">
 					<div class="answers__header">
 						xxxxx项目真实案例
 					</div>
-					<div class="tab__content" style="padding:28px;box-sizing:border-box;">
+					<!-- 20190529修改开始 -->
+					<div class="tab__content" style="padding:30px 54px;box-sizing:border-box;">
+						<!-- 20190529修改结束 -->
 						<div class="content__text" style="font-size:18px">
 							一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一段话一一段话一段话一一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一一段话一段话一段话一段话一段话一段话一一段话段话一段话一段话一段话一一段话
 						</div>
@@ -503,13 +571,13 @@
 					</div>
 					<p class="box__title">我们立即与您沟通</p>
 					<div class="box__input">
-						<input type="text"  id="area-right-tel1" maxlength="11" name="tel_right" placeholder="请输入手机号码"  />
+						<input type="text" id="area-right-tel1" maxlength="11" name="tel_right" placeholder="请输入手机号码" />
 					</div>
 					<div class="btn__phone">
 						免费电话
 					</div>
 					<p class="box_text">
-						温馨提示：此次童话将不会产生任何费用请放心使用。
+						温馨提示：此次通话将不会产生任何费用请放心使用。
 
 					</p>
 				</div>
@@ -671,53 +739,63 @@
 		</div>
 
 	</div>
-		<!-- 免费留言  -->
-		<div class="freegossip-section">
-				<div class="centerbox">
-					<div class="wraper fl">
-						<p class="tip">留言免费获取详细加盟资料</p>
-						<form name="form1" method="POST" action="">
-							<div class="form-group">
-								<div class="fl form-input"><span class="icon-icon icon-username"></span><input type="text" name="username" placeholder="请输入您的姓名"></div>
-								<div class="fl form-input form-input-tel"><span class="icon-icon icon-tel"></span><input type="text" name="tel" placeholder="请输入您的电话"></div>
-							</div>
-							<div class="form-group">
-								<div class="fl form-input form-input1"><span class="icon-icon icon-message"></span><textarea class="message" placeholder="留下您的宝贵意见或根据意向选择右侧快捷键留言"></textarea></div>
-							</div>
-							<div class="form-group">
-								<input type="submit" class="btn-submit" value="提交留言">
-							</div>
-						</form>
+	<!-- 免费留言  -->
+	<div class="freegossip-section">
+		<div class="centerbox">
+			<div class="wraper fl">
+					<!-- 2019、5、24修改 -->
+				<p class="tip" id='get-info'>留言免费获取详细加盟资料</p>
+					<!-- 2019、5、24修改 -->
+				<form name="form1" method="POST" action="">
+					<div class="form-group">
+						<!-- 2019.05.23修改 -->
+						<div class="fl form-input"><span class="icon-icon icon-username"></span><input class="username" type="text"
+								name="username" placeholder="请输入您的姓名"></div>
+								<!-- 2019、5、24修改  maxlength="11"-->
+						<div class="fl form-input form-input-tel"><span class="icon-icon icon-tel"></span><input
+								type="text" name="dianhua" class="tel" maxlength="11" placeholder="请输入您的电话"></div>
+								<!-- 2019、5、24修改 -->
+								<!-- 2019.05.23修改 -->
 					</div>
-					<div class="wraper fl quick-message">
-						<ul id="quickMessage">
-							<li>
-								<a href="javascript:void(0)">项目很好，请尽快联系我详谈。</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">请问我所在的地区可以加盟了吗？</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">留下邮箱，请将多项目详细资料邮件给我。</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">想了解更多加盟流程，请与我联系！</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">作为项目代理加盟商能得到哪些支持？</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">请问投资此项目所需要的费用有哪些？</a>
-							</li>
-						</ul>
+					
+					<div class="form-group">
+						<div class="fl form-input form-input1"><span class="icon-icon icon-message"></span><textarea
+								class="message" placeholder="留下您的宝贵意见或根据意向选择右侧快捷键留言"></textarea></div>
 					</div>
-					<div class="wraper fr message-img hover-img">
-						<a href="#">
-						<img src="https://www.53.com.cn/upimages/meetingsmall/20179/1c0612826c7e403e9d544e1a8937bdf0.jpg">
-					</a>
+					<div class="form-group">
+						<input type="submit" class="btn-submit" value="提交留言">
 					</div>
-				</div>
+				</form>
 			</div>
+			<div class="wraper fl quick-message">
+				<ul id="quickMessage">
+					<li>
+						<a href="javascript:void(0)">项目很好，请尽快联系我详谈。</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">请问我所在的地区可以加盟了吗？</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">留下邮箱，请将多项目详细资料邮件给我。</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">想了解更多加盟流程，请与我联系！</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">作为项目代理加盟商能得到哪些支持？</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)">请问投资此项目所需要的费用有哪些？</a>
+					</li>
+				</ul>
+			</div>
+			<div class="wraper fr message-img hover-img">
+				<a href="#">
+					<img src="https://www.53.com.cn/upimages/meetingsmall/20179/1c0612826c7e403e9d544e1a8937bdf0.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
 	<!-- <div class="form__content" id='form__content'>
 		<div class="form__content__box">
 			<p class="form__title">免费获取xx项目详细加盟资料</p>
@@ -764,10 +842,14 @@
 			</div>
 			<div class="ul__text">
 				<ul>
-					<li><a href="#">关于我们</a> </li>
-					<li><a href="#">联系我们</a> </li>
-					<li><a href="#">招商服务</a> </li>
-					<li><a href="#">意见反馈</a> </li>
+					<li><a href="#">关于我们</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">联系我们</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">招商服务</a></li>
+					<li><span>|</span></li>
+					<li><a href="#">意见反馈</a></li>
+					<li><span>|</span></li>
 					<li style="border:none;"><a href="#">招商专题</a> </li>
 				</ul>
 				<div class="ul__phone__box">
@@ -789,7 +871,7 @@
 						版权所有©53驯鹿商机网
 					</p>
 					<p class="logo__text--white">
-						Copyright © 2010-2019 驯鹿家纺专业网 ALL Right Reserved         
+						Copyright © 2010-2019 驯鹿家纺专业网 ALL Right Reserved
 					</p>
 
 					<p class="logo__text--white">
@@ -828,6 +910,9 @@
 
 </html>
 <script src='js/jquery-1.11.0.min.js'></script>
-<script src='js/jqueryPhoto.js'></script>
+<!-- <script src='js/jqueryPhoto.js'></script> -->
+<script src='js/idangerous.swiper.min.js'></script>
 <script src='js/header.js'></script>
 <script src='js/details.js'></script>
+
+</script>

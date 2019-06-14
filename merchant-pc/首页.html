@@ -12,7 +12,10 @@
 	<meta name="description" content="">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="canonical" href="#">
-	<link href="./css/swiper.min.css" rel="stylesheet">
+	<!-- 20190522 修改开始 -->
+	<!-- <link href="./css/swiper.min.css" rel="stylesheet"> -->
+	<link href="./css/idangerous.swiper.css" rel="stylesheet">
+	<!-- 20190522 修改结束 -->
 	<link rel="stylesheet" href="./css/reset.css" />
 	<link rel="stylesheet" href="./css/public.css" />
 	<link rel="stylesheet" href="./css/layout.css" />
@@ -23,9 +26,11 @@
 			<div class="fl text-scroll">
 				<span class="icon-icon icon-news"></span>
 				<ul class="text-scroll-ul">
-					<li><a href="#">1加盟奶茶店风险大不大？</a></li>
-					<li><a href="#">2加盟奶茶店风险大不大？</a></li>
-					<li><a href="#">3加盟奶茶店风险大不大？</a></li>
+					<!-- 2019528修改开始 -->
+					<li><a href="#">顶部品牌资讯滚动条文本内容有重叠现象顶部品牌资讯滚?？？？</a><span>2019-05-28</span></li>
+					<li><a href="#">2加盟奶茶店风险大不大？</a><span>2019-05-28</span></li>
+					<li><a href="#">3加盟奶茶店风险大不大？</a><span>2019-05-28</span></li>
+					<!-- 2019528修改结束 -->
 				</ul>
 			</div>
 			<div class="fr html-map">
@@ -40,18 +45,18 @@
 		<!-- 搜索区域 -->
 		<div class="header-search">
 			<div class="header-searchbox">
-				<div class="form-input posi-re">
+				<div class="form-input posi-re fl">
 					<span class="icon-icon icon-search"></span>
 					<input id="searchValue" type="text" placeholder="搜索项目" />
 				</div>
-				<span id="searchIcon" class="btn-btn btn-search">
+				<button type="submit" id="searchIcon" class="btn-btn btn-search fr">
 					<!-- <i class="icon-icon icon-search"></i> -->
 					<a>搜索</a>
-				</span>
+				</button>
 			</div>
 			<div class="header-search-hot">
-				<p>热门搜索：</p>
-				<ul>
+				<p class="fl">热门搜索：</p>
+				<ul class="fl">
 					<li><a target="_blank" href="#">炸鸡</a></li>
 					<li><a target="_blank" href="#">奶茶</a></li>
 					<li><a target="_blank" href="#">卡兹乐汉堡</a></li>
@@ -388,33 +393,37 @@
 	<div class="hots-section centerbox1 section-pub hover-img">
 		<span class="btn-btn">热门品牌</span>
 		<div class="swiper-container2">
-			<div class="swiper-wrapper">
-		        <div class="swiper-slide">
-		        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
-		        		<img src="https://images.53.com.cn/ggimages/zhuanti/201904/131991920444759132.jpg" alt="炸鸡很疯狂">
-		        	</a>
-		        </div>
-		        <div class="swiper-slide">
-		        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
-		        		<img src="https://images.53.com.cn/ggimages/201903/131976308487569211.jpg" alt="炸鸡很疯狂">
-		        	</a>
-		        </div>
-		        <div class="swiper-slide">
-		        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
-		        		<img src="https://images.53.com.cn/ggimages/201903/131976308487569211.jpg" alt="炸鸡很疯狂">
-		        	</a>
-		        </div>
-		        <div class="swiper-slide">
-		        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
-		        		<img src="https://images.53.com.cn/ggimages/ggimages/201904/131999703800884904.jpg" alt="炸鸡很疯狂">
-		        	</a>
-		        </div>
-		        <div class="swiper-slide">
-		        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
-		        		<img src="https://images.53.com.cn/ggimages/ggimages/201904/131999706508699436.jpg" alt="炸鸡很疯狂">
-		        	</a>
-		        </div>
+			<!-- 20190522 修改开始 -->
+			<div class="swiper-container2-inner">
+				<div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
+			        		<img src="https://images.53.com.cn/ggimages/zhuanti/201904/131991920444759132.jpg" alt="炸鸡很疯狂">
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
+			        		<img src="https://images.53.com.cn/ggimages/201903/131976308487569211.jpg" alt="炸鸡很疯狂">
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
+			        		<img src="https://images.53.com.cn/ggimages/201903/131976308487569211.jpg" alt="炸鸡很疯狂">
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
+			        		<img src="https://images.53.com.cn/ggimages/ggimages/201904/131999703800884904.jpg" alt="炸鸡很疯狂">
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
+			        		<img src="https://images.53.com.cn/ggimages/ggimages/201904/131999706508699436.jpg" alt="炸鸡很疯狂">
+			        	</a>
+			        </div>
+			    </div>
 		    </div>
+		    <!-- 20190522 修改结束 -->
 		    <div class="swiper-button-prev"></div>
 		    <div class="swiper-button-next"></div>
 		</div>
@@ -1896,7 +1905,7 @@
 				<ul>
 					<li>投资金额：</li>
 					<li><a class="cur" href="javascript:void(0);">1万以下</a></li>
-					<li><a href="javascript:void(0);">1-3万</a></li>
+					<!-- <li><a href="javascript:void(0);">1-3万</a></li> -->
 					<li><a href="javascript:void(0);">3-5万</a></li>
 					<li><a href="javascript:void(0);">5-10万</a></li>
 					<li><a href="javascript:void(0);">10万-20万</a></li>
@@ -1906,7 +1915,8 @@
 					<li class="fr more"><a href="#" target="_blank">更多</a></li>
 				</ul>
 			</div>
-			<div class="likes-swiper-container2">
+			<!-- 20190522 修改开始 -->
+			<div class="likes-swiper-container2 likes-container1">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -1915,7 +1925,7 @@
 			        	<div class="fl div-text">
 							<p class="title"><a href="#">灵感甜甜圈1</a></p>
 							<p class="money">投资额：<em class="orangeColor">10~200万</em></p>
-							<p class="shops">门 店：<em class="orangeColor">459万家</em></p>
+							<p class="shops">门&nbsp;&nbsp;&nbsp;店：<em class="orangeColor">459万家</em></p>
 							<a href="#" class="btn-circle btn-look">查看详情</a>
 						</div>
 			        </div>
@@ -1967,7 +1977,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container2 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2028,7 +2038,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container3 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2089,7 +2099,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container4 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2150,7 +2160,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container5 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2211,7 +2221,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container6 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2272,7 +2282,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container7 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2333,7 +2343,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
-			<div class="likes-swiper-container2 hidden">
+			<div class="likes-swiper-container2 likes-container8 hidden">
 				<div class="swiper-wrapper">
 			        <div class="swiper-slide">
 			        	<a class="fl div-img" target="_blank" href="https://www.53.com.cn/jm_zj/2914867.html" rel="nofollow">
@@ -2394,6 +2404,7 @@
 			    <div class="swiper-button-prev"></div>
 		    	<div class="swiper-button-next"></div>
 			</div>
+			<!-- 20190522 修改结束 -->
 		</div>
 		<div class="likes-bottom">
 			<div class="fl franchise-dynamics">
@@ -2404,16 +2415,16 @@
 							<a href="#" class="fl news-item">
 								<span class="time">2019-04</span>
 								<span class="who">王女士咨询了</span>
-								<span class="brand-name">小哥花甲米线</span>
+								<span class="brand-name">崔记扒鸡</span>
 							</a>
 							<a href="#" class="fr news-btn">我要咨询</a>
 						</li>
 						<li>
-							<a href="#" class="fl news-item">
+							<span class="fl news-item">
 								<span class="time">2019-04</span>
 								<span class="who">王女士咨询了</span>
-								<span class="brand-name">崔记扒鸡</span>
-							</a>
+								<a href="#" class="brand-name">小哥花甲米线</a>
+							</span>
 							<a href="#" class="fr news-btn">我要咨询</a>
 						</li>
 						<li>
@@ -2523,12 +2534,12 @@
 			<div class="fl catering-demand">
 				<div class="title">餐饮需求动态</div>
 				<div class="wraper">
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
-					<p class="item"><a href="#">19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
+					<p class="item"><a>19年4月9日 9:58：来自53加盟网的创业投资者对创业项目木九十眼镜产来自53加盟网的创业投资者对创业项目木九十眼镜产生意向：游小萍</a></p>
 				</div>
 			</div>
 		</div>
@@ -2545,8 +2556,11 @@
 			<p class="tip">留言免费获取详细加盟资料</p>
 			<form name="form1" method="POST" action="">
 				<div class="form-group">
-					<div class="fl form-input"><span class="icon-icon icon-username"></span><input type="text" name="username" placeholder="请输入您的姓名" /></div>
-					<div class="fl form-input form-input-tel"><span class="icon-icon icon-tel"></span><input type="text" name="tel" placeholder="请输入您的电话" /></div>
+					
+					<div class="fl form-input"><span class="icon-icon icon-username"></span><input type="text" class="username" name="username" placeholder="请输入您的姓名" /></div>
+					<!-- 2019527 修改开始 -->
+					<div class="fl form-input form-input-tel"><span class="icon-icon icon-tel"></span><input type="text" class="tel" maxlength="11" name="dianhua" placeholder="请输入您的电话" /></div>
+					<!-- 2019527 修改结束 -->
 				</div>
 				<div class="form-group">
 					<div class="fl form-input form-input1"><span class="icon-icon icon-message"></span><textarea class="message" placeholder="留下您的宝贵意见或根据意向选择右侧快捷键留言"></textarea></div>
@@ -2646,7 +2660,10 @@
 	</div>
 	<div id="toTop"></div>
 	<script type="text/javascript" src="./js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="./js/swiper.min.js"></script>
+	<!-- 20190522 修改开始 -->
+	<!-- <script type="text/javascript" src="./js/swiper.min.js"></script> -->
+	<script type="text/javascript" src="./js/idangerous.swiper.min.js"></script>
+	<!-- 20190522 修改结束 -->
 	<script type="text/javascript" src="./js/jquery.SuperSlide.2.1.3.js"></script>
 	<script type="text/javascript" src="./js/home.js"></script>
 </body>

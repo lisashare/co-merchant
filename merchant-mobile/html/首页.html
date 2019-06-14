@@ -149,15 +149,19 @@
         </ul>
         <!-- 新闻轮播 -->
         <div class="i-news-lb-wrap bottom-line">
-            <div class="i-news-box notice o-h" id="noticeBox">
-                <ul class="i-news-list">
-                    <li><a class="db text-ellip" href="#">1指定内容是当前页面中的某些元素，那么这些元素将从原位置上消失。简而言之</a></li>
-                    <li><a class="db text-ellip" href="#">2立刻把七叶和茶项目分享给大家，这项目太神了立刻把七叶和茶项目分享给大家，这项目太神了</a></li>
-                    <li><a class="db text-ellip" href="#">3回调函数，每次动画完成，marginTop归零，并把此时第一条信息添加到列表最后</a></li>
-                    <li><a class="db text-ellip" href="#">4这篇文章主要给大家介绍了关于利用10行js代码实现滚动公告效果的相关资</a></li>
-                    <li><a class="db text-ellip" href="#">5立刻把七叶和茶项目分享给大家</a></li>
-                </ul>
+            <!-- 2019.5.24 修改开始 （新增一个div包裹） -->
+            <div>
+                <div class="i-news-box notice o-h" id="noticeBox">
+                    <ul class="i-news-list">
+                        <li><a class="db text-ellip" href="#">1指定内容是当前页面中的某些元素，那么这些元素将从原位置上消失。简而言之</a></li>
+                        <li><a class="db text-ellip" href="#">2立刻把七叶和茶项目分享给大家，这项目太神了立刻把七叶和茶项目分享给大家，这项目太神了</a></li>
+                        <li><a class="db text-ellip" href="#">3回调函数，每次动画完成，marginTop归零，并把此时第一条信息添加到列表最后</a></li>
+                        <li><a class="db text-ellip" href="#">4这篇文章主要给大家介绍了关于利用10行js代码实现滚动公告效果的相关资</a></li>
+                        <li><a class="db text-ellip" href="#">5立刻把七叶和茶项目分享给大家</a></li>
+                    </ul>
+                </div>
             </div>
+            <!-- 2019.5.24 修改结束 -->
         </div>
         <!-- 热门项目 -->
         <div class="i-project-wrap i-hot-project bottom-line">
@@ -203,7 +207,7 @@
                                 </p>
                                 <p class="i-online-desc clear">
                                     <span class="i-online-money">
-                                        ￥<i class="rmb">500</i>万</span>
+                                        ￥500万</span>
                                     <span class="i-online-time fr">2019-03-19</span>
                                 </p>
                             </dd>
@@ -751,7 +755,7 @@
                     <input name="category_name" type="hidden" value="">
                     <input name="tel" class="tel" type="text" placeholder="请输入您的手机号">
                     <p>温馨提示：提交后，我们会尽快将资料发送给您。</p>
-                    <a href="javascript:;" class="icon article-layer-btn layer-btn"></a>
+                    <button type="submit" class="icon article-layer-btn layer-btn"></button>
                 </form>
                 <div class="icon layer-close"></div>
             </div>
@@ -766,6 +770,7 @@
 <script>
      // 新闻公告 start
     var iliHeight = $("#noticeBox").height();//单行滚动的高度
+    console.log(iliHeight);
     var area = document.getElementById('noticeBox');
     var speed = 2;//滚动的速度
     var time;

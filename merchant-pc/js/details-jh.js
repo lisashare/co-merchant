@@ -33,6 +33,14 @@ $(function(){
     //     $(this).addClass('left__content__item--orange');
     // })
     //swiper
+    $('.words').each(function(){
+      var maxwidth=30;
+      if($(this).text().length>maxwidth){
+      $(this).text($(this).text().substring(0,maxwidth));
+      $(this).html($(this).html()+'...');
+      }
+      });
+   
     var mySwiper = new Swiper ('.swiper-container', {
       autoplay: 3000,
       loop: true, // 循环模式选项
@@ -41,13 +49,6 @@ $(function(){
       autoplayDisableOnInteraction : false
     })  
     
-     $('.words').each(function(){
-      var maxwidth=30;
-      if($(this).text().length>maxwidth){
-      $(this).text($(this).text().substring(0,maxwidth));
-      $(this).html($(this).html()+'...');
-      }
-      });
-   
+    
      
 })

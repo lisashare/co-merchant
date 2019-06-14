@@ -76,24 +76,25 @@ $(function () {
          return reg.test(tel);
      }
      $(".btn-submit").click(function(){
-        if( !isPhoneNumber( $("input[name='tel']").val() ) ){
+        if( !isPhoneNumber( $("input[name='dianhua']").val() ) ){
             // alert("请输入正确的手机号");
-            $("input[name='tel']").val("");
-            $("input[name='tel']").attr("placeholder","请输入正确的手机号");
+            $("input[name='dianhua']").val("");
+            $("input[name='dianhua']").attr("placeholder","请输入正确的手机号");
             $(".form-input-tel").css("border","1px solid red");
             return false;
         }
      });
 
-     $("input[name='tel']").on('input propertychange',function() {
+     $("input[name='dianhua']").on('input propertychange',function() {
             $(".form-input-tel").css("border","none");
         });
      //手机号验证end
 
      //右侧免费电话start
      $(".btn__phone").click(function() {
-        var reTel = /^1[3|4|5|7|8|9]\d{9}$/;
-        if(reTel.test($("#area-right-tel1").val()) === false) {
+        // var reTel = /^1[3|4|5|7|8|9]\d{9}$/;
+        // if(reTel.test($("#area-right-tel1").val()) === false) {
+        if( !isPhoneNumber( $("#area-right-tel1").val() ) ){
             alert("请输入正确的电话号码！");
              $("#area-right-tel1").val("");
             $("#area-right-tel1").attr("placeholder","请输入正确的手机号");
@@ -102,4 +103,59 @@ $(function () {
         }
     })
      //右侧免费电话end
+    
+     //swiper
+   var viewSwiper = new Swiper('.view .swiper-container', {
+	autoplay :5000,
+	preventLinksPropagation:true,
+	autoplayDisableOnInteraction:false,
+	onSlideChangeStart: function() {
+		updateNavPosition()
+	},
+	
+})
+$('.pic_page').html(Number(viewSwiper.activeIndex+1)+'/' + Number(viewSwiper.slides.length))
+$('.view .arrow-left,.preview .arrow-left').on('click', function(e) {
+	e.preventDefault()
+	if (viewSwiper.activeIndex == 0) {
+		console.log(viewSwiper.slides.length)
+		viewSwiper.swipeTo(viewSwiper.slides.length-1, 1000);
+		return
+	}
+	viewSwiper.swipePrev()
+})
+$('.view .arrow-right,.preview .arrow-right').on('click', function(e) {
+	e.preventDefault()
+	if (viewSwiper.activeIndex == viewSwiper.slides.length - 1) {
+		viewSwiper.swipeTo(0, 1000);
+		return
+	}
+	viewSwiper.swipeNext()
+})
+
+var previewSwiper = new Swiper('.preview .swiper-container', {
+	visibilityFullFit: true,
+	slidesPerView: 'auto',
+	onlyExternal: true,
+	onSlideClick: function() {
+		viewSwiper.swipeTo(previewSwiper.clickedSlideIndex)
+	}
+})
+
+function updateNavPosition() {
+   
+	
+		$('.preview .active-nav').removeClass('active-nav')
+		var activeNav = $('.preview .swiper-slide').eq(viewSwiper.activeIndex).addClass('active-nav')
+		if (!activeNav.hasClass('swiper-slide-visible')) {
+			if (activeNav.index() > previewSwiper.activeIndex) {
+				var thumbsPerNav = Math.floor(previewSwiper.width / activeNav.width()) - 1
+				previewSwiper.swipeTo(activeNav.index()-thumbsPerNav)
+			} else {
+				previewSwiper.swipeTo(activeNav.index())
+			}
+		}
+
+		$('.pic_page').html(Number(viewSwiper.activeIndex+1)+'/' + Number(viewSwiper.slides.length))
+	}
 })

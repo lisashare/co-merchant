@@ -2,7 +2,8 @@
     width: 100%;
     background: #333333;
     min-width: 1200px;
-    height: 178px;
+    /*height: 178px;*/
+    /*height: 161px;*/
     /* padding-bottom: 20px; */
     
 }
@@ -35,8 +36,8 @@
 }
 .footer__black .ul__text{
     width: 100%;
-    overflow: hidden;
-
+    /*height: 50px;*/
+    height: 45px;
   
 
 }
@@ -44,16 +45,19 @@
     overflow: hidden;
     float: left;
     width: 50%;
-    margin-left: -15px;
-    margin-top: 15px;
+    /*margin-left: -15px;*/
+    margin-top: 0px;
     
 }
 .footer__black .ul__text ul li{
-    border-right: 1px solid #FF5909;
+    /*border-right: 1px solid #FF5909;*/
     float: left;
     color: #FF5909;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     font-size: 18px;
+}
+.footer__black .ul__text ul li span {
+    padding: 0 14px;
 }
 .footer__black .ul__text ul li a{
     color: #FF5909;
@@ -63,8 +67,10 @@
     float: right;
     /* width: 22%; */
     color: #ffffff;
-    font-size: 24px;
-
+    /*font-size: 24px;*/
+    font-size: 18px;
+    /*margin-top: -22px;*/
+    margin-top: -20px;
 }
 .ul__phone__box .big__phone__text{
     font-size: 36px;
@@ -84,13 +90,16 @@
 .footer__orange .logo__text__wrapper{
     width: 60%;
     float: left;
-    margin-top: 24px;
+    /*margin-top: 24px;*/
+    margin-top: 21px;
 }
 .footer__orange .logo__text__wrapper .logo__box{
     display: inline-block;
     vertical-align: middle;
     width: 183px;
     height: 59px;
+    position: relative;
+    top: -1px;
 }
 .footer__orange .logo__text__wrapper .logo__box img {
     width: 183px;
@@ -105,20 +114,27 @@
 .footer__orange .logo__text__wrapper .logo__text .logo__text--white{
     font-size: 12px;
     color: #fff;
-    padding-bottom: 5px;
-    margin-left: 40px;
+    /*padding-bottom: 5px;*/
+    /*margin-left: 40px;*/
+    margin-left: 34px;
+    line-height: 12px;
+    margin-bottom: 8px;
+}
+.footer__orange .logo__text__wrapper .logo__text .logo__text--white:nth-of-type(1){
+    margin-top: 2px;
 }
 .footer__orange .erweima__box{
     float: right;
     /* width: 33%; */
-    margin-top: 20px;
-    margin-right: 30px;
+    margin-top: 22px;
+    /*margin-right: 30px;*/
 
 }
 .footer__orange .erweima__box .item__box{
     display: inline-block;
     vertical-align: middle;
-    
+    width: 340px;
+    overflow: hidden;
 }
 .footer__orange .erweima__box .item__box .item__img{
     display: inline-block;
@@ -126,6 +142,7 @@
     width: 74px;
     height: 74px;
     background: red;
+    float: left;
 }
 .footer__orange .erweima__box .item__box .item__img{
     /* margin-left: 30px; */
@@ -138,8 +155,10 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 12px;
-    width: 96px;
-
+    width: 93px;
+    float:left;
+    margin-top:20px;
+    margin-left: 3px;
 }
 .footer__orange .erweima__box .item__box .item__text__box .item__text{
     color: #fff;

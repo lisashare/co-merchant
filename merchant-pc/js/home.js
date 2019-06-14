@@ -72,13 +72,13 @@ var swiper1 = new Swiper('.swiper-container1', {
     observeParents: true,  //修改swiper的父元素时，自动初始化swiper
     pagination: '.swiper-pagination1',
     paginationClickable: true,
-    autoplay: 5000,
+    autoplay: 4000,
     loop: true,
     autoplayDisableOnInteraction : false,
 });
 
 //热门品牌
-var swiper2 = new Swiper('.swiper-container2', {
+var swiper2 = new Swiper('.swiper-container2-inner', {
 	slidesPerView : 5,
 	observer: true,       //修改swiper自己或子元素时，自动初始化swiper
     observeParents: true,  //修改swiper的父元素时，自动初始化swiper
@@ -91,9 +91,15 @@ var swiper2 = new Swiper('.swiper-container2', {
 	nextButton:'.swiper-button-next',
     autoplayDisableOnInteraction : false,
 });
+$(".swiper-container2 .swiper-button-prev").on("click",function(){
+    swiper2.swipePrev();
+});
+$(".swiper-container2 .swiper-button-next").on("click",function(){
+    swiper2.swipeNext();
+});
 
 //猜你喜欢轮播图
-var swiper3 = new Swiper('.likes-swiper-container2', {
+var swiper31 = new Swiper('.likes-container1', {
 	slidesPerView : 3,
 	observer: true,       //修改swiper自己或子元素时，自动初始化swiper
     observeParents: true,  //修改swiper的父元素时，自动初始化swiper
@@ -106,6 +112,165 @@ var swiper3 = new Swiper('.likes-swiper-container2', {
 	nextButton:'.swiper-button-next',
     autoplayDisableOnInteraction : false,
 });
+$(".likes-container1 .swiper-button-prev").on("click",function(){
+    swiper31.swipePrev();
+});
+$(".likes-container1 .swiper-button-next").on("click",function(){
+    swiper31.swipeNext();
+});
+var swiper32 = new Swiper('.likes-container2', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container2 .swiper-button-prev").on("click",function(){
+    swiper32.swipePrev();
+});
+$(".likes-container2 .swiper-button-next").on("click",function(){
+    swiper32.swipeNext();
+});
+var swiper33 = new Swiper('.likes-container3', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container3 .swiper-button-prev").on("click",function(){
+    swiper33.swipePrev();
+});
+$(".likes-container3 .swiper-button-next").on("click",function(){
+    swiper33.swipeNext();
+});
+var swiper34 = new Swiper('.likes-container4', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container4 .swiper-button-prev").on("click",function(){
+    swiper34.swipePrev();
+});
+$(".likes-container4 .swiper-button-next").on("click",function(){
+    swiper34.swipeNext();
+});
+var swiper35 = new Swiper('.likes-container5', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container5 .swiper-button-prev").on("click",function(){
+    swiper35.swipePrev();
+});
+$(".likes-container5 .swiper-button-next").on("click",function(){
+    swiper35.swipeNext();
+});
+var swiper36 = new Swiper('.likes-container6', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container6 .swiper-button-prev").on("click",function(){
+    swiper36.swipePrev();
+});
+$(".likes-container6 .swiper-button-next").on("click",function(){
+    swiper36.swipeNext();
+});
+var swiper37 = new Swiper('.likes-container7', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container7 .swiper-button-prev").on("click",function(){
+    swiper37.swipePrev();
+});
+$(".likes-container7 .swiper-button-next").on("click",function(){
+    swiper37.swipeNext();
+});
+var swiper38 = new Swiper('.likes-container8', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-container8 .swiper-button-prev").on("click",function(){
+    swiper38.swipePrev();
+});
+$(".likes-container8 .swiper-button-next").on("click",function(){
+    swiper38.swipeNext();
+});
+/*var swiper32 = new Swiper('.likes-swiper-container2', {
+    slidesPerView : 3,
+    observer: true,       //修改swiper自己或子元素时，自动初始化swiper
+    observeParents: true,  //修改swiper的父元素时，自动初始化swiper
+    spaceBetween: 15,
+    // pagination: '.swiper-pagination1',
+    // paginationClickable: true,
+    // autoplay: 1000,
+    loop: true,
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    autoplayDisableOnInteraction : false,
+});
+$(".likes-swiper-container1 .swiper-button-prev").on("click",function(){
+    swiper32.swipePrev();
+});
+$(".likes-swiper-container1 .swiper-button-next").on("click",function(){
+    swiper32.swipeNext();
+});
+*/
 
 //火爆招商
 var swiper4 = new Swiper('.swiper-container4', {
@@ -116,13 +281,21 @@ var swiper4 = new Swiper('.swiper-container4', {
 	// spaceBetween: 15,
     pagination: '.swiper-pagination4',
     paginationClickable: true,
-    paginationBulletRender: function (swiper, index, className) {
+    // paginationBulletRender: function (swiper, index, className) {
+    paginationSwitchRender: function (swiper, index, className) {
       return '<span class="' + className + '">' + (index + 1) + '</span>';
   	},
     autoplay: 4000,
     prevButton:'.swiper-button-prev',
 	nextButton:'.swiper-button-next',
     autoplayDisableOnInteraction : false,
+});
+$(".swiper-container4 span.swiper-pagination-switch").append( function(n){ return n+1; } );
+$(".swiper-container4 .swiper-button-prev").on("click",function(){
+    swiper4.swipePrev();
+});
+$(".swiper-container4 .swiper-button-next").on("click",function(){
+    swiper4.swipeNext();
 });
 
 $(document).ready(function () {
@@ -201,15 +374,17 @@ $(document).ready(function () {
          var reg =/^0?1[3|4|5|6|7|8][0-9]\d{8}$/;
          return reg.test(tel);
      }
+     // 2019527 修改开始
      $(".btn-submit").click(function(){
-        if( !isPhoneNumber( $("input[name='tel']").val() ) ){
+        if( !isPhoneNumber( $("input[name='dianhua']").val() ) ){
             // alert("请输入正确的手机号");
-            $("input[name='tel']").val("");
-            $("input[name='tel']").attr("placeholder","请输入正确的手机号");
-            $(".form-input-tel").css("border","1px solid red");
+            $("input[name='dianhua']").val("");
+            $("input[name='dianhua']").attr("placeholder","请输入正确的手机号");
+            $(".form-input-dianhua").css("border","1px solid red");
             return false;
         }
      });
+     // 2019527 修改结束
 
      $("input[name='tel']").on('input propertychange',function() {
             $(".form-input-tel").css("border","none");

@@ -65,30 +65,30 @@ $(".header-search").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
     $(".common-search-mask").fadeToggle(300);
-    $("html").toggleClass("hei-100");
-    $("body").toggleClass("hei-100");
+    // $("html").toggleClass("hei-100");
+    // $("body").toggleClass("hei-100");
 })
 // 点击阴影关闭
 $(".common-layer-search a").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
     $(".common-search-mask").fadeToggle(300);
-    $("html").toggleClass("hei-100");
-    $("body").toggleClass("hei-100");
+    // $("html").toggleClass("hei-100");
+    // $("body").toggleClass("hei-100");
 })
 $(".common-back-btn").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
     $(".common-search-mask").fadeToggle(300);
-    $("html").toggleClass("hei-100");
-    $("body").toggleClass("hei-100");
+    // $("html").toggleClass("hei-100");
+    // $("body").toggleClass("hei-100");
 })
 $(".common-search-mask").on("click",function (e) {
     e.stopPropagation();
     $(".common-layer-search").slideToggle(300);
     $(".common-search-mask").fadeToggle(300);
-    $("html").toggleClass("hei-100");
-    $("body").toggleClass("hei-100");
+    // $("html").toggleClass("hei-100");
+    // $("body").toggleClass("hei-100");
 })
 // 搜索关闭阴影
 

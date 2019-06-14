@@ -168,11 +168,11 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide info-view">
                         <dl>
-                            <dt><img src="../images/occupy/9@2x.png"></dt>
+                            <dt><img src="../images/occupy/13@2x.png"></dt>
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name">
-                                    老北京火锅，正宗老北京的风味，来来来你请
+                                    老北京火锅正宗老北京的风味来来来你请来老...
                                 </p>
                                 <a href="#" class="info-detail bgcolor-gradient db tac">
                                     查看详情
@@ -186,7 +186,7 @@
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name">
-                                    老北京火锅，正宗老北京的风味，来来来你请
+                                    老北京火锅，正宗老北京的风味，来来来你请老北京火锅正宗老北京的风味来来来你请来老
                                 </p>
                                 <a href="#" class="info-detail bgcolor-gradient db tac">
                                     查看详情
@@ -200,7 +200,7 @@
                             <dd>
                                 <p class="i-online-title text-ellip">李嘉嘉甜品</p>
                                 <p class="i-online-name">
-                                    老北京火锅，正宗老北京的风味，来来来你请
+                                    来来来你请老北京火锅正宗老北京的风味来来来你请来老
                                 </p>
                                 <a href="#" class="info-detail bgcolor-gradient db tac">
                                     查看详情
@@ -292,5 +292,18 @@
         observer: true, 
         observeParents: true
     })
+
+    // Swiper两行...
+    ellipEleSwiper();
+    function ellipEleSwiper(){
+        var ellipEle = $('.info-referral .i-online-name');
+        var lineHeight = parseInt($('.info-referral .i-online-name').css('line-height')) *2 ;
+        for(var i=0;i < ellipEle.length;i++){
+            if( ellipEle.eq(i).height() > lineHeight){
+                ellipEle.eq(i).addClass('zxline-clamp');
+            }
+        }
+    }
+
 </script>
 </html>

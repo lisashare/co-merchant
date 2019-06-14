@@ -64,9 +64,9 @@
         });
     }
 })(jQuery);
-$("div.text-scroll").myScroll({
+/*$("div.text-scroll").myScroll({
     speed: 50, //数值越大，速度越慢
-});
+});*/
 // 滚动新闻end
 
 //下拉选择

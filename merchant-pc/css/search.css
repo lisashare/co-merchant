@@ -38,8 +38,9 @@ body {
 .container .content-list .section-title {
   font-size: 20px;
   color: #ffffff;
-  width: 170px;
+  width: 162px;
   height: 60px;
+  padding: 0 4px;
   line-height: 60px;
   text-align: center;
   background-color: #ff5909;
@@ -49,6 +50,9 @@ body {
   position: relative;
   top: -50px;
   left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .container .content-list ul {
   margin-top: -20px;
@@ -95,6 +99,7 @@ body {
   font-size: 14px;
   color: #999999;
   line-height: 21px;
+  height: 64px;
 }
 .container .content-list li .div-text .money-updattime {
   overflow: hidden;
@@ -126,7 +131,7 @@ body {
   margin-left: 16px;
   margin-bottom: 14px;
   display: inline-block;
-  border-bottom: 3px solid #f26f68;
+  border-bottom: 3px solid #ff5909;
 }
 .container .aside .section .section-con {
   padding: 0 16px;
@@ -250,7 +255,8 @@ body {
   color: #999999;
 }
 .container .aside .section.hot-search2 {
-  height: 261px;
+  padding-bottom: 16px;
+  overflow: hidden;
 }
 .container .aside .section.hot-search2 li {
   float: left;
@@ -264,13 +270,17 @@ body {
 .container .aside .section.hot-search2 li a {
   font-size: 16px;
   color: #666666;
-  width: 76px;
+  width: 68px;
   height: 40px;
+  padding: 0 4px;
   line-height: 40px;
   text-align: center;
   display: block;
   border-radius: 8px;
   background-color: #ffdece;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .container .aside .section.hot-search2 li a:hover,
 .container .aside .section.hot-search2 li a.cur {

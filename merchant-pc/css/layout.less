@@ -13,7 +13,8 @@ body {
 		color: #333333;
 	}
 	.text-scroll {
-		width: 253px;
+		// width: 253px;
+		width: 700px;
 		height: 30px;
 		line-height: 30px;
 		padding-left: 27px;
@@ -28,6 +29,20 @@ body {
 			li {
 				height: 30px;
 				line-height: 30px;
+				// width: 214px;
+				width: 500px;
+				position: relative;
+			    a {
+			    	width: 368px;
+			    	overflow: hidden;
+				    text-overflow: ellipsis;
+				    white-space: nowrap;
+				    display: inline-block;
+			    }
+			    span {
+			    	position: absolute;
+			    	right: 0;
+			    }
 			}
 		}
 	}
@@ -49,7 +64,8 @@ body {
 		transform: translate(0, -50%);
 		position: absolute;
 		left: 0;
-		top: 50%;
+		// top: 50%;
+		top: 48%;
 		img {
 			width: 235px;
 			height: 77px;
@@ -69,10 +85,13 @@ body {
 			overflow: hidden;
 			input {
 				font-size: 16px;
+				// font-family: "PingFangSC-Regular, sans-serif";
 				color: #000000;
+				line-height: 16px;
 				width: 332px;
 				height: 42px;
-				padding-left: 47px;
+				// padding-left: 47px;
+				padding: 13px 13px 13px 47px;
 				border: 2px solid #ff5909;
 				border-right: none;
 				box-sizing: border-box;
@@ -84,26 +103,37 @@ body {
 				background-image: url("../images/icons/icon_search.png");
 			}
 			.btn-search {
+				font-size: 20px;
+    			color: #ffffff;
 				width: 132px;
     			height: 42px;
     			display: block;
     			position: relative;
     			a {
     				font-size: 20px;
+    				color: #ffffff;
     			}
 			}
 		}
 		.header-search-hot {
-			display: flex;
-			align-items: center;
+			/*display: flex;
+			align-items: center;*/
 			margin-top: 16px;
-			p {}
+			p {
+				width: 74px;
+				color: #666666;
+			}
 			ul {
-				display: flex;
-				align-items: center;
+				// display: flex;
+				// align-items: center;
+				width: 380px;
+				height: 20px;
+				overflow: hidden;
+				white-space: nowrap;
 				li {
 					float: left;
-					margin: 0 7px;
+					// margin: 0 7px;
+					margin-right: 10px;
 					a:hover {
 						color: #ff5909;
 					}
@@ -127,10 +157,12 @@ body {
 			float: left;
 			font-size: 18px;
 			color: #ffffff;
-			width: 234px;
+			// width: 234px;
+			width: 160px;
 			height: 40px;
 			margin-right: 28px;
-			text-align: center;
+			// text-align: center;
+			padding-left: 74px;
 			background-color: #ff5909;
 			background-image: url("../images/icons/icon_fl.png");
 			background-repeat: no-repeat;
@@ -152,7 +184,7 @@ body {
 		position: relative;
 		background-color: pink;
 		z-index: 101;
-		top: -3px;
+		// top: -3px;
 		.cate-menu {
 			width: 234px;
 			height: 432px;
@@ -257,14 +289,15 @@ body {
 			left: 234px;
 			top: 0;
 			.cate_pop_item {
-				padding: 10px 0;
+				// padding: 10px 0;
 				height: 412px;
 				/*overflow-x: hidden;
     			overflow-y: scroll;*/
     			overflow: auto;
 				li {
 					float: left;
-					padding: 10px 20px;
+					// padding: 10px 20px;
+					padding: 0px 20px;
 					a {
 						font-size: 16px;
 						color: #666666!important;
@@ -289,9 +322,10 @@ body {
 		    max-width: 1920px;
 		    height: 432px;
 		    overflow: hidden;
-		    position: relative;
-		    // top: -2px;
-		    top: -5px;
+		    // position: relative;
+		    // top: -5px;
+		    position: absolute;
+		    top: 0;
 		}
 		a,img {
 			width: 100%;
@@ -301,7 +335,7 @@ body {
 			display: block;
 		}
 		img {
-			position: absolute;
+			// position: absolute;
 		}
 		// img { float: left; }
 		.swiper-pagination1 {
@@ -312,7 +346,7 @@ body {
 		    right: -470px;
 		    text-align: center;
 		    z-index: 1;
-		    .swiper-pagination-bullet  {
+		    .swiper-pagination-bullet, .swiper-pagination-switch  {
 		    	width: 30px;
 			    height: 4px;
 			    margin: 0 9px;
@@ -320,11 +354,13 @@ body {
 			    transition: all .3;
 			   	opacity: 1;
 			   	border-radius: 0;
+			   	display: inline-block;
 		    }
-		    .swiper-pagination-bullet-active {
+		    .swiper-pagination-bullet-active, .swiper-visible-switch.swiper-active-switch {
 		    	width: 30px;
 			    height: 4px;
-			    background: #fdda31;
+			    // background: #fdda31;
+			    background: #ff5909;
 			    transition: all .3;
 		    }
 		}
@@ -345,7 +381,7 @@ body {
 	}
 
 	.banner-ad>ul>li {
-	    margin: 0 6px;
+	    margin: 0 5px;
 	    float: left;
 	}
 
@@ -459,7 +495,8 @@ body {
 			position: relative;
 			position: absolute;
 			right: 16px;
-			top: 10px;
+			// top: 10px;
+			top: 22px;
 			.icon-news {
 				width: 23px;
 				height: 17px;
@@ -553,10 +590,11 @@ body {
 				width: 100%;
 				position: relative;
 				.name-counts {
+					// font-size: 16px;
 					color: #666666;
 					margin-top: 20px;
 					.name {
-						
+						font-size: 16px;
 						width: 214px;
 						margin-bottom: 4px;
 						a {
@@ -573,7 +611,8 @@ body {
 					}
 				}
 				.btn-circle {
-					top: 0px;
+					// top: 0px;
+					top: -2px;
 					left: auto;
 					right: 0;
 				}
@@ -589,7 +628,16 @@ body {
 		width: 1174px;
 		height: 148px;
 		margin: 0 auto;
-		overflow: hidden;
+	    .swiper-container2-inner {
+	    	width: 1174px;
+			height: 148px;
+			margin: 0 auto;
+			overflow: hidden;
+	    }
+	    .swiper-wrapper {
+	    	margin-left: 6px;
+	    	// padding: 0 4px;
+	    }
 		.swiper-slide {
 			width: 222px;
 			height: 148px;
@@ -606,11 +654,15 @@ body {
 			}
 		}
 		.swiper-button-prev,.swiper-button-next {
-			top: 62%;
+			// top: 62%;
+			// top: 50%;
+			top: 56%;
 			width: 11px;
 			height: 17px;
 			background-size: 11px 17px;
 			background-repeat: no-repeat;
+			position: absolute;
+			cursor: pointer;
 		}
 		.swiper-button-prev {
 			left: -11px;
@@ -627,9 +679,11 @@ body {
 //品牌、创业推荐
 .recomend-section {
 	.section-pub {
-		margin: 78px auto 0px;
+		// margin: 78px auto 0px;
+		margin: 60px auto 0px;
 		height: 264px;
 		padding-top: 70px;
+		background-color: #ffffff;
 		.btn-btn {
 			cursor: pointer;
 			&:nth-of-type(2) {
@@ -654,7 +708,8 @@ body {
 					height: 100%;*/
 					width: 222px;
 					height: 148px;
-					margin-bottom: 20px;
+					// margin-bottom: 20px;
+					margin-bottom: 14px;
 				}
 			}
 			.rem-title {
@@ -821,11 +876,14 @@ body {
 						}
 					}
 					.swiper-button-prev,.swiper-button-next {
-						top: 64px;
+						// top: 64px;
+						top: 40px;
 						width: 8px;
 						height: 12px;
 						background-size: 8px 12px;
 						background-repeat: no-repeat;
+						position: absolute;
+						cursor: pointer;
 					}
 					.swiper-button-prev {
 						left: auto;
@@ -846,7 +904,7 @@ body {
 					    right: 27px;
 					    text-align: center;
 					    z-index: 1;
-					    .swiper-pagination-bullet  {
+					    .swiper-pagination-bullet, .swiper-pagination-switch  {
 					    	font-size: 16px;
   							color: #333333;
 					    	width: 24px;
@@ -854,10 +912,14 @@ body {
   							line-height: 24px;
   							text-align: center;
 						    margin: 0 9px;
-						    background-color: transparent;
+						    // background-color: transparent;
+						    // background-color: pink;
 						   	opacity: 1;
+						   	display: inline-block;
+						   	border-radius: 50%;
+						   	cursor: pointer;
 					    }
-					    .swiper-pagination-bullet-active {
+					    .swiper-pagination-bullet-active, .swiper-visible-switch.swiper-active-switch {
 					    	color: #ffffff;
 					    	width: 24px;
   							height: 24px;
@@ -968,16 +1030,22 @@ body {
 								margin-top: 8px;
 								p:nth-of-type(1) {
 									height: 22px;
+									overflow: hidden;
 								}
 								.rank-name {
 									font-size: 16px;
 									color: #666666;
-									width: 128px;
+									width: 122px;
 								}
 								.rank-money {
 									font-size: 18px;
 									font-weight: bold;
 									color: #f85100;
+									width: 82px;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+								    text-align: right;
 								}
 								.rank-attention {
 									font-size: 14px;
@@ -1069,8 +1137,8 @@ body {
 				margin-right: 0;
 			}
 			&.on, &:hover {
-				background-color: #f85100;
-				border: 1px dashed #f85100;
+				background-color: #ff5909;
+				border: 1px dashed #ff5909;
 				a {
 					color: #ffffff;
 					border-bottom: 1px dashed #ffffff;
@@ -1092,7 +1160,7 @@ body {
 .joining-section {
 	.section-pub {
 		// margin: 78px auto 60px;
-		margin: 78px auto 0;
+		margin: 60px auto 0;
 		height: 790px;
 		.franchise-discount {
 			width: 820px;
@@ -1143,9 +1211,11 @@ body {
 						}
 						.drink-name {
 							width: 144px;
+							height: 42px;	
 							margin-left: 8px;
 						}
 						.drink-name-sub {
+							height: 22px;
 							a {
 								font-size: 16px;
 								color: #666666;
@@ -1177,6 +1247,7 @@ body {
 						width: 100%;
 						margin: 14px auto;
 						.company, .addr {
+							color: #666666;
 							padding-left: 18px;
 							background-image: url("../images/icons/icon_company.png");
 							background-size: 14px 15px;
@@ -1227,6 +1298,7 @@ body {
 			height: 720px;
 			padding: 70px 16px 0;
 			position: relative;
+			background-color: #ffffff;
 			li {
 				overflow: hidden;
 				margin-bottom: 20px;
@@ -1291,7 +1363,8 @@ body {
 //餐饮资讯
 .catering-section {
 	.section-pub {
-		margin: 78px auto 60px;
+		// margin: 78px auto 60px;
+		margin: 60px auto 60px;
 		height: 672px;
 		ul li {
 			float: left;
@@ -1325,6 +1398,7 @@ body {
 					}
 					a {
 						font-size: 16px;
+						color: #666666;
 						&:hover {
 							color: #ff5909;
 						}
@@ -1348,7 +1422,8 @@ body {
 		position: relative;
 		overflow: hidden;
 		.likes-slider-money {
-			width: 756px;
+			// width: 756px;
+			width: 710px;
 			height: 18px;
 			position: absolute;
 			right: 0;
@@ -1363,7 +1438,8 @@ body {
 				&:nth-of-type(1),&:nth-of-type(9),&:nth-of-type(10) {
 					margin-right: 0;
 				}
-				&:nth-of-type(10) {
+				// &:nth-of-type(10) {
+				&:last-child {
 					margin-right: 16px;
 					a {
 						font-size: 12px;
@@ -1389,7 +1465,8 @@ body {
 			width: 1110px;
 			height: 106px;
 			overflow: hidden;
-			margin: 36px auto 0;
+			// margin: 36px auto 0;
+			margin: 46px auto 0;
 			// margin-left: -555px;
 			// position: absolute;
 			// top: 46px;
@@ -1460,11 +1537,14 @@ body {
 				// }
 			}
 			.swiper-button-prev,.swiper-button-next {
-				top: 62%;
+				// top: 62%;
+				top: 50%;
 				width: 11px;
 				height: 17px;
 				background-size: 11px 17px;
 				background-repeat: no-repeat;
+				position: absolute;
+				cursor: pointer;
 			}
 			.swiper-button-prev {
 				left: 0px;
@@ -1512,11 +1592,13 @@ body {
 							background-size: 14px 14px;
 							background-position: left center;
 							background-repeat: no-repeat;
+							float: left;
 						}
 						.who {
 							font-size: 14px;
 							color: #999999;
 							margin: 0 10px;
+							float: left;
 						}
 						.brand-name	{
 							font-size: 16px;
@@ -1526,6 +1608,7 @@ body {
 							overflow: hidden;
 						    text-overflow: ellipsis;
 						    white-space: nowrap;
+						    float: left;
 						}
 					}
 					.news-btn {
@@ -1643,9 +1726,10 @@ body {
 						background-size: 17px 13px;
 						background-position: left center;
 						background-repeat: no-repeat;
-						&:hover {
+						cursor: default;
+						/*&:hover {
 							color: #ff5909;
-						}
+						}*/
 					}
 				}
 			}
@@ -1678,6 +1762,9 @@ body {
 		background-color: transparent;
 		border: none;
 		font-size: 16px;
+		line-height: 16px;
+		// padding: 13px 0px 13px ;
+		// font-family:"Arial";
 		font-family: "PingFangSC-Regular, sans-serif";
 		// color: #666666;
 		color: #000000;
@@ -1715,14 +1802,17 @@ body {
 					width: 460px;
 					height: 120px;
 				}
-				input[name="username"] {
+				input[name="username"], input.username {
 					// color: #666666;
 					color: #000000;
-					width: 130px;
+					// width: 130px;
+					width: 146px;
 					height: 42px;
-					padding-left: 36px;
+					// padding-left: 36px;
+					padding: 13px 0px 13px 36px;
+					box-sizing: border-box;
 				}
-				input[name="tel"] {
+				input[name="tel"], input[name="dianhua"], input.tel {
 					// color: #666666;
 					color: #000000;
 					width: 244px;
@@ -1767,6 +1857,7 @@ body {
 				line-height: 50px;
 				text-align: center;
 				background-color: #f85100;
+				cursor: pointer;
 			}
 		}
 	}
@@ -1806,9 +1897,9 @@ body {
 
 //友情链接
 .friend-link {
-	/*height: 218px;
-	padding: 60px auto 30px;*/
-	height: 308px;
+	// height: 218px;
+	// padding: 60px auto 30px;
+	// height: 308px;
 	background-color: #333333;
 	a {
 		color: #ffffff;
@@ -1844,8 +1935,11 @@ body {
 	}
 	.friend-link-bottom {
 		margin-top: 30px;
+		margin-bottom: 18px;
 		overflow: hidden;
 		.friend-link-nav {
+			height: 27px;
+			padding-top: 20px;
 			a,span {
 				float: left;
 				font-size: 18px;
@@ -1876,7 +1970,8 @@ body {
 	.copyright-logo {
 		width: 183px;
 		height: 59px;
-		margin-top: 24px;
+		// margin-top: 24px;
+		margin-top: 28px;
 		img {
 			width: 183px;
 			height: 59px;
@@ -1887,6 +1982,7 @@ body {
 		margin-top: 34px;
 		p {
 			font-size: 12px;
+			line-height: 12px;
 			color: #ffffff;
 			margin-bottom: 8px;
 		}

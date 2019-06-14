@@ -9,7 +9,8 @@
 }
 
 .header-top .text-scroll {
-    width: 253px;
+    /*width: 253px;*/
+    width: 700px;
     height: 30px;
     line-height: 30px;
     padding-left: 27px;
@@ -26,6 +27,10 @@
 .header-top .text-scroll .text-scroll-ul li {
     height: 30px;
     line-height: 30px;
+    /*width: 214px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .header-top .html-map {
@@ -61,7 +66,8 @@
 .header .header-logo img {
     width: 235px;
     height: 77px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
+    margin-top: 24px;
 }
 
 .header-search-wrapper {
@@ -167,10 +173,13 @@
 
 .header .header-search .header-searchbox input {
     font-size: 16px;
+    font-family: "PingFangSC-Regular, sans-serif";
     color: #000;
-    width: 423px;
+    width: 422px;
     height: 42px;
-    padding-left: 107px;
+    line-height: 16PX;
+    /*padding-left: 107px;*/
+    padding: 13px 13px 13px 107px;
     border: 2px solid #ff5909;
     border-right: none;
     box-sizing: border-box;
@@ -200,19 +209,34 @@
 }
 
 .header .header-search .header-search-hot {
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
     margin-top: 16px;
 }
-
+.header .header-search .header-search-hot p{
+    width: 74px;
+    color: #666666;
+}
 .header .header-search .header-search-hot ul {
-    display: flex;
-    align-items: center;
+    /*display: flex;
+    align-items: center;*/
+    width: 378px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .header .header-search .header-search-hot ul li {
     float: left;
-    margin: 0 7px;
+    /*margin: 0 7px;*/
+    margin-right: 10px;
+}
+.header .header-search .header-search-hot ul li a {
+    float: left;
+    /*width: 76px;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .header .header-search-hot ul li a:hover{
     color: #ff5909;

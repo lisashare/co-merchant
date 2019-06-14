@@ -100,31 +100,27 @@ button { border: none; }
 textarea { resize:none; overflow:auto; }
 body { font-size:14px; font-family: PingFangSC-Regular, sans-serif; }
 
+input:focus::-webkit-contacts-auto-fill-button{
+    opacity: 0;
+}
+
 ::-webkit-input-placeholder {
     /* WebKit browsers */
-    font-size: 16px;
     color: #999999;
-    font-family: "PingFangSC-Regular, sans-serif";
 }
 
 :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
-    font-size: 16px;
     color: #999999;
-    font-family: "PingFangSC-Regular, sans-serif";
 }
 
 ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
-    font-size: 16px;
     color: #999999;
-    font-family: "PingFangSC-Regular, sans-serif";
 }
 
 :-ms-input-placeholder {
     /* Internet Explorer 10+ */
-    font-size: 16px;
     color: #999999;
-    font-family: "PingFangSC-Regular, sans-serif";
 }
 /* end reset */

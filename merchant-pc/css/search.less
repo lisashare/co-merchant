@@ -39,8 +39,9 @@ body {
 		.section-title {
 			font-size: 20px;
 			color: #ffffff;
-			width: 170px;
+			width: 162px;
 			height: 60px;
+			padding: 0 4px;
 			line-height: 60px;
 			text-align: center;
 			background-color: #ff5909;
@@ -50,6 +51,9 @@ body {
 			position: relative;
 			top: -50px;
 			left: 0;
+			overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
 		}
 		ul {
 			margin-top: -20px;
@@ -94,6 +98,7 @@ body {
 					font-size: 14px;
 					color: #999999;
 					line-height: 21px;
+					height: 64px;
 				}
 				.money-updattime {
 					overflow: hidden;
@@ -128,7 +133,7 @@ body {
 				margin-left: 16px;
 				margin-bottom: 14px;
 				display: inline-block;
-				border-bottom: 3px solid #f26f68;
+				border-bottom: 3px solid #ff5909;
 			}
 			.section-con {
 				padding: 0 16px;
@@ -252,7 +257,9 @@ body {
 				}
 			}
 			&.hot-search2 {
-				height: 261px;
+				// height: 261px;
+				padding-bottom: 16px;
+				overflow: hidden;
 				li {
 					float: left;
 					width: 76px;
@@ -264,13 +271,17 @@ body {
 					a {
 						font-size:16px; 
 						color: #666666;
-						width: 76px;
+						width: 68px;
 						height: 40px;
+						padding: 0 4px;
 						line-height: 40px;
 						text-align: center;
 						display: block;
 						border-radius: 8px;
 						background-color: #ffdece;
+						overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
 						&:hover, &.cur{
 							color: #ffffff;
 							background-color: #ff5909;
